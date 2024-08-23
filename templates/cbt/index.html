@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block content %}
+
+
+    <!-- App Title -->
+    <h1>Welcome to Social Science ABU, CBT center.</h1>
+    <!-- Welcome Message Section -->
+  <div class="card p-2">
+    <h4>Welcome Message:</h4>
+    <p>
+        Welcome to your premier destination for computer-based
+        testing. Prepare for your exams with confidence and success.
+    </p>
+    <!-- Brief Introduction Section -->
+    <h4>Brief Introduction:</h4>
+    <p>
+        Social Science ABU provides a wide range of tests and quizzes to help you
+        excel in your studies and assessments. Whether you're preparing for an
+        important exam or simply testing your knowledge, we've got you covered.
+    </p>
+    <!-- Instructions Section -->
+    <h4>Instructions:</h4>
+    <p>Before you begin, please read the following instructions carefully:</p>
+    <ol>
+        <li>Ensure you have a stable internet connection.</li>
+        <li>
+            You will have a specific time limit for each test. Be mindful of the
+            timer.
+        </li>
+        <li>Select your answers by clicking on the options provided.</li>
+        <li>Review your answers before submitting if time allows.</li>
+    </ol>
+    <div>
+    <a href="{% url 'cbt_tests' %}" class="btn btn-primary btn-outline mt-1"><span>Continue</span><em class="icon ni ni-arrow-right"></em></a>
+    </div>
+  </div>
+
+{% endblock content %}

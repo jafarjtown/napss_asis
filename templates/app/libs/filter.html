@@ -1,0 +1,37 @@
+{% load static %}
+<div class="card border form-div">
+    <script src="{% static "js/load_courses.js" %}" defer></script>
+        <form>
+          <h4 class="card-subtitle">Filter Component</h4>
+            <label> Department:
+            <select name="department" department>
+                <option value="null">--Select--</option>
+                {% for d in departments %}
+                <option value="{{d.id}}" {% if d.id == department %}
+                selected
+                {% endif %} >{{d.name}}</option>
+           {% endfor %}
+            </select>
+            </label>
+            <label> Level:
+            <select name="level" level>
+                <option value="null">--Select--</option>
+                {% for l in levels %}
+                <option value="{{l}}" {% if l == level %}selected
+                {% endif %}>{{l}} Level</option>
+               {% endfor %}
+            </select>
+            </label>
+            <label> Course :
+            <select name="course" course>
+                <option value="null">--Select--</option>
+            </select>
+            </label>
+            {% if not hbtn %}
+         <div>
+            <button class="d-none btn btn-primary mt-1" get-m><span>{% if btn %}{{btn}}{% else %} Filter {% endif %}</span><em class="icon ni ni-files"></em></button>
+          </div>
+            {% endif %}
+        
+    </form>
+</div>

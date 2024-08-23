@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+  <div class="card p-0 border-bottom w-100 d-flex flex-column">
+    <img class="card-img object-fit-cover h-200px bg-primary rounded-0" src="{{blog.cover.url}}">
+    <span class="p-1 card-title h4">{{blog.title}}</span>
+  </div>
+  <div class="p-1">
+    <span>Blogger : {{blog.user}} </span>
+  </div>
+  <div class="p-1">
+    {% if user.is_authenticated %}
+    <div class="border p-1">
+    {{blog.content|safe}}
+    </div>
+    {% if not user_rated %}
+    <form method="post" id="form" class="border-top mt-1">
+      {% csrf_token %}
+      <small>Blogs are shared to other people by their ratings, please rate this blog post to help us deliver the post to other users.</small>
+      <div class="form-group">
+      <label class="form-label" for="Default-Range">Rating Scale</label>
+        <div class="w-100px form-control-wrap">
+          <div name='rating' class="form-control-slider" data-start="2" data-tooltip="true" data-min='0' data-max='5' id="rating"></div>
+        </div>
+        <small>Note: once you submit a rating, you can't rate the blog again.</small>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="feedback-02">Feedback</label>
+        <div class="form-control-wrap">
+            <textarea name="feedback" class="form-control" id="feedback-02" placeholder="Start writing here"></textarea>
+        </div>
+      </div>
+      <button class="btn btn-outlined btn-primary">Save</button>
+    </form>
+    {% endif %}
+    {% else %}
+    {{blog.content|safe|truncatewords:200}}
+    <hr>
+    <a class="pr-3 pl-3 btn btn-outline btn-primary" href="{% url 'user_login' %}">Sing In to Read more</a>
+    {% endif %}
+  </div>
+  <div class="p-1">
+    <span class="p">Comments</span>
+    {% for rating in blog.ratings.all %}
+      <div class="card border w-200px">
+        <div class="d-flex p-1">
+          <div class="bg-primary me-1 w-15 h-20">
+            <img >
+          </div>
+          <div class="d-flex flex-column ml-1">
+            <span>{{rating.user}}</span>
+            <span>
+              <ul class="rating">
+              {% for i in rate %}
+                  <li><em class="icon ni ni-star{% if i <= rating.scale != 0%}-fill{% endif %}"></em></li>
+              {% endfor %}
+              </ul>
+              </span>
+          </div>
+        </div>
+        <span class="p-1">{{rating.comment}}</span>
+        
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
+{% block script %}
+<script defer>
+
+  var slider = document.getElementById('rating');
+  var form = document.getElementById('form')
+  function submitForm() {
+        var hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = "rating";
+        hiddenInput.value = slider.noUiSlider.get();
+        form.appendChild(hiddenInput);
+        form.submit();
+    }
+  form.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    submitForm()
+  })
+</script>
+{% endblock script %}

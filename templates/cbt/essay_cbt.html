@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+    <h2>Essay courses CBT - practical</h2>
+    <p>Here are available Computer based test, each test cost 50 coins</p>
+    <table>
+        <thead>
+            <tr>
+                <td>Course</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody>
+        {% for c in courses %}
+        <tr>
+            <td>{{c.topic}}</td>
+            <td><a href="{% url "cbt_test_essay" c.id %}">Run</a> | <a href="#">Delete</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</section>
+
+{% endblock content %}

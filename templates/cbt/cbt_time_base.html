@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="card">
+    <h2 class="card-title">{{course.name}} Test</h2>
+    <p>Questions boxes, click to select question or use the navigators below.</p>
+    <div questions style="display:flex;gap:2px;flex-wrap:wrap"></div>
+    <div timer></div>
+</section>
+
+<section class="card border mt-2">
+     <div class="form-div">
+        <form method="post" action="{% url "cbt_test_result" course.id %}">
+        {% csrf_token %}
+        {% if result %}
+        <p>Here's what you score : {{result.score}}/40 | <a href="{% url "cbt_test" course.id %}">Retry</a></p>
+        {% for q in qs %}
+                <div style="flex-direction:column" >
+            <p>{{forloop.counter}}. {{q.q.question}}</p>
+            <ol style="padding-left: 20px" type="A">
+                
+            {% for o in q.q.options.all %}
+            <label>
+            <li style="{% if o.id == q.select and o.is_correct %} background: lightgreen;{% elif o.is_correct %} background: orange;{% elif q.select == o.id %} background:red;{% endif %}padding:5px;margin-bottom:4px">
+            {{o.value}}
+            </li>
+            </label>
+            {% endfor %}
+            </ol>
+        </div>
+        {% endfor %}
+        {% else %}
+        {% for q in qs %}
+        <div style="flex-direction:column;display:none" question id="{{forloop.counter}}">
+            <p>{{forloop.counter}}. {{q.question}}</p>
+            <ol type="A">
+                
+            {% for o in q.options.all %}
+               
+            <li class="m-1">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio{{o.id}}" name="{{q.id}}" value="{{o.id}}" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio{{o.id}}">{{o.value}}</label>
+            </div>
+            </li>
+            {% endfor %}
+            </ol>
+            <div>
+               <button type="button" class="btn btn-secondary" prev {% if forloop.counter == 1 %}disabled{% endif %}><em class="icon ni ni-chevron-left"></em><span>Previous</span></button>
+               <button type="button" class="btn btn-secondary" next  {% if qs.last == q %} disabled{% endif %}><span>Next</span><em class="icon ni ni-chevron-right"></em></button>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% if result is None %}
+        <button class="btn btn-primary">Submit/check</button>
+        {% endif %}
+    </form>
+    </div>
+    
+</section>
+
+{% endblock content %}
+{% block script %}
+<script src="{% static "js/cbt.js" %}"></script>
+<script src="{% static "js/timer.js" %}"></script>
+<script>
+    const form = document.querySelector("form")
+    form.onsubmit = () => { document.querySelectorAll("input").forEach(inp=>inp.disabled = false)
+    }
+</script>
+{% endblock script %} 

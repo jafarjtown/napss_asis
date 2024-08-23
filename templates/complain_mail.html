@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback/Complaint Submission Confirmation</title>
+    <style>
+     body, h1{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the email container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the header */
+        .header {
+            
+        }
+
+        /* Style the main content */
+        .content {
+            padding: 20px 0;
+        }
+
+        /* Add some spacing */
+        .spacer {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Feedback/Complaint Submission Confirmation</h1>
+        </div>
+        <div class="content">
+            <p>Dear {{ user_name }},</p>
+            <div class="spacer"></div>
+            <p>We greatly appreciate your engagement with Babuga's Library and your valuable feedback, suggestions, and requests. Your input is crucial in helping us improve and tailor our services to meet your needs.</p>
+            <p>Here's a quick confirmation of your submission:</p>
+            
+            <p><b>Request Type</b> : {{ request_type }}</p>
+            <p><b>Topic</b> : {{topic}}</p>
+            <p><b>Date of submission</b> : {{ date }}</p>
+            <b>Description / Request</b>
+            <p>{{ description }}</p>
+            <p>Rest assured that your message has been received, and our team is diligently reviewing it. We take all feedback seriously and strive to address your concerns and suggestions promptly.</p>
+            <p>Our commitment to providing you with an exceptional experience remains unwavering. We will get to work on your request or address any concerns raised in your feedback. If necessary, a member of our team may reach out to you for further clarification or assistance.</p>
+            <p>In the meantime, if you have any urgent questions or require immediate assistance, please don't hesitate to contact our support team at <a href="mailto:contact@babugas-library.com.ng">contact@babugas-library.com.ng</a>.</p>
+            <div class="spacer"></div>
+            <p>Once again, thank you for choosing Babuga's Library and for helping us enhance our platform. We look forward to serving you better in the future.</p>
+            <p>Warm regards,</p>
+            <p>{{ admin }}</p>
+            <p>Babuga's Library Team</p>
+        </div>
+    </div>
+</body>
+</html>

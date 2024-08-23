@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="hero">
+    
+    <div>
+        <a href="{% url "course" %}">Courses</a>
+        <a href="{% url "material_list" %}">Resources</a>
+    </div>
+    <div>
+        <p>Explore a wide array of materials, ranging from PDFs to videos, handouts, past questions, and a variety of other valuable resources, all generously provided by our community for your benefit.</p>
+    </div>
+    
+</section>
+<section class="card mt-1 sec">
+  <span class="">The {{pr_short_name}} platform is a comprehensive digital solution designed to address the needs of students, administrators, and faculty members within an academic setting. As a personal project, I am developing this platform to provide a centralized hub for accessing essential resources, facilitating communication, and enhancing campus life.</span>
+  <span class="ff-italic right align-self-end text-decoration-underline">Jafaru Idris</span>
+</section>
+<!-- blogging -->
+<section class="card mt-1 sec">
+  <h4 class="card-title">Latest Updates</h4>
+  <div id="carouselExConInd" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner">
+        {% for blog in blogs %}
+        <a href="{% url 'read_blog' blog.id %}" class="carousel-item {% if blogs.first == blog %}active{% endif %}">
+          <span class="user-card border-bottom pb-1">
+                  <span class="user-avatar sq h-100px w-100px rounded-0">
+                          <img class="" src="{{blog.cover.url}}" alt="">
+                  </span>
+                <span class="user-info d-flex flex-column">
+                    <span class="lead-text">{{blog.title|truncatechars:30}}</span>
+                    <p class="sub-text">{{blog.desc|truncatechars:110}}</p>
+                </span>
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExConInd" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExConInd" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+</section>
+<!-- statistics -->
+<section class="card mt-1 sec">
+  <span class="card-title h4">Stats</span>
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
+      <span><em class="icon ni ni-building"></em></span>
+      <span class="fw-bold">{{departments_count}}</span>
+      <span class="p-1 small">Departments</span>
+    </div>
+    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
+      <span><em class="icon ni ni-book"></em></span>
+      <span class="fw-bold">{{courses_count}}</span>
+      <span class="p-1 small">Courses</span>
+    </div>
+    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
+      <span><em class="icon ni ni-pen"></em></span>
+      <span class="fw-bold">100K</span>
+      <span class="p-1 small">Online Quiz</span>
+    </div>
+    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
+      <span><em class="icon ni ni-files"></em></span>
+      <span class="fw-bold">{{materials_count}}</span>
+      <span class="p-1 small">Materials</span>
+    </div>
+    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
+      <span><em class="icon ni ni-users"></em></span>
+      <span class="fw-bold">{{users_count}}</span>
+      <span class="p-1 small">Users</span>
+    </div>
+  </div>
+</section>
+<!-- quick links -->
+<section class="card mt-1 sec">
+<span class="card-title h4">Quick links.</span>
+<div class="btn-group" aria-label="Basic example">
+  <a href="{% url 'user_register' %}" class="btn btn-dim center btn-primary">Register</a>
+  <a href="{% url 'cbt_tests' %}" class="btn btn-dim center btn-primary">CBT</a>
+  <a href="{% url 'about' %}" class="btn btn-dim center btn-primary">About Us</a>
+</div>
+</section>
+<!-- sponsors -->
+{% if partners %}
+<section class="card mt-1 sec">
+  <span class="card-title h4">Our Partners</span>
+   {% for partner in partners %}
+   <span class="user-card pb-1">
+        <span class="user-avatar h-100px w-100px">
+            <img class="bg-light" src="{{partner.image.url}" alt="">
+        </span>
+        <span class="user-info d-flex flex-column">
+          <span class="lead-text">{{partner.name}}</span>
+          <p class="sub-text">{{partner.info}}</p>
+        </span>
+   </span>
+   {% endfor %}
+</section>
+{% endif %}
+<section class="card p-2 mt-1 sec">
+<form method="post" class="">
+   {% csrf_token %}
+  <span class="card-title h4">Contact Form</span>
+  <div class="form-group">
+    <label class="form-label" for="contact-01">Name or Email</label>
+    <div class="form-control-wrap">
+        <input name="name" type="text" class="form-control" id="contact-01" placeholder="Full name or Email Address">
+    </div>
+</div>
+<div class="form-group">
+    <label class="form-label" for="contact-02">Message</label>
+    <div class="form-control-wrap">
+        <textarea name="message" class="form-control" id="contact-textarea" placeholder="Start writing here"></textarea>
+    </div>
+</div>
+<div class="form-group">
+  <button class="btn btn-success">Submit</button>
+</div>
+</form>
+</section>
+{% endblock content %}
+
+
+
+
+
+
+<div class="hero">
+    <div class="br">
+    
+        <h1>Welcome to SITENAME</h1>
+    
+        <p>Need a reading materials? worry no more, you are at the right place.</p>
+    </div>
+    <div>
+    
+        <p>You may ask, is it free? YES, its free my dear, it is sponsored by NASSS under the leadership of Jagaban for you and it's going to remained free forever!!</p>
+        <figure>
+        <img src="{% static "imgs/logo.jpg"%}" alt="">
+        <figcaption>Jagaban</figcaption>
+        </figure>
+        </div>
+    
+    <div class="br">
+        <p>You can get different kinds of materials here from pdfs to videos, handout, pass questions, useful or relevant resources and more all made available for you by the community</p>
+    </div>
+    <div class="nbr">
+            <div>There's up to 
+                <h1>10,000 +</h1> materials on this site
+            </div>
+            <div>
+                With <h1>5,000 +</h1> downloads
+            </div>
+    </div>
+    <div class="button-links">
+    
+    <p>
+      You have a useful soft copy of handout, pass questions or other important materials? you can also contribute in making this platform more helpful to we the students. Click on below button to Contribute 
+    </p>
+    
+        
+    
+    <a href="{% url "upload" %}">Contribute</a>
+    
+    </div>
+</div>

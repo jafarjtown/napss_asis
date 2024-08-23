@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="card">
+{% include 'app/libs/help.html' %}
+{% include "app/libs/filter.html" with department=department departments=departments levels=levels btn="Filter" sort=True hbtn=True %}
+<button class="d-none btn btn-primary mt-1" get-m><span>Get Materials</span><em class="icon ni ni-files"></em></button>
+<div class="mt-2">
+  <h3 class="card-subtitle">All Documents </h3>
+  <div list>
+     <p>Select Course and click on Get Materials</p>
+  </div>
+  <div>
+      <ul class="pagination" pagination></ul>
+    </div>
+</div>
+</section>
+{% endblock %}
+{% block script %}
+<script src="{% static "js/load_materials.js" %}"></script>
+{% endblock script %}

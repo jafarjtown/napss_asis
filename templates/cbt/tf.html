@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h3>True and False questions</h3>
+    <div class="hr"></div>
+    <form>
+    {% for q in tfs %}
+        <h3>{{q.name}}  <a href="{% url 'true_false_result' q.id %}">Proceed</a></h3>
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="content-page wide-md m-auto">
+                                    <div class="nk-block-head nk-block-head-lg wide-xs mx-auto">
+                                        <div class="nk-block-head-content text-center">
+                                            <h2 class="nk-block-title fw-normal">About {{pr_short_name}} ABU</h2>
+                                        </div>
+                                    </div><!-- .nk-block-head -->
+                                    <div class="nk-block">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner card-inner-xl">
+                                                <article class="entry">
+                                                    <h4>Our Mission</h4>
+                                                    <p>At {{pr_long_name}} ABU, our mission is clear: to provide Ahmadu Bello University students with rapid access to a wealth of educational materials precisely when they need them. We believe that access to quality learning resources should never be a barrier to academic success. That's why we are committed to breaking down these barriers and empowering students on their educational journey.</p>
+                                                    <h4>Our Vision</h4>
+                                                    <p>Imagine a platform where all the reading materials you require for your courses are available at your fingertips. From lecture handouts, notes, and course outlines to challenging assignments, past questions, and a host of other relevant resources, we aspire to be your go-to source for academic excellence. Our vision is to create a seamless learning experience that empowers students to reach their full potential.</p>
+                                                    <h4>Abundant Resources, Diverse Formats</h4>
+                                                    <p>With an extensive collection of approximately 5,000 materials, our library caters to various learning preferences. Whether you prefer traditional PDF documents, engaging videos, enlightening images, or informative audio resources, we've got you covered. Our commitment to diversity ensures that your learning journey is both enriching and personalized.</p>
+                                                    <h4>Community-Driven Excellence</h4>
+                                                    <p>Social Science ABU thrives on the spirit of collaboration and community. It's our wonderful community of contributors, including students, educators, and passionate individuals, that makes this platform possible. Together, we create a vibrant ecosystem where knowledge is freely shared and continuously enriched.</p>
+                                                    <h4>Meet the Founders</h4>
+                                                    <p>Social Science ABU was founded by Jafaru Idris Tesla and co-founded by Babuga Umar Baga. Their vision and dedication to enhancing educational accessibility have driven the creation of this platform.</p>
+                                                    <img src="{% static 'imgs/us~2.jpeg' %}" alt="">
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div><!-- .nk-block -->
+                                </div><!-- .content-page -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+{% endblock content %}

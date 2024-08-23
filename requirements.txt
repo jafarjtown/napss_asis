@@ -1,0 +1,13 @@
+Django==3.2.2
+gunicorn
+uvicorn
+whitenoise
+dj-database-url
+psycopg2-binary
+djangorestframework-word-filter
+django-url-filter
+django-filter
+python-dotenv
+pytz
+django-compressor
+django-summernote

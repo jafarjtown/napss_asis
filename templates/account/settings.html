@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="nk-block">
+  <div class="card card-bordered">
+    <div class="card-aside-wrap">
+      <div class="card-inner card-inner-lg">
+        <div class="nk-block-head nk-block-head-lg">
+          <div class="nk-block-between">
+            <div class="nk-block-head-content">
+              <h4 class="nk-block-title">Personal Information</h4>
+              <div class="nk-block-des">
+                <p>Basic info, like your Name, Email and Phone, that you use on Social Science ABU Platform.</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- .nk-block-head -->
+        <div class="nk-block">
+          <div class="nk-data data-list">
+            <div class="data-head">
+              <h6 class="overline-title">Basics</h6>
+            </div>
+            <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+              <div class="data-col">
+                <span class="data-label">Full Name</span>
+                <span class="data-value">{{user.get_full_name}}</span>
+              </div>
+              <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div><!-- data-item -->
+            </div><!-- data-item -->
+            <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+              <div class="data-col">
+              <span class="data-label">Display Name</span>
+              <span class="data-value">{{user.username}}</span>
+            </div>
+              <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div><!-- data-item -->
+            </div><!-- data-item -->
+            <div class="data-item">
+                <div class="data-col">
+                    <span class="data-label">Email</span>
+                    <span class="data-value">{{user.email}}</span>
+                </div>
+                <div class="data-col data-col-end"><span class="data-more disable"><em class="icon ni ni-lock-alt"></em></span></div>
+            </div><!-- data-item -->
+            <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                <div class="data-col">
+                    <span class="data-label">Phone Number</span>
+                    <span class="data-value {% if user.phone == None %}text-soft{% endif %}">{% if user.phone %}{{user.phone}}{% else %}Not add yet{% endif %}</span>
+                </div>
+                <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
+            </div><!-- data-item -->
+        </div><!-- data-list -->
+        <div class="nk-data data-list">
+            <div class="data-head">
+                <h6 class="overline-title">Settings</h6>
+            </div>
+            <div class="data-item">
+                <div class="data-col">
+                    <span class="data-label">Password</span>
+                </div>
+                <div class="data-col data-col-end"><a href="{% url 'password_reset' %}" class="link link-primary">Forgotten</a></div>
+            </div><!-- data-item -->
+            <div class="data-item">
+                <div class="data-col">
+                    <span class="data-label">Account</span>
+                    <span class="small">Deactivated Account can't be logged in, unless it's activated</span>
+                </div>
+                <div class="data-col data-col-end"><a href="#" class="link link-warning">Deactivate</a></div>
+            </div><!-- data-item -->
+            <div class="data-item">
+                <div class="data-col">
+                    <span class="data-label">Account</span>
+                    <span class="small">Deletef Account can't be recoverd</span>
+                </div>
+                <div class="data-col data-col-end"><a href="#" class="link link-danger">Delete</a></div>
+            </div><!-- data-item -->
+          </div><!-- data-list -->
+    </div><!-- .nk-block -->
+    </div>
+</div><!-- .card-aside-wrap -->
+</div><!-- .card -->
+</div><!-- .nk-block -->
+  
+<div class="modal fade" role="dialog" id="profile-edit">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-lg">
+                    <h5 class="title">Update Profile</h5>
+                    <form method="post" action="{% url 'update_user' %}" class="tab-content">
+                      {% csrf_token %}
+                        <div class="tab-pane active" id="personal">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="full-name">First Name</label>
+                                        <input name="first_name" type="text" class="form-control form-control-lg" id="full-name" value="{{user.first_name}}" placeholder="Enter Full name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="display-name">Last Name</label>
+                                        <input name="last_name" type="text" class="form-control form-control-lg" id="display-name" value="{{user.last_name}}" placeholder="Enter Last name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone-no">Phone Number</label>
+                                        <input name="phone" type="text" class="form-control form-control-lg" id="phone-no" value="{% if user.phone %}{{ user.phone }}{% else %}+234{% endif %}" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="latest-sale">
+                                        <label class="custom-control-label" for="latest-sale">Use full name to display </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                        <li>
+                                            <button class="btn btn-lg btn-primary" data-bs-dismiss="modal">Update Profile</button>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-bs-dismiss="modal" class="link link-light">Cancel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .tab-pane -->
+                    </form><!-- .tab-content -->
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    
+{% endblock content %}
+<section><h1>Account settings</h1></section>
+<section class="card">
+    <h2 class="h3 card-title">User info</h2>
+    <div class="form-div">
+        <form method="post" action="{% url "update_user" %}">
+            {% csrf_token %}
+        <label>Email <input type="email" value="{{user.email}}" disabled></label>
+        <label>First name
+        <input type="text" value="{{user.first_name}}" name="first_name">
+        </label>
+        <label>Last name's
+        <input type="text" value="{{user.last_name}}" name="last_name">
+        </label>
+        <button class="submit-btn">save</button>
+        </form>
+    </div>
+</section>
+<div class="hr"></div>
+<section class="card">
+    <h2 class="h3 card-title text-danger">Delete account</h2>
+    <form class="form-div" method="post" action="{% url "delete_account" %}">
+        {% csrf_token %}
+        <label>Enter your Password
+        <input type="password" name="password">
+        <button class="submit-btn" style="background: red; padding: 10px; ">Delete</button></label>
+    </form>
+</section>

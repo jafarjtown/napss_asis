@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="card form-div">
+        <h3 class="card-subtitle">Search Materials</h3>
+        {% include 'app/libs/help.html' %}
+        <div class="form-group">
+          <div class="form-control-wrap">
+            <label class="form-label" for="outlined">Input Box</label>
+            <input value="{{q}}" name="q" type="text" class="form-control form-control" id="outlined" placeholder="pols 101 or Introduction to political science" autocomplete="false" input>
+          </div>
+          <small>
+                Enter enough information as possible, in other to help us find your desired material'(s)
+            </small>
+        </div>
+        <button class="btn btn-primary w-100px" btn><span>Search</span><em class="ni icon ni-search"></em></button>
+       
+    </div>
+<section class="card border mt-1">
+  <h3 class="card-title">Results</h3>
+  <div list>
+     <p>Start typing and click Search</p>
+  </div>
+  <div>
+      <ul class="pagination" pagination></ul>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+<script src="{% static 'js/load_materials.js' %}"></script>
+<script src="{% static 'js/search.js' %}"></script>
+{% endblock script %}

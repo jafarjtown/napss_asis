@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="card p-1">
+  <div class="card-header">
+    <h4 class="card-title">Department of {{timetable.department}} Time Table {{timetable.level}} Level</h4>
+  </div>
+  <div class="table-responsive">
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      {% for time in timetable.lecture_times %}
+      <th scope="col" class="text-nowrap">{{time.format|upper}}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+   {% for day, lectures in timetable.lectures_day %}
+    <tr>
+      <td scope='row'>{{day}}</td>
+          {% for lecture in lectures %}
+          {% for time in timetable.lecture_times %}
+            {% if lecture.time == time %}
+            <td>
+              <span>
+              <a href="{% url 'course' %}?department={{lecture.class.course.department.id}}&course={{lecture.class.course.code}}">{{lecture.class.course|upper}}</a>
+              </span>
+              <span>
+                {{lecture.class.venue}}
+              </span>
+            </td>
+            {% endif %}
+          {% endfor %}
+          {% endfor %}
+    </tr>
+   {% endfor %}
+  </tbody>
+</table>
+  </div>
+</section>
+{% endblock content %}

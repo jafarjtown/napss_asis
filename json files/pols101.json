@@ -1,0 +1,438 @@
+{
+    "course": "Pols 101",
+    "questions":[
+        {
+        "question": "What is the primary focus of political science?",
+        "options": ["Economic analysis", "Studying human behavior", "Government and politics", "Environmental studies"],
+        "answer": "Government and politics"
+    },
+    {
+        "question": "Who is known for his work 'The Prince' and is considered a key figure in political science?",
+        "options": ["Thomas Hobbes", "John Locke", "Niccolò Machiavelli", "Jean-Jacques Rousseau"],
+        "answer": "Niccolò Machiavelli"
+    },
+    {
+        "question": "Which form of government is characterized by a single ruler with absolute authority?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Federalism"],
+        "answer": "Monarchy"
+    },
+    {
+        "question": "What term describes a government's authority and right to exercise power?",
+        "options": ["Sovereignty", "Democracy", "Bureaucracy", "Totalitarianism"],
+        "answer": "Sovereignty"
+    },
+    {
+        "question": "In which branch of government are laws made and passed?",
+        "options": ["Executive branch", "Legislative branch", "Judicial branch", "Bureaucracy"],
+        "answer": "Legislative branch"
+    },
+    {
+        "question": "Who developed the social contract theory and introduced the concept of the 'general will'?",
+        "options": ["Thomas Hobbes", "John Locke", "Niccolò Machiavelli", "Jean-Jacques Rousseau"],
+        "answer": "Jean-Jacques Rousseau"
+    },
+    {
+        "question": "What is the term for a system of government where power is divided between a central authority and regional or state governments?",
+        "options": ["Unitary system", "Confederation", "Federal system", "Parliamentary system"],
+        "answer": "Federal system"
+    },
+    {
+        "question": "Which political system emphasizes direct citizen participation in decision-making and policy creation?",
+        "options": ["Authoritarianism", "Oligarchy", "Democracy", "Totalitarianism"],
+        "answer": "Democracy"
+    },
+    {
+        "question": "What is the legal document that outlines the structure and governance of a country?",
+        "options": ["Constitution", "Ideology", "Bureaucracy", "Federalism"],
+        "answer": "Constitution"
+    },
+    {
+        "question": "Who is known for his work 'Leviathan' and the concept of the social contract in political philosophy?",
+        "options": ["Thomas Hobbes", "John Locke", "Niccolò Machiavelli", "Jean-Jacques Rousseau"],
+        "answer": "Thomas Hobbes"
+    },
+    {
+        "question": "Which political system is characterized by rule by a small group of individuals or elites?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Federalism"],
+        "answer": "Oligarchy"
+    },
+    {
+        "question": "In the context of political science, what is the term for a form of government where power is concentrated in the central government?",
+        "options": ["Federal system", "Confederation", "Unitary system", "Parliamentary system"],
+        "answer": "Unitary system"
+    },
+    {
+        "question": "Who is the philosopher known for his contributions to the idea of natural rights and the social contract theory?",
+        "options": ["Thomas Hobbes", "John Locke", "Niccolò Machiavelli", "Jean-Jacques Rousseau"],
+        "answer": "John Locke"
+    },
+    {
+        "question": "What is the term for a legal agreement that outlines the rights and responsibilities of business partners?",
+        "options": ["Articles of incorporation", "Business plan", "Bylaws", "Partnership agreement"],
+        "answer": "Partnership agreement"
+    },
+    {
+        "question": "In the context of political science, what term describes the study of the behavior and actions of governments and political systems?",
+        "options": ["Political economy", "Political psychology", "Political sociology", "Political analysis"],
+        "answer": "Political science"
+    },
+    {
+        "question": "Which theory of governance is characterized by power vested in the hands of a single individual or monarch?",
+        "options": ["Absolutism", "Democracy", "Republicanism", "Pluralism"],
+        "answer": "Absolutism"
+    },
+    {
+        "question": "What term describes a method of raising capital for a startup by selling ownership shares to investors?",
+        "options": ["Crowdfunding", "Bootstrapping", "IPO (Initial Public Offering)", "Seed funding"],
+        "answer": "IPO (Initial Public Offering)"
+    },
+    {
+        "question": "In political science, what is the term for the process of identifying and evaluating potential policy options?",
+        "options": ["Legislation", "Policy analysis", "Political action", "Government oversight"],
+        "answer": "Policy analysis"
+    },
+    {
+        "question": "What term describes the act of voting to select individuals to represent the public in government?",
+        "options": ["Electoral college", "Suffrage", "Referendum", "Representation"],
+        "answer": "Suffrage"
+    },
+    {
+        "question": "In the context of political science, what is the term for a system where power is shared among various levels of government, such as federal and state governments?",
+        "options": ["Unitary system", "Confederation", "Federal system", "Parliamentary system"], "answer": "Federal system" }, { "question": "Which theory in political science emphasizes the role of individuals' interests in shaping political decisions and actions?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Pluralism" }, { "question": "What is the term for the act of choosing leaders or policies by voting in an election?", "options": ["Political action", "Suffrage", "Referendum", "Representation"], "answer": "Suffrage" }, { "question": "In political science, what is the term for the division of power and responsibilities among different branches of government?", "options": ["Checks and balances", "Government separation", "Executive oversight", "Legislative control"], "answer": "Checks and balances" }, { "question": "Which political philosophy emphasizes the idea that individuals should be free from government intervention in their economic activities?", "options": ["Socialism", "Liberalism", "Conservatism", "Fascism"], "answer": "Liberalism" }, { "question": "What is the term for the study of the structure and functioning of government institutions and the behavior of public officials?", "options": ["Political economy", "Political psychology", "Political sociology", "Political analysis"], "answer": "Political science" }, { "question": "In the context of political science, what is the term for a method of public decision-making in which citizens vote on specific issues?", "options": ["Legislation", "Referendum", "Electoral college", "Representation"], "answer": "Referendum" }, { "question": "Which political system is characterized by citizens electing representatives to make decisions on their behalf?", "options": ["Authoritarianism", "Oligarchy", "Democracy", "Totalitarianism"], "answer": "Democracy" }, { "question": "What is the term for a system of government where power is concentrated in a single leader who rules with absolute authority?", "options": ["Democracy", "Monarchy", "Oligarchy", "Autocracy"], "answer": "Autocracy" }, { "question": "In political science, what is the term for a set of beliefs and values that guide political behavior and policy preferences?", "options": ["Political ideology", "Political affiliation", "Political doctrine", "Political manifesto"], "answer": "Political ideology" }, { "question": "Which theory in political science suggests that power is concentrated in the hands of a small, elite group?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Elitism" }, { "question": "What is the term for the allocation of government authority and resources among different levels of government, such as federal, state, and local?", "options": ["Decentralization", "Centralization", "Federalization", "Bureaucratization"], "answer": "Decentralization" }, { "question": "In political science, what is the term for a system where the government owns and controls the means of production?", "options": ["Capitalism", "Socialism", "Communism", "Fascism"], "answer": "Socialism" }, { "question": "Which concept in political science involves individuals voluntarily agreeing to give up some of their natural rights in exchange for protection and security?", "options": ["Sovereignty", "Social contract", "Pluralism", "Suffrage"], "answer": "Social contract" }, { "question": "What is the term for the government's ability to make and enforce laws and regulations?", "options": ["Policy analysis", "Political action", "Sovereignty", "Government oversight"], "answer": "Sovereignty" }, { "question": "In political science, what is the term for the process of studying how people behave in political contexts?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political psychology" }, { "question": "Which theory in political science emphasizes the impact of political and economic structures on decision-making and behavior?", "options": ["Pluralism", "Structuralism", "Behavioralism", "Elitism"], "answer": "Structuralism" }, { "question": "What is the term for a system where individuals and businesses have the freedom to own property and engage in economic activities?", "options": ["Capitalism", "Socialism", "Communism", "Fascism"], "answer": "Capitalism" }, { "question": "In the context of political science, what is the term for the study of how political institutions and systems function?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political analysis" }, { "question": "Which political philosophy advocates for strong government intervention in economic and social matters for the greater good?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Socialism" }, { "question": "What is the term for the process of citizens participating in the decision-making process of a government through voting?", "options": ["Legislation", "Political action", "Suffrage", "Referendum"], "answer": "Suffrage" }, { "question": "In political science, what is the term for the study of the relationship between individuals and society in a political context?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political sociology" }, { "question": "Which political philosophy emphasizes tradition, limited government, and individual freedom?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Conservatism" }, { "question": "What is the term for the practice of studying and comparing political systems and behaviors in various countries?", "options": ["Political psychology", "Political sociology", "Comparative politics", "Political analysis"], "answer": "Comparative politics" }, { "question": "In political science, what is the term for the process of public officials overseeing and monitoring government actions and decisions?", "options": ["Political oversight", "Government scrutiny", "Policy evaluation", "Accountability"], "answer": "Political oversight" }, { "question": "Which political philosophy is characterized by strong government control, authoritarianism, and nationalism?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Fascism" },
+        {
+        "question": "In political science, what is the term for the process of making, implementing, and enforcing laws and policies?",
+        "options": ["Legislation", "Political action", "Government oversight", "Policy enforcement"],
+        "answer": "Legislation"
+    },
+    {
+        "question": "Which political philosophy emphasizes limited government, individual liberty, and free-market capitalism?",
+        "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"],
+        "answer": "Liberalism"
+    },
+    {
+        "question": "What is the term for a system of government where a single ruler holds all power and makes decisions without citizen input?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Autocracy"],
+        "answer": "Autocracy"
+    },
+    {
+        "question": "In political science, what is the term for the study of the behavior and actions of individuals in the political arena?",
+        "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"],
+        "answer": "Political behavior"
+    },
+    {
+        "question": "Which theory in political science focuses on the impact of economic interests and groups in shaping government policies?",
+        "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"],
+        "answer": "Pluralism"
+    },
+    {
+        "question": "What is the term for a system of government where a single political party controls all aspects of governance?",
+        "options": ["Democracy", "Monarchy", "Totalitarianism", "Fascism"],
+        "answer": "Totalitarianism"
+    },
+    {
+        "question": "In the context of political science, what term describes the ability of a government to make and enforce decisions within its borders?",
+        "options": ["Legitimacy", "Sovereignty", "Government authority", "Bureaucracy"],
+        "answer": "Sovereignty"
+    },
+    {
+        "question": "Which political philosophy advocates for traditional values, strong government, and social conservatism?",
+        "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"],
+        "answer": "Conservatism"
+    },
+    {
+        "question": "What is the term for the study of the impact of political and economic structures on political decisions and actions?",
+        "options": ["Political structure analysis", "Structuralism", "Political behavior analysis", "Economic influence study"],
+        "answer": "Structuralism"
+    },
+    {
+        "question": "In political science, what is the term for the process of analyzing and interpreting political events and developments?",
+        "options": ["Political psychology", "Political sociology", "Political analysis", "Political commentary"],
+        "answer": "Political analysis"
+    },
+    {
+        "question": "Which political system is characterized by the rule of a single leader or party without competitive elections?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Totalitarianism"],
+        "answer": "Totalitarianism"
+    },
+    {
+        "question": "What is the term for the legal document that outlines the principles, rights, and laws of a nation?",
+        "options": ["Constitution", "Ideology", "Bill of Rights", "Charter"],
+        "answer": "Constitution"
+    },
+    {
+        "question": "In political science, what term describes the power and authority of a government to control its own territory and make decisions?",
+        "options": ["Legitimacy", "Sovereignty", "Government authority", "Bureaucracy"],
+        "answer": "Sovereignty"
+    },
+    {
+        "question": "Which theory in political science focuses on the power and influence of a small, elite group in society?",
+        "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"],
+        "answer": "Elitism"
+    },
+    {
+        "question": "What is the term for a form of government where power is concentrated in a single leader who exercises authority without citizen participation?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Autocracy"],
+        "answer": "Autocracy"
+    },
+    {
+        "question": "In the context of political science, what term describes the practice of studying and comparing political systems and behaviors in different countries?",
+        "options": ["Comparative politics", "Political sociology", "Political analysis", "International relations"],
+        "answer": "Comparative politics"
+    },
+    {
+        "question": "Which theory in political science focuses on the behavior of individuals and groups in the political process?",
+        "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"],
+        "answer": "Behavioralism"
+    },
+    {
+        "question": "What is the term for a system of government where citizens have the right to vote for their leaders and representatives?",
+        "options": ["Suffrage", "Referendum", "Democracy", "Representation"],
+        "answer": "Suffrage"
+    },
+    {
+        "question": "In political science, what is the term for the analysis of the relationship between individuals and society in a political context?",
+        "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"],
+        "answer": "Political sociology"
+    },
+    {
+        "question": "Which political philosophy advocates for a classless society with common ownership of the means of production?",
+        "options": ["Liberalism", "Conservatism", "Socialism", "Fascism"],
+        "answer": "Socialism"
+    },
+    {
+        "question": "What is the term for the process of evaluating and examining government policies and actions?",
+        "options": ["Political oversight", "Government scrutiny", "Policy evaluation", "Accountability"],
+        "answer": "Policy evaluation"
+    },
+    {
+        "question": "In political science, what is the term for the authority and power of a government to control its territory and make decisions?","options": ["Legitimacy", "Sovereignty", "Government authority", "Bureaucracy"], "answer": "Sovereignty" }, { "question": "Which theory in political science emphasizes the role of multiple interest groups influencing government decisions?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Pluralism" }, { "question": "What is the term for a system of government where power is held by an elected body of representatives?", "options": ["Democracy", "Monarchy", "Oligarchy", "Republic"], "answer": "Republic" }, { "question": "In political science, what is the term for the study of the behavior and actions of individuals in political contexts?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political behavior" }, { "question": "Which political philosophy advocates for limited government intervention in the economy and individual freedom?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Liberalism" }, { "question": "What is the term for a system of government where power is shared between a central authority and regional governments?", "options": ["Unitary system", "Confederation", "Federal system", "Parliamentary system"], "answer": "Federal system" }, { "question": "In political science, what term describes the allocation of government authority and resources among different levels of government?", "options": ["Decentralization", "Centralization", "Federalization", "Bureaucratization"], "answer": "Decentralization" }, { "question": "Which theory in political science focuses on the influence of power and wealth in politics?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Elitism" }, { "question": "What is the term for the study of political systems and behavior in different countries and regions?", "options": ["Comparative politics", "Political sociology", "Political analysis", "International relations"], "answer": "Comparative politics" }, { "question": "In the context of political science, what is the term for the practice of analyzing and interpreting political events and developments?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political commentary"], "answer": "Political analysis" }, { "question": "Which political system is characterized by citizens electing representatives to make decisions on their behalf?", "options": ["Authoritarianism", "Oligarchy", "Democracy", "Totalitarianism"], "answer": "Democracy" }, { "question": "What is the term for the process of citizens participating in the decision-making process of a government through voting?", "options": ["Legislation", "Political action", "Suffrage", "Referendum"], "answer": "Suffrage" }, { "question": "In political science, what is the term for the study of the relationship between individuals and society in a political context?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political sociology" }, { "question": "Which political philosophy advocates for strong government intervention in economic and social matters for the greater good?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Socialism" }, { "question": "What is the term for the process of public officials overseeing and monitoring government actions and decisions?", "options": ["Political oversight", "Government scrutiny", "Policy evaluation", "Accountability"], "answer": "Political oversight" }, { "question": "In political science, what term describes the concept of citizens participating directly in decision-making and policy creation?", "options": ["Direct democracy", "Referendum", "Suffrage", "Representation"], "answer": "Direct democracy" }, { "question": "Which theory in political science emphasizes the role of individuals' interests in shaping political decisions and actions?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Pluralism" }, { "question": "What is the term for the concept that individuals voluntarily agree to give up some natural rights in exchange for protection and security?", "options": ["Sovereignty", "Social contract", "Pluralism", "Suffrage"], "answer": "Social contract" }, { "question": "In political science, what is the term for the set of beliefs and values that guide political behavior and policy preferences?", "options": ["Political ideology", "Political affiliation", "Political doctrine", "Political manifesto"], "answer": "Political ideology" }, { "question": "Which theory in political science suggests that power is concentrated in the hands of a small, elite group?", "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"], "answer": "Elitism" }, { "question": "What is the term for the allocation of government authority and resources among different levels of government, such as federal, state, and local?", "options": ["Decentralization", "Centralization", "Federalization", "Bureaucratization"], "answer": "Decentralization" }, { "question": "In political science, what is the term for a system where the government owns and controls the means of production?", "options": ["Capitalism", "Socialism", "Communism", "Fascism"], "answer": "Socialism" }, { "question": "Which concept in political science involves individuals voluntarily agreeing to give up some of their natural rights in exchange for protection and security?", "options": ["Sovereignty", "Social contract", "Pluralism", "Suffrage"], "answer": "Social contract" }, { "question": "What is the term for the government's ability to make and enforce laws and regulations?", "options": ["Policy analysis", "Political action", "Sovereignty", "Government oversight"], "answer": "Sovereignty" }, { "question": "In political science, what is the term for the process of studying how people behave in political contexts?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political psychology" }, { "question": "Which theory in political science emphasizes the impact of political and economic structures on decision-making and behavior?", "options": ["Pluralism", "Structuralism", "Behavioralism", "Elitism"], "answer": "Structuralism" }, { "question": "What is the term for a system of government where individuals and businesses have the freedom to own property and engage in economic activities?", "options": ["Capitalism", "Socialism", "Communism", "Fascism"], "answer": "Capitalism" }, { "question": "In the context of political science, what is the term for the study of how political institutions and systems function?", "options": ["Political psychology", "Political sociology", "Political analysis", "Political behavior"], "answer": "Political analysis" }, { "question": "Which political philosophy advocates for strong government intervention in economic and social matters for the greater good?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Socialism" }, { "question": "What is the term for the practice of studying and comparing political systems and behaviors in various countries?", "options": ["Political psychology", "Political sociology", "Comparative politics", "Political analysis"], "answer": "Comparative politics" }, { "question": "In political science, what is the term for the process of public officials overseeing and monitoring government actions and decisions?", "options": ["Political oversight", "Government scrutiny", "Policy evaluation", "Accountability"], "answer": "Political oversight" }, { "question": "Which political philosophy is characterized by strong government control, authoritarianism, and nationalism?", "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"], "answer": "Fascism" }, {
+        "question": "What term describes a government where the military holds significant political power and often rules the country?",
+        "options": ["Military junta", "Plutocracy", "Theocracy", "Democracy"],
+        "answer": "Military junta"
+    },
+    {
+        "question": "Who is known for his work 'The Social Contract' and the idea of a 'general will' in political philosophy?",
+        "options": ["John Locke", "Jean-Jacques Rousseau", "Karl Marx", "Adam Smith"],
+        "answer": "Jean-Jacques Rousseau"
+    },
+    {
+        "question": "Which political system allows citizens to propose and enact laws directly through a petition process?",
+        "options": ["Totalitarianism", "Autocracy", "Direct democracy", "Oligarchy"],
+        "answer": "Direct democracy"
+    },
+    {
+        "question": "What is the term for a sudden, illegal seizure of power by a small group or military force?",
+        "options": ["Revolution", "Coup d'état", "Secession", "Anarchy"],
+        "answer": "Coup d'état"
+    },
+    {
+        "question": "In political science, what is the term for the ability of a government to maintain order and security within its borders?",
+        "options": ["National sovereignty", "Internal sovereignty", "Economic sovereignty", "Global sovereignty"],
+        "answer": "Internal sovereignty"
+    },
+    {
+        "question": "Who wrote 'The Communist Manifesto' and is considered a key figure in the development of Marxist theory?",
+        "options": ["John Locke", "Karl Marx", "Friedrich Hayek", "Adam Smith"],
+        "answer": "Karl Marx"
+    },
+    {
+        "question": "What is the term for a system of government where religious leaders hold political power?",
+        "options": ["Monarchy", "Aristocracy", "Theocracy", "Plutocracy"],
+        "answer": "Theocracy"
+    },
+    {
+        "question": "In political science, what is the term for a situation in which a government loses legitimacy and the state dissolves into chaos?",
+        "options": ["Failed state", "Stable state", "Authoritarian state", "Unitary state"],
+        "answer": "Failed state"
+    },
+    {
+        "question": "Which theory in political science emphasizes the role of large corporations and economic elites in influencing government decisions?",
+        "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"],
+        "answer": "Elitism"
+    },
+    {
+        "question": "What term describes the practice of influencing and shaping government policies by interest groups and lobbyists?",
+        "options": ["Political activism", "Policy analysis", "Political lobbying", "Public diplomacy"],
+        "answer": "Political lobbying"
+    },
+    {
+        "question": "In political science, what is the term for a system where power is concentrated in a single leader who rules with absolute authority?",
+        "options": ["Autocracy", "Monarchy", "Oligarchy", "Totalitarianism"],
+        "answer": "Autocracy"
+    },
+    {
+        "question": "Who is known for his concept of 'the invisible hand' in economics and is considered a foundational figure in political economy?",
+        "options": ["John Locke", "Karl Marx", "Friedrich Hayek", "Adam Smith"],
+        "answer": "Adam Smith"
+    },
+    {
+        "question": "What is the term for the political ideology that promotes the interests of the working class and the abolition of private property?",
+        "options": ["Capitalism", "Liberalism", "Socialism", "Communism"],
+        "answer": "Communism"
+    },
+    {
+        "question": "In the context of political science, what term describes the concentration of power and decision-making in the hands of one person or a small group?",
+        "options": ["Centralization", "Decentralization", "Federalization", "Bureaucratization"],
+        "answer": "Centralization"
+    },
+    {
+        "question": "Which political system involves a combination of democratic principles and a monarch as the ceremonial head of state?",
+        "options": ["Authoritarianism", "Democracy", "Theocracy", "Constitutional monarchy"],
+        "answer": "Constitutional monarchy"
+    },
+    {
+        "question": "What term describes the study of the impact of political decisions and actions on the environment?",
+        "options": ["Political ecology", "Environmental politics", "Ecological governance", "Green governance"],
+        "answer": "Environmental politics"
+    },
+    {
+        "question": "In political science, what is the term for the process of transforming raw data into information that can inform policy decisions?",
+        "options": ["Data analysis", "Policy evaluation", "Quantitative research", "Qualitative analysis"],
+        "answer": "Data analysis"
+    },
+    {
+        "question": "Which political philosophy emphasizes strong government control, nationalism, and authoritarianism?",
+        "options": ["Fascism", "Liberalism", "Socialism", "Conservatism"],
+        "answer": "Fascism"
+    },
+    {
+        "question": "What is the term for the practice of using economic sanctions as a tool of foreign policy to influence other countries?",
+        "options": ["Economic embargo", "Diplomatic pressure", "Sanction diplomacy", "Economic diplomacy"],
+        "answer": "Economic diplomacy"
+    },
+    {
+        "question": "In the context of political science, what term describes the fragmentation and division of power among various government agencies and branches?",
+        "options": ["Bureaucratic dispersion", "Centralization", "Decentralization", "Federalization"],
+        "answer": "Bureaucratic dispersion"
+    },
+    {
+        "question": "Who is known for his work 'Two Treatises of Government' and the idea of natural rights?",
+        "options": ["Thomas Hobbes", "John Locke", "Jean-Jacques Rousseau", "Karl Marx"],
+        "answer": "John Locke"
+    },
+    {
+        "question": "What term describes the process of changing one's political beliefs or affiliations over time?",
+        "options": ["Political conversion", "Political transformation", "Political realignment", "Political adaptation"],
+        "answer": "Political realignment"
+    },
+    {
+        "question": "In political science, what is the term for the study of the legal and ethical aspects of politics and governance?",
+        "options": ["Political ethics", "Ethical politics", "Moral governance", "Legal morality"],
+        "answer": "Political ethics"
+    },
+    {
+        "question": "Which theory in political science focuses on the behavior of individuals in political settings, such as voting and participation?",
+        "options": ["Behavioralism", "Elitism", "Pluralism", "Structuralism"],
+        "answer": "Behavioralism"
+    },
+    {
+        "question": "What is the term for a form of government where a single political party monopolizes power and suppresses opposition?","options": ["Totalitarianism", "Oligarchy", "Monarchy", "One-party state"], "answer": "One-party state" }, { "question": "In the context of political science, what term describes the act of a country expanding its influence and power through diplomacy and military force?", "options": ["Expansionism", "Colonization", "Imperialism", "Globalization"], "answer": "Imperialism" }, { "question": "Which political system involves a parliament that elects the head of government, often a prime minister?", "options": ["Parliamentary system", "Presidential system", "Monarchy", "Authoritarianism"], "answer": "Parliamentary system" }, { "question": "What term describes the act of a nation voluntarily giving up its nuclear weapons and capabilities?", "options": ["Nuclear disarmament", "Nuclear proliferation", "Arms control", "Denuclearization"], "answer": "Nuclear disarmament" }, { "question": "In political science, what is the term for a system where citizens elect representatives who make decisions on their behalf?", "options": ["Representative democracy", "Direct democracy", "Oligarchy", "Theocracy"], "answer": "Representative democracy" },{
+        "question": "What term describes a government system where power is divided between a central authority and smaller political units?",
+        "options": ["Federalism", "Unitarism", "Confederalism", "Monarchy"],
+        "answer": "Federalism"
+    },
+    {
+        "question": "Who is known for his concept of 'natural law' and the idea that governments should protect individuals' natural rights?",
+        "options": ["Karl Marx", "Thomas Hobbes", "John Locke", "Jean-Jacques Rousseau"],
+        "answer": "John Locke"
+    },
+    {
+        "question": "In a democracy, what is the term for the process of citizens voting directly on proposed laws or policies?",
+        "options": ["Suffrage", "Referendum", "Representation", "Referall"],
+        "answer": "Referendum"
+    },
+    {
+        "question": "What is the term for a system where political power is held by a small, elite group or class of individuals?",
+        "options": ["Democracy", "Oligarchy", "Theocracy", "Authoritarianism"],
+        "answer": "Oligarchy"
+    },
+    {
+        "question": "In political science, what is the term for a government's right to make decisions without external interference?",
+        "options": ["Sovereignty", "Legitimacy", "Federalism", "Autonomy"],
+        "answer": "Sovereignty"
+    },
+    {
+        "question": "Who is known for his work 'The Wealth of Nations' and the concept of the 'invisible hand' in economics?",
+        "options": ["Adam Smith", "Karl Marx", "Friedrich Hayek", "John Locke"],
+        "answer": "Adam Smith"
+    },
+    {
+        "question": "What is the term for a political system in which a single ruler holds all power and makes decisions without citizen input?",
+        "options": ["Democracy", "Monarchy", "Totalitarianism", "Oligarchy"],
+        "answer": "Totalitarianism"
+    },
+    {
+        "question": "In the context of political science, what term describes the study of how political systems and behaviors differ across countries?",
+        "options": ["Political psychology", "Political sociology", "Comparative politics", "Political analysis"],
+        "answer": "Comparative politics"
+    },
+    {
+        "question": "Which theory in political science emphasizes the role of interest groups and competing interests in shaping government policies?",
+        "options": ["Pluralism", "Elitism", "Behavioralism", "Structuralism"],
+        "answer": "Pluralism"
+    },
+    {
+        "question": "What term describes the practice of influencing government policies through organized groups and individuals who seek to shape political decisions?",
+        "options": ["Lobbying", "Legislation", "Policy advocacy", "Public influence"],
+        "answer": "Lobbying"
+    },
+    {
+        "question": "In political science, what is the term for a government system where a single leader holds absolute power?",
+        "options": ["Democracy", "Monarchy", "Oligarchy", "Autocracy"],
+        "answer": "Autocracy"
+    },
+    {
+        "question": "Who is known for his work 'Leviathan' and the idea that people create governments to escape the 'state of nature'?",
+        "options": ["Karl Marx", "Thomas Hobbes", "John Locke", "Jean-Jacques Rousseau"],
+        "answer": "Thomas Hobbes"
+    },
+    {
+        "question": "What is the term for a political ideology that advocates for limited government intervention in economic affairs and individual freedom?",
+        "options": ["Liberalism", "Conservatism", "Fascism", "Socialism"],
+        "answer": "Liberalism"
+    },
+    {
+        "question": "In the context of political science, what term describes the concentration of power and decision-making in a centralized authority?",
+        "options": ["Centralization", "Decentralization", "Bureaucratization", "Federalization"],
+        "answer": "Centralization"
+    },
+    {
+        "question": "Which political system involves a monarch as the ceremonial head of state and an elected prime minister as the head of government?",
+        "options": ["Constitutional monarchy", "Absolute monarchy", "Parliamentary republic", "Authoritarianism"],
+        "answer": "Constitutional monarchy"
+    },
+    {
+        "question": "What term describes the study of the impact of government policies and actions on the environment?",
+        "options": ["Environmental politics", "Political ecology", "Green governance", "Ecological governance"],
+        "answer": "Environmental politics"
+    },
+    {
+        "question": "In political science, what is the term for the process of analyzing data to inform and evaluate government policies?",
+        "options": ["Data analysis", "Policy evaluation", "Quantitative research", "Qualitative analysis"],
+        "answer": "Data analysis"
+    },
+    {
+        "question": "Which political philosophy emphasizes strong government control, nationalism, and authoritarianism?",
+        "options": ["Fascism", "Liberalism", "Socialism", "Conservatism"],
+        "answer": "Fascism"
+    },
+    {
+        "question": "What is the term for the use of economic sanctions as a tool of foreign policy to influence other countries?",
+        "options": ["Economic embargo", "Diplomatic pressure", "Sanction diplomacy", "Economic diplomacy"],
+        "answer": "Economic diplomacy"
+    },
+    {
+        "question": "In the context of political science, what term describes the division of power and decision-making among various government agencies and branches?",
+        "options": ["Decentralization", "Centralization", "Federalization", "Bureaucratization"],
+        "answer": "Decentralization"
+    },
+    {
+        "question": "Who is known for his work 'Two Treatises of Government' and the idea of natural rights?",
+        "options": ["Karl Marx", "John Locke", "Jean-Jacques Rousseau", "Thomas Hobbes"],
+        "answer": "John Locke"
+    },
+    {
+        "question": "What term describes the process of changing one's political beliefs or affiliations over time?",
+        "options": ["Political transformation", "Political conversion", "Political adaptation", "Political realignment"], "answer": "Political realignment" }, { "question": "In political science, what is the term for the study of the legal and ethical aspects of politics and governance?", "options": ["Political ethics", "Ethical politics", "Moral governance", "Legal morality"], "answer": "Political ethics" }, { "question": "Which theory in political science focuses on the behavior of individuals in political settings, such as voting and participation?", "options": ["Behavioralism", "Elitism", "Pluralism", "Structuralism"], "answer": "Behavioralism" }, { "question": "What is the term for a form of government where a single political party monopolizes power and suppresses opposition?", "options": ["Oligarchy", "Totalitarianism", "Monarchy", "One-party state"], "answer": "One-party state" }, { "question": "In the context of political science, what term describes the act of a country expanding its influence and power through diplomacy and military force?", "options": ["Colonization", "Expansionism", "Imperialism", "Globalization"], "answer": "Imperialism" }, { "question": "Which political system involves a parliament that elects the head of government, often a prime minister?", "options": ["Presidential system", "Parliamentary system", "Authoritarianism", "Monarchy"], "answer": "Parliamentary system" }, { "question": "What term describes the act of a nation voluntarily giving up its nuclear weapons and capabilities?", "options": ["Nuclear proliferation", "Arms control", "Denuclearization", "Nuclear disarmament"], "answer": "Nuclear disarmament" }, { "question": "In political science, what is the term for a system where citizens elect representatives who make decisions on their behalf?", "options": ["Representative democracy", "Oligarchy", "Theocracy", "Direct democracy"], "answer": "Representative democracy" }
+    ]
+}

@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a comprehensive collection of PDFs, past questions, course outlines, and relevant study materials for Ahmadu Bello University students. Access valuable resources to excel in your academic journey.">
+    <meta name="keywords" content="Ahmadu Bello University, ABU, PDFs, past questions, course outlines, study materials">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow"> <!-- To allow search engines to index the site -->
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Ahmadu Bello University Study Resources">
+    <meta property="og:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for Ahmadu Bello University students.">
+    <meta property="og:image" content="your-website-image-url.jpg">
+    <meta property="og:url" content="https://www.babugas-library.com.ng">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmadu Bello University Study Resources">
+    <meta name="twitter:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for Ahmadu Bello University students.">
+    <meta name="twitter:image" content="your-website-image-url.jpg">
+    <meta name="twitter:url" content="https://www.babugas-library.com.ng">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "apple-touch-icon.png" %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon-32x32.png" %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon-16x16.png" %}">
+<link rel="manifest" href="{% static "site.webmanifest" %}">
+    <title>Babuga's library - {% block title %}Get reading materials here{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/dashlite.css" %}">
+    <link rel="stylesheet" href="{% static "css/header.css" %}">
+    <link rel="stylesheet" href="{% static "css/footer.css" %}">
+    <script src="{% static "js/script.js" %}"></script>
+    </head>
+<body>
+    {% include "header.html" %}
+    <main>
+        {% include "messages.html" %}
+        {% block content %}
+        {% endblock content %}
+    </main>
+    {% include "footer.html" %}
+     {% block script %}
+    {% endblock script %}
+    <script>
+        // header
+        const nav = document.querySelector("[nav]")
+
+        function toggleNav() {
+            nav.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

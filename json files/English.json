@@ -1,0 +1,667 @@
+{
+    "course": "English",
+    "questions": [
+      {
+        "question": "What is the plural form of 'child'?",
+        "options": ["childs", "children", "childen", "child's"],
+        "answer": "children"
+      },
+      {
+        "question": "What is the synonym for 'happy'?",
+        "options": ["sad", "joyful", "angry", "tired"],
+        "answer": "joyful"
+      },
+      {
+        "question": "Which of the following is a conjunction?",
+        "options": ["cat", "and", "run", "blue"],
+        "answer": "and"
+      },
+      {
+        "question": "What is the opposite of 'brave'?",
+        "options": ["scared", "happy", "strong", "sad"],
+        "answer": "scared"
+      },
+      {
+        "question": "Which of these words is a verb?",
+        "options": ["apple", "jump", "house", "blue"],
+        "answer": "jump"
+      },
+      {
+        "question": "What does the acronym 'NASA' stand for?",
+        "options": ["National Association of Space Astronauts", "North American Space Agency", "National Aeronautics and Space Administration", "New Age Science Association"],
+        "answer": "National Aeronautics and Space Administration"
+      },
+      {
+        "question": "In the sentence 'She sang beautifully,' what is the adverb?",
+        "options": ["she", "sang", "beautifully", "the"],
+        "answer": "beautifully"
+      },
+      {
+        "question": "What is the past tense of 'eat'?",
+        "options": ["ate", "eaten", "eating", "eats"],
+        "answer": "ate"
+      },
+      {
+        "question": "Which punctuation mark is used to indicate possession?",
+        "options": ["comma", "exclamation mark", "apostrophe", "semicolon"],
+        "answer": "apostrophe"
+      },
+      {
+        "question": "What is the main character called in a story?",
+        "options": ["villain", "protagonist", "antagonist", "sidekick"],
+        "answer": "protagonist"
+      },
+      {
+        "question": "What is the superlative form of 'happy'?",
+        "options": ["happiest", "happyer", "happyness", "happier"],
+        "answer": "happiest"
+      },
+      {
+        "question": "Which of the following is a synonym for 'beautiful'?",
+        "options": ["ugly", "pretty", "small", "fast"],
+        "answer": "pretty"
+      },
+      {
+        "question": "What is the past participle of 'swim'?",
+        "options": ["swim", "swum", "swam", "swimming"],
+        "answer": "swum"
+      },
+      {
+        "question": "Which sentence is in the past tense?",
+        "options": ["She sings a song.", "They will sing a song.", "She sang a song.", "She is singing a song."],
+        "answer": "She sang a song."
+      },
+      {
+        "question": "What is the opposite of 'empty'?",
+        "options": ["full", "half", "broken", "dark"],
+        "answer": "full"
+      },
+      {
+        "question": "Which of the following is a preposition?",
+        "options": ["run", "on", "book", "happy"],
+        "answer": "on"
+      },
+      {
+        "question": "What is the plural form of 'fox'?",
+        "options": ["foxes", "foxs", "foxen", "fox's"],
+        "answer": "foxes"
+      },
+      {
+        "question": "What is a group of cows called?",
+        "options": ["herd", "flock", "pack", "school"],
+        "answer": "herd"
+      },
+      {
+        "question": "Which of the following is an adverb?",
+        "options": ["quick", "apple", "jump", "softly"],
+        "answer": "softly"
+      },
+      {
+        "question": "What is the plural form of 'baby'?",
+        "options": ["babies", "baby", "babys", "babys'"],
+        "answer": "babies"
+      },
+      {
+        "question": "What is the past tense of 'run'?",
+        "options": ["ran", "run", "running", "runs"],
+        "answer": "ran"
+      },
+      {
+        "question": "Which of the following words is a pronoun?",
+        "options": ["car", "he", "happy", "book"],
+        "answer": "he"
+      },
+      {
+        "question": "What is the comparative form of 'far'?",
+        "options": ["farrer", "farest", "farther", "farer"],
+        "answer": "farther"
+      },
+      {
+        "question": "What is the plural form of 'woman'?",
+        "options": ["woman", "womans", "women", "womens"],
+        "answer": "women"
+      },
+      {
+        "question": "Which word means the opposite of 'night'?",
+        "options": ["morning", "moon", "darkness", "day"],
+        "answer": "day"
+      },
+      {
+        "question": "What is the verb in the sentence: 'She reads a book'?",
+        "options": ["reads", "she", "book", "a"],
+        "answer": "reads"
+      },
+      {
+        "question": "What is the plural form of 'leaf'?",
+        "options": ["leafs", "leave", "leaves", "leaf's"],
+        "answer": "leaves"
+      },
+      {
+        "question": "What is the opposite of 'old'?",
+        "options": ["young", "big", "small", "new"],
+        "answer": "young"
+      },
+      {
+        "question": "Which of these words is an adjective?",
+        "options": ["jump", "quick", "run", "apple"],
+        "answer": "quick"
+      },
+      {
+        "question": "What is the present continuous form of 'eat'?",
+        "options": ["eaten", "ate", "eating", "eats"],
+        "answer": "eating"
+      },
+      {
+        "question": "What is the plural form of 'knife'?",
+        "options": ["knifes", "knife", "knive", "knives"],
+        "answer": "knives"
+      },
+      {
+        "question": "Which word is an example of an interjection?",
+        "options": ["quick", "ouch", "run", "apple"],
+        "answer": "ouch"
+      },
+      {
+        "question": "What is the comparative form of 'good'?",
+        "options": ["best", "better", "gooder", "great"],
+        "answer": "better"
+      },
+      {
+        "question": "What is the past tense of 'go'?",
+        "options": ["going", "gone", "went", "goes"],
+        "answer": "went"
+      },
+      {
+        "question": "Which of the following words is a conjunction?",
+        "options": ["moon", "and", "book", "happy"],
+        "answer": "and"
+      },
+      {
+        "question": "What is the opposite of 'happy'?",
+        "options": ["sad", "joyful", "angry", "tired"],
+        "answer": "sad"
+      },
+      {
+        "question": "What is the superlative form of 'small'?",
+        "options": ["smallest", "smaller", "smalling", "smally"],
+        "answer": "smallest"
+      },
+      {
+        "question": "What is the plural form of 'city'?",
+        "options": ["city", "citie", "cities", "city's"],
+        "answer": "cities"
+      },
+      {
+        "question": "What is the past participle of 'break'?",
+        "options": ["breaked", "broken", "breaks", "breaking"],
+        "answer": "broken"
+      },
+      {
+        "question": "Which of the following is a synonym for 'angry'?",
+        "options": ["happy", "joyful", "mad", "tired"],
+        "answer": "mad"
+      },
+      {
+        "question": "What is the past tense of 'write'?",
+        "options": ["writed", "wrote", "written", "writing"],
+        "answer": "wrote"
+      },
+      {
+        "question": "Which of these words is an adverb?",
+        "options": ["run", "quick", "book", "softly"],
+        "answer": "softly"
+      },
+      {
+        "question": "What is the plural form of 'tooth'?",
+        "options": ["teeth", "tooths", "toothies", "tooth's"],
+        "answer": "teeth"
+      },
+      {
+        "question": "What is the opposite of 'near'?",
+        "options": ["far", "close", "between", "next"],
+        "answer": "far"
+      },
+      {
+        "question": "Which sentence is in the present tense?",
+        "options": ["She will go to the store.", "He went to the park.", "They are eating lunch.", "I am writing a letter."],
+        "answer": "I am writing a letter."
+      },
+      {
+        "question": "What is the verb in the sentence: 'The cat is sleeping'?",
+        "options": ["cat", "is", "the", "sleeping"],
+        "answer": "sleeping"
+      },
+      {
+        "question": "What is the plural form of 'foot'?",
+        "options": ["foot", "foots", "feets", "feet"],
+        "answer": "feet"
+      },
+      {
+        "question": "What is a group of wolves called?",
+        "options": ["herd", "flock", "pack", "den"],
+        "answer": "pack"
+      },
+      {
+        "question": "Which of the following is a pronoun?",
+        "options": ["jump", "he", "quick", "apple"],
+        "answer": "he"
+      },
+      {
+        "question": "What is the comparative form of 'bad'?",
+        "options": ["worse", "badly", "baddest", "worsely"],
+        "answer": "worse"
+      },
+      {
+        "question": "What is the past tense of 'run'?",
+        "options": ["ran", "run", "running", "runs"],
+        "answer": "ran"
+      },
+      {
+        "question": "Which word is an example of an interjection?",
+        "options": ["quick", "ouch", "run", "apple"],
+        "answer": "ouch"
+      },
+      {
+        "question": "What is the comparative form of 'good'?",
+        "options": ["best", "better", "gooder", "great"],
+        "answer": "better"
+      },
+      {
+        "question": "What is the past tense of 'go'?",
+        "options": ["going", "gone", "went", "goes"],
+        "answer": "went"
+      },
+      {
+        "question": "Which of the following words is a conjunction?",
+        "options": ["moon", "and", "book", "happy"],
+        "answer": "and"
+      },
+      {
+        "question": "What is the opposite of 'happy'?",
+        "options": ["sad", "joyful", "angry", "tired"],
+        "answer": "sad"
+      },
+      {
+        "question": "What is the superlative form of 'small'?",
+        "options": ["smallest", "smaller", "smalling", "smally"],
+        "answer": "smallest"
+      },
+      {
+        "question": "What is the plural form of 'city'?",
+        "options": ["city", "citie", "cities", "city's"],
+        "answer": "cities"
+      },
+      {
+        "question": "What is the past participle of 'break'?",
+        "options": ["breaked", "broken", "breaks", "breaking"],
+        "answer": "broken"
+      },
+      {
+        "question": "Which of the following is a synonym for 'angry'?",
+        "options": ["happy", "joyful", "mad", "tired"],
+        "answer": "mad"
+      },
+      {
+        "question": "What is the past tense of 'write'?",
+        "options": ["writed", "wrote", "written", "writing"],
+        "answer": "wrote"
+      },
+      {
+        "question": "What is the plural form of 'tooth'?",
+        "options": ["teeth", "tooths", "toothies", "tooth's"],
+        "answer": "teeth"
+      },
+      {
+        "question": "What is the opposite of 'happy'?",
+        "options": ["sad", "joyful", "angry", "tired"],
+        "answer": "sad"
+      },
+      {
+        "question": "What is the superlative form of 'bad'?",
+        "options": ["worse", "badly", "baddest", "worsely"],
+        "answer": "worst"
+      },
+      {
+        "question": "What is the past tense of 'run'?",
+        "options": ["ran", "run", "running", "runs"],
+        "answer": "ran"
+      },
+      {
+        "question": "What is the comparative form of 'far'?",
+        "options": ["farrer", "farest", "farther", "farer"],
+        "answer": "farther"
+      },
+      {
+        "question": "What is the plural form of 'city'?",
+        "options": ["city", "citie", "cities", "city's"],
+        "answer": "cities"
+      },
+      {
+        "question": "What is the past participle of 'swim'?",
+        "options": ["swim", "swum", "swam", "swimming"],
+        "answer": "swum"
+      },
+      {
+        "question": "Which sentence is in the past tense?",
+        "options": ["She sings a song.", "They will sing a song.", "She sang a song.", "She is singing a song."],
+        "answer": "She sang a song."
+      },
+      {
+        "question": "What is the comparative form of 'small'?",
+        "options": ["smallest", "smaller", "smalling", "smally"],
+        "answer": "smaller"
+      },
+      {
+    "question": "What is the antonym of 'victory'?",
+    "options": ["Loss", "Success", "Triumph", "Win"],
+    "answer": "Loss"
+  },
+  {
+    "question": "In the sentence, 'She walked quietly,' what is the adverb?",
+    "options": ["She", "Walked", "Quietly", "The"],
+    "answer": "Quietly"
+  },
+  {
+    "question": "What is the plural form of 'child'?",
+    "options": ["Children", "Childs", "Childen", "Child's"],
+    "answer": "Children"
+  },
+  {
+    "question": "Which literary device involves the repetition of initial consonant sounds in a series of words?",
+    "options": ["Metaphor", "Simile", "Hyperbole", "Alliteration"],
+    "answer": "Alliteration"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, such as 'level'?",
+    "options": ["Palindrome", "Anagram", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "What is the present participle of the verb 'sing'?",
+    "options": ["Sang", "Singing", "Sung", "Sings"],
+    "answer": "Singing"
+  },
+  {
+    "question": "Which word is a homophone for 'flower'?",
+    "options": ["Flew", "Flour", "Floor", "Flood"],
+    "answer": "Flour"
+  },
+  {
+    "question": "What is the comparative form of 'good'?",
+    "options": ["Well", "Gooder", "Better", "Best"],
+    "answer": "Better"
+  },
+  {
+    "question": "What is the term for a word that imitates the sound it represents, such as 'buzz' or 'moo'?",
+    "options": ["Onomatopoeia", "Metaphor", "Simile", "Alliteration"],
+    "answer": "Onomatopoeia"
+  },
+  {
+    "question": "Which part of speech is the word 'understand'?",
+    "options": ["Noun", "Verb", "Adjective", "Pronoun"],
+    "answer": "Verb"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same but has different meanings and pronunciations, such as 'lead' (to guide) and 'lead' (a metal)?",
+    "options": ["Homophone", "Synonym", "Antonym", "Homograph"],
+    "answer": "Homograph"
+  },
+  {
+    "question": "Which word means 'the study of the Earth's physical features'?",
+    "options": ["Biology", "Geology", "Astronomy", "Chemistry"],
+    "answer": "Geology"
+  },
+  {
+    "question": "What is the past tense of the verb 'swim'?",
+    "options": ["Swam", "Swum", "Swimming", "Swims"],
+    "answer": "Swam"
+  },
+  {
+    "question": "What is the term for a word that is the opposite in meaning to another word, such as 'hot' and 'cold'?",
+    "options": ["Synonym", "Homophone", "Antonym", "Homograph"],
+    "answer": "Antonym"
+  },
+  {
+    "question": "Which word is an interjection?",
+    "options": ["Wow", "Quickly", "She", "Strongly"],
+    "answer": "Wow"
+  },
+  {
+    "question": "What is the plural of 'man'?",
+    "options": ["Mans", "Mens", "Manses", "Men"],
+    "answer": "Men"
+  },
+  {
+    "question": "What is the term for a word that sounds like the noise it represents, such as 'buzz' or 'moo'?",
+    "options": ["Onomatopoeia", "Metaphor", "Simile", "Alliteration"],
+    "answer": "Onomatopoeia"
+  },
+  {
+    "question": "Which of these is a pronoun?",
+    "options": ["Run", "Happily", "She", "Strongly"],
+    "answer": "She"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, such as 'level'?",
+    "options": ["Palindrome", "Anagram", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "What is the plural of 'man'?",
+    "options": ["Mans", "Mens", "Manses", "Men"],
+    "answer": "Men"
+  },
+  {
+    "question": "What is the term for a word that is the opposite in meaning to another word, such as 'hot' and 'cold'?",
+    "options": ["Synonym", "Homophone", "Antonym", "Homograph"],
+    "answer": "Antonym"
+   },
+   {
+    "question": "What is the opposite of 'generous'?",
+    "options": ["Greedy", "Kind", "Charitable", "Selfless"],
+    "answer": "Greedy"
+  },
+  {
+    "question": "In the sentence, 'He runs fast,' what is the adjective?",
+    "options": ["He", "Runs", "Fast", "The"],
+    "answer": "Fast"
+  },
+  {
+    "question": "What is the plural form of 'foot'?",
+    "options": ["Foots", "Feet", "Footies", "Feets"],
+    "answer": "Feet"
+  },
+  {
+    "question": "Which literary device involves giving human emotions to nature or objects?",
+    "options": ["Metaphor", "Simile", "Pathetic Fallacy", "Personification"],
+    "answer": "Pathetic Fallacy"
+  },
+  {
+    "question": "What is the term for a word that means the opposite of itself, like 'happy' and 'sad'?",
+    "options": ["Homograph", "Antonym", "Synonym", "Homophone"],
+    "answer": "Antonym"
+  },
+  {
+    "question": "What is the present participle of the verb 'read'?",
+    "options": ["Red", "Reading", "Ridden", "Reads"],
+    "answer": "Reading"
+  },
+  {
+    "question": "Which word is a homophone for 'flower'?",
+    "options": ["Flew", "Flour", "Floor", "Flood"],
+    "answer": "Flour"
+  },
+  {
+    "question": "What is the superlative form of 'good'?",
+    "options": ["Well", "Gooder", "Better", "Best"],
+    "answer": "Best"
+  },
+  {
+    "question": "What is the term for a figure of speech where contradictory terms are combined for effect?",
+    "options": ["Metaphor", "Simile", "Oxymoron", "Hyperbole"],
+    "answer": "Oxymoron"
+  },
+  {
+    "question": "Which part of speech is the word 'happiness'?",
+    "options": ["Noun", "Verb", "Adjective", "Adverb"],
+    "answer": "Noun"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, like 'racecar'?",
+    "options": ["Anagram", "Palindrome", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "What is the past tense of the verb 'sleep'?",
+    "options": ["Sleeped", "Sleeping", "Slept", "Sleeps"],
+    "answer": "Slept"
+  },
+  {
+    "question": "Which word means 'to express disapproval or disappointment'?",
+    "options": ["Applaud", "Celebrate", "Complain", "Praise"],
+    "answer": "Complain"
+  },
+  {
+    "question": "In the sentence, 'She sings beautifully,' what part of speech is 'beautifully'?",
+    "options": ["Noun", "Adjective", "Verb", "Adverb"],
+    "answer": "Adverb"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, like 'racecar'?",
+    "options": ["Anagram", "Palindrome", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "Which of these is a pronoun?",
+    "options": ["Quick", "Happily", "She", "Strongly"],
+    "answer": "She"
+  },
+  {
+    "question": "What is the comparative form of 'far'?",
+    "options": ["Farther", "Farer", "More far", "Farest"],
+    "answer": "Farther"
+  },
+  {
+    "question": "What is the term for a word or phrase that means the same as another word or phrase?",
+    "options": ["Synonym", "Antonym", "Homonym", "Metaphor"],
+    "answer": "Synonym"
+  },
+  {
+    "question": "Which of these words is an interjection?",
+    "options": ["Jumped", "Wow", "Quickly", "Blue"],
+    "answer": "Wow"
+  },
+  {
+    "question": "What is the process of creating new words by combining parts of existing words called?",
+    "options": ["Synonyms", "Hyphenation", "Compounding", "Antonyms"],
+    "answer": "Compounding"
+  },
+  {
+    "question": "What is the antonym of 'courageous'?",
+    "options": ["Fearless", "Brave", "Timid", "Bold"],
+    "answer": "Timid"
+  },
+  {
+    "question": "In the sentence, 'He plays the piano beautifully,' what is the direct object?",
+    "options": ["He", "Plays", "Piano", "Beautifully"],
+    "answer": "Piano"
+  },
+  {
+    "question": "What is the plural form of 'goose'?",
+    "options": ["Gooses", "Geeses", "Goose", "Geese"],
+    "answer": "Geese"
+  },
+  {
+    "question": "Which literary device involves the use of 'like' or 'as' to make a comparison?",
+    "options": ["Metaphor", "Simile", "Hyperbole", "Personification"],
+    "answer": "Simile"
+  },
+  {
+    "question": "What is the term for a word that means the same as another word, like 'happy' and 'joyful'?",
+    "options": ["Synonym", "Homophone", "Antonym", "Homograph"],
+    "answer": "Synonym"
+  },
+  {
+    "question": "What is the present participle of the verb 'swim'?",
+    "options": ["Swam", "Swum", "Swimming", "Swims"],
+    "answer": "Swimming"
+  },
+  {
+    "question": "Which word is a homophone for 'sun'?",
+    "options": ["Son", "Sonn", "Suhn", "Sann"],
+    "answer": "Son"
+  },
+  {
+    "question": "What is the superlative form of 'far'?",
+    "options": ["Farther", "Farer", "More far", "Farest"],
+    "answer": "Farest"
+  },
+  {
+    "question": "What is the term for a figure of speech where two contradictory terms are combined for emphasis?",
+    "options": ["Metaphor", "Simile", "Oxymoron", "Hyperbole"],
+    "answer": "Oxymoron"
+  },
+  {
+    "question": "Which part of speech is the word 'happiness'?",
+    "options": ["Noun", "Verb", "Adjective", "Adverb"],
+    "answer": "Noun"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, like 'level'?",
+    "options": ["Anagram", "Palindrome", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "What is the past tense of the verb 'run'?",
+    "options": ["Ran", "Runned", "Running", "Runs"],
+    "answer": "Ran"
+  },
+  {
+    "question": "Which word means 'to express approval or admiration'?",
+    "options": ["Applaud", "Celebrate", "Complain", "Praise"],
+    "answer": "Applaud"
+  },
+  {
+    "question": "In the sentence, 'They speak English fluently,' what part of speech is 'fluently'?",
+    "options": ["Noun", "Adjective", "Verb", "Adverb"],
+    "answer": "Adverb"
+  },
+  {
+    "question": "What is the term for a word that means the opposite of itself, like 'hot' and 'cold'?",
+    "options": ["Homograph", "Antonym", "Synonym", "Homophone"],
+    "answer": "Antonym"
+  },
+  {
+    "question": "Which of these is an adverb?",
+    "options": ["Jumped", "Quickly", "She", "Strongly"],
+    "answer": "Quickly"
+  },
+  {
+    "question": "What is the plural of 'woman'?",
+    "options": ["Womans", "Women", "Womens", "Woman's"],
+    "answer": "Women"
+  },
+  {
+    "question": "What is the term for a word that is spelled the same forwards and backwards, like 'racecar'?",
+    "options": ["Anagram", "Palindrome", "Antonym", "Homonym"],
+    "answer": "Palindrome"
+  },
+  {
+    "question": "Which of these words is an interjection?",
+    "options": ["Jumped", "Wow", "Quickly", "Blue"],
+    "answer": "Wow"
+  },
+  {
+    "question": "What is the process of creating new words by combining parts of existing words called?",
+    "options": ["Synonyms", "Hyphenation", "Compounding", "Antonyms"],
+    "answer": "Compounding"
+  },
+  {
+    "question": "Which type of sentence expresses strong emotion and ends with an exclamation mark?",
+    "options": ["Declarative", "Imperative", "Interrogative", "Exclamatory"],
+    "answer": "Exclamatory"
+  }
+ 
+]
+
+}

@@ -1,0 +1,42 @@
+{% load static %}
+<div class="material">
+        <div class="material-card">
+            <div class="material-info">
+                <img src="/static/imgs/{{material.type}}.png" alt="" loading="lazy"></img>
+                
+                <div class="info">
+                    <span>
+                    {{ material.code }}
+                    </span>
+                    <span class="material-title">
+                   {{ material.title }}</span>
+                     <span> 
+           {{ material.department.name }}
+                    </span>
+                    
+               
+                </div>
+            </div>
+            
+            <div class="btns">
+               
+            <a style="text-align:center" href="{{ material.file.url }}" download><img src="{% static "imgs/download.png" %}" alt="download" loading="lazy"/><br><small>Download</small></a>
+            
+           
+            
+            <a style="text-align:center" class="download-button" href="{{ material.file.url }}"><img src="{% static "imgs/view.png" %}" alt="download" loading="lazy"/><br><small>View</small></a>
+            <a style="text-align:center" class="download-button" href="{% url "flag_material" material.id %}"><img src="{% static "imgs/issue.png" %}" alt="download" loading="lazy"/><br><small>Report</small></a>
+            
+            </div>
+        </div>
+        <details>
+                   <p>
+                      {% if material.comment %} {{material.comment}}
+                      {% else %}
+                      -----------------
+                      {% endif %}
+                       </p>
+                   <hr>
+                   <small><b>Note</b> Above is a comment written by who shared the material or Administrator</small>
+                </details>
+        </div>

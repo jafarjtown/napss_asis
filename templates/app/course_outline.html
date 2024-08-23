@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+     <h1>Course outline form</h1>
+</section>
+<div class="form-div">
+    <p>{{course.title}}</p>
+    <p>{{course.code}} - <a href="{% url "course" %}?department={{course.department.id}}&course={{course.code}}">Details</a></p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>
+            Outline
+            <input type="file" name="outline">
+            {% if course.outline %}
+               <p>Course Outline already exists, <a href="{{course.outline.url}}">Check</a></p>
+            {% endif %}
+        </label>
+        
+        <button class="submit-btn">Save</button>
+    </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+<div class="card-header">
+    <h4 class="card-title">Tests.</h4>
+    {% include 'app/libs/help.html' %}
+</div>
+<div class="card-body p-1">
+    {% include 'app/libs/filter.html' with departments=departments levels=levels department=department level=level %}
+<div id="accordion" class="accordion border mt-1">
+  {% for course in courses %}
+  <div class="accordion-item">
+      <a href="#" class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-item-{{course.id}}">
+          <h6 class="title">{{course.course.code}} - {{course.course.title}}</h6>
+          <span class="accordion-icon"></span>
+      </a>
+      <div class="accordion-body collapse p-0" id="accordion-item-{{course.id}}" data-bs-parent="#accordion">
+          <div class="accordion-inner p-1">
+            {% if course.objectives.count > 0 %}
+              <div obj>
+                  <div class="card border p-1 form-div">
+                      <h4 class="card-title">Objectives</h4>
+                      <input sub value="{{course.id}}" hidden>
+                      <label>Number of Questions :
+                      <select time>
+                          <option value="20">20 questions</option>
+                          <option value="35">35 questions</option>
+                          <option value="40">40 questions</option>
+                      </select></label>
+                      <br>
+                      <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+              </div>
+              
+            {% endif %}
+            {% if course.essays.count > 0 %}
+              <div essay>
+                  <div class="card border p-1 form-div mt-1">
+                      <h4 class=card-title>Essays</h4>
+                      <input sub value="{{course.id}}" hidden>
+                     <label>Number of Questions :
+                      <select time>
+                          <option>3 questions</option>
+                          <option>6 questions</option>
+                          <option>9 questions</option>
+                      </select></label>
+                      <br>
+                      <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+</div>
+              
+            {% endif %}
+            {% if course.fill_the_blank.count > 0 %}
+              <div fill>
+                    <div class="card border p-1 form-div mt-1">
+                      <h4 class="card-title">Fill in the space</h4>
+                      <input sub value="{{course.id}}" hidden>
+                      <label>Number of questions:
+                      <select time>
+                          <option>10 questions</option>
+                          <option>15 questions</option>
+                          <option>25 questions</option>
+                      </select></label>
+                      
+                      <br>
+                      <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+</div>
+              
+            {% endif %}
+            {% if course.true_false.count > 0 %}
+              <div trf>
+                  <h4>True and False</h4>
+                  <div class="card border p-1 form-div mt-1">
+                    <input value="{{course.id}}" sub hidden>
+                    <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+</div>
+            {% endif %}
+            {% if course.match_makings.count > 0 %}
+              <div mm>
+                  <h4>Match making</h4>
+                  <div class="card border p-1 form-div mt-1">
+                      <label>Subject :
+                      <select sub>
+                           {% for c in mm %}
+                           <option value="{{c.id}}">{{c.topic}}</option>
+                           {% empty %}
+                           <option>Coming soon</option>
+                           {% endfor %}
+                      </select></label>
+                      <br>
+                      <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+</div>
+           
+            {% endif %}
+            {% if course.objectives.count > 0 %}
+              <div timeBase>
+                    <div class="card border p-1 form-div mt-1">
+                  <h4>Time based</h4>
+                      <input value="{{course.id}}" sub hidden>
+                      <label>Time :
+                      <select time>
+                          <option value="15">15 minutes</option>
+                          <option value="20">20 minutes</option>
+                          <option value="35">35 minutes</option>
+                      </select></label>
+                      <br>
+                      <button class="btn btn-secondary" btn>Proceed</button>
+                  </div>
+</div>
+            {% endif %}
+          </div>
+      </div>
+  </div>
+  {% empty %}
+  <p class="card-text p-1">No tests found, try again later.</p>
+  {% endfor %}
+</div>  
+</div>
+</div>
+<script>
+    const obj = document.querySelectorAll("[obj]")
+    const fill = document.querySelectorAll("[fill]")
+    const trf = document.querySelectorAll("[trf]")
+    const essay = document.querySelectorAll("[essay]")
+    const mm = document.querySelectorAll("[mm]")
+    const tb = document.querySelectorAll("[timeBase]")
+    
+    
+ obj.forEach(obj=> clickToPlay(obj, "objectives", time=true))
+ fill.forEach(fill=>  clickToPlay(fill, "fill-in-blank"))
+trf.forEach(trf=> clickToPlay(trf, "true-false"))
+ essay.forEach(essay=> clickToPlay(essay, "essay"))
+ mm.forEach(mm=> clickToPlay(mm, "match-making"))
+ tb.forEach(tb=> clickToPlay(tb, "time-base", time=true))
+    
+    
+    function clickToPlay(elem, url, time=false){
+        const objSub = elem.querySelector("[sub]")
+        const objTime = elem.querySelector("[time]")
+        const objBtn = elem.querySelector("[btn]")
+    
+        objBtn.onclick = () => {
+            if(objSub.value.toLowerCase() == "coming soon") {
+                alert("This Test not available")
+                return 
+            }
+            let href = `/computer-based-test/${url}/${objSub.value}`
+            if(time) href+=`?t=${objTime.value}`
+            location.href = href
+    }
+    }
+</script>
+{% endblock content %}

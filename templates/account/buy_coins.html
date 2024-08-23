@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section><h1>Balance : {{user.account.coins}}</h1></section>
+<section>
+    <h3>Buy more coins</h3>
+    <div class="form-div">
+        <form method="post">
+            {% csrf_token %}
+        <label>Amount<input type="number" name="amount" amount required></label>
+        <label>fees
+        <input disabled apay>
+        </label>
+        
+        <button class="submit-btn">save</button>
+        </form>
+    </div>
+</section>
+
+{% endblock content %}
+{% block script %}
+<script>
+    const amount = document.querySelector("[amount]")
+    const apay = document.querySelector("[apay]")
+    
+    amount.addEventListener("change", ()=>{
+        apay.value = Number.parseInt(amount.value) / 2
+    })
+</script>
+{% endblock script %}

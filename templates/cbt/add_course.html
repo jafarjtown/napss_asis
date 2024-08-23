@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <div class="form-div">
+        <h2>Add a course for CBT</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label>Course Name <input type="text" name="name" list="courses" required></label>
+                <datalist id="courses">
+                    {% for c in courses %}
+                        <option>{{c.name}}</option>
+                    {% endfor %}
+                </datalist>
+            </div>
+            <button class="submit-btn">Create or update</button>
+        </form>
+        <div class="hr"></div>
+        <p>You can upload a json file in this format</p>
+        <pre>
+            {
+                "course":"course name",
+                "questions":[
+                    {
+                        "question":"Question will be here",
+                        "options":[
+                            "option A", 
+                            "option B", 
+                            "option C", 
+                            "option D"
+                            ],
+                        "answer":"eg option A"
+                    },
+                    ...
+                ]
+            }
+        </pre>
+        <div class="hr"></div>
+        <form method="post" enctype="multipart/form-data" action="{% url "cbt_course_by_upload" %}">
+            {% csrf_token %}
+            <label>Select JSON file
+            <input type="file" name="file"></label>
+            <button class="submit-btn">Save</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,206 @@
+{
+    "course":"[Gens202] Entrepreneurship",
+    "questions": [
+  {
+    "question": "What is the primary goal of entrepreneurship?",
+    "options": ["Maximize profits", "Create value", "Achieve work-life balance", "Avoid risks"],
+    "answer": "Create value"
+  },
+  {
+    "question": "Which of the following is a characteristic of successful entrepreneurs?",
+    "options": ["Risk aversion", "Procrastination", "Adaptability", "Reliance on luck"],
+    "answer": "Adaptability"
+  },
+  {
+    "question": "Which term describes the process of turning an idea into a viable business?",
+    "options": ["Market analysis", "Business planning", "Entrepreneurship", "Product development"],
+    "answer": "Entrepreneurship"
+  },
+  {
+    "question": "What does SWOT analysis stand for in the context of entrepreneurship?",
+    "options": ["Strengths, Weaknesses, Opportunities, Threats", "Sales, Workforce, Operations, Technology", "Savings, Wage, Office, Taxes", "Strategies, Wealth, Ownership, Time"],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats"
+  },
+  {
+    "question": "Which type of entrepreneurship focuses on creating social or environmental impact alongside financial success?",
+    "options": ["Social entrepreneurship", "Traditional entrepreneurship", "Corporate entrepreneurship", "Micro-entrepreneurship"],
+    "answer": "Social entrepreneurship"
+  },
+  {
+    "question": "What is a business model canvas used for in entrepreneurship?",
+    "options": ["Assessing personal skills", "Visualizing and planning a business", "Calculating tax deductions", "Monitoring stock market trends"],
+    "answer": "Visualizing and planning a business"
+  },
+  {
+    "question": "Which of the following is an example of a startup incubator?",
+    "options": ["Amazon", "Harvard University", "TechCrunch", "Y Combinator"],
+    "answer": "Y Combinator"
+  },
+  {
+    "question": "What term describes the process of acquiring funds from investors to grow a business?",
+    "options": ["Networking", "Bootstrapping", "Pitching", "Fundraising"],
+    "answer": "Fundraising"
+  },
+  {
+    "question": "Which factor is essential for successful entrepreneurship?",
+    "options": ["Avoiding all risks", "Innovation", "Conforming to existing norms", "Solely pursuing personal gain"],
+    "answer": "Innovation"
+  },
+  {
+    "question": "What type of entrepreneurship involves an individual starting a small business, often from home?",
+    "options": ["Social entrepreneurship", "Corporate entrepreneurship", "Micro-entrepreneurship", "Franchise entrepreneurship"],
+    "answer": "Micro-entrepreneurship"
+  },
+  {
+    "question": "What does ROI stand for in entrepreneurship?",
+    "options": ["Return on Investment", "Risk of Inaction", "Revenue of Innovation", "Resource Optimization Index"],
+    "answer": "Return on Investment"
+  },
+  {
+    "question": "Which of the following is NOT a common source of startup funding?",
+    "options": ["Venture capital", "Angel investors", "Crowdfunding", "Savings account"],
+    "answer": "Savings account"
+  },
+  {
+    "question": "What is the term for the legal protection granted to an invention or product?",
+    "options": ["Trademark", "Copyright", "Patent", "Franchise"],
+    "answer": "Patent"
+  },
+  {
+    "question": "In entrepreneurship, what does MVP stand for?",
+    "options": ["Minimum Viable Product", "Most Valuable Pitch", "Market Value Proposition", "Maximum Value Potential"],
+    "answer": "Minimum Viable Product"
+  },
+  {
+    "question": "What is the process of selling a product or service to a large corporation or government agency called?",
+    "options": ["Retailing", "Consumerization", "B2B Sales", "E-commerce"],
+    "answer": "B2B Sales"
+  },
+   {
+    "question": "What are some unique challenges that women entrepreneurs may face in the business world?",
+    "options": ["Limited access to funding", "No challenges specific to gender", "Easier access to mentors", "Fewer opportunities for networking"],
+    "answer": "Limited access to funding"
+  },
+  {
+    "question": "What is one key advantage of having intellectual property protection for a business?",
+    "options": ["Increased competition", "Decreased innovation", "Legal rights to prevent copying", "Reduced profitability"],
+    "answer": "Legal rights to prevent copying"
+  },
+  {
+    "question": "In the context of organizational structure, what does the term 'matrix organization' refer to?",
+    "options": ["A structure with a single hierarchical chain of command", "A structure with multiple layers of management", "A hybrid structure with dual reporting relationships", "A decentralized structure with no formal hierarchy"],
+    "answer": "A hybrid structure with dual reporting relationships"
+  },
+  {
+    "question": "What is a common challenge faced by women entrepreneurs when seeking investment?",
+    "options": ["Lack of business skills", "Strong support from investors", "Limited access to networks", "Low levels of confidence"],
+    "answer": "Limited access to networks"
+  },
+  {
+    "question": "What type of intellectual property protection is granted to creative works like books, music, and art?",
+    "options": ["Trademark", "Copyright", "Patent", "Trade secret"],
+    "answer": "Copyright"
+  },
+  {
+    "question": "What term describes a business model where a female entrepreneur starts and runs a business from home?",
+    "options": ["Micro-entrepreneurship", "Franchise entrepreneurship", "Corporate entrepreneurship", "Traditional entrepreneurship"],
+    "answer": "Micro-entrepreneurship"
+  },
+  {
+    "question": "What is the primary goal of a business incubator in supporting women entrepreneurs?",
+    "options": ["Maximizing short-term profits", "Providing mentorship and resources", "Competing with startup accelerators", "Enforcing strict business regulations"],
+    "answer": "Providing mentorship and resources"
+  },
+  {
+    "question": "Which type of intellectual property protection is granted to a new and useful invention?",
+    "options": ["Trademark", "Copyright", "Patent", "Trade secret"],
+    "answer": "Patent"
+  },
+  {
+    "question": "In organizational management, what does the term 'decentralization' refer to?",
+    "options": ["Concentrating decision-making at the top", "Distributing decision-making authority throughout the organization", "Eliminating all middle management", "Outsourcing all key functions"],
+    "answer": "Distributing decision-making authority throughout the organization"
+  },
+  {
+    "question": "What is a common organizational structure for startups characterized by a small, close-knit team?",
+    "options": ["Matrix organization", "Flat organization", "Hierarchical organization", "Bureaucratic organization"],
+    "answer": "Flat organization"
+  },
+  {
+    "question": "Which entrepreneurship theory suggests that entrepreneurs have unique traits and characteristics that drive them to start businesses?",
+    "options": ["Resource-Based Theory", "Trait Theory", "Effectuation Theory", "Opportunity Theory"],
+    "answer": "Trait Theory"
+  },
+  {
+    "question": "According to the Resource-Based Theory of entrepreneurship, what are valuable resources that can provide a competitive advantage?",
+    "options": ["Non-unique resources", "Common resources", "Immobile resources", "Scarce resources"],
+    "answer": "Immobile resources"
+  },
+  {
+    "question": "In the context of women entrepreneurship, what is the 'gender similarities hypothesis'?",
+    "options": ["Men and women entrepreneurs face the same challenges", "Men and women entrepreneurs are fundamentally different", "Women entrepreneurs are more risk-averse", "Men are more innovative in entrepreneurship"],
+    "answer": "Men and women entrepreneurs face the same challenges"
+  },
+  {
+    "question": "What is the process of documenting and registering a new invention or innovation to gain exclusive rights known as?",
+    "options": ["Trademarking", "Incorporation", "Patenting", "Copyrighting"],
+    "answer": "Patenting"
+  },
+  {
+    "question": "According to Schumpeter's Theory of Innovation and Entrepreneurship, what is the role of entrepreneurs in the economy?",
+    "options": ["Maintaining stability and equilibrium", "Creating and disrupting markets through innovation", "Minimizing risk through diversification", "Avoiding competition"],
+    "answer": "Creating and disrupting markets through innovation"
+  },
+  {
+    "question": "Which entrepreneurship theory suggests that entrepreneurs identify and pursue opportunities, regardless of their personal traits?",
+    "options": ["Trait Theory", "Resource-Based Theory", "Effectuation Theory", "Opportunity Theory"],
+    "answer": "Opportunity Theory"
+  },
+  {
+    "question": "What is a common challenge faced by women entrepreneurs in accessing venture capital funding?",
+    "options": ["Lack of investment-worthy ideas", "Strong support from investors", "Implicit biases in the investment process", "Easy access to networks"],
+    "answer": "Implicit biases in the investment process"
+  },
+  {
+    "question": "In the context of intellectual property, what does the term 'trade secret' refer to?",
+    "options": ["A protected invention", "A confidential business practice or formula", "A type of trademark", "Publicly available knowledge"],
+    "answer": "A confidential business practice or formula"
+  },
+  {
+    "question": "What is the primary goal of the Lean Startup methodology in entrepreneurship?",
+    "options": ["Maximizing product development time", "Building a large customer base", "Reducing waste and validating business ideas quickly", "Seeking external funding immediately"],
+    "answer": "Reducing waste and validating business ideas quickly"
+  },
+  {
+    "question": "What is the term for an organization that provides shared office spaces and resources for startups and entrepreneurs?",
+    "options": ["Incubator", "Accelerator", "Franchise", "Consortium"],
+    "answer": "Incubator"
+  },
+  {
+    "question": "According to the Effectuation Theory of entrepreneurship, what is the central principle guiding entrepreneurs?",
+    "options": ["Maximizing profits", "Planning for all contingencies", "Starting with a specific goal", "Using available resources to create opportunities"],
+    "answer": "Using available resources to create opportunities"
+  },
+  {
+    "question": "In women entrepreneurship, what is an example of a support network that provides mentorship and resources?",
+    "options": ["Venture capital firms", "Boys' club organizations", "Business incubators", "Patent offices"],
+    "answer": "Business incubators"
+  },
+  {
+    "question": "What does the term 'branding' refer to in the context of intellectual property?",
+    "options": ["Protecting trade secrets", "Registering patents", "Creating a unique image for a product or company", "Copyrighting creative works"],
+    "answer": "Creating a unique image for a product or company"
+  },
+  {
+    "question": "What is the term for a legal agreement in which one business permits another to use its brand, trademarks, or products for a fee?",
+    "options": ["Partnership", "Franchise", "Copyright", "Merger"],
+    "answer": "Franchise"
+  },
+  {
+    "question": "What is the primary purpose of a business plan in entrepreneurship?",
+    "options": ["To secure venture capital funding", "To outline a startup's legal structure", "To set long-term goals and objectives", "To describe the business's strategy and operations"],
+    "answer": "To describe the business's strategy and operations"
+  }
+]
+
+}

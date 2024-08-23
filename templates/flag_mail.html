@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course/Material Flagging Confirmation</title>
+    <style>
+        /* Reset some default styles */
+        body, h1{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the email container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the header */
+        .header {
+            
+        }
+
+        /* Style the main content */
+        .content {
+            padding: 20px 0;
+        }
+
+        /* Add some spacing */
+        .spacer {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Course/Material Flagging Confirmation</h1>
+        </div>
+        <div class="content">
+            <p>Dear {{ user_name }},</p>
+            <div class="spacer"></div>
+            <p>We hope this message finds you well. We want to express our gratitude for your active involvement in maintaining the quality and integrity of Babuga's Library. We have received your recent flagging of a course or content, and we take this matter seriously.</p>
+            <!-- Add more confirmation content here if needed -->
+            <div class="spacer"></div>
+            <b>Complain</b>
+            <p>{{ reasons }}</p>
+            <p><b>Date of submission</b> : {{ date }}</p>
+            <div class="spacer"></div>
+            <p>Our team is committed to providing a safe and enriching learning environment for all users. Your vigilance in flagging any course or content that may be of concern is a crucial part of achieving this goal.</p>
+            <p>We have initiated a review of the flagged course/content based on the information you provided. Our content moderation team will carefully assess the situation to determine if any action is required. This may include content removal, revision, or further investigation.</p>
+            <p>Rest assured that we will handle this matter with the utmost discretion and urgency. If additional information or clarification is needed from you, a member of our team may reach out to you via email.</p>
+            <p>In the meantime, if you have any further concerns or encounter any issues while using Babuga's Library, please do not hesitate to contact our support team at <a href="mailto:contact@babugas-library.com.ng">contact@babugas-library.com.ng</a>. Your feedback is invaluable in ensuring the quality and safety of our platform.</p>
+            <div class="spacer"></div>
+            <p>We thank you for your active participation in helping us maintain a high standard of educational content and a positive learning experience for all users of Babuga's Library.</p>
+            <p>Warm regards,</p>
+            <p>{{ admin }}</p>
+            <p>Babuga's Library Team</p>
+        </div>
+    </div>
+</body>
+</html>

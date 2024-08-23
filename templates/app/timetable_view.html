@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card border form-div">
+      {% include 'app/libs/help.html' %}
+      <form>
+          <h4 class="card-subtitle">Filter Component</h4>
+            <label> Department:
+            <select name="department">
+                <option value="null">--Select--</option>
+                {% for d in departments %}
+                <option value="{{d.id}}">{{d.name}}</option>
+           {% endfor %}
+            </select>
+            </label>
+            <label> Level:
+            <select name="level">
+                <option value="null">--Select--</option>
+                {% for l in levels %}
+                <option value="{{l}}">{{l}} Level</option>
+               {% endfor %}
+            </select>
+            </label>
+         <div>
+            <button class="btn btn-primary mt-1" get-m><span>Get Time Table</span><em class="icon ni ni-grid"></em></button>
+          </div>
+        
+    </form>
+    <p></p>
+</div>
+{% endblock content %}

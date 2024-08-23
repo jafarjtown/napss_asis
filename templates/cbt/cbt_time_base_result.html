@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section>
+    <h2>{{course.course.code|upper}} Test</h2>
+    <p>This is just a playground or exercising place.</p>
+    
+    <div class="card border form-div">
+        <p>Here's what you score : {{result.score}}/40</p>
+        {% for q in qs %}
+            <div class="divider m-1"></div>
+            <div style="flex-direction:column" >
+            <p>{{forloop.counter}}. {{q.q.question}}</p>
+            <ol type="A">
+                
+            {% for o in q.q.options.all %}
+            <label>
+            <li style="{% if o.id == q.select and o.is_correct %} background: lightgreen;{% elif o.is_correct %} background: orange;color:white;{% elif q.select == o.id %} background:red;color:white;{% endif %}padding:5px;margin-bottom:4px">
+            {{o.value}}
+            </li>
+            </label>
+            {% endfor %}
+            </ol>
+        </div>
+        {% endfor %}
+    </div>
+    
+</section>
+
+{% endblock content %}

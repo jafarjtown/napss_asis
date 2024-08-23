@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="card mb-1 p-2">
+    <h4>{{course.course.code|upper}} Test</h4>
+    <p>Questions boxes, click to select question or use the navigators below.</p>
+    <div questions style="display:flex;gap:2px;flex-wrap:wrap"></div>
+</div>
+<div>
+    <div>
+        <form class="card border p-2">
+        {% csrf_token %}
+        <p class="m-0">Scores : <span score></span></p>
+        <div class="divider m-1"></div>
+        {% for q in questions %}
+        <div style="flex-direction:column;display:none" question id="{{q.id}}">
+            <p class="mb-1">{{forloop.counter}}. {{q.question_text}}</p>
+            <div class="mb-2">
+                <ul class="custom-control-group">
+                  <li>
+                    <div class="custom-control custom-control-sm custom-checkbox custom-control-pro">
+                    <input value="True" type="radio" class="custom-control-input" name="tf" id="{{q.id}}true">
+                    <label class="custom-control-label" for="{{q.id}}true">True</label>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="custom-control custom-control-sm custom-checkbox custom-control-pro">
+                          <input value="False" type="radio" class="custom-control-input" name="tf" id="{{q.id}}false">
+                          <label class="custom-control-label" for="{{q.id}}false">False</label>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+            <input type="text" value="{{q.correct_answer}}" style="display:none" correct_answer>
+            <p class="correct-answer" style="display:none" display_correct_answer>Correct Answer : {{q.correct_answer}}</p>
+        <div>
+               <button type="button" class="btn btn-secondary" prev {% if forloop.counter == 1 %}disabled{% endif %}><em class="icon ni ni-chevron-left"></em><span>Previous</span></button>
+               <button type="button" class="btn btn-secondary" next  {% if questions.last == q %} disabled{% endif %}><span>Next</span><em class="icon ni ni-chevron-right"></em></button>
+            </div>
+        </div>
+        {% endfor %}
+    </form>
+    </div>
+</div>
+
+{% endblock content %}
+{% block script %}
+<script src="{% static "js/cbt.js" %}"></script>
+{% endblock script %}

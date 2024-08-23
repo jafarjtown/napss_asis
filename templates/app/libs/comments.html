@@ -1,0 +1,32 @@
+<div class="mt-2">
+    <form method="post">
+        {% csrf_token %}
+        <h3 class="card-subtitle">Comment section</h3>
+        <div class="form-group">
+          <label class="form-label" for="default-01">Name</label>
+          <div class="form-control-wrap">
+            <input name="name" type="text" class="form-control" id="default-01" placeholder="Enter name">
+        </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="default-02">Comment</label>
+          <div class="form-control-wrap">
+            <textarea name="commment" class="form-control" id="default-textarea" placeholder="Write commment"></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary">Comment</button>
+    </form>
+    
+    
+</div>
+<section>
+    {% for comment in course.comments_set %}
+    <h4>{{comment.user}}</h4>
+    <p>{{comment.comment}}</p>
+    <div class="hr"></div>
+    {% if forloop.counter == 10 %}
+    <a href="">load more</a>
+    {% endif %}
+    {% endfor %}
+
+</section>

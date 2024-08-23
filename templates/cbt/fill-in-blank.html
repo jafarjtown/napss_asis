@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h3>{{course.course.code|upper}} Fill in the blank</h3>
+    <form class="card border form-div">
+    <p>Answers are not Case-sensitive.</p>
+    {% for q in questions %}
+    <div class="divider m-1"></div>
+    <div trs>
+        <p>{{forloop.counter}}. {{q.parse_html|safe}}</p>
+        <p class="mb-1" style="display:none;padding-left:15px;border-left:1px solid" ans>Answer : <span correct_answer>{{q.correct_answers}}</span></p>
+    </div>
+    {% endfor %}
+    <div>
+    <button class="btn btn-secondary" btn type="button">Check</button>
+    </div>
+    </form>
+</div>
+{% endblock content %}
+{% block script %}
+<script src="{% static 'js/cbt_fill.js' %}"></script>
+{% endblock script %}

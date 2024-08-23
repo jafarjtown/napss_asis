@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block script %}
+<script src="{% static "js/load_courses.js" %}" defer>
+</script>
+{% endblock script %}
+
+{% block content %}
+<section class="card">
+  {% include 'app/libs/help.html' %}
+{% include "app/libs/filter.html" with btn="Get Course"%}
+    {% if course %}
+    <div class="p-2 mb-2">
+    <h4 class="card-title">{{course.title}}</h4>
+    <div class="divider mt-0"></div>
+    <h4>Code : {{course.code|upper}}</h4>
+    <p>{{course.info}}</p>
+    <p>Materials :{{course.material_set.count}} <a href="{% url "material_list" %}?department={{course.department.id}}&course={{course.code}}">Check out</a></p>
+    <p>
+        {% if course.outline %}
+        <a href="{{course.outline.url}}" download>Download course outline</a>
+        {% else %}
+        Course outline not available  <a href="{% url "upload_outline" course.id %}">Click to add</a>
+        {% endif %}
+    </p>
+    <p><b>Note:</b> anyone can flag an issue if you found anything that's not alright concerning the above course, <a href="{% url "flag_course" course.id %}">Flag issue</a></p>
+    {% include "app/libs/comments.html"  with next="courses?" course=course %}
+    {% else %}
+    </div>
+    <p>Select Course from above to see the details about it.</p>
+    {% endif %}
+</section>
+{% endblock content%}
