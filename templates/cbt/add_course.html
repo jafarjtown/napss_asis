@@ -37,7 +37,7 @@
             }
         </pre>
         <div class="hr"></div>
-        <form method="post" enctype="multipart/form-data" action="{% url "cbt_course_by_upload" %}">
+        <form method="post" enctype="multipart/form-data" action="{% url "cbt:cbt_course_by_upload" %}">
             {% csrf_token %}
             <label>Select JSON file
             <input type="file" name="file"></label>

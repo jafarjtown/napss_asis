@@ -12,6 +12,7 @@ class MaterialViewset(viewsets.ModelViewSet):
     """
     API endpoint that allows materials to be viewed or edited.
     """
+    
     queryset = Material.objects.all()
     serializer_class = MaterialSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
@@ -24,6 +25,7 @@ class CourseViewset(viewsets.ModelViewSet):
     """
     API endpoint that allows courses to be viewed or edited.
     """
+    model = Course
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
     permission_classes = [permissions.AllowAny]

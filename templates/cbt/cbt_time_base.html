@@ -10,7 +10,7 @@
 
 <section class="card border mt-2">
      <div class="form-div">
-        <form method="post" action="{% url "cbt_test_result" course.id %}">
+        <form method="post" action="{% url "cbt:cbt_test_result" course.id %}">
         {% csrf_token %}
         {% if result %}
         <p>Here's what you score : {{result.score}}/40 | <a href="{% url "cbt_test" course.id %}">Retry</a></p>

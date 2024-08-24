@@ -7,7 +7,8 @@ router.register("courses", v1.CourseViewset)
 router.register("materials", v1.MaterialViewset)
 router.register("past-questions", v1.PassQViewset)
 
+
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+     path('', include(router.urls, namespace='')),
+     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

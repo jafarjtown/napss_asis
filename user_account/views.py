@@ -26,6 +26,10 @@ def user_login(request):
         if user is not None:
             login(request, user)
             messages.success(request, "Login successful")
+            if request.GET.get('next'):
+              return redirect(request.GET.get('next'))
+            return redirect("/")
+            
         else:
             messages.error(request, "Invalid credentials")
     return render(request, "account/auth-login.html")

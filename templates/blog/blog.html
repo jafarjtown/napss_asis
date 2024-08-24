@@ -2,16 +2,17 @@
 
 {% block content %}
 <div class="card">
-  <div class="card p-0 border-bottom w-100 d-flex flex-column">
+  <div class="p-1">
+    <span>Blogger : {{blog.user}} </span><br>
+    <span>Date : {{blog.created_on}} </span>
+  </div>
+  <div class="p-0 border-bottom w-100 d-flex flex-column">
     <img class="card-img object-fit-cover h-200px bg-primary rounded-0" src="{{blog.cover.url}}">
     <span class="p-1 card-title h4">{{blog.title}}</span>
   </div>
   <div class="p-1">
-    <span>Blogger : {{blog.user}} </span>
-  </div>
-  <div class="p-1">
     {% if user.is_authenticated %}
-    <div class="border p-1">
+    <div class="min-vh-100">
     {{blog.content|safe}}
     </div>
     {% if not user_rated %}

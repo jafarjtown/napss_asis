@@ -1,15 +1,43 @@
 {% extends "base.html" %}
 {% load static %}
 {% block script %}
-<script src="{% static "js/load_courses.js" %}" defer>
+<script defer>
+const level = document.querySelector("[level]")
+const department = document.querySelector("[department]")
+const course = document.querySelector("[course]")
+
+
+level.addEventListener("change", getCourse) 
+department.addEventListener("change", getCourse) 
+
+async function getCourse(){
+        let blankSelect = "--Select--"
+        if(department.value == 'null' || level.value == 'null'){
+          return
+        }
+        let defaultOption = document.createElement("option")
+        defaultOption.innerText = "--Select--"
+        defaultOption.value = "null"
+        course.innerHTML=""
+        course.appendChild(defaultOption)
+    // fetch all courses in the level 
     
+    const response = await fetch(`/api/rest/courses/?department__id=${department.value}&level=${level.value}`)
+    const data = await response.json()
+    for (let d of data) {
+        let option = document.createElement("option")
+        option.innerText = d.code.toUpperCase() +" - "+d.title
+        option.value = d.code
+        course.appendChild(option)
+    }
+}
+
 </script>
 {% endblock script %}
 {% block content %}
-<section>
-        <h1>Upload a resources</h1>
-</section>
 <div class="form-div card">
+  <h3 class="card-title">Upload new resouce</h3>
+  <p><b>Note:</b> Before uploading any resource to this platform, make sure you understand all the terms and conditions <a href="terms">Terms and condition</a></p>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
             <label> Department:
@@ -27,7 +55,6 @@
                 <option value="200">200 Level</option>
                 <option value="300">300 Level</option>
                 <option value="400">400 Level</option>
-                <option value="000">General </option>
             </select>
             </label>
             <label> Course :

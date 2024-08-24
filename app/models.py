@@ -64,7 +64,7 @@ class Material(models.Model):
     
     @property
     def flag_url(self):
-        return reverse("flag_material", kwargs={"mid":self.id})
+        return reverse("app:flag_material", kwargs={"mid":self.id})
     @property 
     def size(self):
         file_size = self.file.size

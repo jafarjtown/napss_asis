@@ -7,12 +7,12 @@
   </div>
   <div class="card-body p-1 d-flex flex-row flex-wrap g-2 mt-1 justify-content-around flex-fill">
     {% for blog in blogs %}
-      <div style="height:fit-content;width:160px;" class="card mb-1 border d-flex flex-column">
+      <div style="height:fit-content;width:250px;" class="card mb-1 border d-flex flex-column p-0">
         <img class="card-img-top h-150px object-fit-cover" src="{{blog.cover.url}}">
-        <h6 class="card-title">{{blog.title|truncatechars:25}}</h6>
-        <p class="card-text p-1">{{blog.desc|truncatechars:100}}</p>
+        <h6 class="card-title p-1 pb-0 text-decoration-underline">{{blog.title|truncatechars:25}}</h6>
+        <p class="card-text p-1 pb-0 pt-0">{{blog.desc|truncatechars:100}}</p>
         <div class="card-footer">
-          <p class="d-flex justify-content-between">{{blog.ratings.count}} rate <a href="{% url 'read_blog' blog.id %}"><span>Read</span><em class="ni icon ni-arrow-right"></em></a></p>
+          <p class="d-flex justify-content-between">{{blog.ratings.count}} rate <a href="{% url 'blog:read_blog' blog.id %}"><span>Read</span><em class="ni icon ni-arrow-right"></em></a></p>
         </div>
       </div>
     {% endfor %}

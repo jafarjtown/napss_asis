@@ -23,7 +23,6 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
     
-@login_required   
 def upload(request):
     context = {
             "departments": Department.objects.all()
@@ -139,9 +138,9 @@ def courses(request):
         dep = Department.objects.prefetch_related("course_set").get(id = department)
         course = dep.course_set.get(code = course)
         if request.method == "POST":
-             if not request.user.is_authenticated:
-               return redirect('user_login')
-             user = request.POST.get("user")
+             #if not request.user.is_authenticated:
+             #  return redirect('auth:user_login')
+             user = request.POST.get("name")
              comment = request.POST.get("comment")
              if user == "":
                     user = "Anonymous User"

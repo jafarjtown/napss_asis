@@ -40,5 +40,5 @@ def write_blog(request):
     cover = request.FILES.get('cover')
     blog = BlogPost.objects.create(publish=publish, title=title, desc=desc, cover=cover, content=content, user=request.user)
     messages.success(request, 'Post saved.')
-    return redirect('read_blog', blog.id)
+    return redirect('blog:read_blog', blog.id)
   return render(request, 'blog/write.html', {'form':form})

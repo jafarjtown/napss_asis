@@ -69,15 +69,15 @@ def cbt_test_result(request, id):
 
 
 def cbt_create_course(request):
-    courses = cbt.objects.all()
+    courses = CourseCBT.objects.all()
     if request.method == "POST":
         name = request.POST.get("name")
         course,_ = cbt.objects.get_or_create(name=name)
-        return redirect("cbt_add_qs", course=course.id)
+        return redirect("cbt:cbt_add_qs", course=course.id)
     return render(request, 'cbt/add_course.html', {"courses":courses})
     
 def cbt_add_qs(request, course):
-    course = cbt.objects.get(id=course)
+    course = CourseCBT.objects.get(id=course)
     if request.method == 'POST':
         question_form = QuestionForm(request.POST)
         option_forms = []
@@ -97,7 +97,7 @@ def cbt_add_qs(request, course):
                 option = option_form.save()
                 question.options.add(option)
                 question.save()
-            return redirect("cbt_add_qs", course=course.id)
+            return redirect("cbt:cbt_add_qs", course=course.id)
     else:
         question_form = QuestionForm()
         option_forms = [OptionForm(prefix=f'option_{i}') for i in range(4)]
@@ -109,9 +109,13 @@ def add_by_upload(request):
         uploaded_file = request.FILES.get("file")
         if uploaded_file:
                 js = json.load(uploaded_file)
-                co, _ = cbt.objects.get_or_create(name=js.get("course"))
+                course = Course.objects.get(code=js.get('course'))
+                #if CourseCBT.objects.filter(course__code=js.get("course")).exists():
+                co, _ = CourseCBT.objects.get_or_create(course=course)
+                #else:
+                #  co = CourseCBT.objects.get(course__code=js.get("course"))
                 for q in js.get("questions"):
-                    if co.questions.filter(question=q["question"]).exists():
+                    if co.objectives.filter(question=q["question"]).exists():
                         continue 
                     qu = Question.objects.create(question=q["question"])
                     for op in q.get("options"):
@@ -121,11 +125,11 @@ def add_by_upload(request):
                         o = Option.objects.create(value=op, is_correct=is_correct)
                         qu.options.add(o)
                         qu.save()
-                    co.questions.add(qu)
+                    co.objectives.add(qu)
                     co.save()
         else:
             return JsonResponse({"error": "No file uploaded"}, status=400)
-    return redirect("cbt")
+    return redirect("cbt:cbt")
 
 
 def essay_cbt(request):

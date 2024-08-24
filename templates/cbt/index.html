@@ -2,9 +2,9 @@
 
 
     <!-- App Title -->
-    <h1>Welcome to Social Science ABU, CBT center.</h1>
     <!-- Welcome Message Section -->
   <div class="card p-2">
+    <h1>Welcome to {{pr_short_name}}, CBT center.</h1>
     <h4>Welcome Message:</h4>
     <p>
         Welcome to your premier destination for computer-based
@@ -13,7 +13,7 @@
     <!-- Brief Introduction Section -->
     <h4>Brief Introduction:</h4>
     <p>
-        Social Science ABU provides a wide range of tests and quizzes to help you
+        {{pr_long_name}} provides a wide range of tests and quizzes to help you
         excel in your studies and assessments. Whether you're preparing for an
         important exam or simply testing your knowledge, we've got you covered.
     </p>
@@ -30,7 +30,7 @@
         <li>Review your answers before submitting if time allows.</li>
     </ol>
     <div>
-    <a href="{% url 'cbt_tests' %}" class="btn btn-primary btn-outline mt-1"><span>Continue</span><em class="icon ni ni-arrow-right"></em></a>
+    <a href="{% url 'cbt:cbt_tests' %}" class="btn btn-primary btn-outline mt-1"><span>Continue</span><em class="icon ni ni-arrow-right"></em></a>
     </div>
   </div>
 

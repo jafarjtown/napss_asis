@@ -1,6 +1,6 @@
  {% load static %}
             <!-- sidebar @s -->
-            <div class="nk-sidebar nk-sidebar-fixed is-dark " data-content="sidebarMenu">
+            <div class="nk-sidebar nk-sidebar-fixed" data-content="sidebarMenu">
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-menu-trigger">
                         <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
@@ -8,7 +8,7 @@
                     </div>
                     <div class="nk-sidebar-brand">
                         <a href="/" class="logo-link nk-sidebar-logo">
-                            <img class="logo logo-img" src="{% static 'imgs/logo.png' %}" alt="logo">
+                            <img class="logo logo-img" src="{% static pr_small_logo %}" alt="logo">
                         </a>
                     </div>
                 </div><!-- .nk-sidebar-element -->
@@ -17,28 +17,28 @@
                         <div class="nk-sidebar-menu" data-simplebar>
                             <ul class="nk-menu">
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Social Science Library</h6>
+                                    <h6 class="overline-title text-primary-alt">{{pr_short_name}} Platform</h6>
                                 </li><!-- .nk-menu-heading -->
                                 <li class="nk-menu-item">
-                                    <a href="" class="nk-menu-link">
+                                    <a href="{% url 'app:index' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-home"></em></span>
                                         <span class="nk-menu-text">Home</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="{% url 'search' %}" class="nk-menu-link">
+                                    <a href="{% url 'app:search' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-search"></em></span>
                                         <span class="nk-menu-text">Search</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="{% url 'blogs' %}" class="nk-menu-link">
+                                    <a href="{% url 'blog:blogs' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-property-alt"></em></span>
                                         <span class="nk-menu-text">Blogs</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="{% url 'about' %}" class="nk-menu-link">
+                                    <a href="{% url 'app:about' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-info-i"></em></span>
                                         <span class="nk-menu-text">About</span>
                                     </a>
@@ -51,21 +51,21 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="{% url 'material_list' %}" class="nk-menu-link"><span class="nk-menu-text">Materils</span></a>
+                                            <a href="{% url 'app:material_list' %}" class="nk-menu-link"><span class="nk-menu-text">Materils</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="{% url 'course' %}" class="nk-menu-link"><span class="nk-menu-text">Courses</span></a>
+                                            <a href="{% url 'app:course' %}" class="nk-menu-link"><span class="nk-menu-text">Courses</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="{% url 'pqs' %}" class="nk-menu-link"><span class="nk-menu-text">Past Questions</span></a>
+                                            <a href="{% url 'app:pqs' %}" class="nk-menu-link"><span class="nk-menu-text">Past Questions</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="{% url 'timetables' %}" class="nk-menu-link"><span class="nk-menu-text">Time Tables</span></a>
+                                            <a href="{% url 'app:timetables' %}" class="nk-menu-link"><span class="nk-menu-text">Time Tables</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="{% url 'cbt' %}" class="nk-menu-link">
+                                    <a href="{% url 'cbt:cbt' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-monitor"></em></span>
                                         <span class="nk-menu-text">Computer based</span>
                                     </a>
@@ -73,12 +73,12 @@
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
                                   {% if user.is_authenticated %}
-                                    <a href="{% url 'user_logout' %}" class="nk-menu-link">
+                                    <a href="{% url 'auth:user_logout' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-signout"></em></span>
                                         <span class="nk-menu-text">Sign-Out</span>
                                     </a>
                                   {% else %}
-                                    <a href="{% url 'user_login' %}" class="nk-menu-link">
+                                    <a href="{% url 'auth:user_login' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-signin"></em></span>
                                         <span class="nk-menu-text">Sign-In</span>
                                     </a>
@@ -101,8 +101,8 @@
                                     <a class="btn btn-icon btn-trigger me-n2" data-bs-toggle="dropdown" href="#"><em class="icon ni ni-more-v"></em></a>
                                     <div class="dropdown-menu dropdown-menu-end">
                                       <ul class="link-list-opt no-bdr">
-                                        <li><a href="{% url 'password_reset' %}"><em class="icon ni ni-lock"></em><span>Change Password</span></a></li>
-                                        <li><a href="{% url 'account_settings' %}"><em class="icon ni ni-user"></em><span>Profile</span></a></li>
+                                        <li><a href="{% url 'auth:password_reset' %}"><em class="icon ni ni-lock"></em><span>Change Password</span></a></li>
+                                        <li><a href="{% url 'auth:account_settings' %}"><em class="icon ni ni-user"></em><span>Profile</span></a></li>
                                       </ul>
                                     </div>
                                   </div>

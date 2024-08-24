@@ -5,8 +5,8 @@
 <section class="hero">
     
     <div>
-        <a href="{% url "course" %}">Courses</a>
-        <a href="{% url "material_list" %}">Resources</a>
+        <a href="{% url "app:course" %}">Courses</a>
+        <a href="{% url "app:material_list" %}">Resources</a>
     </div>
     <div>
         <p>Explore a wide array of materials, ranging from PDFs to videos, handouts, past questions, and a variety of other valuable resources, all generously provided by our community for your benefit.</p>
@@ -23,7 +23,7 @@
   <div id="carouselExConInd" class="carousel slide" data-bs-ride="carousel">
    <div class="carousel-inner">
         {% for blog in blogs %}
-        <a href="{% url 'read_blog' blog.id %}" class="carousel-item {% if blogs.first == blog %}active{% endif %}">
+        <a href="{% url 'blog:read_blog' blog.id %}" class="carousel-item {% if blogs.first == blog %}active{% endif %}">
           <span class="user-card border-bottom pb-1">
                   <span class="user-avatar sq h-100px w-100px rounded-0">
                           <img class="" src="{{blog.cover.url}}" alt="">
@@ -81,9 +81,9 @@
 <section class="card mt-1 sec">
 <span class="card-title h4">Quick links.</span>
 <div class="btn-group" aria-label="Basic example">
-  <a href="{% url 'user_register' %}" class="btn btn-dim center btn-primary">Register</a>
-  <a href="{% url 'cbt_tests' %}" class="btn btn-dim center btn-primary">CBT</a>
-  <a href="{% url 'about' %}" class="btn btn-dim center btn-primary">About Us</a>
+  <a href="{% url 'auth:user_register' %}" class="btn btn-dim center btn-primary">Register</a>
+  <a href="{% url 'cbt:cbt_tests' %}" class="btn btn-dim center btn-primary">CBT</a>
+  <a href="{% url 'app:about' %}" class="btn btn-dim center btn-primary">About Us</a>
 </div>
 </section>
 <!-- sponsors -->
