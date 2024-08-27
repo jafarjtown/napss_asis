@@ -3,7 +3,6 @@
 from django import template
 from django.urls import resolve, reverse
 from django.utils.safestring import mark_safe
-print(5)
 register = template.Library()
 
 @register.simple_tag(takes_context=True)

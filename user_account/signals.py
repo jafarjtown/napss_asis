@@ -4,8 +4,8 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 from django.template.loader import render_to_string
 
-from app.models import FlaggedIssue, Request 
-from .models import Account
+from material.models import Request 
+from .models import Account, FlaggedIssue
 import datetime
 
 

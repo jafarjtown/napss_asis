@@ -5,8 +5,8 @@
 <section class="hero">
     
     <div>
-        <a href="{% url "app:course" %}">Courses</a>
-        <a href="{% url "app:material_list" %}">Resources</a>
+        <a href="{% url "material:course" %}">Courses</a>
+        <a href="{% url "material:material_list" %}">Resources</a>
     </div>
     <div>
         <p>Explore a wide array of materials, ranging from PDFs to videos, handouts, past questions, and a variety of other valuable resources, all generously provided by our community for your benefit.</p>
@@ -124,6 +124,7 @@
 </div>
 </form>
 </section>
+{% include 'app/libs/buy_tea.html' %}
 {% endblock content %}
 
 

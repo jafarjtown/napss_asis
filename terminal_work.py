@@ -1,4 +1,4 @@
-from app.models import Course, Department
+from material.models import Course, Department
 import json
 def upload_department():
   with open('json files/departments.json') as js:

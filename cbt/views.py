@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse 
 from .models import CourseCBT, Question, Option, EssayQuestion,TrueFalseQuestion
 from .forms import QuestionForm, OptionForm, TrueFalseQuestionForm
-from app.models import Department , Course
+from material.models import Department , Course
 
 from user_account.decorators import has_enough_coins, subtract_coins
 import random as r
@@ -24,17 +24,14 @@ def tests(request):
     context["departments"] = departments
     context["levels"] = levels
     if course:
-      context['courses'] = CourseCBT.objects.prefetch_related('objectives', 'essays', 'fill_the_blank', 'true_false').select_related('course').filter(course__code=course)
-    else:
-      context['courses'] = CourseCBT.objects.prefetch_related('objectives', 'essays', 'fill_the_blank', 'true_false').select_related('course').all()
-    
+      context['course'] = Course.objects.prefetch_related('objectives').get(code=course)
     return render(request, "cbt/cbt_tests.html", context)
 
 #@has_enough_coins(100)
 #@subtract_coins(100)
 def cbt_test(request, id=None):
     t = int(request.GET.get("t", 15))
-    course = CourseCBT.objects.get(id=id)
+    course = Course.objects.get(id=id)
     questions= course.objectives.order_by("?").all()
     return render(request, "cbt/cbt_test.html", {"course": course, "qs": questions[:t]})
     
@@ -46,14 +43,14 @@ def cbt_time_base(request, id=None):
         t = 40
     else:
         t = 60
-    course = CourseCBT.objects.get(id=id)
+    course = Course.objects.get(id=id)
     questions= course.objectives.order_by("?").all()
     return render(request, "cbt/cbt_time_base.html", {"course": course, "qs": questions[:t], "time":time})
     
     
 def cbt_test_result(request, id):
     result = {"score":0, "qss":{}}
-    course = CourseCBT.objects.get(id=id)
+    course = Course.objects.get(id=id)
     qs = []
     if request.method == "POST":  
         attempts = dict(request.POST)
@@ -110,12 +107,9 @@ def add_by_upload(request):
         if uploaded_file:
                 js = json.load(uploaded_file)
                 course = Course.objects.get(code=js.get('course'))
-                #if CourseCBT.objects.filter(course__code=js.get("course")).exists():
-                co, _ = CourseCBT.objects.get_or_create(course=course)
-                #else:
                 #  co = CourseCBT.objects.get(course__code=js.get("course"))
                 for q in js.get("questions"):
-                    if co.objectives.filter(question=q["question"]).exists():
+                    if course.objectives.filter(question=q["question"]).exists():
                         continue 
                     qu = Question.objects.create(question=q["question"])
                     for op in q.get("options"):
@@ -125,8 +119,8 @@ def add_by_upload(request):
                         o = Option.objects.create(value=op, is_correct=is_correct)
                         qu.options.add(o)
                         qu.save()
-                    co.objectives.add(qu)
-                    co.save()
+                    course.objectives.add(qu)
+                    course.save()
         else:
             return JsonResponse({"error": "No file uploaded"}, status=400)
     return redirect("cbt:cbt")

@@ -1,0 +1,15 @@
+{% load static %}
+
+<div class="card p-1 d-flex flex-row g-1 h-1000px">
+  <img style="width:100px; height:100px; object-fit: cover;" class="object-fit-cover rounded border-2 border-dark bg-primary" src="{% static img_url %}">
+  <div class="fs-5 w-100 d-flex flex-column align-items-center">
+    <span>{{name}}</span>
+    <span>{{role}}</span>
+    <div class="d-flex flex-row gap-2 fs-4">
+      <a href="tel:{{phone_number}}"><em class="ni icon ni-call"></em></a>
+      <a href="mailto:{{email}}"><em class="ni icon ni-mail"></em></a>
+      <a href="{{facebook}}"><em class="ni icon ni-facebook-f"></em></a>
+      <a href="{{twitter}}"><em class="ni icon ni-twitter"></em></a>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from app.models import Material, Course, PastQuestion
+from material.models import Material, Course, PastQuestion
 
 class MaterialSerializer(serializers.ModelSerializer):
     class Meta:

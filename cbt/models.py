@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class CourseCBT(models.Model):
-  course = models.OneToOneField('app.Course', on_delete=models.CASCADE, related_name='cbt_test')
+  course = models.OneToOneField('material.Course', on_delete=models.CASCADE, related_name='cbt_test')
   objectives = models.ManyToManyField('Question', blank=True)
   essays = models.ManyToManyField('EssayQuestion', blank=True)
   fill_the_blank = models.ManyToManyField('FillInTheBlanksQuestion', blank=True)
@@ -10,8 +10,9 @@ class CourseCBT(models.Model):
   
 
 class Question(models.Model):
+    course = models.ForeignKey('material.Course', on_delete=models.CASCADE, null=True, related_name='objectives')
     question = models.TextField()
-    options = models.ManyToManyField("Option", blank=True)
+    #options = models.ManyToManyField("Option", blank=True)
     
     @property
     def correct_answer(self):
@@ -20,6 +21,7 @@ class Question(models.Model):
                 return o
         
 class Option(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True, related_name='options')
     value = models.CharField(max_length=500)
     is_correct = models.BooleanField(default=False)
     

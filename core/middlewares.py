@@ -7,7 +7,6 @@ from .contexts import INFO
 class OnlyStaffViewMiddleware(MiddlewareMixin):
   def process_view(self, request, view_func, view_args, view_kwargs):
     view_name = request.resolver_match.view_name
-    print(view_name)
     if view_name in INFO.get('pr_only_staff_views', []) and request.user.is_staff == False:
       messages.error(request, f'Please Sign Up to Staff Account')
       return redirect(reverse('auth:user_login')+f"?next={request.path}")
@@ -22,9 +21,9 @@ class LoginRequiredOrNotMiddleware(MiddlewareMixin):
         if app_name == 'auth' or INFO.get('pr_allowed_apps', 'all') == 'all':
           return None
         if app_name in INFO.get('pr_app_maintenance'):
-          messages.info(request, f'The previous page is under maintenance, try again later.\nThanks')
+          messages.info(request, f'The page is under maintenance, try again later.\nThanks')
           return redirect('app:index')
         if not user.is_authenticated and not app_name in INFO.get('pr_allowed_apps'):
-          messages.error(request, f'Please Sign Up to have access to the previous page.')
+          messages.error(request, f'Please Sign Up to have access to the page.')
           return redirect(reverse('auth:user_login')+f"?next={request.path}")
         return None

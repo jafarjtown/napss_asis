@@ -32,7 +32,7 @@ ul, ol{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(transparent, black), url('/static/imgs/hero.jpg');
-    background-position: 0;
+    background-position: center;
     border-radius: 5px;
     
 }

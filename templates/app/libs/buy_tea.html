@@ -1,16 +1,11 @@
-<section>
-    <h1>Buy Us tea 🍵</h1>
-</section>
-<div class="form-div">
-   
-    <form>
-        <label>
-            Amount in Naira
-            <input type="number" name="amount" placeholder="100 - 1,000,000,000">
-        </label>
-        <small>help in keeping the platform running.</small>
-        <button class="submit-btn">Buy</button>
+
+<div class="card border p-1 input-group mb-1">
+    <form action="{% url 'app:register_newsletter' %}" method="post">
+      {% csrf_token %}
+        <p>Subscribing for our Newsletter by submitting your email below.</p>
+        <input class="form-control mb-1" type="email" name="email" required placeholder="Email">
+        <button class="btn btn-primary w-auto">Subscribe</button>
         
     </form>
     
-</div>
+</d>

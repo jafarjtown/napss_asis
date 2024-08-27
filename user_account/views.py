@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import Account, User
-from app.models import Request 
+from material.models import Request 
 from django.utils import timezone
 from datetime import datetime
 from django.contrib.auth.decorators import login_required

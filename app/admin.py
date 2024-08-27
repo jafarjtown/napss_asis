@@ -1,18 +1,7 @@
 from django.contrib import admin
+from core.contexts import INFO
 
-from .models import Course, Department,Material, PastQuestion, Time, Day, LectureHour, TimeTable
-# Register your models here.
-
-admin.site.site_header = "Social Science, ABU"
-admin.site.site_title = "SS ABU Administrator"
-admin.site.index_title = "Welcome to Social Science, ABU Administrator Panel"
-
-admin.site.register(Material)
-admin.site.register(Course)
-admin.site.register(PastQuestion)
-admin.site.register(Department)
-admin.site.register(TimeTable)
-admin.site.register(Time)
-admin.site.register(Day)
-admin.site.register(LectureHour)
+admin.site.site_header = INFO.get('pr_short_name')
+admin.site.site_title = f"{INFO.get('pr_short_name')} Administrator"
+admin.site.index_title = f"Welcome to {INFO.get('pr_long_name')}, ABU Administrator Panel"
 

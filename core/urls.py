@@ -28,6 +28,7 @@ urlpatterns = [
     path('computer-based-test/', include('cbt.urls')),
     path('api/rest/', include('api.urls')),
     path('summernote/', include('django_summernote.urls')),
+    path('resource/', include('material.urls')),
     path('', include('app.urls')),
 ]
 

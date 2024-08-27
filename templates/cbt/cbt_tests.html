@@ -9,10 +9,10 @@
 <div class="card-body p-1">
     {% include 'app/libs/filter.html' with departments=departments levels=levels department=department level=level %}
 <div id="accordion" class="accordion border mt-1">
-  {% for course in courses %}
+  {% if course %}
   <div class="accordion-item">
       <a href="#" class="accordion-head collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-item-{{course.id}}">
-          <h6 class="title">{{course.course.code}} - {{course.course.title}}</h6>
+          <h6 class="title">{{course.code}} - {{course.title}}</h6>
           <span class="accordion-icon"></span>
       </a>
       <div class="accordion-body collapse p-0" id="accordion-item-{{course.id}}" data-bs-parent="#accordion">
@@ -115,9 +115,9 @@
           </div>
       </div>
   </div>
-  {% empty %}
+  {% else %}
   <p class="card-text p-1">No tests found, try again later.</p>
-  {% endfor %}
+  {% endif %}
 </div>  
 </div>
 </div>
