@@ -3,10 +3,10 @@
 {% block content %}
 
                 <div class="nk-content ">
-                    <div class="container-fluid">
-                        <div class="nk-content-inner">
+                    <div class="container-fluid p-0">
+                        <div class="nk-content-inner p-0">
                             <div class="nk-content-body">
-                                <div class="content-page wide-md m-auto">
+                                <div class="content-page wide-md m-auto p-0">
                                     <div class="nk-block-head nk-block-head-lg wide-xs mx-auto">
                                         <div class="nk-block-head-content text-center">
                                             <h2 class="nk-block-title fw-normal">About {{pr_short_name}} ABU</h2>
@@ -23,10 +23,13 @@
                                                     <h4>Abundant Resources, Diverse Formats</h4>
                                                     <p>With an extensive collection of approximately 5,000 materials, our library caters to various learning preferences. Whether you prefer traditional PDF documents, engaging videos, enlightening images, or informative audio resources, we've got you covered. Our commitment to diversity ensures that your learning journey is both enriching and personalized.</p>
                                                     <h4>Community-Driven Excellence</h4>
-                                                    <p>Social Science ABU thrives on the spirit of collaboration and community. It's our wonderful community of contributors, including students, educators, and passionate individuals, that makes this platform possible. Together, we create a vibrant ecosystem where knowledge is freely shared and continuously enriched.</p>
+                                                    <p>{{pr_long_name}} thrives on the spirit of collaboration and community. It's our wonderful community of contributors, including students, educators, and passionate individuals, that makes this platform possible. Together, we create a vibrant ecosystem where knowledge is freely shared and continuously enriched.</p>
                                                     <h4>Meet the Founders</h4>
-                                                    <p>Social Science ABU was founded by Jafaru Idris Tesla and co-founded by Babuga Umar Baga. Their vision and dedication to enhancing educational accessibility have driven the creation of this platform.</p>
-                                                    <img src="{% static 'imgs/us~2.jpeg' %}" alt="">
+                                                    <p>{{pr_long_name}} was founded by Jafaru Idris Tesla and co-founded and sponsored by Ishak. Their vision and dedication to enhancing educational accessibility have driven the creation of this platform.</p>
+                                                    <div class="d-flex flex-wrap">
+                                                    {% include 'app/libs/spon.html' with img_url='imgs/jafaru_idris.jpg' name='Jafar Idris (Tesla)' role='Co-founder & Developer' phone_number='+2347080332077' facebook='https://www.facebook.com/jaafar.idrees.7' twitter='https://x.com/JafarJere_Idris' email='jafaridris82@gmail.com' info='Software Developer, Nigeria. Passionate about creating innovative solutions using Django and Next.js. Also pursuing a degree in political science at ABU Zaria. Always eager to learn and solve problems through code.' %}
+                                                    {% include 'app/libs/spon.html' with img_url='imgs/ishak.jpg' name='Aliyu Mustapha AHIM' role='Co-founder' phone_number='+2347036855578' facebook='https://www.facebook.com/profile.php?id=100079305995210' twitter='https://x.com/Abu_AliOfficial' email='mustyjr10@gmail.com' %}
+                                                    </div>
                                                 </article>
                                             </div>
                                         </div>

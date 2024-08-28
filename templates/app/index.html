@@ -34,6 +34,8 @@
                 </span>
             </span>
         </a>
+        {% empty %}
+        <p>No Blogs at the moment</p>
         {% endfor %}
     </div>
     <a class="carousel-control-prev" href="#carouselExConInd" role="button" data-bs-slide="prev">
@@ -46,36 +48,15 @@
     </a>
 </div>
 </section>
-<!-- statistics -->
 <section class="card mt-1 sec">
-  <span class="card-title h4">Stats</span>
-  <div class="d-flex flex-wrap justify-content-center">
-    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
-      <span><em class="icon ni ni-building"></em></span>
-      <span class="fw-bold">{{departments_count}}</span>
-      <span class="p-1 small">Departments</span>
-    </div>
-    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
-      <span><em class="icon ni ni-book"></em></span>
-      <span class="fw-bold">{{courses_count}}</span>
-      <span class="p-1 small">Courses</span>
-    </div>
-    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
-      <span><em class="icon ni ni-pen"></em></span>
-      <span class="fw-bold">100K</span>
-      <span class="p-1 small">Online Quiz</span>
-    </div>
-    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
-      <span><em class="icon ni ni-files"></em></span>
-      <span class="fw-bold">{{materials_count}}</span>
-      <span class="p-1 small">Materials</span>
-    </div>
-    <div class="m-1 h-100px w-100px border border-primary rounded-circle d-flex flex-column justify-content-center d-flex align-items-center">
-      <span><em class="icon ni ni-users"></em></span>
-      <span class="fw-bold">{{users_count}}</span>
-      <span class="p-1 small">Users</span>
-    </div>
+<div class="">
+  <div class="d-flex flex-wrap">
+    {% include 'app/libs/service.html' with name='Repository' icon='list-index' desc='A centralized hub for all academic resources, including reading materials, past questions, and course outlines. Students can easily access and study relevant materials, preparing them for exams and assignments.' %}
+    {% include 'app/libs/service.html' with name='Arena' icon='puzzle' desc='A simulated learning environment where students can practice and test their knowledge. Students can identify their strengths and weaknesses, and improve their understanding of course concepts.' %}
+    {% include 'app/libs/service.html' with name='Nexus' icon='signal' desc='A central platform that connects students with all the necessary resources and tools. Students have a single point of access to everything they need for their academic journey.' %}
   </div>
+</div>
+
 </section>
 <!-- quick links -->
 <section class="card mt-1 sec">
@@ -89,11 +70,11 @@
 <!-- sponsors -->
 {% if partners %}
 <section class="card mt-1 sec">
-  <span class="card-title h4">Our Partners</span>
+  <span class="card-title h4">Our Sponsors</span>
    {% for partner in partners %}
    <span class="user-card pb-1">
         <span class="user-avatar h-100px w-100px">
-            <img class="bg-light" src="{{partner.image.url}" alt="">
+            <img class="bg-light" src="{{partner.image.url}}" alt="{{partner.name}}">
         </span>
         <span class="user-info d-flex flex-column">
           <span class="lead-text">{{partner.name}}</span>

@@ -1,0 +1,41 @@
+{% load static %}
+<style>
+  .testimony-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.testimony-card .card-title {
+  font-weight: bold;
+}
+
+.testimony-card .card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.testimony-card .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.testimony-card .social-links a {
+  margin: 0 5px;
+}
+
+</style>
+<div class="card testimony-card">
+  <img src="{% static img_url %}" class="card-img-top" alt="User Image">
+  <div class="card-body">
+    <h5 class="card-title">John Doe</h5>
+    <p class="card-text">This is a testimonial from John Doe. He is a satisfied customer of our product.</p>
+    <div class="social-links">
+      <a href="#" class="btn btn-sm btn-outline-primary"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="btn btn-sm btn-outline-primary"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="btn btn-sm btn-outline-primary"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+</div>

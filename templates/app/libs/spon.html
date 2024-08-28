@@ -1,0 +1,45 @@
+{% load static %}
+<style>
+  .testimony-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+.testimony-card > img{
+  height: 250px;
+}
+
+.testimony-card .card-title {
+  font-weight: bold;
+}
+
+.testimony-card .card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.testimony-card .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.testimony-card .social-links a {
+  margin: 0 5px;
+}
+</style>
+<div class="card testimony-card">
+  <img src="{% static img_url %}" class="card-img-top" alt="{{name}} Image">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <span class="card-subtitle">{{role}}</span>
+    <p class="card-text">{{info}}</p>
+    <div class="social-links">
+      <a href="tel:{{phone_number}}" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-call"></i></a>
+      <a href="{{facebook}}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-facebook-f"></i></a>
+      <a href="{{twitter}}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-twitter"></i></a>
+      <a href="mailto:{{email}}" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-mail"></i></a>
+    </div>
+  </div>
+</div>

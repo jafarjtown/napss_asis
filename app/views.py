@@ -2,17 +2,14 @@
 from django.shortcuts import render, redirect
 from material.models import Material, Department , Course
 from blog.models import BlogPost, User
-from .models import Newsletter
+from .models import Newsletter, Partner
 from django.contrib import messages
 
 def index(request):
   context = {}
   blogs = BlogPost.objects.all()
   context['blogs'] = blogs
-  context['departments_count'] = Department.objects.count()
-  context['materials_count'] = Material.objects.count()
-  context['courses_count'] = Course.objects.count()
-  context['users_count'] = User.objects.count()
+  context['partners'] = Partner.objects.all()
   return render(request, 'app/index.html', context)
 
 def about(request):

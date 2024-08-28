@@ -12,7 +12,6 @@ class CourseCBT(models.Model):
 class Question(models.Model):
     course = models.ForeignKey('material.Course', on_delete=models.CASCADE, null=True, related_name='objectives')
     question = models.TextField()
-    #options = models.ManyToManyField("Option", blank=True)
     
     @property
     def correct_answer(self):
