@@ -14,12 +14,24 @@
     
 </section>
 <section class="card mt-1 sec">
-  <span class="">The {{pr_short_name}} platform is a comprehensive digital solution designed to address the needs of students, administrators, and faculty members within an academic setting. As a personal project, I am developing this platform to provide a centralized hub for accessing essential resources, facilitating communication, and enhancing campus life.</span>
-  <span class="ff-italic right align-self-end text-decoration-underline">Jafaru Idris</span>
+  <blockquote class="blockquote">
+   “ <b>{{pr_short_name}}</b> is a digital platform that aims to streamline academic activities. It offers a central location for students, administrators, and faculty to access resources, communicate, and engage with campus life. ”
+  </blockquote>
+  <span class="ff-italic right align-self-end text-decoration-underline">Jafaru Idris (Tesla)</span>
+</section>
+<!-- quick links -->
+<section class="card mt-1 sec">
+<span class="card-title h4 mb-3">Quick Actions.</span>
+<div class="btn-group" aria-label="Basic example">
+  <a href="{% url 'material:pqs' %}" class="btn btn-dim center btn-primary">PQs</a>
+  <a href="{% url 'cbt:cbt_tests' %}" class="btn btn-dim center btn-primary">CBT</a>
+  <a href="{% url 'material:material_list' %}" class="btn btn-dim center btn-primary">Materials</a>
+  <a href="{% url 'app:about' %}" class="btn btn-dim center btn-primary">About</a>
+</div>
 </section>
 <!-- blogging -->
 <section class="card mt-1 sec">
-  <h4 class="card-title">Latest Updates</h4>
+  <h4 class="card-title mb-3">Blogs</h4>
   <div id="carouselExConInd" class="carousel slide" data-bs-ride="carousel">
    <div class="carousel-inner">
         {% for blog in blogs %}
@@ -58,19 +70,10 @@
 </div>
 
 </section>
-<!-- quick links -->
-<section class="card mt-1 sec">
-<span class="card-title h4">Quick links.</span>
-<div class="btn-group" aria-label="Basic example">
-  <a href="{% url 'auth:user_register' %}" class="btn btn-dim center btn-primary">Register</a>
-  <a href="{% url 'cbt:cbt_tests' %}" class="btn btn-dim center btn-primary">CBT</a>
-  <a href="{% url 'app:about' %}" class="btn btn-dim center btn-primary">About Us</a>
-</div>
-</section>
 <!-- sponsors -->
 {% if partners %}
 <section class="card mt-1 sec">
-  <span class="card-title h4">Our Sponsors</span>
+  <span class="card-title h4 mb-3">Sponsors</span>
    {% for partner in partners %}
    <span class="user-card pb-1">
         <span class="user-avatar h-100px w-100px">
@@ -78,16 +81,17 @@
         </span>
         <span class="user-info d-flex flex-column">
           <span class="lead-text">{{partner.name}}</span>
-          <p class="sub-text">{{partner.info}}</p>
-        </span>
+       </span>
    </span>
    {% endfor %}
 </section>
 {% endif %}
+{% include 'app/libs/buy_tea.html' %}
 <section class="card p-2 mt-1 sec">
-<form method="post" class="">
+<form method="post">
    {% csrf_token %}
-  <span class="card-title h4">Contact Form</span>
+  <span class="card-title h4 mb-3">Contact Form</span>
+  <p>you can drop us a message by submitting it through this form.</p>
   <div class="form-group">
     <label class="form-label" for="contact-01">Name or Email</label>
     <div class="form-control-wrap">
@@ -101,11 +105,10 @@
     </div>
 </div>
 <div class="form-group">
-  <button class="btn btn-success">Submit</button>
+  <button class="btn btn-primary">Submit</button>
 </div>
 </form>
 </section>
-{% include 'app/libs/buy_tea.html' %}
 {% endblock content %}
 
 
