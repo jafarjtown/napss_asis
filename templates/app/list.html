@@ -2,6 +2,7 @@
 {% load static %}
 {% block title %}Collection of resource{% endblock title %}
 {% block content %}
+<h4 class="mt-1">Materials Repository</h4>
 <section class="card">
 {% include 'app/libs/help.html' %}
 {% include "app/libs/filter.html" with department=department departments=departments levels=levels btn="Filter" sort=True hbtn=True %}

@@ -25,25 +25,6 @@
                                         <span class="nk-menu-text">Home</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
-                                <li class="nk-menu-item">
-                                    <a href="{% url 'material:search' %}" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-search"></em></span>
-                                        <span class="nk-menu-text">Search</span>
-                                    </a>
-                                </li><!-- .nk-menu-item -->
-                                <li class="nk-menu-item">
-                                    <a href="{% url 'blog:blogs' %}" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-property-alt"></em></span>
-                                        <span class="nk-menu-text">Blogs</span>
-                                    </a>
-                                </li><!-- .nk-menu-item -->
-                                <li class="nk-menu-item">
-                                    <a href="{% url 'app:about' %}" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-info-i"></em></span>
-                                        <span class="nk-menu-text">About</span>
-                                    </a>
-                                </li><!-- .nk-menu-item -->
-                                
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-book"></em></span>
@@ -51,7 +32,7 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="{% url 'material:material_list' %}" class="nk-menu-link"><span class="nk-menu-text">Materils</span></a>
+                                            <a href="{% url 'material:material_list' %}" class="nk-menu-link"><span class="nk-menu-text">Materials</span></a>
                                         </li>
                                         <li class="nk-menu-item">
                                             <a href="{% url 'material:course' %}" class="nk-menu-link"><span class="nk-menu-text">Courses</span></a>
@@ -65,11 +46,30 @@
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
+                                    <a href="{% url 'material:search' %}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-search"></em></span>
+                                        <span class="nk-menu-text">Search</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="{% url 'blog:blogs' %}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-property-alt"></em></span>
+                                        <span class="nk-menu-text">Blogs</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                
+                                <li class="nk-menu-item">
                                     <a href="{% url 'cbt:cbt' %}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-monitor"></em></span>
-                                        <span class="nk-menu-text">Computer based</span>
+                                        <span class="nk-menu-text">Arena</span>
                                     </a>
                                     
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="{% url 'app:about' %}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-info-i"></em></span>
+                                        <span class="nk-menu-text">About</span>
+                                    </a>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
                                   {% if user.is_authenticated %}
@@ -110,7 +110,7 @@
                               </div><!-- .user-card -->
                                   </div><!-- .card-inner -->
                                 </li>
-                                  {% endif %}
+                                {% endif %}
                             </ul><!-- .nk-menu -->
                         </div><!-- .nk-sidebar-menu -->
                     </div><!-- .nk-sidebar-content -->

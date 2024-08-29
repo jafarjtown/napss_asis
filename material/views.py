@@ -91,14 +91,12 @@ def timetable_view(request):
     if department and level:
       timetable = TimeTable.objects.get(department__id = int(department), level = int(level))
       return redirect('timetable', timetable.id)
-    timetable = TimeTable.objects.first()
     departments = Department.objects.all()
     sort = request.GET.get("sort")
     levels = [100, 200, 300, 400]
     
     context = {"departments":departments}
     context["levels"] = levels 
-    context['timetable'] = timetable
     return render(request , "app/timetable_view.html", context)
 
 

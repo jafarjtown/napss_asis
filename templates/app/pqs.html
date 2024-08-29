@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<h4 class="mt-1">Past Questions (Exam & Test)</h4>
 <section class="card">
          {% include "app/libs/help.html" %}
          {% include "app/libs/filter.html" with department=department departments=departments levels=levels btn="Filter" sort=True hbtn=True %}

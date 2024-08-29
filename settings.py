@@ -1,3 +1,3 @@
 
 
-MODE = 'development'
+MODE = 'production'

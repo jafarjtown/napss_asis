@@ -5,17 +5,19 @@
     <meta name="keywords" content="{{pr_long_name}}, ABU, PDFs, past questions, course outlines, study materials">
     <meta name="author" content="Jafaru Idris">
     <meta name="robots" content="index, follow"> <!-- To allow search engines to index the site -->
-
+    <meta name="icon" content="{% static pr_small_logo %}">
     <!-- Open Graph Meta Tags (for social media sharing) -->
     <meta property="og:title" content="{{pr_long_name}} Study Resources">
     <meta property="og:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for {{pr_long_name}} students.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="{% static pr_small_logo %}">
 
     <!-- Twitter Card Meta Tags (for Twitter sharing) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{pr_long_name}} Study Resources">
     <meta name="twitter:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for {{pr_long_name}} students.">
-
+    <meta name="twitter:image" content="{% static pr_small_logo %}">
+    
     <title>{{pr_long_name}} - {% block title %}Get reading materials here{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/dashlite.css' %}">
