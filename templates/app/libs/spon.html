@@ -36,10 +36,18 @@
     <span class="card-subtitle">{{role}}</span>
     <p class="card-text">{{info}}</p>
     <div class="social-links">
+      {% if phone_number %}
       <a href="tel:{{phone_number}}" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-call"></i></a>
+      {% endif %}
+      {% if facebook %}
       <a href="{{facebook}}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-facebook-f"></i></a>
+      {% endif %}
+      {% if twitter %}
       <a href="{{twitter}}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-twitter"></i></a>
+      {% endif %}
+      {% if email %}
       <a href="mailto:{{email}}" class="btn btn-sm btn-outline-primary"><i class="ni icon ni-mail"></i></a>
+      {% endif %}
     </div>
   </div>
 </div>
