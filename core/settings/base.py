@@ -30,15 +30,33 @@ INSTALLED_APPS = [
     'blog',
     'material',
     
+    
     # third parties apps
     #'django_underconstruction',
     'whitenoise',
     'rest_framework',
-    'rest_framework_word_filter',
     'django_filters',
 ]
-INSTALLED_APPS += ('django_summernote', )
-SUMMERNOTE_THEME = 'bs4'  # Show summernote with Bootstrap4
+
+
+INSTALLED_APPS += [
+'wagtail.contrib.forms',
+'wagtail.contrib.redirects',
+'wagtail.embeds',
+'wagtail.sites',
+'wagtail.users',
+'wagtail.snippets',
+'wagtail.documents',
+'wagtail.images',
+'wagtail.search',
+'wagtail.admin',
+'wagtail.contrib.settings',
+'wagtail',
+
+'modelcluster',
+'taggit',
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,7 +69,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'core.middlewares.LoginRequiredOrNotMiddleware',
     'core.middlewares.OnlyStaffViewMiddleware',
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
+
+WAGTAIL_SITE_NAME = 'NAPSS & ASIS E-LIBRARY'
+WAGTAILADMIN_BASE_URL = 'http://localhost:8000/'
+WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
+
+
 
 TEMPLATES = [
     {
@@ -64,7 +89,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'core.contexts.project_info'
+                'core.contexts.project_info',
+                'wagtail.contrib.settings.context_processors.settings',
             ],
         },
     },
@@ -97,12 +123,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
-import pytz
-from django.utils import timezone
-timezone.get_default_timezone = lambda: pytz.timezone(TIME_ZONE)
-USE_I18N = True
-TIME_ZONE = "UTC"
+TIME_ZONE = 'Etc/UTC'
 USE_TZ = True
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
@@ -117,12 +140,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'auth:user_login'
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'my_cache_table',
-    }
-}
 
 REST_FRAMEWORK = {
     #'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -151,9 +168,6 @@ REST_FRAMEWORK = {
         'URL_FORMAT_OVERRIDE': 'json',
         'VIEW_NAME_FUNCTION': 'rest_framework.views.get_view_name',
         'ORDERING_PARAM': 'ordering',
-        'DEFAULT_FILTER_BACKENDS': [
-            'url_filter.integrations.drf.DjangoFilterBackend',
-        ]
     },
     'NAME': 'Social Sciences, ABU',
     'COERCE_DECIMAL_TO_STRING': True,

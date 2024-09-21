@@ -3,8 +3,9 @@
 const get_m = document.querySelector("[get-m]");
 const list_dom = document.querySelector("[list]");
 
-const URL_STR = '/api/rest/materials/'
+const URL_STR = '/api/rest/beta/materials/'
 const PAGING_MAX = 1
+let LAST_REQUEST
 
 if(get_m){
   get_m.addEventListener('click', () => {
@@ -27,6 +28,8 @@ if(get_m){
         q.push(`course__department__id=${d}`);
     }
 
+    if(LAST_REQUEST == q.join('-')) return
+    LAST_REQUEST = q.join('-')
     list_dom.innerHTML = "<p>Loading ... Please wait</p>";
     loadMaterials(queries=q.join("&"));
 });

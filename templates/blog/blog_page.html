@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+<!-- Load the wagtailimages_tags: -->
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block content %}
+<style>
+  .body li{
+    list-style: initial !important;
+    margin-left: 1rem;
+  }
+</style>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date }}</p>
+
+    <div class="intro fst-italic fs-3 bg-primary text-white p-1 mb-1">{{ page.intro }}</div>
+    <div class="body bg-white p-1">
+      <p><a href="{{ page.get_parent.url }}"><em class="ni icon ni-chevron-left"></em>Previous Page</a></p>
+      {{ page.body|richtext }}
+
+    <!-- Add this: -->
+    <div id="carouselExConInd" class="carousel slide border" data-bs-ride="carousel">
+     <div class="carousel-inner">
+    {% for item in page.gallery_images.all %}
+        <a class="carousel-item {% if page.gallery_images.first == item %}active{% endif %}">
+          <span class="border-bottom pb-1">
+               {% image item.image fill-320x240 %}
+              <p class="fst-italic text-center">{{ item.caption }}</p>
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExConInd" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExConInd" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+    <p><a href="{{ page.get_parent.url }}"><em class="ni icon ni-chevron-left"></em>Previous Page</a></p>
+    {% if page.get_children %}
+    <p>Sub Pages</p>
+      {% for page in page.get_children %}
+        <p><a href="{% pageurl page %}">{{page.title}}</a></p>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endblock %}

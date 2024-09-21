@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+<!-- Load wagtailimages_tags: -->
+{% load wagtailcore_tags wagtailimages_tags %}
+<!-- Modify this: -->
+{% block content %}
+<div class="">
+  <h3 class="p-1">{{page.title}}</h3>
+  {{page.intro|richtext}}
+  <div class="d-flex flex-row flex-wrap g-2 justify-content-around flex-fill">
+    {% for post in blogpages %}
+    {% with post=post.specific %}
+      <div style="height:fit-content;width:300px;" class="card mb-1 border d-flex flex-column p-0">
+        {% with post.main_image as main_image %}
+            {% if main_image %}{% image main_image fill-300x200 %}{% endif %}
+        {% endwith %}
+        <h6 class="card-title p-1 pb-0">{{post.title|truncatechars:25}}</h6>
+        <p class="card-text p-1 pb-0 pt-0">{{ post.intro|truncatechars:100}}</p>
+        <div class="card-footer">
+          <p class="d-flex justify-content-between">{{post.date}} {{post.user}}<a href="{% pageurl post %}"><span>Read</span><em class="ni icon ni-arrow-right"></em></a></p>
+        </div>
+      </div>
+    {% endwith %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
+
+{% for post in blogpages %}
+    {% with post=post.specific %}
+        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+        <!-- Add this: -->
+        {% with post.main_image as main_image %}
+            {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
+        {% endwith %}
+        <p>{{ post.intro }}</p>
+        {{ post.body|richtext }}
+    {% endwith %}
+{% endfor %}

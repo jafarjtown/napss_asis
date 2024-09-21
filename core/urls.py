@@ -24,14 +24,22 @@ handler500 = 'user_account.views.handler500'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user_account.urls')),
-    path('blogs/', include('blog.urls')),
+    #path('blogs/', include('blog.urls')),
     path('computer-based-test/', include('cbt.urls')),
     path('api/rest/', include('api.urls')),
-    path('summernote/', include('django_summernote.urls')),
     path('resource/', include('material.urls')),
     path('', include('app.urls')),
 ]
 
+from wagtail.admin import urls as wagtailadmin_urls
+from wagtail import urls as wagtail_urls
+from wagtail.documents import urls as wagtaildocs_urls
+
+urlpatterns += [
+    path('cms/', include(wagtailadmin_urls)),
+    path('documents/', include(wagtaildocs_urls)),
+    path('blogs/', include(wagtail_urls)),
+]
 from django.conf import settings
 from django.conf.urls.static import static
 
