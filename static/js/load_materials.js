@@ -64,6 +64,7 @@ function createMaterialElement(obj) {
     
     const fileIconDiv = document.createElement("div");
     fileIconDiv.classList.add("nk-file-icon");
+    fileIconDiv.classList.add("fs-2");
 
     const spanIcon = document.createElement("span");
     spanIcon.classList.add("nk-file-icon-type");
@@ -111,6 +112,7 @@ function createMaterialElement(obj) {
     };
 
     const download = createButton("Download", 'icon ni ni-download', obj.file);
+    download.download = true
     const view = createButton("View", 'icon ni ni-view', obj.file);
     const report = createButton("Report", 'icon ni ni-report', obj.flag_url);
 

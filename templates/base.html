@@ -23,10 +23,11 @@
                                 </a>
                             </div>
                             <div class="nk-header-brand d-xl-none">
-                                <a class="logo-link">
+                                <a class="logo-link" advance-search-btn>
                                  <em class="ni icon ni-search fs-3"></em>
                                 </a>
                             </div>
+                            <dialog class="border" advance-search-dialog>{% include 'advance_search_field.html' %}</dialog>
                             <!-- .nk-header-brand -->
                             
                         </div><!-- .nk-header-wrap -->
@@ -77,6 +78,7 @@
 
     <script src="{% static 'js/bundle.js' %}"></script>
     <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'js/advance_search.js' %}"></script>
     {% block script %}
     {% endblock script %}
 </body>

@@ -180,4 +180,4 @@ class CourseComment(models.Model):
 class PastQuestion(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name="pass_questions")
     pq = models.FileField(upload_to="pq")
-    year = models.DateField(auto_now=False)
+    year = models.CharField(max_length=4)

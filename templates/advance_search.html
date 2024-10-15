@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card p-2 border">
+  <h2>Advance Search</h2>
+  <p>Result of <span class="text-primary-emphasis">{{q}}</span> from :
+    {% for model in models_name %}
+        {% if forloop.last and forloop.counter > 1 %}and {% endif %}
+        <span class="text-success">{{ model }}</span>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+  {% if empty_models %}
+  <p>No result return from :
+    {% for model in empty_models %}
+        {% if forloop.last and forloop.counter > 1 %}and {% endif %}
+        <span class="text-danger">{{ model }}</span>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</div>
+<div class="card p-1 d-flex flex-wrap">
+  <p>{{number_of_results}} result{{number_of_results|pluralize}} in total</p>
+{% for queryset in models %}
+  {% for model in queryset.objects %}
+    {% include 'components/advance/'|add:queryset.object_name.lower|add:'.html' with obj=model %}
+  {% endfor %}
+{% endfor %}
+</div>
+{% endblock content %}

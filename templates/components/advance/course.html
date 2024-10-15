@@ -1,0 +1,6 @@
+<div class="card p-2 rounded border mb-1">
+  <span class="badge badge-dot bg-secondary">Course</span>
+  <h4>{{obj.code}} - {{obj.title}}</h4>
+  <p>{{obj.info}}</p>
+  <a href="{% url 'material:course' %}?department={{obj.department.id}}&course={{obj.code}}" class="btn btn-outline-primary border-0 center w-50">View <em class="icon ni ni-arrow-right"></em></a>
+</div>

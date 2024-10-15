@@ -1,0 +1,33 @@
+<div class="card p-2">
+  <h3>Advance Search</h3>
+  <form method="post" action="{% url 'app:advance_search' %}" advance_form>
+    {% csrf_token %}
+    <div class="form-group">
+    <label class="form-label" for="default-ad1">Input Field</label>
+      <div class="form-control-wrap">
+        <input name="q" type="text" class="form-control" id="default-ad1" placeholder="Enter Phrase" required>
+      </div>
+    </div>
+    <span>Search In:</span>
+    <div class="d-flex flex-column">
+      <div class="custom-control custom-checkbox mb-1">
+      <input cka name="pq" type="checkbox" class="custom-control-input" id="customCheck1Pq">
+      <label class="custom-control-label" for="customCheck1Pq">Past Questions</label>
+    </div>
+      <div class="custom-control custom-checkbox mb-1">
+      <input cka name="m" type="checkbox" class="custom-control-input" id="customCheck1m">
+      <label class="custom-control-label" for="customCheck1m">Materials</label>
+    </div>
+      <div class="custom-control custom-checkbox mb-1">
+      <input cka name="c" type="checkbox" class="custom-control-input" id="customCheck1c">
+      <label class="custom-control-label" for="customCheck1c">Courses</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input cka name="tb" type="checkbox" class="custom-control-input" id="customCheck1tb">
+      <label class="custom-control-label" for="customCheck1tb">Time Tables</label>
+    </div>
+  </div>
+  <button type="button" class="btn btn-danger mt-1" close-advance-btn>Close</button>
+  <button type="submit" class="btn btn-primary mt-1" search-advance-btn>Search</button>
+  </form>
+</div>
