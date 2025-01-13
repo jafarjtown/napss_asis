@@ -7,6 +7,7 @@ INFO = {
   "pr_big_logo": "",
   "pr_allowed_apps": ['admin', 'app', 'api', 'material'],
   "pr_app_maintenance": [],
+  "pr_view_maintenance": ['material:timetables'],
   "pr_only_staff_views": ['blog:write'],
 }
 

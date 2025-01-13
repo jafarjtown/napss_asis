@@ -4,7 +4,7 @@ from material.models import Material, Course, PastQuestion
 class MaterialSerializer(serializers.ModelSerializer):
     class Meta:
         model = Material
-        fields = ["url", "course", "title", "comment","upload_on","file", "code", "flag_url", "department_name"]
+        fields = ["url", "course", "title", "comment","upload_on","file", "code", "flag_url", "department_name", "download_url"]
         
         
 class CourseSerializer(serializers.ModelSerializer):

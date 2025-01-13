@@ -1,11 +1,13 @@
 from django.shortcuts import render,redirect
 from django.http import JsonResponse 
+from django.http import FileResponse, Http404
+import os
 from .models import Material, Department , Course, TimeTable, CourseComment ,PastQuestion, Day, Time
 from user_account.models import FlaggedIssue
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .utils import FileComparator
-from blog.models import BlogPost, User
+from blog.models import BlogPage, User
 # Create your views here.
 
     
@@ -186,3 +188,24 @@ def past_questions(request):
     context["courses"] = courses
     return render(request, 'app/pqs.html', context)
     
+def download_material(request, material_id):
+    try:
+        # Fetch the material object by ID
+        material = Material.objects.get(id=material_id)
+
+        # Get the file path
+        file_path = material.file.path
+
+        # Return the file as a response for download
+        response = FileResponse(open(file_path, "rb"), as_attachment=True)
+        response["Content-Disposition"] = f'attachment; filename="{material.file.name}"'
+        user_wallet = request.user.wallet 
+        user_wallet.amount -= 50
+        user_wallet.save()
+        print(user_wallet)
+        return response
+
+    except Material.DoesNotExist:
+        raise Http404("Material not found")
+    except Exception as e:
+        raise Http404("Error processing the file")

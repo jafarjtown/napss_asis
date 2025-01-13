@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'user_account',
     'blog',
     'material',
+    'service',
+    'wallet',
     
     
     # third parties apps
@@ -36,25 +38,6 @@ INSTALLED_APPS = [
     'whitenoise',
     'rest_framework',
     'django_filters',
-]
-
-
-INSTALLED_APPS += [
-'wagtail.contrib.forms',
-'wagtail.contrib.redirects',
-'wagtail.embeds',
-'wagtail.sites',
-'wagtail.users',
-'wagtail.snippets',
-'wagtail.documents',
-'wagtail.images',
-'wagtail.search',
-'wagtail.admin',
-'wagtail.contrib.settings',
-'wagtail',
-
-'modelcluster',
-'taggit',
 ]
 
 
@@ -69,13 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'core.middlewares.LoginRequiredOrNotMiddleware',
     'core.middlewares.OnlyStaffViewMiddleware',
-    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
-
-WAGTAIL_SITE_NAME = 'NAPSS & ASIS E-LIBRARY'
-WAGTAILADMIN_BASE_URL = 'http://localhost:8000/'
-WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
-
 
 
 TEMPLATES = [
@@ -90,7 +67,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'core.contexts.project_info',
-                'wagtail.contrib.settings.context_processors.settings',
             ],
         },
     },

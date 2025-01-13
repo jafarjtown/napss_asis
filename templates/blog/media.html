@@ -1,0 +1,169 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h3 class="nk-block-title page-title">Media</h3>
+                                        </div><!-- .nk-block-head-content -->
+                                        <div class="nk-block-head-content">
+                                            <div class="toggle-wrap nk-block-tools-toggle">
+                                                <a href="#" class="btn btn-icon btn-trigger toggle-expand me-n1" data-target="pageMenu"><em class="icon ni ni-more-v"></em></a>
+                                                <div class="toggle-expand-content" data-content="pageMenu" style="display: none;">
+                                                    <ul class="nk-block-tools g-3">
+                                                        <li>
+                                                            <div class="drodown">
+                                                                <a href="#" class="dropdown-toggle btn btn-white btn-dim btn-outline-light" data-bs-toggle="dropdown"><em class="d-none d-sm-inline icon ni ni-filter-alt"></em><span>Filtered by</span><em class="dd-indc icon ni ni-chevron-right"></em></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <ul class="link-list-opt no-bdr">
+                                                                        <li><a href="#"><span>All Media Files</span></a></li>
+                                                                        <li><a href="#"><span>Images</span></a></li>
+                                                                        <li><a href="#"><span>Audio</span></a></li>
+                                                                        <li><a href="#"><span>Video</span></a></li>
+                                                                        <li><a href="#"><span>Document</span></a></li>
+                                                                        <li><a href="#"><span>Spreadsheets</span></a></li>
+                                                                        <li><a href="#"><span>Archives</span></a></li>
+                                                                        <li><a href="#"><span>Mine</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="nk-block-tools-opt">
+                                                            <a data-bs-toggle="modal" href="#addMedia" class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Add Media</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
+                                <div class="nk-block">
+                                    <div class="row g-gs">
+                                      {% for doc in documents.all %}
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                            <div class="gallery gallery-content card card-bordered">
+                                                <div class="gallery-images">
+                                                    <img class="w-100 rounded" src="{{ doc.file.url }}" alt="{{ doc.alt_text }}">
+                                                </div>
+                                                <div class="image-overlay">
+                                                    <ul>
+                                                        <li><a data-bs-toggle="modal" href="#editMedia{{ doc.id }}"><em class="icon ni ni-edit"></em></a></li>
+                                                    </ul>
+                                                </div><!--image-overlay-->
+                                            </div>
+                                        </div>
+                                            <div class="modal fade" tabindex="-1" role="dialog" id="editMedia{{ doc.id }}">
+
+        <div class="modal-dialog modal-lg" role="document">
+
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Edit Media</h5>
+                    <form action="{% url 'blog:update_media' doc.id %}" method="post" enctype="multipart/form-data" class="mt-4">
+                        {% csrf_token %}
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="editName">Name</label>
+                                    <input name="name" type="text" class="form-control" id="editName" placeholder="Plant" value="{{ doc.name }}">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="editAlt">Alter Text</label>
+                                    <input name="alt_text" type="text" class="form-control" id="editAlt" placeholder="Feature Image" value="{{ doc.alt_text }}">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="category">Featured Image</label>
+                                    <div class="form-control-wrap">
+                                        <img src="{{ doc.file.url }}" alt="{{ doc.alt_text }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="category">Featured Image</label>
+                                    <input type="file" name="document">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Update</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+                                      {% empty %}
+                                      <h4>No Documents</h4>
+                                      {% endfor %}
+                                    </div>
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+   <!-- Add Page-->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="addMedia">
+
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Add Media</h5>
+                    <form method="post" action="{% url 'blog:add_media' %}" class="mt-4" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="addName">Name</label>
+                                    <input name="name" type="text" class="form-control" id="addName" placeholder="Plant" value="Plant">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="addAlt">Alter Text</label>
+                                    <input name="alt_text" type="text" class="form-control" id="addAlt" placeholder="Feature Image" value="Feature Image">
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="category">Featured Image</label>
+                                    <input type="file" name="document" >
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Update</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Edit Page-->
+
+{% endblock content %}

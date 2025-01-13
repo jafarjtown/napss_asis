@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container wide-xl">
+                        <div class="nk-content-inner">
+                          <div class="nk-content-body">
+                                <div class="nk-content-wrap">
+                                    <div class="nk-block-head nk-block-head-sm">
+                                        <div class="nk-block-between">
+                                            <div class="nk-block-head-content">
+                                                <h3 class="nk-block-title page-title">New Service</h3>
+                                                <div class="nk-block-des text-soft">
+                                                    <p>You have total 95 Services.</p>
+                                                </div>
+                                            </div><!-- .nk-block-head-content -->
+                                        </div><!-- .nk-block-between -->
+                                    </div><!-- .nk-block-head -->
+                                    <div class="nk-block">
+                                        <div class="card card-bordered card-stretch">
+                                            <div class="card-inner-group">
+                                                <div class="card-inner p-0">
+                                                  <form method="post" class="px-3 py-1">
+                                                    {% csrf_token %}
+                                                    <div class="form-group">
+                                                        <label class="form-label">Service Type</label>
+                                                        <div class="form-control-wrap">
+                                                            <select name="service" class="form-select js-select2" service>
+                                                                {% for service in services %}
+                                                                <option value="{{ service.id }}" id="{{ service.id }}" data-price={{ service.price }} data-help='{{ service.information }}'>{{ service.name }}</option>
+                                                                {% endfor %}
+                                                            </select>
+                                                            <p class="small pt-1" service-help>Help text</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label">Service Priority</label>
+                                                        <div class="form-control-wrap">
+                                                            <select name="priority" class="form-select js-select2" priority>
+                                                                {% for priority in priorities %}
+                                                                <option value="{{ priority.id }}" data-level={{ priority.level }} data-help='{{ priority.information }}'>{{ priority.name }}</option>
+                                                                {% endfor %}
+                                                            </select>
+                                                            <p class="small pt-1" priority-help>Help text</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label">Sevice Expense</label>
+                                                        <div class="form-control-wrap">
+                                                          <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                              <span class="input-group-text" price>₦0.00</span>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <label class="form-label" for="default-02">More Informatiom</label>
+                                                        <div class="form-control-wrap">
+                                                            <textarea name="information" class="form-control" id="info-textarea"></textarea>
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <button class="btn btn-primary">Continue</button>
+                                                    </div>
+                                                  </form>
+                                                </div><!-- .card-inner -->
+                                            </div><!-- .card-inner-group -->
+                                        </div><!-- .card -->
+                                    </div><!-- .nk-block -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+{% endblock content %}
+{% block script %}
+<script>
+// Select elements
+const service_selector = $('.js-select2[service]');
+const priority_selector = $('.js-select2[priority]');
+const price = document.querySelector('[price]');
+const service_help = document.querySelector('[service-help]');
+const priority_help = document.querySelector('[priority-help]');
+
+
+// Event listener for service and priority changes
+service_selector.on('change', updatePrice);
+priority_selector.on('change', updatePrice);
+
+// Function to calculate and update price
+function updatePrice() {
+  let selectedService = service_selector.val(); // Get selected service value
+  let selectedPriority = priority_selector.val(); // Get selected priority value
+  let basePrice = service_selector.find(':selected').attr('data-price') || 0
+  let s_help = service_selector.find(':selected').attr('data-help') || 0
+  let p_help = priority_selector.find(':selected').attr('data-help') || 0
+  let priority = priority_selector.find(':selected').attr('data-level') || 0
+
+  service_help.textContent = s_help
+  priority_help.textContent = p_help
+  // Calculate total price
+  const totalPrice = basePrice * priority;
+
+  // Update price element
+  price.textContent = `₦${totalPrice.toFixed(2)}`;
+  
+}
+updatePrice()
+</script>
+{% endblock script %}
+<script>
+const service_selector = document.querySelector('[service]');
+const priority_selector = document.querySelector('[priority]');
+const price = document.querySelector('[price]');
+
+// Event listener for service change
+service_selector.addEventListener('change', serviceChange);
+
+// Event listener for priority change
+priority_selector.addEventListener('change', priorityChange);
+
+// Function to handle service change
+function serviceChange(event) {
+  alert('Service changed:', event.target.value);
+  // Add your logic here to handle service changes
+}
+
+// Function to handle priority change
+function priorityChange(event) {
+  console.log('Priority changed:', event.target.value);
+  // Add your logic here to handle priority changes
+}
+  
+  
+</script>

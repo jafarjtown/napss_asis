@@ -1,36 +1,90 @@
 {% extends "base.html" %}
 
 <!-- Load wagtailimages_tags: -->
-{% load wagtailcore_tags wagtailimages_tags %}
-<!-- Modify this: -->
+{% block style %}
+{% endblock style %}
 {% block content %}
+<style>
+  .pages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .pages > a{
+    width: 350px;
+    height: 350px;
+    border: 1px solid lightgray;
+    position: relative;
+  }
+  .pages > a > img{
+    position: absolute;
+    height: 100%;
+  }
+  .pages > a > div{
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(transparent, #000000a8 15%, black 80%);
+  }
+</style>
 <div class="bg-white p-1">
-  <h3 class="text-primary-emphasis">{{page.title}}</h3>
-  {{page.intro|richtext}}
-  <div class="d-flex flex-row flex-wrap g-2 justify-content-around flex-fill">
-    {% for post in blogpages %}
-    {% with post=post.specific %}
-      <a href="{% pageurl post %}" style="height:fit-content;width:300px;" class="mb-2 border-bottom d-flex flex-column p-0">
-        {% with post.main_image as main_image %}
-            {% if main_image %}{% image main_image fill-300x200 %}{% endif %}
-        {% endwith %}
-        <h6 class="p-1 pb-0">{{post.title|truncatechars:25}}</h6>
-        <p class="p-1 pb-0 pt-0">{{ post.intro|truncatechars:100}}</p>
+  <div class="nk-block-head nk-block-head">
+                      <div class="nk-block-between position-relative">
+                        <div class="nk-block-head-content">
+                                                    <h3>Pages</h3>
+                                                </div>
+                        <div class="nk-block-head-content">
+                                                    <ul class="nk-block-tools g-1">
+                                                        <li class="d-lg-none">
+                                                            <a href="#" class="btn btn-trigger btn-icon search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a>
+                                                        </li>
+                                                        <li class="d-lg-none">
+                                                            <div class="dropdown">
+                                                                <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="dropdown"><em class="icon ni ni-menu-alt-r"></em></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <ul class="link-list-opt no-bdr">
+                                                                        <li><a href="{% url 'blog:add_blog' %}" ><em class="icon ni ni-plus"></em><span>Add Page</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                <div class="search-wrap px-2 d-lg-none" data-search="search">
+                                                    <form class="search-content">
+                                                        <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
+                                                        <input name="q" type="text" class="form-control border-transparent form-focus-none" placeholder="Search pages">
+                                                        <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                    </form>
+                                                </div><!-- .search-wrap -->
+                                            </li>
+                                        </div>
+                      </div>
+                    </div>
+    {% if q %}
+    <p>All pages that contains {{ q }}</p>
+    {% endif %}
+  <div class="pages">
+    {% for page in blogs %}
+      <a href="{% url 'blog:read_blog' page.slug %}" class="rounded">
+        <img src="{{ page.cover_image.file.url }}">
+        <div>
+          <h6 class="p-1 pb-0 text-white">{{page.title|truncatechars:50}}</h6>
+          <div class="user-card d-flex flex-row">
+                                           <div class="user-avatar">
+
+                                             <span>{{page.author.first_name.0}}{{page.author.last_name.0}}</span>
+                                           </div>
+                                           <div class="user-info text-white">
+                                              <span class="fw-bold">{{ page.author.get_full_name }}</span>
+                                              <span class="d-block small">Posted on {{ page.created_at|date:'D, M Y' }}, Edited on {{ page.modified_on|date:'D, M Y' }}</span>
+                                            </div>
+                                          </div>
+        </div>
       </a>
-    {% endwith %}
     {% endfor %}
   </div>
 </div>
 {% endblock content %}
-
-{% for post in blogpages %}
-    {% with post=post.specific %}
-        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-        <!-- Add this: -->
-        {% with post.main_image as main_image %}
-            {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
-        {% endwith %}
-        <p>{{ post.intro }}</p>
-        {{ post.body|richtext }}
-    {% endwith %}
-{% endfor %}

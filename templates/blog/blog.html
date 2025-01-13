@@ -1,88 +1,213 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
-<div class="card">
-  <div class="p-1">
-    <span>Blogger : {{blog.user}} </span><br>
-    <span>Date : {{blog.created_on}} </span>
-  </div>
-  <div class="p-0 border-bottom w-100 d-flex flex-column">
-    <img class="card-img object-fit-cover h-200px bg-primary rounded-0" src="{{blog.cover.url}}">
-    <span class="p-1 card-title h4">{{blog.title}}</span>
-  </div>
-  <div class="p-1">
-    {% if user.is_authenticated %}
-    <div class="min-vh-100">
-    {{blog.content|safe}}
-    </div>
-    {% if not user_rated %}
-    <form method="post" id="form" class="border-top mt-1">
-      {% csrf_token %}
-      <small>Blogs are shared to other people by their ratings, please rate this blog post to help us deliver the post to other users.</small>
-      <div class="form-group">
-      <label class="form-label" for="Default-Range">Rating Scale</label>
-        <div class="w-100px form-control-wrap">
-          <div name='rating' class="form-control-slider" data-start="2" data-tooltip="true" data-min='0' data-max='5' id="rating"></div>
-        </div>
-        <small>Note: once you submit a rating, you can't rate the blog again.</small>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="feedback-02">Feedback</label>
-        <div class="form-control-wrap">
-            <textarea name="feedback" class="form-control" id="feedback-02" placeholder="Start writing here"></textarea>
-        </div>
-      </div>
-      <button class="btn btn-outlined btn-primary">Save</button>
-    </form>
-    {% endif %}
-    {% else %}
-    {{blog.content|safe|truncatewords:200}}
-    <hr>
-    <a class="pr-3 pl-3 btn btn-outline btn-primary" href="{% url 'user_login' %}">Sing In to Read more</a>
-    {% endif %}
-  </div>
-  <div class="p-1">
-    <span class="p">Comments</span>
-    {% for rating in blog.ratings.all %}
-      <div class="card border w-200px">
-        <div class="d-flex p-1">
-          <div class="bg-primary me-1 w-15 h-20">
-            <img >
-          </div>
-          <div class="d-flex flex-column ml-1">
-            <span>{{rating.user}}</span>
-            <span>
-              <ul class="rating">
-              {% for i in rate %}
-                  <li><em class="icon ni ni-star{% if i <= rating.scale != 0%}-fill{% endif %}"></em></li>
-              {% endfor %}
-              </ul>
-              </span>
-          </div>
-        </div>
-        <span class="p-1">{{rating.comment}}</span>
+
+{% block content %}  
+<style>
+  .custommark{
+    border: .5px solid red;
+  }
+  .body li{
+    list-style: auto;
+    margin-left: 1rem;
+  }
+  .body img{
+    object-fit: contain;
+    height: fit-content;
+    border: .5px solid lightgray
+    ;
+  }
+  .cover-img{
+    object-fit: contain;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5px;
+  }
+  .gallery_image{
+    height: 200px !important;
+    width: 100%;
+    object-fit: contain;
+  }
+</style>
+                <!-- content @s -->
+                <div class="nk-content container-fluid">
+                    <div class="nk-block-head nk-block-head">
+                      <div class="nk-block-between position-relative">
+                        <div class="nk-block-head-content">
+                                                    <a class="h4" href="{% url 'blog:index' %}"><em class="ni icon ni-arrow-left"></em> Back</a>
+                                                </div>
+                        <div class="nk-block-head-content">
+                                                    <ul class="nk-block-tools g-1">
+                                                        <li class="d-lg-none">
+                                                            <a href="#" class="btn btn-trigger btn-icon search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a>
+                                                        </li>
+                                                      </ul>
+                                                <div class="search-wrap px-2 d-lg-none" data-search="search">
+                                                    <form text-lookup-form class="search-content">
+                                                        <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
+                                                        <input id="lookup-text" type="text" class="form-control border-transparent form-focus-none" placeholder="Search word or texts">
+                                                        <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                    </form>
+                                                </div><!-- .search-wrap -->
+                                            </li>
+                                        </div>
+                      </div>
+                    </div>
+                    <div class="container-fluid bg-white">
+                    <img class="cover-img mt-1" src="{{ page.cover_image.file.url }}">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="content-page wide-md m-auto">
+                                    <div class="nk-block-head mx-auto">
+                                        <a href="html/user-details-regular.html">
+                                          <div class="user-card d-flex flex-row">
+                                           <div class="user-avatar">
+                                             <span>{{page.author.first_name.0}}{{page.author.last_name.0}}</span>
+                                           </div>
+                                           <div class="user-info">
+                                              <span class="text-dark fw-bold">{{ page.author.get_full_name }} {% if user == page.author %}<a href="{% url 'blog:edit_blog' page.slug %}">Edit</a>{% endif %}</span>
+                                              <span class="d-block small">Posted on {{ page.created_at|date:'D, M Y H i' }}, Edited on {{ page.modified_on|date:'D, M Y h i' }}</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                        <div class="nk-block-head-content mt-2">
+                                          {% for tag in page.tags.all %}
+                                          <span class="badge bg-outline-{% cycle 'primary' 'secondary' 'dark' %}">{{ tag.value }}</span>
+                                          {% endfor %}
+                                            <h2 class="nk-block-title fw-bold mt-1">{{ page.title }}</h2>
+                                        </div>
+                                    </div><!-- .nk-block-head -->
+                                    <div class="nk-block">
+                                        <div class="card">
+                                            <div class="card-inner card-inner-xl p-1">
+                                                <article class="entry body">
+                                                    <div id="content">
+                                                    {{ page.content|safe }}
+                                                    </div>
+                                                    {% if page.gallery_images.all %}
+                                                    <div id="carouselExConInd" class="carousel carousel-fade border" data-bs-ride="carousel">
+                                                       <div class="carousel-inner">
+                                                        {% for doc in page.gallery_images.all %}
+                                                            <a class="carousel-item {% if page.gallery_images.first == doc %}active{% endif %}">
+                                                              <img class="gallery_image" src="{{ doc.file.url }}" >
+                                                              <span class="border-bottom pb-1">
+                                                                  <p class="fst-italic text-center">{{ doc.alt_text }}</p>
+                                                                </span>
+                                                            </a>
+                                                          {% endfor %}
+                                                        </div>
+                                                        <a class="carousel-control-prev" href="#carouselExConInd" role="button" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carouselExConInd" role="button" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </a>
+                                                    </div>
+                                                    {% endif %}
+                                                </article>
+                                            </div>
+                                        </div><!-- .card -->
+                                        <div class="card card-bordered">
+                                          {% for comment in page.comments.all %}
+                                            <div class="nk-msg-item current" data-msg-id="1">
+                                            <div class="nk-msg-media user-avatar">
+                                                <span>AL</span>
+                                            </div>
+                                            <div class="nk-msg-info">
+                                                <div class="nk-msg-from">
+                                                    <div class="nk-msg-sender">
+                                                        <div class="name">{{ comment.name }}</div>
+                                                    </div>
+                                                    <div class="nk-msg-meta">
+                                                        <l<div class="date">{{ comment.created_on }}</l>
+                                                    </div>
+                                                </div>
+                                                <div class="nk-msg-context">
+                                                    <div class=" w-75">
+                                                      {{ comment.content|safe }}
+                                                    </div>
+                                                    <div class="nk-msg-lables">
+                                                        <div class="small">{{ comment.upvote }} <a href="#"><em class="icon ni ni-upword-ios"></em></a></div>
+                                                        <div class="small">{{ comment.downvote }} <a href="#"><em class="icon ni ni-downward-ios"></em></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .nk-msg-item -->
+                                          {% endfor %}
+                                        {% if page.allow_comment %}
+                                            <div class="card-inner">
+                                                <div class="card-head">
+                                                    <h5 class="card-title">Leave a Reply</h5>
+                                                </div>
+                                                <form action="{% url 'blog:comment' page.id %}" method="post" id="blog-form">
+                                                    {% csrf_token %}
+                                                    <div class="form-group">
+                                                        <label class="form-label">Comment</label>
+                                                        <div class="form-control-wrap">
+                                                            <div id="blogbody" class="summernote-minimal">
+                                                                <p>Great!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="cf-full-name">Name</label>
+                                                        <input name="name" type="text" class="form-control" id="cf-full-name" value="{{ user.get_full_name }}">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="cf-email-address">Email</label>
+                                                        <input name="email" type="text" class="form-control" id="cf-email-address" value="{{ user.email }}">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary">Post Comment</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        {% else %}
+                                        <p>Comment is disabled for this page</p>
+                                        {% endif %}
+                                        </div>
+                                        
+                                    </div><!-- .nk-block -->
+                                </div><!-- .content-page -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- content @e -->
+{% endblock content %}  
+{% block script %}  
+    <link rel="stylesheet" href="{% static 'css/editors/summernote.css' %}">
+    <script src="{% static 'js/libs/editors/summernote.js' %}"></script>
+    <script src="{% static 'js/editors.js' %}"></script>
+    <script src="{% static 'js/text-lookup.js' %}"></script>
+    <script>
+
+      const form_tag = document.getElementById("blog-form"); // Replace 'mail-form' with the actual ID of your form
+
+      function submitFormWithTinyMCEContent() {
+
+        const summernoteContent = $("#blogbody").summernote('code');
+
+        const hiddenInput1 = document.createElement("input");
         
-      </div>
-    {% endfor %}
-  </div>
-</div>
-{% endblock content %}
-{% block script %}
-<script defer>
-
-  var slider = document.getElementById('rating');
-  var form = document.getElementById('form')
-  function submitForm() {
-        var hiddenInput = document.createElement("input");
-        hiddenInput.type = "hidden";
-        hiddenInput.name = "rating";
-        hiddenInput.value = slider.noUiSlider.get();
-        form.appendChild(hiddenInput);
-        form.submit();
-    }
-  form.addEventListener('submit', (e)=>{
-    e.preventDefault()
-    submitForm()
-  })
-</script>
-{% endblock script %}
+        hiddenInput1.type = "hidden";
+        hiddenInput1.name = "content";
+        hiddenInput1.value = summernoteContent;
+    
+        form_tag.appendChild(hiddenInput1);
+        form_tag.submit();
+}
+      // Attach event listener to form submission
+     
+      form_tag.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+            submitFormWithTinyMCEContent(); // Call function to handle form submission with TinyMCE content
+      });
+    
+    
+  
+  </script>
+{% endblock script %}  

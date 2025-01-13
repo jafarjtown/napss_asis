@@ -24,6 +24,11 @@ class Material(models.Model):
     upload_on = models.DateTimeField(auto_now_add=True)
     
     @property
+    def download_url(self):
+      return reverse('material:download_material', kwargs={'material_id':self.id})
+    
+    
+    @property
     def type(self):
         
         mime_type, _ = mimetypes.guess_type(self.file.name)

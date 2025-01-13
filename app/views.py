@@ -1,13 +1,13 @@
 # app/views.py
 from django.shortcuts import render, redirect
 from material.models import Material, Department , Course, PastQuestion, TimeTable
-from blog.models import BlogPost, User, BlogPage
+from blog.models import BlogPage, User
 from .models import Newsletter, Partner
 from django.contrib import messages
 from .utils import search_in_model
 def index(request):
   context = {}
-  blogs = BlogPost.objects.all()
+  blogs = BlogPage.objects.all()
   context['blogs'] = blogs
   context['partners'] = Partner.objects.all()
   return render(request, 'app/index.html', context)

@@ -111,8 +111,8 @@ function createMaterialElement(obj) {
         return button;
     };
 
-    const download = createButton("Download", 'icon ni ni-download', obj.file);
-    download.download = true
+    const download = createButton("Download", 'icon ni ni-download', obj.download_url);
+    //download.download = true
     const view = createButton("View", 'icon ni ni-view', obj.file);
     const report = createButton("Report", 'icon ni ni-report', obj.flag_url);
 

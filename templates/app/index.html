@@ -35,14 +35,14 @@
   <div id="carouselExConInd" class="carousel slide" data-bs-ride="carousel">
    <div class="carousel-inner">
         {% for blog in blogs %}
-        <a href="{% url 'blog:read_blog' blog.id %}" class="carousel-item {% if blogs.first == blog %}active{% endif %}">
-          <span class="user-card border-bottom pb-1">
+        <a href="{% url 'blog:read_blog' blog.slug %}" class="carousel-item {% if blogs.first == blog %}active{% endif %}">
+          <span class="user-card pb-1">
                   <span class="user-avatar sq h-100px w-100px rounded-0">
-                          <img class="" src="{{blog.cover.url}}" alt="">
+                          <img class="" src="{{blog.cover_image.file.url}}" alt="">
                   </span>
                 <span class="user-info d-flex flex-column">
                     <span class="lead-text">{{blog.title|truncatechars:30}}</span>
-                    <p class="sub-text">{{blog.desc|truncatechars:110}}</p>
+                    <p class="sub-text">{{blog.content|truncatechars:110|safe}}</p>
                 </span>
             </span>
         </a>
@@ -59,6 +59,7 @@
         <span class="visually-hidden">Next</span>
     </a>
 </div>
+<a href="{% url 'blog:index' %}">View Blogs Page</a>
 </section>
 <section class="card mt-1 sec">
 <div class="">

@@ -27,3 +27,4 @@ function preventInvalidSubmit(form){
 OpenAdvanceBtn.addEventListener('click', openAdvanceSearchModal)
 
 form.addEventListener('submit', preventInvalidSubmit)
+
