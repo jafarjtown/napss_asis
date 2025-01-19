@@ -1,49 +1,42 @@
+const btn = $("[get-m]");
+const level = $(".js-select2[level]");
+const department = $(".js-select2[department]");
+const course = $(".js-select2[course]");
 
-var btn = document.querySelector("[get-m]")
-const level = document.querySelector("[level]")
-const department = document.querySelector("[department]")
-const course = document.querySelector("[course]")
+(() => {
+  if (Number(level.val())) getCourse();
+})();
 
-;(()=>{
-    if(Number(level.value)) getCourse()
-})()
+course.on("change", () => {
+  if (course.val() === "null") btn.addClass("d-none");
+  else btn.removeClass("d-none");
+});
 
+level.on("change", getCourse);
+department.on("change", getCourse);
 
-course.addEventListener('change', ()=>{
-  if(course.value == 'null') btn.classList.add('d-none')
-  else{
-    btn.classList.remove('d-none')
+async function getCourse() {
+  const blankSelect = "--select--";
+
+  if (department.val() === "null" || level.val() === "null") {
+    btn.addClass("d-none");
+    return;
+  } else {
+    if (course.val() !== "null") btn.removeClass("d-none");
   }
-})
-level.addEventListener("change", getCourse) 
-department.addEventListener("change", getCourse) 
 
-async function getCourse(){
-        let blankSelect = "--select--"
-        if(department.value == 'null' || level.value == 'null'){
-          btn.classList.add('d-none')
-          return
-        }else{
-          if(course.value != 'null') btn.classList.remove('d-none')
-        }
-        let defaultOption = document.createElement("option")
-        defaultOption.innerText = "--loading please wait--"
-        defaultOption.value = "null"
-        course.innerHTML=""
-        course.appendChild(defaultOption)
-    // fetch all courses in the level 
-    
-    const response = await fetch(`/api/rest/beta/courses/?department__id=${department.value}&level=${level.value}`)
-    const data = await response.json()
-    course.removeChild(defaultOption)
-    for (let d of data) {
-        let option = document.createElement("option")
-        option.innerText = d.code.toUpperCase() +" - "+d.title
-        option.value = d.code
-        course.appendChild(option)
-    }
-    btn.classList.remove('d-none')
-    
+  // Add the loading option
+  course.html('<option value="null">--loading please wait--</option>');
+
+  // Fetch courses based on department and level
+  const response = await fetch(`/api/rest/beta/courses/?department__id=${department.val()}&level=${level.val()}`);
+  const data = await response.json();
+
+  // Populate course options
+  course.empty(); // Clear current options
+  data.forEach(d => {
+    course.append(`<option value="${d.code}">${d.code.toUpperCase()} - ${d.title}</option>`);
+  });
+
+  btn.removeClass("d-none");
 }
-
-

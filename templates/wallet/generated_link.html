@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="zxx" class="js">
+
+{% include 'head.html' %}
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- content @s -->
+                <div class="nk-content d-flex flex-column align-content-center p-1">
+                    <div class="container-fluid d-flex flex-column align-content-center">
+                        <div class="nk-content-inner d-flex flex-column align-content-center">
+                            <div class="nk-content-body">
+                            
+                                            <div class="nk-content nk-content-fluid">
+                    <div class="container-xl wide-lg">
+                        <div class="nk-content-body">
+                            <div class="nk-block-head">
+                                <div class="nk-block-head-sub"><span>Dynamic Subscription Page</span> </div><!-- .nk-block-head-sub -->
+                                <div class="nk-block-between-md g-4">
+                                    <div class="nk-block-head-content">
+                                        <h2 class="nk-block-title fw-normal">{{ link.name }}</h2>
+                                        <p>Subscription Type : <b>{{ link.link_type|title }}</b></p>
+                                        <p>Subscription Amount : <b>{{ link.display_amount }}</b></p>
+                                        <p>Available Slot : <b>{{ link.available_slot }} Slots</b></b>
+                                    </div>
+                                </div><!-- .nk-block-between -->
+                            </div><!-- .nk-block-head -->
+                            <div class="nk-block">
+                                <div class="row g-gs">
+                                    <div class="col-sm-6 col-lg-4 col-xl-6 col-xxl-4">
+                                        <div class="card card-bordered">
+                                          {% if messages %}
+                                          {% for message in messages %}
+                                          <p class="m-3">{{ message }}</p>
+                                          {% endfor %}
+                                          {% endif %}
+                                          {% if link.available_slot > 0 %}
+                                          <form  method="post" class="px-2 py-4 form-validate">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                              <label class="form-label" for="number">Progress</label>
+                                              <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="{{ link.progress }}"></div>
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label class="form-label" for="number">Number</label>
+                                              <div class="form-control-wrap">
+                                                <input list="beneficiaries" class="form-control" type="tel" name="number" minlength='11' required placeholder="eg. +2347080332077 or 07080332077" data-msg="Pleaee enter a valid phone number.">
+                                              </div>
+                                              <small>By using comma (,) to spread multiple numbers, you can buy for multiple customers at once. eg. 07080332077,07042612214</small>
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-end">
+                                              <button class="btn btn-primary">Proceed</button>
+                                            </div>
+                                          </form>
+                                          {% else %}
+                                          <p class="p-4">This link has already been used.</p>
+                                          {% endif %}
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap">
+                            <div class="nk-footer-copyright"> &copy; 2024/2025 {{pr_long_name}}, ABU Zaria. Developed by <a href="https://softnio.com" target="_blank">Jafar Idris</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+
+    <script src="{% static 'js/bundle.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'js/advance_search.js' %}"></script>
+    {% block script %}
+    {% endblock script %}
+</body>
+
+</html>

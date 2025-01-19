@@ -143,32 +143,29 @@
                                         <h2 class="nk-block-title fw-normal">Wallet / Assets</h2>
                                         
                                     </div>
-                                    <div class="nk-block-head-content">
-                                        <ul class="nk-block-tools gx-3">
-                                             <li><a href="#" class="btn btn-primary"><span>Send</span> <em class="icon ni ni-arrow-long-right"></em></a></li>
-                                        </ul>
-                                    </div>
                                 </div><!-- .nk-block-between -->
                             </div><!-- .nk-block-head -->
                             <div class="nk-block">
-                                <div class="nk-block-head-sm">
-                                    <div class="nk-block-head-content">
-                                        <h5 class="nk-block-title title">Naira Account</h5>
-                                    </div>
-                                </div>
                                 <div class="row g-gs">
                                     <div class="col-sm-6 col-lg-4 col-xl-6 col-xxl-4">
                                         <div class="card card-bordered">
+                                          {% if user.wallet and user.wallet.account_number %}
                                             <div class="nk-wgw">
                                                 <div class="nk-wgw-inner">
                                                     <a class="nk-wgw-name" href="#">
-                                                        <div class="nk-wgw-icon is-default">
+                                                        <div class="nk-wgw-icon">
                                                             <em class="icon ni ni-sign-kobo"></em>
                                                         </div>
                                                         <h5 class="nk-wgw-title title">Naira Wallet</h5>
                                                     </a>
                                                     <div class="nk-wgw-balance">
-                                                        <div class="amount">{{ wallet.amount|intcomma }}<span class="currency currency-nio">NAIRA</span></div>
+                                                        <div class="amount">{{ user.wallet.balance|intcomma }}<span class="currency currency-nio">NAIRA</span></div>
+                                                    </div>
+                                                    <div class="nk-wgw-balance">
+                                                      <p>Account Number : <b>{{ user.wallet.account_number }}</b></p>
+                                                      <p>Bank Name : <b>{{ user.wallet.bank_name }}</b></p>
+                                                      <p>Account Name : <b>{{ user.wallet.account_name }}</b></p>
+                                                      <small>To fund your wallet please use the above account details.</small>
                                                     </div>
                                                 </div>
                                                 <div class="nk-wgw-actions">
@@ -178,7 +175,48 @@
                                                     </ul>
                                                 </div>
                                              </div>
+                                          {% else %}
+                                            <div class="nk-wgw">
+                                                <div class="nk-wgw-inner">
+                                                  {% if not user.wallet.nin %}
+                                                  <form method="post">
+                                                    {% csrf_token %}
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="default-01">NIN</label>
+                                                        <div class="form-control-wrap">
+                                                            <input name="nin" type="number" class="form-control" id="default-01" placeholder="Enter your NIN here">
+                                                        </div>
+                                                        <small>NIN is required to generate account number for you</small>
+                                                    </div>
+                                                    <button class="btn btn-primary">save</button>
+                                                  </form>
+                                                  {% else %}
+                                                  <form method="post" action="{% url 'wallet:generate_account' %}">
+                                                    {% csrf_token %}
+                                                    <button class="btn btn-primary">Generate Account Number</button>
+                                                    <p class="small">Generate new Account Number that you can use to fund your wallet automatically.</p>
+                                                  </form>
+                                                  {% endif %}
+                                                </div>
+                                            </div>
+                                          {% endif %}
                                         </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                                <div class="divider"></div>
+                                <div class="row g-gs">
+                                    <div class="col-sm-6 col-lg-4 col-xl-6 col-xxl-4">
+                                        
+                                            <div class="nk-wgw card card-bordered">
+                                                <div class="nk-wgw-inner d-flex flex-row justify-content-around">
+                                                  <a href="{% url 'wallet:buy_data' %}" class="">Buy Data <em class="icon ni ni-arrow-right"></em></a>
+                                                  <a href="{% url 'wallet:buy_airtime' %}">Buy Airtime</a>
+                                                </div>
+                                                <div class="nk-wgw-inner">
+                                                <p class="mt-0">Are you running a WhatsApp TV, Group or Channel? are you that kind of person that do giveaway? and you're annoyed of copying and pasting of recharge card pins, sending airtime to your users one at a time? worry no more, WE GOT YOU ;) click <a href="{% url 'wallet:generate_link' %}">Here</a> to ease.</p>
+                                                </div>
+                                            </div>
+                                        
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                             </div>

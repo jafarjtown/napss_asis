@@ -7,13 +7,16 @@ from django.template.loader import render_to_string
 from material.models import Request 
 from .models import Account, FlaggedIssue
 import datetime
+from core import monnify
 
 
-# @receiver(post_save, sender=User)  # Replace User with your model
+#@receiver(post_save, sender=User)  # Replace User with your model
 def send_welcome_email(sender, instance, created, **kwargs):
     if created:
-        Account.objects.create(user=instance, coins=5000)
-    
+        #Account.objects.create(user=instance, coins=5000)
+        res = monnify.create_virtual_account(instance.get_full_name(), instance.email, str(datetime.datetime.now()))
+        print(res)
+        return
         subject = "Welcome to Babuga's Library - Your School's Learning Hub!"
         email_content = render_to_string('welcome_mail.html', {'user_name': instance.get_full_name(), "admin": "Ja'afar Idris Tesla"})
         from_email = "Babuga's Library <support@babugas-library.com.ng>"

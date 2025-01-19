@@ -9,9 +9,8 @@
     --primary-color: #55acff;
 }
 img.logo{
-  border: 2px solid black;
-  border-radius: 2px;
-  background-color: white;
+  width: 30px;
+  object-fit: contain;
 }
 a{
     text-decoration: none;
@@ -32,7 +31,7 @@ ul, ol{
     flex-direction: column;
     align-items: center;
     background: linear-gradient(transparent, black), url('/static/imgs/hero.jpg');
-    background-position: center;
+    background-position: 40% 50%;
     border-radius: 5px;
     
 }
@@ -295,4 +294,58 @@ subscription.pr{
 }
 [pagination] button[disabled]{
     background-color: lightgray;
+}
+
+.loader{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffffef;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loader img{
+  width: 150px;
+  margin-top: 40%;
+}
+
+.loader span.n {
+  width: fit-content;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  gcolor: #00923f;
+  color: #00923f;
+  -webkit-text-stroke: 1px #00923f;
+  background: conic-gradient(#00923f 0 0) 0/0 100% no-repeat text;
+}
+.loader span.n:before {
+  content: "Abusite Hub";
+}
+/* HTML: <div class="loader"></div> */
+.loader span.animate{
+  width: 20px;
+  aspect-ratio: 1;
+  background: #00923f;
+  box-shadow: 0 0 60px 15px #00923f;
+  transform: translate(-80px);
+  clip-path: inset(0);
+  animation:
+    l4-1 0.5s ease-in-out infinite alternate,
+    l4-2 1s   ease-in-out infinite;
+}
+@keyframes l4-1 {
+  100% {transform: translateX(80px)}
+}
+@keyframes l4-2 {
+   33% {clip-path: inset(0 0 0 -100px)}
+   50% {clip-path: inset(0 0 0 0)     }
+   83% {clip-path: inset(0 -100px 0 0)}
 }

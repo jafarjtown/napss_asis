@@ -4,6 +4,11 @@
 
 {% include 'head.html' %}
 <body class="nk-body bg-lighter npc-general has-sidebar ">
+  <div class="loader" loader>
+    <img src="{% static pr_napss_logo %}">
+    <span class="n"></span>
+    <span class="animate"></span>
+  </div>
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">
@@ -13,19 +18,21 @@
                 <!-- main header @s -->
                 <div class="nk-header nk-header-fixed is-light">
                     <div class="container-fluid">
-                        <div class="nk-header-wrap justify-content-between">
+                        <div class="nk-header-wrap">
                             <div class="nk-menu-trigger d-xl-none ms-n1">
                                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
                             </div>
-                            <div class="nk-header-brand d-xl-none">
+                            <div class="d-flex flex-row justify-content-between align-content-center flex-grow-1">
+                            <div class="nk-header-brand">
                                 <a href="/" class="logo-link">
-                                    <img class="logo logo-img" src="{% static pr_small_logo %}"  alt="logo">
+                                    <img class="logo" src="{% static pr_small_logo %}"  alt="logo">
                                 </a>
                             </div>
-                            <div class="nk-header-brand d-xl-none">
+                            <div class="nk-header-brand mx-3 d-flex flex-column justify-content-center">
                                 <a class="logo-link" advance-search-btn>
                                  <em class="ni icon ni-search fs-3"></em>
                                 </a>
+                            </div>
                             </div>
                             <dialog class="border" advance-search-dialog>{% include 'advance_search_field.html' %}</dialog>
                             <!-- .nk-header-brand -->
@@ -81,6 +88,14 @@
     <script src="{% static 'js/advance_search.js' %}"></script>
     {% block script %}
     {% endblock script %}
+    <script>
+      $(document).ready(function() {
+        setTimeout(()=>{
+        $('[loader]').addClass('d-none')
+        document.documentElement.style.setProperty('--primary-color', '#00923f');
+        },1000)
+      });
+    </script>
 </body>
 
 </html>

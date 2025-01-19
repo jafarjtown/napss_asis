@@ -200,7 +200,7 @@ def download_material(request, material_id):
         response = FileResponse(open(file_path, "rb"), as_attachment=True)
         response["Content-Disposition"] = f'attachment; filename="{material.file.name}"'
         user_wallet = request.user.wallet 
-        user_wallet.amount -= 50
+        user_wallet.balance -= 50
         user_wallet.save()
         print(user_wallet)
         return response

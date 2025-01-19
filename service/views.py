@@ -24,7 +24,7 @@ def add_service(request):
     else:
       messages.success(request, 'Service booked successful.')
       service = Service.objects.create(type=s_type, priority=s_priority, information=service_information, price=total_expense)
-      user_wallet.amount -= total_expense
+      user_wallet.balance -= total_expense
       user_wallet.save()
   return render(request, 'service/add.html', {'services':services, 'priorities':priorities})
 

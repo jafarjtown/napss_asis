@@ -4,3 +4,4 @@ djangorestframework
 django-filter
 python-dotenv
 django-compressor
+gunicorn
