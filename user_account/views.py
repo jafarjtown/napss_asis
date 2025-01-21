@@ -56,6 +56,8 @@ def user_register(request):
             )
             Account.objects.create(user=user)
             messages.success(request, "Account created successfully")
+            login(request, user)
+            return redirect("/")
         
     return render(request, "account/auth-register.html")
 
@@ -115,7 +117,7 @@ def update_user(request):
         user.first_name = request.POST.get("first_name")
         user.save()
         messages.success(request, "Account updated successfully")
-    return redirect("account_settings")
+    return redirect("auth:account_settings")
 
 @login_required
 def wallet(request):

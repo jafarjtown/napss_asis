@@ -57,7 +57,7 @@
                 <div class="data-col">
                     <span class="data-label">Password</span>
                 </div>
-                <div class="data-col data-col-end"><a href="{% url 'password_reset' %}" class="link link-primary">Forgotten</a></div>
+                <div class="data-col data-col-end"><a href="{% url 'auth:password_reset' %}" class="link link-primary">Forgotten</a></div>
             </div><!-- data-item -->
             <div class="data-item">
                 <div class="data-col">
@@ -86,7 +86,7 @@
                 <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
                 <div class="modal-body modal-body-lg">
                     <h5 class="title">Update Profile</h5>
-                    <form method="post" action="{% url 'update_user' %}" class="tab-content">
+                    <form method="post" action="{% url 'auth:update_user' %}" class="tab-content">
                       {% csrf_token %}
                         <div class="tab-pane active" id="personal">
                             <div class="row gy-4">

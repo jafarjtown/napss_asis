@@ -1,9 +1,14 @@
 
 <div class="card p-1 input-group mb-1 mt-1 sec">
-    <form action="{% url 'app:register_newsletter' %}" method="post">
+    <form class="form-validate" action="{% url 'app:register_newsletter' %}" method="post">
       {% csrf_token %}
         <p>Subscribing for our Newsletter by submitting your email below.</p>
+        <div class="form-group">
+          <div class="form-control-wrap">
+            
         <input class="form-control mb-1" type="email" name="email" required placeholder="Email">
+          </div>
+        </div>
         <button class="btn btn-primary w-auto">Subscribe</button>
         
     </form>
