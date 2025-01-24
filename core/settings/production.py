@@ -17,7 +17,7 @@ DATABASES = {
     }
 }
 MEDIA_ROOT = BASE_DIR.parent / 'media.abusitehub.com.ng/'
-MEDIA_URL = 'https://media.abusitehub.com.ng/'
+MEDIA_URL = 'http://media.abusitehub.com.ng/'
 
 # Logging configuration
 LOGGING = {
@@ -25,7 +25,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'handlers': {
         'file': {
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'logs/django_error.txt'),
         },
@@ -33,7 +33,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['file'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'propagate': True,
         },
     },
