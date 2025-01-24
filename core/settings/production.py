@@ -16,7 +16,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-MEDIA_ROOT = BASE_DIR.parent / '/media.abusitehub.com.ng/'
+MEDIA_ROOT = BASE_DIR.parent / 'media.abusitehub.com.ng/'
 MEDIA_URL = 'https://media.abusitehub.com.ng/'
 
 # Logging configuration
