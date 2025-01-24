@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import JsonResponse 
 from django.http import FileResponse, Http404
+from django.conf import settings
 import os
 from .models import Material, Department , Course, TimeTable, CourseComment ,PastQuestion, Day, Time
 from user_account.models import FlaggedIssue
@@ -193,19 +194,17 @@ def download_material(request, material_id):
         # Fetch the material object by ID
         material = Material.objects.get(id=material_id)
 
-        # Get the file path
-        file_path = material.file.path
+        # Construct the file path using MEDIA_ROOT
+        file_path = os.path.join(settings.MEDIA_ROOT, material.file.name)
 
         # Return the file as a response for download
         response = FileResponse(open(file_path, "rb"), as_attachment=True)
-        response["Content-Disposition"] = f'attachment; filename="{material.file.name}"'
-        user_wallet = request.user.wallet 
-        user_wallet.balance -= 50
-        user_wallet.save()
-        print(user_wallet)
+        response["Content-Disposition"] = f'attachment; filename="{os.path.basename(material.file.name)}"'
         return response
 
     except Material.DoesNotExist:
         raise Http404("Material not found")
+    except FileNotFoundError:
+        raise Http404("File not found on the server")
     except Exception as e:
-        raise Http404("Error processing the file")
+        raise Http404(f"Error processing the file: {e}")
