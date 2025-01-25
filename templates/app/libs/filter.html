@@ -4,7 +4,7 @@
         <form>
           <h4 class="card-subtitle">Filter Component</h4>
             <label> Department:
-            <select class="form-select js-select2" name="department" department>
+            <select class="form-select js-select2" data-ui="lg" name="department" department>
                 <option value="null">--Select--</option>
                 {% for d in departments %}
                 <option value="{{d.id}}" {% if d.id == department %}
@@ -14,7 +14,7 @@
             </select>
             </label>
             <label> Level:
-            <select class="form-select js-select2" name="level" level>
+            <select class="form-select js-select2" data-ui="lg" name="level" level>
                 <option value="null">--Select--</option>
                 {% for l in levels %}
                 <option value="{{l}}" {% if l == level %}selected
@@ -23,7 +23,7 @@
             </select>
             </label>
             <label> Course :
-            <select class="form-select js-select2" name="course" course>
+            <select class="form-select js-select2" data-ui="lg" name="course" course>
                 <option value="null">--Select--</option>
             </select>
             </label>

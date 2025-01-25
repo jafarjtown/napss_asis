@@ -1,8 +1,12 @@
 from django.shortcuts import render,redirect
+from django.shortcuts import get_object_or_404
 from django.http import JsonResponse 
 from django.http import FileResponse, Http404
+from django.http import HttpResponse
 from django.conf import settings
 import os
+import zipfile
+from io import BytesIO
 from .models import Material, Department , Course, TimeTable, CourseComment ,PastQuestion, Day, Time
 from user_account.models import FlaggedIssue
 from django.contrib.auth.decorators import login_required
@@ -14,7 +18,8 @@ from blog.models import BlogPage, User
     
 def upload(request):
     context = {
-            "departments": Department.objects.all()
+            "departments": Department.objects.all(),
+            'levels': [100,200,300,400]
     }
     if request.method == 'POST':
         course = request.POST.get('course')
@@ -208,3 +213,32 @@ def download_material(request, material_id):
         raise Http404("File not found on the server")
     except Exception as e:
         raise Http404(f"Error processing the file: {e}")
+        
+        
+
+def bulk_download_materials(request, id):
+    # Get the course object or return 404 if not found
+    course = get_object_or_404(Course, id=id)
+    
+    # Create a BytesIO buffer to store the ZIP file
+    buffer = BytesIO()
+    
+    # Create a ZIP file in memory
+    with zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+        # Loop through all materials related to the course
+        for material in course.materials.all():
+            # Get the file path and name
+            file_path = material.file.path
+            file_name = os.path.basename(file_path)
+            
+            # Add the file to the ZIP archive
+            zip_file.write(file_path, file_name)
+    
+    # Set the buffer's pointer to the beginning
+    buffer.seek(0)
+    
+    # Create the HttpResponse object with the ZIP file
+    response = HttpResponse(buffer, content_type='application/zip')
+    response['Content-Disposition'] = f'attachment; filename="{course.code.upper()}_materials.zip"'
+    
+    return response

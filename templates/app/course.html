@@ -13,10 +13,10 @@
   {% include "app/libs/filter.html" with btn="Get Course"%}
     {% if course %}
     <div class="p-2 mb-2">
-    <h4 class="card-title">{{course.title}}</h4>
+    <h4 class="card-title">{{course.title|title}}</h4>
     <div class="divider mt-0"></div>
     <h4>Code : {{course.code|upper}}</h4>
-    <p>{{course.info}}</p>
+    <p style="white-space: pre-line">{{course.info}}</p>
     <p>Materials : {{course.materials.count}} <a href="{% url "material:material_list" %}?department={{course.department.id}}&course={{course.code}}">Check out</a></p>
     <p>
         {% if course.outline %}

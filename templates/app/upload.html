@@ -1,38 +1,33 @@
 {% extends "base.html" %}
 {% load static %}
-{% block script %}
 <script defer>
-const level = document.querySelector("[level]")
-const department = document.querySelector("[department]")
-const course = document.querySelector("[course]")
+const level = $(".js-select2[level]")
+const department = $(".js-select2[department]")
+const course = $(".js-select2[course]")
 
 
-level.addEventListener("change", getCourse) 
-department.addEventListener("change", getCourse) 
+level.on("change", getCourse) 
+department.on("change", getCourse) 
 
 async function getCourse(){
-        let blankSelect = "--Select--"
-        if(department.value == 'null' || level.value == 'null'){
+        if(department.val() == 'null' || level.val() == 'null'){
           return
         }
-        let defaultOption = document.createElement("option")
-        defaultOption.innerText = "--Select--"
-        defaultOption.value = "null"
-        course.innerHTML=""
-        course.appendChild(defaultOption)
+        course.html('<option value="null">--loading please wait--</option>');
+
     // fetch all courses in the level 
     
     const response = await fetch(`/api/rest/courses/?department__id=${department.value}&level=${level.value}`)
     const data = await response.json()
-    for (let d of data) {
-        let option = document.createElement("option")
-        option.innerText = d.code.toUpperCase() +" - "+d.title
-        option.value = d.code
-        course.appendChild(option)
-    }
+    course.empty(); // Clear current options
+    data.forEach(d => {
+      course.append(`<option value="${d.code}">${d.code.toUpperCase()} - ${d.title}</option>`);
+    });
 }
 
 </script>
+{% block script %}
+<script src="{% static "js/load_courses.js" %}"></script>
 {% endblock script %}
 {% block content %}
 <div class="form-div card">
@@ -40,44 +35,48 @@ async function getCourse(){
   <p><b>Note:</b> Before uploading any resource to this platform, make sure you understand all the terms and conditions <a href="terms">Terms and condition</a></p>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-            <label> Department:
-            <select name="department" department>
-                <option>--Select Department--</option>
+        
+            
+          <label> Department:
+            <select class="form-select js-select2" data-ui="lg" name="department" department>
+                <option value="null">--Select--</option>
                 {% for d in departments %}
-                <option value="{{d.id}}">{{d.name}}</option>
+                <option value="{{d.id}}" {% if d.id == department %}
+                selected
+                {% endif %} >{{d.name}}</option>
            {% endfor %}
             </select>
             </label>
             <label> Level:
-            <select level>
-                <option>--Select Level--</option>
-                <option value="100">100 Level</option>
-                <option value="200">200 Level</option>
-                <option value="300">300 Level</option>
-                <option value="400">400 Level</option>
+            <select class="form-select js-select2" data-ui="lg" name="level" level>
+                <option value="null">--Select--</option>
+                {% for l in levels %}
+                <option value="{{l}}" {% if l == level %}selected
+                {% endif %}>{{l}} Level</option>
+               {% endfor %}
             </select>
             </label>
             <label> Course :
-            <select name="course" course>
-                <option>--Select Course--</option>
+            <select class="form-select js-select2" data-ui="lg" name="course" course>
+                <option value="null">--Select--</option>
             </select>
             </label>
         <div class="hr"></div>
         <p>Information about the material</p>
         <div>
             <label> Title :
-            <input type="text" name="title" placeholder="Title for material."></label>
+            <input class="form-control form-control-lg" type="text" name="title" placeholder="Title for material."></label>
         </div>
        <div>
             <label> Comment:
-            <textarea name="comment" placeholder="( optional )"></textarea></label>
+            <textarea class="form-control form-control-lg" name="comment" placeholder="( optional )"></textarea></label>
         </div>
         <div>
             <label> File:
-            <input type="file" name="file" required></label>
+            <input class="form-control form-control-lg" type="file" name="file" required></label>
         </div>
         <p style="background: white;color: black;"><b>Note : </b>any material that's not relevant will be removed by Administrators</p>
-        <div><button class="btn btn-primary">Submit</button></div>
+        <div><button type="submit" class="btn btn-primary">Submit</button></div>
         
         
     </form>
