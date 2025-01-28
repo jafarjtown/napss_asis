@@ -1,0 +1,496 @@
+{
+  "course": "POLS403",
+  "title": "Development Administration",
+  "questions": [
+    {
+      "question": "What does administrative restructuring aim to achieve in the context of development administration?",
+      "options": ["Improved efficiency and effectiveness of government operations", "Increase in government spending", "Decentralization of political power", "Reduction in the role of public sector enterprises"],
+      "answer": "Improved efficiency and effectiveness of government operations"
+    },
+    {
+      "question": "Which of the following is a major cause of underdevelopment in many developing countries?",
+      "options": ["Weak public administration and governance structures", "Excessive industrialization", "Low levels of foreign aid", "High levels of foreign direct investment"],
+      "answer": "Weak public administration and governance structures"
+    },
+    {
+      "question": "What role does the state play in the classical approach to development administration?",
+      "options": ["The state controls all economic activities and redistributes wealth", "The state is responsible for managing all industries", "The state acts as a facilitator and enabler of market activities", "The state has minimal involvement in the economy"],
+      "answer": "The state controls all economic activities and redistributes wealth"
+    },
+    {
+      "question": "How does structural adjustment impact public administration in developing countries?",
+      "options": ["It often leads to the reduction of state control and privatization of public services", "It strengthens bureaucratic institutions", "It increases government involvement in the economy", "It eliminates corruption from the public sector"],
+      "answer": "It often leads to the reduction of state control and privatization of public services"
+    },
+    {
+      "question": "What is one of the main objectives of development administration?",
+      "options": ["To create a framework for effective governance and sustainable development", "To prioritize military spending", "To centralize economic decision-making", "To promote foreign control over national resources"],
+      "answer": "To create a framework for effective governance and sustainable development"
+    },
+    {
+      "question": "What does the term 'resource administration' refer to in development administration?",
+      "options": ["The management of natural and human resources for national development", "The control of external economic influences", "The redistribution of wealth among foreign investors", "The centralization of fiscal policy in the government"],
+      "answer": "The management of natural and human resources for national development"
+    },
+    {
+      "question": "What is the main criticism of the classical approach to development administration?",
+      "options": ["It leads to inefficiencies due to over-centralization", "It promotes complete deregulation of the economy", "It focuses too much on local governance", "It underestimates the importance of international relations"],
+      "answer": "It leads to inefficiencies due to over-centralization"
+    },
+    {
+      "question": "Which development strategy places emphasis on economic liberalization and market-based solutions?",
+      "options": ["Neoclassical approach", "Classical approach", "Welfare-based approach", "Socialist approach"],
+      "answer": "Neoclassical approach"
+    },
+    {
+      "question": "In terms of development administration, what is one of the key challenges in resource allocation?",
+      "options": ["Ensuring that resources are distributed equitably and efficiently", "Increasing government control over all sectors", "Promoting foreign investment at the expense of local industries", "Encouraging over-consumption of resources"],
+      "answer": "Ensuring that resources are distributed equitably and efficiently"
+    },
+    {
+      "question": "What does decentralization of fiscal power aim to achieve in developing countries?",
+      "options": ["It aims to empower local governments and increase responsiveness to local needs", "It aims to consolidate power in the national government", "It focuses on privatizing all public services", "It decreases government spending in rural areas"],
+      "answer": "It aims to empower local governments and increase responsiveness to local needs"
+    },
+    {
+      "question": "Which of the following is a significant challenge when implementing development policies in countries with weak administrative systems?",
+      "options": ["Lack of capacity and resources to implement policies effectively", "Too much focus on public sector management", "Availability of foreign aid", "Strong political will to reform"],
+      "answer": "Lack of capacity and resources to implement policies effectively"
+    },
+    {
+      "question": "What is the role of public enterprise in the context of development administration?",
+      "options": ["To provide key services and contribute to the national economy", "To increase private sector dominance", "To centralize decision-making", "To reduce the state's involvement in economic affairs"],
+      "answer": "To provide key services and contribute to the national economy"
+    },
+    {
+      "question": "Which concept emphasizes the need for developing countries to manage their own development processes without excessive reliance on external aid?",
+      "options": ["Sustainable development", "Dependency theory", "Globalization", "Economic liberalization"],
+      "answer": "Sustainable development"
+    },
+    {
+      "question": "What is one of the central objectives of classical development administration?",
+      "options": ["The promotion of state-led economic development and social welfare", "The complete privatization of public services", "The minimization of state intervention in the economy", "The promotion of foreign investments over local industries"],
+      "answer": "The promotion of state-led economic development and social welfare"
+    },
+    {
+      "question": "Which of the following is a key characteristic of the neoclassical approach to development administration?",
+      "options": ["A focus on market-driven economies and reducing state intervention", "Emphasis on state ownership and control over all industries", "Promotion of welfare-based policies", "Centralized economic planning by the government"],
+      "answer": "A focus on market-driven economies and reducing state intervention"
+    },
+    {
+      "question": "How does the management of public enterprises contribute to the development administration process?",
+      "options": ["By providing essential public services and generating revenue for the government", "By focusing exclusively on industrial expansion", "By reducing government expenditure", "By privatizing key sectors of the economy"],
+      "answer": "By providing essential public services and generating revenue for the government"
+    },
+    {
+      "question": "What is the impact of structural adjustment policies on social welfare in developing countries?",
+      "options": ["It often leads to cuts in public services and increased poverty", "It improves social services by attracting foreign investment", "It increases government spending on social welfare programs", "It guarantees higher levels of equality and economic justice"],
+      "answer": "It often leads to cuts in public services and increased poverty"
+    },
+    {
+      "question": "What is the primary purpose of public administration in the development process?",
+      "options": ["To implement government policies and ensure the efficient use of resources", "To control military actions", "To limit foreign intervention", "To centralize all decision-making processes"],
+      "answer": "To implement government policies and ensure the efficient use of resources"
+    },
+    {
+      "question": "Which of the following is an essential characteristic of the neoclassical approach to development administration?",
+      "options": ["A focus on reducing state intervention in the economy", "A commitment to state ownership of all enterprises", "Centralized planning of all economic activities", "Strengthening bureaucratic structures"],
+      "answer": "A focus on reducing state intervention in the economy"
+    },
+    {
+      "question": "What is the significance of the historical background in understanding development administration?",
+      "options": ["It helps in identifying key trends and challenges faced by developing nations", "It dictates the current political structure of the country", "It limits future policy options", "It has no impact on current administrative processes"],
+      "answer": "It helps in identifying key trends and challenges faced by developing nations"
+    },
+    {
+      "question": "Which of the following is a key principle of the structural adjustment program (SAP) in development administration?",
+      "options": ["Economic liberalization and reduction of government control", "Centralization of power", "Increase in military spending", "Isolation from international trade"],
+      "answer": "Economic liberalization and reduction of government control"
+    },
+    {
+      "question": "Which method is used by developing countries to manage limited resources effectively?",
+      "options": ["Prioritizing strategic sectors for development", "Privatizing all public services", "Decreasing government spending on education", "Restricting international trade"],
+      "answer": "Prioritizing strategic sectors for development"
+    },
+    {
+      "question": "What is one of the major challenges facing developing countries in terms of public finance?",
+      "options": ["Inefficient collection and allocation of public revenue", "High levels of international trade", "Excessive foreign investments", "Decentralized fiscal management"],
+      "answer": "Inefficient collection and allocation of public revenue"
+    },
+    {
+      "question": "Which of the following approaches to development administration emphasizes government intervention in economic activities?",
+      "options": ["Classical approach", "Neoclassical approach", "Market-based approach", "New public management approach"],
+      "answer": "Classical approach"
+    },
+    {
+      "question": "What role does administrative restructuring play in development administration?",
+      "options": ["Improving the structure and function of government agencies to increase efficiency", "Strengthening political corruption", "Centralizing all decision-making powers", "Eliminating social welfare programs"],
+      "answer": "Improving the structure and function of government agencies to increase efficiency"
+    },
+    {
+      "question": "What is a key issue related to finance and resource management in developing countries?",
+      "options": ["Lack of transparency and accountability in government spending", "Excessive foreign debt", "Availability of skilled labor", "Strong international financial institutions"],
+      "answer": "Lack of transparency and accountability in government spending"
+    },
+    {
+      "question": "How does public enterprise management impact economic development?",
+      "options": ["It can create jobs and contribute to national revenue if managed effectively", "It increases government reliance on foreign markets", "It reduces government intervention in the economy", "It promotes corruption and inefficiency"],
+      "answer": "It can create jobs and contribute to national revenue if managed effectively"
+    },
+    {
+      "question": "Which strategy is most commonly used for administrative restructuring in developing countries?",
+      "options": ["Decentralization of authority", "Centralization of all political power", "Restriction of public service access", "Privatization of government services"],
+      "answer": "Decentralization of authority"
+    },
+    {
+      "question": "What does the term 'structural adjustment' refer to in the context of development administration?",
+      "options": ["Policies aimed at restructuring national economies to make them more market-oriented", "Increased military control over economic resources", "Centralization of administrative functions", "Improvement of social welfare programs"],
+      "answer": "Policies aimed at restructuring national economies to make them more market-oriented"
+    },
+    {
+      "question": "Which of the following is a common effect of ineffective development administration?",
+      "options": ["Increase in poverty and inequality", "Decrease in government corruption", "Improved access to healthcare", "Strong political participation"],
+      "answer": "Increase in poverty and inequality"
+    },
+    {
+      "question": "What is the role of financial management in public administration?",
+      "options": ["Ensuring the proper allocation and use of public funds for development", "Limiting international financial cooperation", "Centralizing all administrative functions", "Increasing military expenditure"],
+      "answer": "Ensuring the proper allocation and use of public funds for development"
+    },
+    {
+      "question": "What does the classical approach to development administration focus on?",
+      "options": ["Top-down management and centralization", "Market-driven economies", "Decentralization of power", "Promotion of private sector-driven growth"],
+      "answer": "Top-down management and centralization"
+    },
+    {
+      "question": "What is the main goal of fiscal decentralization in development administration?",
+      "options": ["To give local governments more control over financial decision-making", "To centralize all economic functions", "To limit government spending", "To increase military expenditure"],
+      "answer": "To give local governments more control over financial decision-making"
+    },
+    {
+      "question": "How does the public enterprise sector contribute to the development process in developing countries?",
+      "options": ["By providing essential services and generating revenue for the state", "By privatizing key industries", "By focusing exclusively on international trade", "By reducing government spending"],
+      "answer": "By providing essential services and generating revenue for the state"
+    },
+    {
+      "question": "What is the key challenge faced by developing countries in managing public enterprises?",
+      "options": ["Corruption and lack of accountability", "High levels of government oversight", "Excessive reliance on foreign capital", "Lack of international trade partnerships"],
+      "answer": "Corruption and lack of accountability"
+    },
+    {
+      "question": "What is one of the outcomes of adopting the neoclassical approach to development administration?",
+      "options": ["Increased privatization of public services", "Centralization of economic planning", "Expansion of public sector enterprises", "Focus on welfare-based governance"],
+      "answer": "Increased privatization of public services"
+    },
+    {
+      "question": "Which of the following is a challenge associated with the implementation of structural adjustment programs?",
+      "options": ["Social unrest and economic inequality", "Rapid industrialization", "Increased political stability", "Reduction in foreign debt"],
+      "answer": "Social unrest and economic inequality"
+    },
+    {
+      "question": "Which strategy is commonly used to improve the efficiency of public enterprises in developing countries?",
+      "options": ["Privatization", "Bureaucratic expansion", "Centralization of resources", "International collaboration"],
+      "answer": "Privatization"
+    },
+    {
+      "question": "What is a common result of poor resource allocation in development administration?",
+      "options": ["Widening income inequality", "Strengthening public infrastructure", "Improved public services", "Increased foreign investments"],
+      "answer": "Widening income inequality"
+    },
+    {
+      "question": "What is the primary goal of public sector reform in developing countries?",
+      "options": ["Increasing the effectiveness and responsiveness of government", "Centralizing political power", "Eliminating governmental oversight", "Promoting external trade"],
+      "answer": "Increasing the effectiveness and responsiveness of government"
+    },
+    {
+      "question": "What is a characteristic feature of the classical approach to development administration?",
+      "options": ["A focus on hierarchical structures and centralization", "A participatory model of governance", "A decentralized approach to decision-making", "A market-driven economy"],
+      "answer": "A focus on hierarchical structures and centralization"
+    },
+    {
+      "question": "What is an essential component of development administration regarding public policy?",
+      "options": ["Sustainable economic growth", "Increased state control over resources", "Restricting political participation", "Isolation from international trade"],
+      "answer": "Sustainable economic growth"
+    },
+    {
+      "question": "Which factor is most crucial in determining the success of a structural adjustment program?",
+      "options": ["Political stability and social consensus", "Increased military spending", "Rapid industrialization", "Government secrecy"],
+      "answer": "Political stability and social consensus"
+    },
+    {
+      "question": "What is the core idea of the neoclassical approach to development administration?",
+      "options": ["Reducing government intervention and focusing on market mechanisms", "Increasing government control over all sectors", "Centralizing resources for uniform development", "Encouraging state ownership of industries"],
+      "answer": "Reducing government intervention and focusing on market mechanisms"
+    },
+    {
+      "question": "Which of the following is an example of a policy adjustment in development administration?",
+      "options": ["Liberalizing trade policies", "Centralizing all government decision-making", "Increasing tariffs on foreign goods", "Eliminating government spending on infrastructure"],
+      "answer": "Liberalizing trade policies"
+    },
+    {
+      "question": "What is the main focus of administrative restructuring in development administration?",
+      "options": ["Improving the efficiency of governmental institutions", "Eliminating social welfare programs", "Reducing foreign investments", "Encouraging corruption"],
+      "answer": "Improving the efficiency of governmental institutions"
+    },
+    {
+      "question": "How does decentralization benefit development administration in developing countries?",
+      "options": ["It improves local governance and increases citizen participation", "It reduces regional autonomy", "It strengthens the central government's control", "It minimizes government spending on public services"],
+      "answer": "It improves local governance and increases citizen participation"
+    },
+    {
+      "question": "What is the impact of the classical approach on developing nations' administrative systems?",
+      "options": ["Increased bureaucracy and inefficiency", "Decentralized decision-making", "Increased local participation", "Efficiency in governance"],
+      "answer": "Increased bureaucracy and inefficiency"
+    },
+    {
+      "question": "What is one of the main challenges faced by developing countries in terms of public enterprise management?",
+      "options": ["Mismanagement of funds and corruption", "Excessive foreign investments", "Increased public satisfaction", "Decreased government spending"],
+      "answer": "Mismanagement of funds and corruption"
+    },
+    {
+      "question": "Which of the following is a potential risk of relying too heavily on structural adjustment programs?",
+      "options": ["Social unrest and poverty", "Sustained economic growth", "Expansion of social services", "Improvement in political stability"],
+      "answer": "Social unrest and poverty"
+    },
+    {
+      "question": "What is the primary concern of financial management in public administration?",
+      "options": ["Ensuring transparent and accountable use of public funds", "Increasing taxes on citizens", "Centralizing all government functions", "Eliminating public-private partnerships"],
+      "answer": "Ensuring transparent and accountable use of public funds"
+    },
+    {
+      "question": "Which of the following strategies can help alleviate poverty in developing nations?",
+      "options": ["Improving public service delivery and resource management", "Centralizing all resources in the capital", "Increased military intervention", "Privatizing all government-run industries"],
+      "answer": "Improving public service delivery and resource management"
+    },
+    {
+      "question": "What is the main goal of financial management in development administration?",
+      "options": ["To ensure optimal allocation of public resources for development", "To focus solely on reducing government expenditure", "To maximize foreign borrowing", "To promote corruption-free government"],
+      "answer": "To ensure optimal allocation of public resources for development"
+    },
+    {
+      "question": "Which of the following is a major problem caused by ineffective resource administration in developing countries?",
+      "options": ["Increased inequality and poverty", "Decreased military expenditure", "Improved public services", "Growth in economic sectors"],
+      "answer": "Increased inequality and poverty"
+    },
+    {
+      "question": "What is the significance of administrative reforms in development administration?",
+      "options": ["To improve the efficiency and accountability of government systems", "To increase the central government's control over regions", "To restrict public access to information", "To centralize decision-making processes"],
+      "answer": "To improve the efficiency and accountability of government systems"
+    },
+    {
+      "question": "What role do public enterprises play in the development of economies in the third world?",
+      "options": ["Providing essential services and creating job opportunities", "Limiting foreign trade", "Centralizing all government functions", "Privatizing national resources"],
+      "answer": "Providing essential services and creating job opportunities"
+    },
+    {
+      "question": "What is the primary purpose of budgeting in public administration?",
+      "options": ["To allocate resources for achieving national development goals", "To increase government revenue", "To reduce the political influence of external bodies", "To centralize power within the government"],
+      "answer": "To allocate resources for achieving national development goals"
+    },
+    {
+      "question": "What is a potential outcome of an inefficient public enterprise management system?",
+      "options": ["Financial losses and the misallocation of resources", "Increased government funding", "Enhanced transparency", "Improved citizen participation"],
+      "answer": "Financial losses and the misallocation of resources"
+    },
+    {
+      "question": "What is the role of public enterprises in development administration?",
+      "options": ["Driving economic growth and providing essential services", "Privatizing all public resources", "Reducing government intervention", "Eliminating foreign trade"],
+      "answer": "Driving economic growth and providing essential services"
+    },
+    {
+      "question": "Which approach focuses on the involvement of citizens in the development process?",
+      "options": ["Participatory approach", "Classical approach", "Neoclassical approach", "Authoritarian approach"],
+      "answer": "Participatory approach"
+    },
+    {
+      "question": "What is a common goal of public policy adjustments in development administration?",
+      "options": ["Achieving sustainable economic development", "Expanding bureaucratic inefficiencies", "Restricting global partnerships", "Reducing transparency"],
+      "answer": "Achieving sustainable economic development"
+    },
+    {
+      "question": "Which international organization often advises on structural adjustment programs?",
+      "options": ["International Monetary Fund (IMF)", "World Trade Organization (WTO)", "United Nations Educational, Scientific and Cultural Organization (UNESCO)", "International Labour Organization (ILO)"],
+      "answer": "International Monetary Fund (IMF)"
+    },
+    {
+      "question": "What is a significant outcome of poor resource administration in developing countries?",
+      "options": ["Increased poverty and inequality", "Rapid industrial growth", "Improved public services", "Reduced foreign aid"],
+      "answer": "Increased poverty and inequality"
+    },
+    {
+      "question": "What is the primary objective of development planning in administration?",
+      "options": ["Optimizing resource allocation for national growth", "Eliminating government regulations", "Restricting public participation", "Increasing political instability"],
+      "answer": "Optimizing resource allocation for national growth"
+    },
+    {
+      "question": "Which of the following is a strategy for addressing corruption in public enterprise management?",
+      "options": ["Enhancing transparency and accountability", "Reducing external audits", "Increasing government secrecy", "Minimizing stakeholder engagement"],
+      "answer": "Enhancing transparency and accountability"
+    },
+    {
+      "question": "What is a critical challenge in implementing structural adjustment programs?",
+      "options": ["Social unrest and resistance to reforms", "Increased foreign investment", "Overwhelming public support", "Rapid economic growth"],
+      "answer": "Social unrest and resistance to reforms"
+    },
+    {
+      "question": "What does administrative decentralization aim to achieve in development administration?",
+      "options": ["Improved local governance and service delivery", "Strengthened central authority", "Minimized regional autonomy", "Increased bureaucratic delays"],
+      "answer": "Improved local governance and service delivery"
+    },
+    {
+      "question": "What is the significance of public accountability in development administration?",
+      "options": ["Ensuring ethical governance and trust", "Restricting public access to information", "Enhancing political favoritism", "Reducing citizen engagement"],
+      "answer": "Ensuring ethical governance and trust"
+    },
+    {
+      "question": "Which term describes the strategic removal of barriers to trade and investment in developing countries?",
+      "options": ["Economic liberalization", "Nationalization", "Protectionism", "Centralization"],
+      "answer": "Economic liberalization"
+    },
+    {
+      "question": "What is a common problem with public enterprises in developing countries?",
+      "options": ["Inefficiency and financial mismanagement", "Excessive privatization", "Lack of public support", "Over-regulation by foreign entities"],
+      "answer": "Inefficiency and financial mismanagement"
+    },
+    {
+      "question": "Which development theory focuses on the interdependence of nations and the exploitation of the periphery by the core?",
+      "options": ["Dependency theory", "Modernization theory", "Rational choice theory", "Cultural relativism"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What is a key element of effective public financial management?",
+      "options": ["Efficient allocation and utilization of public resources", "Maximizing government borrowing", "Reducing transparency in budgeting", "Centralizing all decision-making processes"],
+      "answer": "Efficient allocation and utilization of public resources"
+    },
+    {
+      "question": "What does structural adjustment often require developing countries to reduce?",
+      "options": ["Public sector spending", "Foreign investments", "Privatization efforts", "Economic liberalization"],
+      "answer": "Public sector spending"
+    },
+    {
+      "question": "What is the primary aim of public enterprise reform in development administration?",
+      "options": ["Enhancing efficiency and profitability", "Eliminating public services", "Increasing bureaucracy", "Reducing international trade"],
+      "answer": "Enhancing efficiency and profitability"
+    },
+    {
+      "question": "Which strategy helps address the challenges of resource mismanagement in developing countries?",
+      "options": ["Strengthening institutional frameworks", "Eliminating foreign assistance", "Expanding bureaucratic structures", "Reducing stakeholder participation"],
+      "answer": "Strengthening institutional frameworks"
+    },
+    {
+      "question": "What is a significant drawback of structural adjustment programs?",
+      "options": ["Erosion of social welfare programs", "Rapid poverty alleviation", "Expansion of public sector employment", "Strengthened public enterprise management"],
+      "answer": "Erosion of social welfare programs"
+    },
+    {
+      "question": "Which approach to development administration emphasizes flexibility and adaptability?",
+      "options": ["Neoclassical approach", "Classical approach", "Authoritarian approach", "Top-down approach"],
+      "answer": "Neoclassical approach"
+    },
+    {
+      "question": "What is a major issue in public financial management in developing countries?",
+      "options": ["Lack of transparency and accountability", "Excessive public revenues", "Over-investment in social infrastructure", "Strong institutional frameworks"],
+      "answer": "Lack of transparency and accountability"
+    },
+    {
+      "question": "What is the primary focus of development administration?",
+      "options": ["Promoting economic and social progress in developing countries", "Strengthening military systems", "Advancing political campaigns", "Increasing privatization"],
+      "answer": "Promoting economic and social progress in developing countries"
+    },
+    {
+      "question": "Which approach to development administration emphasizes efficiency, hierarchy, and standardization?",
+      "options": ["Classical approach", "Neoclassical approach", "Participatory approach", "Human relations approach"],
+      "answer": "Classical approach"
+    },
+    {
+      "question": "What is a key feature of the neoclassical approach to development administration?",
+      "options": ["Focus on human behavior and adaptability", "Rigid bureaucratic structures", "Strict top-down decision-making", "Complete reliance on rules"],
+      "answer": "Focus on human behavior and adaptability"
+    },
+    {
+      "question": "What is the goal of structural adjustment programs (SAPs)?",
+      "options": ["Economic stabilization and growth", "Expansion of public sector employment", "Increase in state subsidies", "Nationalization of industries"],
+      "answer": "Economic stabilization and growth"
+    },
+    {
+      "question": "Which strategy involves decentralizing authority to improve efficiency in development administration?",
+      "options": ["Administrative restructuring", "Centralization", "Privatization", "Globalization"],
+      "answer": "Administrative restructuring"
+    },
+    {
+      "question": "What is a common criticism of structural adjustment programs in developing countries?",
+      "options": ["They often result in reduced social spending", "They encourage public sector growth", "They decrease foreign investment", "They eliminate trade liberalization"],
+      "answer": "They often result in reduced social spending"
+    },
+    {
+      "question": "Which sector is most involved in public enterprise management?",
+      "options": ["Public sector", "Private sector", "Informal sector", "Non-governmental organizations"],
+      "answer": "Public sector"
+    },
+    {
+      "question": "What is the main challenge of resource administration in developing countries?",
+      "options": ["Scarcity of resources", "Overabundance of skilled labor", "Excessive technological advancement", "Lack of trade barriers"],
+      "answer": "Scarcity of resources"
+    },
+    {
+      "question": "Which strategy aims to make state-owned enterprises more competitive?",
+      "options": ["Privatization", "Nationalization", "Centralization", "Protectionism"],
+      "answer": "Privatization"
+    },
+    {
+      "question": "What is a major objective of policy adjustments in development administration?",
+      "options": ["Aligning policies with current economic realities", "Increasing bureaucratic rigidity", "Maintaining outdated practices", "Restricting trade policies"],
+      "answer": "Aligning policies with current economic realities"
+    },
+    {
+      "question": "Which historical event heavily influenced modern development administration in developing countries?",
+      "options": ["Colonialism", "The Renaissance", "The Industrial Revolution", "The Space Race"],
+      "answer": "Colonialism"
+    },
+    {
+      "question": "What is a key benefit of decentralization in development administration?",
+      "options": ["Improved responsiveness to local needs", "Increased central government control", "Reduced participation in decision-making", "Minimized accountability"],
+      "answer": "Improved responsiveness to local needs"
+    },
+    {
+      "question": "What is the role of international financial institutions in development administration?",
+      "options": ["Providing loans and technical assistance", "Imposing trade barriers", "Nationalizing industries", "Discouraging privatization"],
+      "answer": "Providing loans and technical assistance"
+    },
+    {
+      "question": "Which challenge is commonly associated with public enterprise management in developing countries?",
+      "options": ["Inefficiency and corruption", "Excessive profitability", "Lack of government oversight", "Over-privatization"],
+      "answer": "Inefficiency and corruption"
+    },
+    {
+      "question": "What is the primary focus of administrative restructuring in development administration?",
+      "options": ["Improving the efficiency and effectiveness of public institutions", "Expanding bureaucratic processes", "Maintaining the status quo", "Reducing stakeholder involvement"],
+      "answer": "Improving the efficiency and effectiveness of public institutions"
+    },
+    {
+      "question": "Which development strategy involves reducing state control over the economy?",
+      "options": ["Economic liberalization", "Centralization", "Nationalization", "Protectionism"],
+      "answer": "Economic liberalization"
+    },
+    {
+      "question": "What is a critical component of public accountability in development administration?",
+      "options": ["Transparency and ethical governance", "Excessive secrecy", "Centralized decision-making", "Limited stakeholder engagement"],
+      "answer": "Transparency and ethical governance"
+    },
+    {
+      "question": "What is a major problem of resource administration in developing countries?",
+      "options": ["Mismanagement of natural resources", "Overuse of technological tools", "Abundance of financial resources", "Lack of global partnerships"],
+      "answer": "Mismanagement of natural resources"
+    },
+    {
+      "question": "Which policy is often used to stabilize economies under structural adjustment programs?",
+      "options": ["Currency devaluation", "Trade protectionism", "Subsidy expansion", "Increased government spending"],
+      "answer": "Currency devaluation"
+    },
+    {
+      "question": "What is the significance of historical context in development administration?",
+      "options": ["Understanding the root causes of underdevelopment", "Focusing only on future strategies", "Ignoring colonial legacies", "Promoting short-term policies"],
+      "answer": "Understanding the root causes of underdevelopment"
+    }
+  ]
+}

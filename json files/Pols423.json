@@ -1,0 +1,516 @@
+{
+  "course": "POLS423",
+  "title": "Politics and Economics in Development",
+  "questions": [
+    {
+      "question": "Which of the following is a key factor in determining the success of economic development policies in third-world countries?",
+      "options": ["Political stability, institutional strength, and sound economic management", "Reliance on foreign aid and investments", "Isolating the economy from global trade", "Complete reliance on agriculture as the primary economic driver"],
+      "answer": "Political stability, institutional strength, and sound economic management"
+    },
+    {
+      "question": "What role does globalization play in the development of third-world economies?",
+      "options": ["Globalization can provide access to global markets, technology, and capital, but may also lead to increased inequality", "Globalization exclusively leads to the decline of local economies", "Globalization only benefits advanced economies, leaving developing ones at a disadvantage", "Globalization ensures uniform economic progress across all countries"],
+      "answer": "Globalization can provide access to global markets, technology, and capital, but may also lead to increased inequality"
+    },
+    {
+      "question": "What is the primary criticism of the Modernization Theory in the context of third-world development?",
+      "options": ["It assumes that all countries can follow the same path of development as Western nations, disregarding cultural and historical differences", "It ignores the importance of foreign aid", "It overemphasizes the role of education", "It advocates for radical government control over markets"],
+      "answer": "It assumes that all countries can follow the same path of development as Western nations, disregarding cultural and historical differences"
+    },
+    {
+      "question": "What is the role of microfinance in promoting economic development in poor countries?",
+      "options": ["Microfinance provides small loans to entrepreneurs, helping them start or expand businesses and break out of poverty", "Microfinance only benefits large corporations", "Microfinance encourages dependency on foreign loans", "Microfinance does not play a significant role in economic development"],
+      "answer": "Microfinance provides small loans to entrepreneurs, helping them start or expand businesses and break out of poverty"
+    },
+    {
+      "question": "How does the political environment influence the success of economic reforms in developing countries?",
+      "options": ["The political environment determines the extent of government support for reforms, the level of corruption, and the capacity for implementing policy changes", "The political environment has no impact on economic reforms", "Political stability alone guarantees the success of economic reforms", "Political systems in developing countries are irrelevant to economic policy success"],
+      "answer": "The political environment determines the extent of government support for reforms, the level of corruption, and the capacity for implementing policy changes"
+    },
+    {
+      "question": "What is the primary purpose of foreign aid in the development process of third-world countries?",
+      "options": ["Foreign aid helps to fill gaps in the domestic economy, support infrastructure development, and promote social welfare", "Foreign aid has no impact on development", "Foreign aid only benefits donor countries", "Foreign aid primarily supports the military sector in developing nations"],
+      "answer": "Foreign aid helps to fill gaps in the domestic economy, support infrastructure development, and promote social welfare"
+    },
+    {
+      "question": "What is the importance of governance in achieving sustainable economic development?",
+      "options": ["Good governance ensures that resources are allocated efficiently, policies are implemented effectively, and corruption is minimized", "Governance is irrelevant to economic development", "Good governance only affects social policies, not economic ones", "Governance is only important for political stability, not economic growth"],
+      "answer": "Good governance ensures that resources are allocated efficiently, policies are implemented effectively, and corruption is minimized"
+    },
+    {
+      "question": "Which of the following is a direct consequence of unequal wealth distribution in developing countries?",
+      "options": ["Social unrest, political instability, and slower economic growth", "Greater economic equality and faster growth", "Improved foreign investment", "Increased political participation across all segments of society"],
+      "answer": "Social unrest, political instability, and slower economic growth"
+    },
+    {
+      "question": "Which of the following is the primary focus of the 'neoliberal' economic model?",
+      "options": ["Promoting free markets, reducing government intervention, and privatizing state-owned enterprises", "Promoting state control over all sectors of the economy", "Focusing exclusively on agricultural development", "Encouraging protectionist policies and local self-sufficiency"],
+      "answer": "Promoting free markets, reducing government intervention, and privatizing state-owned enterprises"
+    },
+    {
+      "question": "What is a potential drawback of relying too heavily on foreign aid for development?",
+      "options": ["It can create dependency and reduce the incentive for local economic self-sufficiency", "It ensures rapid economic growth", "It fosters independence and self-reliance", "It always leads to improved governance and transparency"],
+      "answer": "It can create dependency and reduce the incentive for local economic self-sufficiency"
+    },
+    {
+      "question": "What does 'economic diversification' mean in the context of developing countries?",
+      "options": ["Expanding the economy beyond a single sector (such as agriculture) into various industries to reduce vulnerability", "Focusing exclusively on the agricultural sector", "Restricting foreign investments to protect domestic industries", "Maintaining a single industry for economic sustainability"],
+      "answer": "Expanding the economy beyond a single sector (such as agriculture) into various industries to reduce vulnerability"
+    },
+    {
+      "question": "What is the concept of 'human capital' in relation to economic development?",
+      "options": ["The knowledge, skills, and abilities of the workforce that contribute to economic productivity", "The total wealth possessed by a country", "The total amount of natural resources available for exploitation", "The capacity of a nation to engage in military development"],
+      "answer": "The knowledge, skills, and abilities of the workforce that contribute to economic productivity"
+    },
+    {
+      "question": "What is the role of international trade agreements in the development of third-world economies?",
+      "options": ["International trade agreements can open markets, stimulate exports, and provide access to new technologies, but they may also lead to economic inequality", "Trade agreements only benefit developed countries", "Trade agreements discourage the growth of local industries", "Trade agreements have no impact on economic growth"],
+      "answer": "International trade agreements can open markets, stimulate exports, and provide access to new technologies, but they may also lead to economic inequality"
+    },
+    {
+      "question": "What is the key idea behind 'sustainable development'?",
+      "options": ["Balancing economic growth with environmental protection and social equity for long-term development", "Focusing solely on economic growth without consideration for the environment", "Maximizing profits at the expense of environmental concerns", "Focusing exclusively on environmental conservation while ignoring economic growth"],
+      "answer": "Balancing economic growth with environmental protection and social equity for long-term development"
+    },
+    {
+      "question": "What role do multinational corporations (MNCs) play in the development of third-world countries?",
+      "options": ["MNCs can provide investment, technology, and employment opportunities, but may also exploit local resources and labor", "MNCs solely exploit local resources with no benefit to the economy", "MNCs have no impact on developing countries", "MNCs primarily focus on improving political governance in developing nations"],
+      "answer": "MNCs can provide investment, technology, and employment opportunities, but may also exploit local resources and labor"
+    },
+    {
+      "question": "Which of the following is an important aspect of political economy in relation to development?",
+      "options": ["How political systems influence economic policies, and how economic factors affect political stability and growth", "How political parties control economic policies for personal gain", "The role of authoritarian governments in controlling markets", "The decline of private sector involvement in economic growth"],
+      "answer": "How political systems influence economic policies, and how economic factors affect political stability and growth"
+    },
+    {
+      "question": "Which of the following is a primary challenge to achieving economic development in third-world countries?",
+      "options": ["Political instability and weak governance", "Over-reliance on local markets", "High levels of technological advancement", "Complete economic independence from foreign countries"],
+      "answer": "Political instability and weak governance"
+    },
+    {
+      "question": "What is the significance of 'foreign direct investment' (FDI) in the economic development of developing countries?",
+      "options": ["FDI can bring capital, technology, and expertise to stimulate economic growth", "FDI primarily focuses on agricultural expansion", "FDI leads to the complete domination of the local economy by foreign companies", "FDI reduces the dependency on local businesses and markets"],
+      "answer": "FDI can bring capital, technology, and expertise to stimulate economic growth"
+    },
+    {
+      "question": "Which theory argues that the economic underdevelopment of the third world is a result of its integration into the global capitalist system?",
+      "options": ["Dependency theory", "Modernization theory", "World-systems theory", "Neoclassical economic theory"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What is the main feature of import substitution industrialization (ISI) in the development context?",
+      "options": ["It encourages local industries to replace foreign goods by developing domestic production", "It promotes free trade with no barriers or restrictions", "It focuses on agricultural development while ignoring industrial growth", "It encourages multinational companies to dominate the local market"],
+      "answer": "It encourages local industries to replace foreign goods by developing domestic production"
+    },
+    {
+      "question": "What is the role of education in the economic development of a country?",
+      "options": ["Education contributes to human capital development, leading to increased productivity and innovation", "Education has no impact on economic growth", "Education only serves as a cultural tool with no economic relevance", "Education decreases national competitiveness in the global market"],
+      "answer": "Education contributes to human capital development, leading to increased productivity and innovation"
+    },
+    {
+      "question": "Which of the following is considered a critical element of effective development policy?",
+      "options": ["A balance between state intervention and market forces", "Total state control over all economic sectors", "Free-market principles with no regulatory oversight", "Heavy reliance on external loans and foreign aid"],
+      "answer": "A balance between state intervention and market forces"
+    },
+    {
+      "question": "How does inequality affect the development process in emerging economies?",
+      "options": ["Inequality can limit access to resources and opportunities for large segments of the population, hindering overall economic progress", "Inequality encourages competition and drives growth", "Inequality helps ensure a stable social order", "Inequality has no significant impact on development"],
+      "answer": "Inequality can limit access to resources and opportunities for large segments of the population, hindering overall economic progress"
+    },
+    {
+      "question": "How does the political system of a country influence its economic policies?",
+      "options": ["The political system determines the level of government intervention, regulation, and prioritization of development goals", "Economic policies are purely determined by external forces and markets", "Economic policies are unrelated to political decisions", "A political system only affects the social welfare sector and not economic growth"],
+      "answer": "The political system determines the level of government intervention, regulation, and prioritization of development goals"
+    },
+    {
+      "question": "What is the main purpose of structural adjustment programs (SAPs) in developing countries?",
+      "options": ["To promote economic growth by encouraging market liberalization, reducing government spending, and privatizing state-owned enterprises", "To enhance political stability through government intervention", "To decrease foreign investments and reduce global competition", "To implement socialist policies and reduce the role of the private sector"],
+      "answer": "To promote economic growth by encouraging market liberalization, reducing government spending, and privatizing state-owned enterprises"
+    },
+    {
+      "question": "Which of the following best describes the relationship between environmental sustainability and economic development?",
+      "options": ["Sustainable development balances economic growth with environmental protection, ensuring long-term prosperity", "Economic growth should be prioritized over environmental concerns", "Environmental protection hinders economic development", "Environmental sustainability is irrelevant to economic development in developing countries"],
+      "answer": "Sustainable development balances economic growth with environmental protection, ensuring long-term prosperity"
+    },
+    {
+      "question": "What is the impact of trade protectionism on the economy of developing countries?",
+      "options": ["It may shield local industries from foreign competition but can lead to inefficiencies and higher consumer prices", "It boosts foreign competition and lowers domestic prices", "It leads to complete integration with the global market", "It has no significant effect on local economies"],
+      "answer": "It may shield local industries from foreign competition but can lead to inefficiencies and higher consumer prices"
+    },
+    {
+      "question": "What is the role of international organizations like the IMF and World Bank in the economic development of developing countries?",
+      "options": ["They provide financial assistance, technical expertise, and policy advice to promote economic stability and development", "They impose austerity measures that negatively affect the poor", "They strictly control domestic policies without any room for local input", "They limit the sovereignty of developing countries by controlling their markets"],
+      "answer": "They provide financial assistance, technical expertise, and policy advice to promote economic stability and development"
+    },
+    {
+      "question": "How do political parties in developing countries typically influence economic decision-making?",
+      "options": ["Political parties often shape policies based on their ideologies, which can lead to diverse approaches to economic management", "Political parties have no influence on economic decisions", "Political parties focus solely on foreign relations and ignore domestic economic policies", "Political parties only influence social policies and not economic policies"],
+      "answer": "Political parties often shape policies based on their ideologies, which can lead to diverse approaches to economic management"
+    },
+    {
+      "question": "What is the role of entrepreneurship in the economic development of developing countries?",
+      "options": ["Entrepreneurship promotes innovation, job creation, and the development of new markets, driving economic growth", "Entrepreneurship hinders economic growth by focusing on small-scale businesses", "Entrepreneurship only contributes to economic decline", "Entrepreneurship does not have a significant impact on economic development"],
+      "answer": "Entrepreneurship promotes innovation, job creation, and the development of new markets, driving economic growth"
+    },
+    {
+      "question": "What is the relationship between democracy and economic development?",
+      "options": ["Democracies tend to have better governance, transparency, and policies that foster economic growth", "Democracies focus only on social policies and ignore economic development", "Democracy leads to economic stagnation due to political conflicts", "Democracies are less likely to implement economic policies due to electoral pressures"],
+      "answer": "Democracies tend to have better governance, transparency, and policies that foster economic growth"
+    },
+    {
+      "question": "What is the significance of regional integration for developing countries?",
+      "options": ["Regional integration enhances trade, investment, and economic cooperation among neighboring countries, leading to collective growth", "Regional integration has no significant impact on economic development", "It increases competition among countries within the region", "It reduces cooperation and worsens economic disparities between neighboring countries"],
+      "answer": "Regional integration enhances trade, investment, and economic cooperation among neighboring countries, leading to collective growth"
+    },
+    {
+      "question": "What is the main objective of development policies in a capitalist economy?",
+      "options": ["To foster economic growth while maintaining market competition", "To promote centralized economic control by the state", "To restrict foreign investments and trade", "To focus solely on agricultural development"],
+      "answer": "To foster economic growth while maintaining market competition"
+    },
+    {
+      "question": "Which of the following best describes the relationship between politics and economic growth in developing countries?",
+      "options": ["Political stability and good governance are key to fostering economic growth", "Economic growth is solely dependent on foreign investment", "Political instability has no significant effect on economic outcomes", "Economic growth is driven only by technological advancement"],
+      "answer": "Political stability and good governance are key to fostering economic growth"
+    },
+    {
+      "question": "What role does globalization play in the development of third-world countries?",
+      "options": ["It can lead to both positive and negative outcomes, including access to foreign markets and increased inequality", "It solely benefits the economic elites of developed countries", "It has no effect on developing economies", "It helps reduce international trade barriers and increase domestic policies"],
+      "answer": "It can lead to both positive and negative outcomes, including access to foreign markets and increased inequality"
+    },
+    {
+      "question": "How do state-owned enterprises (SOEs) affect the development of an economy?",
+      "options": ["They can provide essential services and infrastructure but may suffer from inefficiency and political interference", "They focus only on increasing profits without any social responsibility", "They lead to complete privatization of resources", "They encourage competition in the market by reducing monopolies"],
+      "answer": "They can provide essential services and infrastructure but may suffer from inefficiency and political interference"
+    },
+    {
+      "question": "What is the purpose of 'industrial policy' in the context of development economics?",
+      "options": ["To guide the development of strategic industries and sectors that are essential for national growth", "To privatize all industries and reduce government involvement", "To focus only on foreign trade and reduce domestic production", "To limit the influence of international markets on local economies"],
+      "answer": "To guide the development of strategic industries and sectors that are essential for national growth"
+    },
+    {
+      "question": "What is the role of foreign aid in the development of underdeveloped countries?",
+      "options": ["Foreign aid can provide immediate financial support but may lead to dependency if not managed well", "Foreign aid has no significant impact on long-term development", "It should be used only for military purposes", "It promotes the complete withdrawal of local governments from development projects"],
+      "answer": "Foreign aid can provide immediate financial support but may lead to dependency if not managed well"
+    },
+    {
+      "question": "What is the impact of neoliberal economic policies on developing countries?",
+      "options": ["Neoliberal policies can encourage market efficiency but may exacerbate inequality and social exclusion", "They promote government control over the entire economy", "They help reduce global competition by protecting local industries", "They focus entirely on agricultural production while ignoring other sectors"],
+      "answer": "Neoliberal policies can encourage market efficiency but may exacerbate inequality and social exclusion"
+    },
+    {
+      "question": "Which of the following is considered a challenge in the economic development of third-world countries?",
+      "options": ["The unequal distribution of resources, leading to persistent poverty and inequality", "Access to abundant natural resources that are underutilized", "Too much foreign investment in key sectors", "The overdevelopment of advanced technological sectors"],
+      "answer": "The unequal distribution of resources, leading to persistent poverty and inequality"
+    },
+    {
+      "question": "How does trade liberalization affect developing countries?",
+      "options": ["It can increase economic growth by providing access to global markets but may also lead to the collapse of local industries", "It has no impact on domestic industries", "It solely benefits local agricultural production", "It isolates developing countries from international markets"],
+      "answer": "It can increase economic growth by providing access to global markets but may also lead to the collapse of local industries"
+    },
+    {
+      "question": "What does the term 'economic sovereignty' mean in the context of development?",
+      "options": ["The ability of a country to independently make decisions about its economic policies and resources without external influence", "Dependence on foreign aid for all major development projects", "A focus on exporting raw materials and minimizing local production", "Total reliance on international organizations for policy direction"],
+      "answer": "The ability of a country to independently make decisions about its economic policies and resources without external influence"
+    },
+    {
+      "question": "How does corruption affect economic development in developing countries?",
+      "options": ["Corruption diverts resources away from development projects, leading to inefficiency and inequality", "It increases foreign investments", "It leads to economic growth and stability", "It strengthens the political system and governance structures"],
+      "answer": "Corruption diverts resources away from development projects, leading to inefficiency and inequality"
+    },
+    {
+      "question": "What is the significance of the 'informal sector' in the economies of developing countries?",
+      "options": ["The informal sector contributes to employment and income generation but is often unregulated and lacks legal protection", "It has no impact on the economy", "It encourages monopolies and market concentration", "It undermines formal industries by increasing competition"],
+      "answer": "The informal sector contributes to employment and income generation but is often unregulated and lacks legal protection"
+    },
+    {
+      "question": "What is the 'Washington Consensus' and how does it relate to economic development?",
+      "options": ["It is a set of economic policy recommendations emphasizing free markets, privatization, and fiscal discipline", "It promotes state control of the economy and isolation from international trade", "It focuses on the welfare of local industries over global competitiveness", "It encourages large-scale government spending on social programs"],
+      "answer": "It is a set of economic policy recommendations emphasizing free markets, privatization, and fiscal discipline"
+    },
+    {
+      "question": "What is the concept of 'developmental state' in economic theory?",
+      "options": ["A state that actively intervenes in the economy to promote growth, industrialization, and economic development", "A state that minimizes government intervention and allows market forces to dictate growth", "A state that focuses solely on agricultural policies", "A state that depends on foreign aid for its economic growth"],
+      "answer": "A state that actively intervenes in the economy to promote growth, industrialization, and economic development"
+    },
+    {
+      "question": "What is the primary concern of the Human Development Index (HDI) in measuring development?",
+      "options": ["It focuses on economic growth, income levels, and human well-being, including education and life expectancy", "It solely measures economic growth", "It ignores inequality and social factors", "It is focused only on economic and financial indicators"],
+      "answer": "It focuses on economic growth, income levels, and human well-being, including education and life expectancy"
+    },
+    {
+      "question": "What is the importance of infrastructure development for economic growth in developing countries?",
+      "options": ["Infrastructure development facilitates trade, enhances productivity, and attracts investment", "It has little to no effect on economic growth", "It only benefits large multinational corporations", "It leads to the privatization of all state-owned resources"],
+      "answer": "Infrastructure development facilitates trade, enhances productivity, and attracts investment"
+    },
+    {
+      "question": "What is the role of state intervention in the economy in a developing country?",
+      "options": ["To regulate the market, ensure economic stability, and promote development", "To minimize government influence and allow the market to self-regulate", "To focus solely on attracting foreign investments", "To promote only local industries and limit foreign competition"],
+      "answer": "To regulate the market, ensure economic stability, and promote development"
+    },
+    {
+      "question": "What is the primary function of development economics?",
+      "options": ["To analyze economic problems and propose policies that lead to sustainable economic growth", "To promote international trade agreements", "To encourage monopolies and market control by large corporations", "To centralize economic planning under government control"],
+      "answer": "To analyze economic problems and propose policies that lead to sustainable economic growth"
+    },
+    {
+      "question": "Which of the following is a key feature of the dependency theory?",
+      "options": ["The global economic system benefits developing countries", "Developing countries are dependent on developed countries and struggle to escape their influence", "Economic growth is determined solely by internal resources", "Globalization leads to equality in wealth distribution"],
+      "answer": "Developing countries are dependent on developed countries and struggle to escape their influence"
+    },
+    {
+      "question": "How does political stability influence economic development?",
+      "options": ["It creates a conducive environment for investment, trade, and long-term planning", "It leads to the centralization of economic resources", "It reduces international cooperation and foreign aid", "It has no significant impact on economic policies"],
+      "answer": "It creates a conducive environment for investment, trade, and long-term planning"
+    },
+    {
+      "question": "In what way does the political environment affect foreign direct investment (FDI) in developing countries?",
+      "options": ["A stable and predictable political environment attracts more FDI", "Corruption and political instability encourage greater FDI", "FDI is primarily driven by local political ideologies", "Political decisions have no impact on foreign investments"],
+      "answer": "A stable and predictable political environment attracts more FDI"
+    },
+    {
+      "question": "What is the effect of export-oriented growth strategies on developing economies?",
+      "options": ["It encourages the development of key sectors by expanding market access", "It leads to the decline of domestic industries", "It reduces national sovereignty over economic policies", "It promotes reliance on imports and undermines local production"],
+      "answer": "It encourages the development of key sectors by expanding market access"
+    },
+    {
+      "question": "How does the concept of human capital contribute to economic development?",
+      "options": ["By improving the quality of labor through education, training, and healthcare", "By encouraging government control of the economy", "By promoting industrialization and privatization", "By reducing the need for foreign investments"],
+      "answer": "By improving the quality of labor through education, training, and healthcare"
+    },
+    {
+      "question": "Which factor is essential for successful development in a post-colonial state?",
+      "options": ["A strong and independent government that can implement policies effectively", "The abandonment of all foreign assistance", "The rapid privatization of national industries", "Complete reliance on international loans and aid"],
+      "answer": "A strong and independent government that can implement policies effectively"
+    },
+    {
+      "question": "What is the concept of 'market failure' in development economics?",
+      "options": ["When the market fails to allocate resources efficiently or equitably", "When markets are perfectly competitive and efficient", "When the government takes over all economic functions", "When international trade becomes the sole driver of development"],
+      "answer": "When the market fails to allocate resources efficiently or equitably"
+    },
+    {
+      "question": "What does 'inclusive growth' mean in the context of economic development?",
+      "options": ["Economic growth that benefits all segments of society, reducing inequality", "Growth that benefits only a specific sector of the economy", "Growth driven by foreign direct investments", "Economic policies that ignore social welfare programs"],
+      "answer": "Economic growth that benefits all segments of society, reducing inequality"
+    },
+    {
+      "question": "What is the role of economic diplomacy in the development of a country?",
+      "options": ["To negotiate favorable trade agreements and attract foreign investments", "To isolate the country from international trade", "To centralize economic decision-making within the government", "To encourage local industries without any international trade relations"],
+      "answer": "To negotiate favorable trade agreements and attract foreign investments"
+    },
+    {
+      "question": "Which theory asserts that economic development is hindered by the exploitation of developing nations by developed countries?",
+      "options": ["Dependency theory", "Modernization theory", "Neoliberal theory", "Classical economic theory"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "How does the 'dependency syndrome' affect the development strategies of post-colonial countries?",
+      "options": ["It reinforces reliance on foreign aid and technology rather than self-sufficiency", "It encourages self-sufficient policies and local resource mobilization", "It leads to the decentralization of political power", "It reduces the influence of multinational corporations"],
+      "answer": "It reinforces reliance on foreign aid and technology rather than self-sufficiency"
+    },
+    {
+      "question": "What is the main goal of public-private partnerships (PPP) in developing countries?",
+      "options": ["To combine government policy with private sector efficiency for infrastructure and development projects", "To increase government control over private enterprises", "To privatize all government-owned resources", "To minimize private sector involvement in national development projects"],
+      "answer": "To combine government policy with private sector efficiency for infrastructure and development projects"
+    },
+    {
+      "question": "What does 'economic diversification' refer to in the context of development?",
+      "options": ["The process of expanding the economy by investing in various sectors to reduce dependence on one sector", "The centralization of economic activities in a single industry", "The focus on agricultural production only", "The reliance on foreign investments to drive growth"],
+      "answer": "The process of expanding the economy by investing in various sectors to reduce dependence on one sector"
+    },
+    {
+      "question": "What role does microfinance play in the development of local economies?",
+      "options": ["It provides financial services to small businesses and individuals, fostering entrepreneurship", "It encourages large multinational corporations to invest in the country", "It promotes government control of all financial institutions", "It leads to the centralization of wealth and resources"],
+      "answer": "It provides financial services to small businesses and individuals, fostering entrepreneurship"
+    },
+    {
+      "question": "How do politics influence economic policies in developing countries?",
+      "options": ["Through state intervention in the market", "By promoting international trade agreements", "By creating policies based on local needs and realities", "Through the privatization of public assets"],
+      "answer": "Through state intervention in the market"
+    },
+    {
+      "question": "What role do international financial institutions like the IMF and World Bank play in the economic development of developing countries?",
+      "options": ["They provide loans and impose economic reforms to ensure repayment", "They dictate the political agendas of developing countries", "They solely fund private sector projects", "They focus only on promoting local businesses"],
+      "answer": "They provide loans and impose economic reforms to ensure repayment"
+    },
+    {
+      "question": "Which of the following best describes the concept of 'state autonomy' in political economy?",
+      "options": ["The ability of the state to formulate and implement policies without external interference", "The extent to which states rely on foreign investments", "The role of private corporations in influencing state policies", "The impact of global capitalism on state sovereignty"],
+      "answer": "The ability of the state to formulate and implement policies without external interference"
+    },
+    {
+      "question": "What does the concept of 'structural adjustment' imply in the context of development?",
+      "options": ["A set of economic reforms designed to open up markets and reduce state control", "The need to increase government spending on social programs", "The implementation of socialist policies to reduce inequality", "The adoption of protectionist trade policies to shield domestic industries"],
+      "answer": "A set of economic reforms designed to open up markets and reduce state control"
+    },
+    {
+      "question": "Which of the following is a potential downside of economic globalization for developing countries?",
+      "options": ["Exploitation of local resources by multinational corporations", "Increased government control over local markets", "Reduction in foreign investment", "Higher barriers to international trade"],
+      "answer": "Exploitation of local resources by multinational corporations"
+    },
+    {
+      "question": "Which economic theory advocates that development can be achieved through integration into the global economy and market liberalization?",
+      "options": ["Neoliberalism", "Dependency theory", "Modernization theory", "Socialism"],
+      "answer": "Neoliberalism"
+    },
+    {
+      "question": "What is the main premise of the 'Modernization Theory'?",
+      "options": ["Development is a linear process that all societies must go through", "Economic development requires the abandonment of traditional systems", "The state should play a minimal role in economic development", "Cultural factors are irrelevant to economic progress"],
+      "answer": "Development is a linear process that all societies must go through"
+    },
+    {
+      "question": "How do international trade policies affect the economic development of less developed countries?",
+      "options": ["By creating a more favorable market for their exports", "By restricting access to international markets", "By encouraging the protection of local industries", "By increasing dependency on foreign goods and services"],
+      "answer": "By increasing dependency on foreign goods and services"
+    },
+    {
+      "question": "What role do global institutions like the United Nations play in economic development?",
+      "options": ["They provide a platform for international cooperation and development aid", "They enforce trade tariffs and sanctions", "They regulate domestic industries in developing countries", "They act as economic competitors to private companies"],
+      "answer": "They provide a platform for international cooperation and development aid"
+    },
+    {
+      "question": "What is the impact of foreign aid on the political economy of developing nations?",
+      "options": ["It can reinforce dependency relationships and undermine local development", "It fosters national self-sufficiency", "It has no impact on the political structures of developing nations", "It creates competitive markets and encourages innovation"],
+      "answer": "It can reinforce dependency relationships and undermine local development"
+    },
+    {
+      "question": "Which of the following is a feature of a capitalist economic system in the context of political economy?",
+      "options": ["Private ownership of the means of production", "State control over all economic activities", "Equal distribution of wealth among all citizens", "Government regulation of the labor market"],
+      "answer": "Private ownership of the means of production"
+    },
+    {
+      "question": "What is the primary concern of economic development policies in post-colonial states?",
+      "options": ["Achieving economic independence from former colonial powers", "Focusing solely on attracting foreign direct investment", "Maintaining high levels of state control over all sectors", "Promoting global economic integration through free trade agreements"],
+      "answer": "Achieving economic independence from former colonial powers"
+    },
+    {
+      "question": "What is the purpose of social welfare policies in development economics?",
+      "options": ["To reduce inequality and provide basic services for the population", "To ensure the government's control over the economy", "To limit international trade and protect domestic markets", "To promote competition among private corporations"],
+      "answer": "To reduce inequality and provide basic services for the population"
+    },
+    {
+      "question": "What is the central premise of Dependency Theory?",
+      "options": ["Developing countries are economically dependent on developed countries", "Economic growth is solely determined by internal factors", "Global capitalism fosters equality and shared prosperity", "The state should reduce its involvement in the economy"],
+      "answer": "Developing countries are economically dependent on developed countries"
+    },
+    {
+      "question": "What does the term 'economic liberalization' mean?",
+      "options": ["Reducing government regulation and promoting free market policies", "Increasing state control over markets", "Focusing on the development of socialist policies", "Establishing government monopolies in key industries"],
+      "answer": "Reducing government regulation and promoting free market policies"
+    },
+    {
+      "question": "How do economic policies contribute to poverty reduction in developing countries?",
+      "options": ["By stimulating job creation, increasing income levels, and promoting inclusive growth", "By eliminating all forms of government regulation", "By focusing exclusively on international trade agreements", "By focusing on increasing military spending"],
+      "answer": "By stimulating job creation, increasing income levels, and promoting inclusive growth"
+    },
+    {
+      "question": "What is the role of foreign direct investment (FDI) in the economic development of developing nations?",
+      "options": ["It contributes to the growth of industries, creates jobs, and fosters economic growth", "It primarily benefits foreign corporations at the expense of local businesses", "It leads to the nationalization of key industries", "It has no impact on the local economy"],
+      "answer": "It contributes to the growth of industries, creates jobs, and fosters economic growth"
+    },
+    {
+      "question": "Which of the following is a challenge posed by globalization to developing countries?",
+      "options": ["Increased inequality and concentration of wealth", "The reduction of access to international markets", "Loss of control over national economic policies", "The elimination of global competition in the markets"],
+      "answer": "Increased inequality and concentration of wealth"
+    },
+    {
+      "question": "What does the term 'developmental trajectory' refer to in the context of political economy?",
+      "options": ["The path of a country's political and economic evolution", "The level of income distribution in a country", "The degree of globalization in an economy", "The country's historical political system"],
+      "answer": "The path of a country's political and economic evolution"
+    },
+    {
+      "question": "Which of the following theories focuses on the role of the state in guiding economic development?",
+      "options": ["State-led development theory", "Market-driven development theory", "Globalization theory", "Dependency theory"],
+      "answer": "State-led development theory"
+    },
+    {
+      "question": "In political economy, what is meant by the concept of 'economic structures'?",
+      "options": ["The organization and distribution of economic resources in society", "The government's role in regulating market behavior", "The cultural values influencing economic behavior", "The history of a country's financial systems"],
+      "answer": "The organization and distribution of economic resources in society"
+    },
+    {
+      "question": "Which of the following is a central feature of the dependency theory in political economy?",
+      "options": ["The belief that underdeveloped countries are economically dependent on developed countries", "The focus on free-market policies as the path to development", "The idea that global economic systems are naturally equal", "The central role of international organizations in economic growth"],
+      "answer": "The belief that underdeveloped countries are economically dependent on developed countries"
+    },
+    {
+      "question": "What is the role of state policies in shaping economic development?",
+      "options": ["State policies regulate markets and direct economic growth through investments and regulations", "State policies have no impact on economic development", "State policies focus primarily on reducing the role of private companies", "State policies primarily focus on increasing military spending"],
+      "answer": "State policies regulate markets and direct economic growth through investments and regulations"
+    },
+    {
+      "question": "Which of the following is an example of a state-led development policy?",
+      "options": ["Subsidizing key industries and infrastructure", "Privatizing public enterprises", "Deregulating financial markets", "Reducing government spending on education"],
+      "answer": "Subsidizing key industries and infrastructure"
+    },
+    {
+      "question": "What does 'market-driven development' emphasize in economic growth?",
+      "options": ["The role of free-market mechanisms in fostering growth", "The need for government control over key sectors of the economy", "The importance of international aid for development", "The need to protect domestic industries through tariffs"],
+      "answer": "The role of free-market mechanisms in fostering growth"
+    },
+    {
+      "question": "Which of the following concepts explains the persistence of inequality between rich and poor countries in the global economy?",
+      "options": ["World systems theory", "Market-driven development", "Globalization theory", "Capitalist development theory"],
+      "answer": "World systems theory"
+    },
+    {
+      "question": "What is the focus of the theory of 'modernization' in political economy?",
+      "options": ["The belief that societies must go through specific stages of development", "The emphasis on maintaining traditional economic systems", "The idea that development is a result of foreign intervention", "The importance of social equality in development"],
+      "answer": "The belief that societies must go through specific stages of development"
+    },
+    {
+      "question": "Which political ideology advocates for the reduction of government involvement in the economy?",
+      "options": ["Neoliberalism", "Socialism", "Fascism", "Communism"],
+      "answer": "Neoliberalism"
+    },
+    {
+      "question": "Which of the following best describes the concept of 'globalization' in the context of political economy?",
+      "options": ["The process of increasing interconnectedness among national economies", "The effort to isolate national economies from international trade", "The privatization of state-owned enterprises", "The policy of reducing economic inequality within countries"],
+      "answer": "The process of increasing interconnectedness among national economies"
+    },
+    {
+      "question": "What is the primary focus of economic policies in development?",
+      "options": ["To foster economic growth and address social and structural inequalities", "To minimize the role of the government in economic matters", "To promote a uniform global economic system", "To restrict the flow of foreign investments"],
+      "answer": "To foster economic growth and address social and structural inequalities"
+    },
+    {
+      "question": "Which theory emphasizes the dependence of developing countries on developed countries for economic and political stability?",
+      "options": ["Dependency theory", "World systems theory", "Modernization theory", "Capitalism theory"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What does the concept of 'economic liberalization' involve?",
+      "options": ["Reducing state control over the economy and promoting market-based reforms", "Increased government regulation of markets", "Encouraging state monopolies in key sectors", "Maintaining high tariffs to protect local industries"],
+      "answer": "Reducing state control over the economy and promoting market-based reforms"
+    },
+    {
+      "question": "Which of the following is a critique of globalization from a political economy perspective?",
+      "options": ["It often exacerbates inequality between rich and poor countries", "It reduces global trade and economic interaction", "It leads to a uniform global culture", "It eliminates the role of the private sector in the economy"],
+      "answer": "It often exacerbates inequality between rich and poor countries"
+    },
+    {
+      "question": "What is the focus of the World Systems Theory?",
+      "options": ["The way global economic systems create dependency relationships between rich and poor countries", "The need for market-driven solutions to economic problems", "The benefits of government control over key industries", "The focus on sustainable and local economic development"],
+      "answer": "The way global economic systems create dependency relationships between rich and poor countries"
+    },
+    {
+      "question": "Which of the following is a key principle of the Marxist approach to political economy?",
+      "options": ["The role of class struggle in shaping economic systems", "The focus on private property rights", "The importance of foreign investments in national development", "The promotion of free-market economies as the key to development"],
+      "answer": "The role of class struggle in shaping economic systems"
+    },
+    {
+      "question": "What does 'economic development' typically focus on?",
+      "options": ["Improving living standards, reducing poverty, and fostering inclusive growth", "Increasing national military spending", "Promoting the growth of multinational corporations", "Encouraging the privatization of public services"],
+      "answer": "Improving living standards, reducing poverty, and fostering inclusive growth"
+    },
+    {
+      "question": "Which of the following best describes 'structural adjustment programs'?",
+      "options": ["Economic policies imposed by international financial institutions to reform economies", "National policies designed to encourage local businesses", "Programs focused on increasing military spending", "Local efforts to protect domestic industries from global competition"],
+      "answer": "Economic policies imposed by international financial institutions to reform economies"
+    },
+    {
+      "question": "Which political ideology advocates for significant state intervention in the economy to promote equality?",
+      "options": ["Socialism", "Neoliberalism", "Fascism", "Capitalism"],
+      "answer": "Socialism"
+    }
+  ]
+}

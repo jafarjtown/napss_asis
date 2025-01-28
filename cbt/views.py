@@ -117,7 +117,7 @@ def add_by_upload(request):
                         if q["answer"] == op:
                             is_correct = True
                         o = Option.objects.create(value=op, is_correct=is_correct)
-                        qu.options.add(o)
+                        qu.opts.add(o)
                         qu.save()
                     course.objectives.add(qu)
                     course.save()
