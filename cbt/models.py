@@ -15,12 +15,15 @@ class Question(models.Model):
     
     @property
     def correct_answer(self):
-        for o in self.options.all():
+        for o in self.options:
             if o.is_correct:
                 return o
+    @property
+    def options(self):
+      return self.opts.order_by('?')
         
 class Option(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True, related_name='options')
+    question = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True, related_name='opts')
     value = models.CharField(max_length=500)
     is_correct = models.BooleanField(default=False)
     

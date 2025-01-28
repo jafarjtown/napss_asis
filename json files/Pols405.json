@@ -1,0 +1,506 @@
+{
+  "course": "POLS405",
+  "title": "Third World and Dependency",
+  "questions": [
+    {
+      "question": "What is the main argument of dependency theory regarding the global economic structure?",
+      "options": ["It perpetuates inequality between developed and developing countries", "It promotes economic growth in the Third World", "It ensures fair trade practices", "It fosters independence for developing nations"],
+      "answer": "It perpetuates inequality between developed and developing countries"
+    },
+    {
+      "question": "Which policy is often recommended by dependency theorists to reduce external dependency?",
+      "options": ["Economic self-reliance", "Increased foreign borrowing", "Privatization", "Economic liberalization"],
+      "answer": "Economic self-reliance"
+    },
+    {
+      "question": "Which African country implemented Ujamaa as a self-reliance strategy?",
+      "options": ["Tanzania", "Ghana", "South Africa", "Nigeria"],
+      "answer": "Tanzania"
+    },
+    {
+      "question": "What is one criticism of dependency theory?",
+      "options": ["It underestimates internal factors contributing to underdevelopment", "It ignores historical exploitation", "It promotes globalization", "It supports colonialism"],
+      "answer": "It underestimates internal factors contributing to underdevelopment"
+    },
+    {
+      "question": "Which concept describes the economic domination of Third World countries after colonial independence?",
+      "options": ["Neo-colonialism", "Globalization", "Liberalism", "Isolationism"],
+      "answer": "Neo-colonialism"
+    },
+    {
+      "question": "What is the primary goal of the Non-Aligned Movement in the context of dependency?",
+      "options": ["Maintaining independence from Cold War blocs", "Supporting colonial powers", "Promoting capitalist ideologies", "Strengthening ties with developed nations"],
+      "answer": "Maintaining independence from Cold War blocs"
+    },
+    {
+      "question": "Which development theory argues that all nations can follow a single path to modernity?",
+      "options": ["Modernization theory", "Dependency theory", "World-systems theory", "Neo-Marxism"],
+      "answer": "Modernization theory"
+    },
+    {
+      "question": "What role do multinational corporations often play in Third World dependency, according to critics?",
+      "options": ["Exploitation of resources and labor", "Promotion of equitable development", "Reduction of trade imbalances", "Strengthening local industries"],
+      "answer": "Exploitation of resources and labor"
+    },
+    {
+      "question": "What is the main focus of world-systems theory in analyzing global inequality?",
+      "options": ["Core-periphery dynamics", "Individual nations' policies", "Cultural differences", "Technological advancements"],
+      "answer": "Core-periphery dynamics"
+    },
+    {
+      "question": "Which region in the Third World has been most affected by commodity price volatility?",
+      "options": ["Sub-Saharan Africa", "Western Europe", "North America", "East Asia"],
+      "answer": "Sub-Saharan Africa"
+    },
+    {
+      "question": "What is a key strategy for breaking dependency, as proposed by many Third World leaders?",
+      "options": ["Economic diversification", "Increased reliance on foreign aid", "Reducing education investment", "Lowering trade barriers unilaterally"],
+      "answer": "Economic diversification"
+    },
+    {
+      "question": "Which international agreement was aimed at addressing global trade inequalities for developing nations?",
+      "options": ["General Agreement on Tariffs and Trade (GATT)", "Paris Agreement", "Bretton Woods Agreement", "NATO Treaty"],
+      "answer": "General Agreement on Tariffs and Trade (GATT)"
+    },
+    {
+      "question": "How do dependency theorists view foreign aid programs in the Third World?",
+      "options": ["As tools of control by donor nations", "As effective solutions for development", "As opportunities for self-reliance", "As drivers of local entrepreneurship"],
+      "answer": "As tools of control by donor nations"
+    },
+    {
+      "question": "Which historical event significantly shaped dependency relations in the Third World?",
+      "options": ["Colonialism", "Renaissance", "Industrial Revolution", "Space Race"],
+      "answer": "Colonialism"
+    },
+    {
+      "question": "What is the impact of debt servicing on Third World economies?",
+      "options": ["It diverts resources from development projects", "It reduces inflation", "It enhances economic growth", "It leads to economic diversification"],
+      "answer": "It diverts resources from development projects"
+    },
+    {
+      "question": "Which Asian country adopted an export-led growth model to reduce dependency?",
+      "options": ["South Korea", "India", "Vietnam", "Nepal"],
+      "answer": "South Korea"
+    },
+    {
+      "question": "What is a significant obstacle to Third World industrialization?",
+      "options": ["Lack of capital and technology", "Surplus skilled labor", "Excessive infrastructure", "Overabundance of foreign markets"],
+      "answer": "Lack of capital and technology"
+    },
+    {
+      "question": "Which theory argues that Third World nations are locked into unequal global trade relations?",
+      "options": ["Dependency theory", "Modernization theory", "Classical liberalism", "Structural realism"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What is the primary criticism of structural adjustment programs (SAPs) in the Third World?",
+      "options": ["They prioritize debt repayment over social welfare", "They emphasize local industries", "They reduce foreign investment", "They expand public sector employment"],
+      "answer": "They prioritize debt repayment over social welfare"
+    },
+    {
+      "question": "Which organization represents the collective economic interests of oil-exporting Third World countries?",
+      "options": ["OPEC", "IMF", "WTO", "EU"],
+      "answer": "OPEC"
+    },
+    {
+      "question": "Which economic theory critiques the role of global capitalism in perpetuating Third World underdevelopment?",
+      "options": ["Dependency theory", "Modernization theory", "Neoliberalism", "Keynesian economics"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What is a major goal of Third World nations in international trade negotiations?",
+      "options": ["Achieving fairer terms of trade", "Increasing reliance on aid", "Promoting colonial ties", "Reducing exports"],
+      "answer": "Achieving fairer terms of trade"
+    },
+    {
+      "question": "Which international financial institution is often criticized for imposing structural adjustment programs on Third World countries?",
+      "options": ["International Monetary Fund (IMF)", "United Nations", "World Health Organization (WHO)", "World Trade Organization (WTO)"],
+      "answer": "International Monetary Fund (IMF)"
+    },
+    {
+      "question": "Which term describes the reliance of Third World countries on exporting primary commodities to developed nations?",
+      "options": ["Commodity dependence", "Economic diversification", "Import substitution", "Technological innovation"],
+      "answer": "Commodity dependence"
+    },
+    {
+      "question": "What was the main objective of the Bandung Conference of 1955?",
+      "options": ["Promoting unity among African and Asian nations", "Expanding colonial influence", "Strengthening ties with the West", "Establishing military alliances"],
+      "answer": "Promoting unity among African and Asian nations"
+    },
+    {
+      "question": "What is a common critique of modernization theory by dependency theorists?",
+      "options": ["It ignores historical exploitation of Third World countries", "It promotes self-reliance", "It focuses on cultural diversity", "It supports protectionist policies"],
+      "answer": "It ignores historical exploitation of Third World countries"
+    },
+    {
+      "question": "Which region is most frequently associated with the concept of neo-colonialism?",
+      "options": ["Africa", "Europe", "North America", "Australia"],
+      "answer": "Africa"
+    },
+    {
+      "question": "Which global phenomenon is often linked to the deepening of dependency in Third World countries?",
+      "options": ["Globalization", "Isolationism", "Protectionism", "Industrial Revolution"],
+      "answer": "Globalization"
+    },
+    {
+      "question": "What strategy can Third World nations adopt to reduce reliance on foreign aid?",
+      "options": ["Strengthening domestic industries", "Increasing foreign debt", "Expanding colonial trade ties", "Eliminating regional cooperation"],
+      "answer": "Strengthening domestic industries"
+    },
+    {
+      "question": "Which Latin American dependency theorist is known for their significant contributions to the theory?",
+      "options": ["Raúl Prebisch", "Adam Smith", "Karl Marx", "Max Weber"],
+      "answer": "Raúl Prebisch"
+    },
+    {
+      "question": "Which development strategy emphasizes reducing imports and fostering domestic production?",
+      "options": ["Import substitution industrialization", "Export-oriented industrialization", "Structural adjustment", "Foreign direct investment"],
+      "answer": "Import substitution industrialization"
+    },
+    {
+      "question": "How do dependency theorists view foreign direct investment in the Third World?",
+      "options": ["As a tool for exploitation", "As a means of economic independence", "As a source of technological advancement", "As a driver of political stability"],
+      "answer": "As a tool for exploitation"
+    },
+    {
+      "question": "What is the role of the core countries in the global economic system, according to world-systems theory?",
+      "options": ["Dominating and exploiting peripheral countries", "Encouraging mutual cooperation", "Ensuring economic equality", "Promoting free education"],
+      "answer": "Dominating and exploiting peripheral countries"
+    },
+    {
+      "question": "What is one way Third World nations can reduce dependency on developed nations?",
+      "options": ["Fostering regional integration", "Increasing reliance on foreign aid", "Focusing solely on raw material exports", "Adopting isolationist policies"],
+      "answer": "Fostering regional integration"
+    },
+    {
+      "question": "Which concept refers to the transfer of profits and resources from Third World nations to developed countries?",
+      "options": ["Capital flight", "Economic nationalism", "Cultural assimilation", "Export promotion"],
+      "answer": "Capital flight"
+    },
+    {
+      "question": "What is a common characteristic of Third World economies that contributes to dependency?",
+      "options": ["Monocultural production", "Diverse industrial base", "Technological advancement", "High levels of education"],
+      "answer": "Monocultural production"
+    },
+    {
+      "question": "Which country has been a leader in advocating for a New International Economic Order (NIEO) to benefit Third World nations?",
+      "options": ["India", "United States", "Germany", "Japan"],
+      "answer": "India"
+    },
+    {
+      "question": "What is a significant impact of dependency on Third World political systems?",
+      "options": ["Weak state institutions", "Increased democratic practices", "Stable political systems", "Reduced corruption"],
+      "answer": "Weak state institutions"
+    },
+    {
+      "question": "What is the primary focus of dependency theory in explaining underdevelopment?",
+      "options": ["Historical exploitation by developed nations", "Cultural differences", "Geographic isolation", "Democratic governance"],
+      "answer": "Historical exploitation by developed nations"
+    },
+    {
+      "question": "Which event marked the beginning of the formal end of colonialism in Africa and Asia?",
+      "options": ["World War II", "Cold War", "Industrial Revolution", "American Revolution"],
+      "answer": "World War II"
+    },
+    {
+      "question": "Which historical period is most associated with the emergence of dependency theory?",
+      "options": ["Post-World War II era", "Renaissance period", "Industrial Revolution", "Cold War"],
+      "answer": "Post-World War II era"
+    },
+    {
+      "question": "What does the term 'periphery' refer to in dependency theory?",
+      "options": ["Underdeveloped nations", "Highly industrialized nations", "Former colonial powers", "Economic trade unions"],
+      "answer": "Underdeveloped nations"
+    },
+    {
+      "question": "Which concept describes the dominance of developed nations over Third World countries in global trade?",
+      "options": ["Economic imperialism", "Federalism", "Protectionism", "Global socialism"],
+      "answer": "Economic imperialism"
+    },
+    {
+      "question": "What is one major challenge facing Third World countries in reducing dependency?",
+      "options": ["Lack of industrial infrastructure", "Abundance of natural resources", "Overpopulation in rural areas", "Excessive trade surpluses"],
+      "answer": "Lack of industrial infrastructure"
+    },
+    {
+      "question": "Which organization was established to promote economic and social development in the Third World?",
+      "options": ["United Nations Conference on Trade and Development (UNCTAD)", "World Trade Organization (WTO)", "NATO", "International Monetary Fund (IMF)"],
+      "answer": "United Nations Conference on Trade and Development (UNCTAD)"
+    },
+    {
+      "question": "What is a primary feature of neo-colonialism in the Third World?",
+      "options": ["Economic control by foreign corporations", "Military occupation by colonial powers", "Complete political independence", "Cultural isolation from the West"],
+      "answer": "Economic control by foreign corporations"
+    },
+    {
+      "question": "What is one key factor contributing to the debt crisis in many Third World countries?",
+      "options": ["High-interest loans from international financial institutions", "Excessive tax revenues", "Technological advancement", "Surplus industrial goods"],
+      "answer": "High-interest loans from international financial institutions"
+    },
+    {
+      "question": "Which policy is often advocated to enhance Third World economic independence?",
+      "options": ["Promoting regional trade blocs", "Increasing reliance on foreign aid", "Encouraging privatization of all sectors", "Eliminating government intervention"],
+      "answer": "Promoting regional trade blocs"
+    },
+    {
+      "question": "What role do non-governmental organizations (NGOs) often play in Third World development?",
+      "options": ["Providing humanitarian aid and supporting local initiatives", "Increasing dependence on foreign governments", "Promoting military intervention", "Strengthening colonial ties"],
+      "answer": "Providing humanitarian aid and supporting local initiatives"
+    },
+    {
+      "question": "Which term refers to a deliberate strategy by Third World nations to reduce reliance on imported goods?",
+      "options": ["Import substitution industrialization", "Export promotion", "Trade liberalization", "Globalization"],
+      "answer": "Import substitution industrialization"
+    },
+    {
+      "question": "What is the significance of the Non-Aligned Movement (NAM) for Third World countries?",
+      "options": ["It emphasized independence from Cold War superpowers", "It established new colonial relationships", "It focused on military alliances", "It promoted exclusive trade with Western nations"],
+      "answer": "It emphasized independence from Cold War superpowers"
+    },
+    {
+      "question": "Which factor is often cited as a barrier to sustainable development in Third World nations?",
+      "options": ["Corruption in governance", "Strong judicial systems", "High literacy rates", "Stable economic policies"],
+      "answer": "Corruption in governance"
+    },
+    {
+      "question": "What is the primary focus of structural adjustment programs imposed on Third World countries?",
+      "options": ["Reducing public spending and encouraging free-market policies", "Expanding government welfare programs", "Nationalizing key industries", "Increasing reliance on trade unions"],
+      "answer": "Reducing public spending and encouraging free-market policies"
+    },
+    {
+      "question": "What is the primary goal of the South-South Cooperation initiative?",
+      "options": ["Promoting mutual economic and technical support among developing countries", "Fostering dependency on developed nations", "Strengthening ties with former colonial powers", "Encouraging competition among developing countries"],
+      "answer": "Promoting mutual economic and technical support among developing countries"
+    },
+    {
+      "question": "Which economic activity often dominates the economies of Third World countries?",
+      "options": ["Export of raw materials", "High-tech manufacturing", "Financial services", "Cultural industries"],
+      "answer": "Export of raw materials"
+    },
+    {
+      "question": "What is a common consequence of foreign direct investment in Third World countries?",
+      "options": ["Exploitation of natural resources", "Reduction in foreign dependency", "Improved income equality", "National economic independence"],
+      "answer": "Exploitation of natural resources"
+    },
+    {
+      "question": "Which African country is often cited as a case study for dependency on raw material exports?",
+      "options": ["Nigeria", "South Africa", "Morocco", "Ethiopia"],
+      "answer": "Nigeria"
+    },
+    {
+      "question": "Which concept argues that development in Third World countries is hindered by the global capitalist system?",
+      "options": ["World-systems theory", "Modernization theory", "Realist theory", "Keynesian economics"],
+      "answer": "World-systems theory"
+    },
+    {
+      "question": "What is the relationship between Third World nations and multinational corporations, according to dependency theorists?",
+      "options": ["Exploitative and unequal", "Mutually beneficial", "Strictly cooperative", "Focused on technological transfer"],
+      "answer": "Exploitative and unequal"
+    },
+    {
+      "question": "What role does foreign aid play in the context of Third World dependency?",
+      "options": ["It often reinforces dependency rather than fostering independence", "It leads to complete economic independence", "It focuses on eliminating corruption", "It guarantees technological innovation"],
+      "answer": "It often reinforces dependency rather than fostering independence"
+    },
+    {
+      "question": "What is the primary critique of Third World dependency on foreign aid?",
+      "options": ["It perpetuates reliance on developed nations", "It eliminates local industries", "It increases self-sufficiency", "It promotes rapid industrialization"],
+      "answer": "It perpetuates reliance on developed nations"
+    },
+    {
+      "question": "Which theory explains global inequality as a result of unequal exchange in international trade?",
+      "options": ["Dependency theory", "Modernization theory", "Keynesian economics", "Realist theory"],
+      "answer": "Dependency theory"
+    },
+    {
+      "question": "What is one of the primary goals of Third World development strategies?",
+      "options": ["Achieving economic self-reliance", "Promoting dependency on international organizations", "Eliminating industrial growth", "Advancing military power"],
+      "answer": "Achieving economic self-reliance"
+    },
+    {
+      "question": "Which development strategy was promoted by dependency theorists to reduce reliance on Western economies?",
+      "options": ["Import substitution industrialization", "Free trade agreements", "Structural adjustment programs", "Globalization"],
+      "answer": "Import substitution industrialization"
+    },
+    {
+      "question": "What is a major characteristic of international economic structures criticized by Third World countries?",
+      "options": ["Unfair trade practices favoring developed nations", "Equal distribution of resources", "Protection of Third World economies", "Elimination of tariffs"],
+      "answer": "Unfair trade practices favoring developed nations"
+    },
+    {
+      "question": "Which concept highlights the influence of former colonial powers on the political and economic systems of their former colonies?",
+      "options": ["Neo-colonialism", "Industrialization", "Globalization", "Federalism"],
+      "answer": "Neo-colonialism"
+    },
+    {
+      "question": "What is a common goal of public policies in Third World countries?",
+      "options": ["Promoting inclusive economic development", "Reducing industrialization", "Strengthening foreign dependence", "Eliminating trade barriers completely"],
+      "answer": "Promoting inclusive economic development"
+    },
+    {
+      "question": "Which international financial institution is often criticized for imposing austerity measures on Third World countries?",
+      "options": ["International Monetary Fund (IMF)", "World Health Organization (WHO)", "United Nations (UN)", "World Trade Organization (WTO)"],
+      "answer": "International Monetary Fund (IMF)"
+    },
+    {
+      "question": "What does the term 'global South' often refer to in the context of dependency theory?",
+      "options": ["Developing and underdeveloped nations", "Economically advanced nations", "Former colonial powers", "Non-aligned Cold War countries"],
+      "answer": "Developing and underdeveloped nations"
+    },
+    {
+      "question": "What was the aim of the Bandung Conference of 1955?",
+      "options": ["To promote cooperation among Third World nations", "To expand colonial influence", "To support dependency on Western economies", "To develop structural adjustment programs"],
+      "answer": "To promote cooperation among Third World nations"
+    },
+    {
+      "question": "Which economic structure often perpetuates dependency in Third World countries?",
+      "options": ["Primary commodity exports", "Advanced manufacturing industries", "Technological innovation", "Service-based economies"],
+      "answer": "Primary commodity exports"
+    },
+    {
+      "question": "What is a key recommendation by dependency theorists to reduce Third World dependency?",
+      "options": ["Diversifying economies", "Increasing foreign direct investment", "Encouraging open market policies", "Maintaining colonial ties"],
+      "answer": "Diversifying economies"
+    },
+    {
+      "question": "What is the impact of multinational corporations on Third World economies according to dependency theory?",
+      "options": ["They exploit local resources", "They foster economic equality", "They promote local businesses", "They ensure sustainable development"],
+      "answer": "They exploit local resources"
+    },
+    {
+      "question": "Which global trade system is often criticized for being biased against Third World countries?",
+      "options": ["World Trade Organization (WTO)", "African Union (AU)", "European Union (EU)", "United Nations (UN)"],
+      "answer": "World Trade Organization (WTO)"
+    },
+    {
+      "question": "Which policy is considered essential for achieving economic independence in Third World countries?",
+      "options": ["Economic diversification", "Heavy reliance on foreign aid", "Excessive borrowing", "Trade liberalization"],
+      "answer": "Economic diversification"
+    },
+    {
+      "question": "What was a significant outcome of colonial rule on Third World economies?",
+      "options": ["Dependence on raw material exports", "Rapid industrialization", "Technological advancement", "Economic self-reliance"],
+      "answer": "Dependence on raw material exports"
+    },
+    {
+      "question": "Which region is often associated with the term 'Third World' in dependency studies?",
+      "options": ["Africa, Asia, and Latin America", "Europe and North America", "Australia and Oceania", "Middle East and Central Asia"],
+      "answer": "Africa, Asia, and Latin America"
+    },
+    {
+      "question": "What is the main focus of development theories related to the Third World?",
+      "options": ["Addressing poverty and inequality", "Strengthening military power", "Encouraging foreign dependence", "Maintaining colonial legacies"],
+      "answer": "Addressing poverty and inequality"
+    },
+    {
+      "question": "Which development model encourages Third World nations to rely on international markets?",
+      "options": ["Export-oriented industrialization", "Import substitution", "Self-reliance", "Autarky"],
+      "answer": "Export-oriented industrialization"
+    },
+    {
+      "question": "What is the primary role of the G77 in international economic discussions?",
+      "options": ["Advocating for the interests of developing nations", "Promoting free market policies", "Encouraging military alliances", "Developing Western economies"],
+      "answer": "Advocating for the interests of developing nations"
+    },
+    {
+      "question": "What is the primary focus of dependency theory?",
+      "options": ["Explaining underdevelopment in Third World countries", "Encouraging self-reliance in developed countries", "Promoting free trade globally", "Eliminating economic competition"],
+      "answer": "Explaining underdevelopment in Third World countries"
+    },
+    {
+      "question": "Which term describes the economic domination of Third World countries by developed nations?",
+      "options": ["Neo-colonialism", "Globalization", "Economic liberalization", "Socialism"],
+      "answer": "Neo-colonialism"
+    },
+    {
+      "question": "What is a key critique of modernization theory in explaining Third World development?",
+      "options": ["It overlooks structural inequalities in the global economy", "It promotes economic self-reliance", "It emphasizes the role of colonial powers", "It focuses on socialist ideologies"],
+      "answer": "It overlooks structural inequalities in the global economy"
+    },
+    {
+      "question": "Which international organization is often criticized for imposing structural adjustment programs on Third World countries?",
+      "options": ["International Monetary Fund (IMF)", "World Trade Organization (WTO)", "United Nations (UN)", "African Union (AU)"],
+      "answer": "International Monetary Fund (IMF)"
+    },
+    {
+      "question": "What is the central argument of dependency theorists regarding Third World underdevelopment?",
+      "options": ["It is a result of exploitative relationships with developed countries", "It is caused by cultural backwardness", "It is due to excessive industrialization", "It is driven by overdependence on technology"],
+      "answer": "It is a result of exploitative relationships with developed countries"
+    },
+    {
+      "question": "Which development strategy advocates for reducing reliance on foreign imports in Third World countries?",
+      "options": ["Import substitution industrialization", "Export-led growth", "Structural adjustment", "Globalization"],
+      "answer": "Import substitution industrialization"
+    },
+    {
+      "question": "What is a common characteristic of Third World countries?",
+      "options": ["High levels of poverty and inequality", "Dominance in global trade", "Advanced industrialization", "Extensive social welfare programs"],
+      "answer": "High levels of poverty and inequality"
+    },
+    {
+      "question": "Which economic model emphasizes self-reliance and minimizing foreign dependence?",
+      "options": ["Autarky", "Liberalism", "Keynesianism", "Capitalism"],
+      "answer": "Autarky"
+    },
+    {
+      "question": "What is the primary goal of the New International Economic Order (NIEO)?",
+      "options": ["To create a fairer global economic system", "To increase reliance on foreign aid", "To promote isolationism in Third World countries", "To strengthen military alliances"],
+      "answer": "To create a fairer global economic system"
+    },
+    {
+      "question": "Which term refers to the deliberate policy of fostering economic dependency in Third World nations?",
+      "options": ["Neo-imperialism", "Globalization", "Liberalism", "Nationalism"],
+      "answer": "Neo-imperialism"
+    },
+    {
+      "question": "Which policy is commonly associated with structural adjustment programs in Third World countries?",
+      "options": ["Privatization of public enterprises", "Nationalization of industries", "Increased government subsidies", "Trade protectionism"],
+      "answer": "Privatization of public enterprises"
+    },
+    {
+      "question": "Which economic theory argues that global trade favors developed nations over Third World countries?",
+      "options": ["World-systems theory", "Modernization theory", "Liberal economic theory", "Mercantilism"],
+      "answer": "World-systems theory"
+    },
+    {
+      "question": "What is the role of multinational corporations in dependency theory?",
+      "options": ["They perpetuate economic dependency in Third World countries", "They reduce inequality in global trade", "They promote industrialization in Third World economies", "They advocate for economic self-sufficiency"],
+      "answer": "They perpetuate economic dependency in Third World countries"
+    },
+    {
+      "question": "What is a common impact of foreign aid on Third World countries according to dependency theorists?",
+      "options": ["It fosters long-term dependency on developed nations", "It encourages self-sufficiency", "It reduces economic inequality", "It eliminates external debt"],
+      "answer": "It fosters long-term dependency on developed nations"
+    },
+    {
+      "question": "Which historical system contributed to the economic underdevelopment of Third World countries?",
+      "options": ["Colonialism", "Feudalism", "Industrial revolution", "Agrarianism"],
+      "answer": "Colonialism"
+    },
+    {
+      "question": "What does the term 'Third World' historically refer to?",
+      "options": ["Countries that were non-aligned during the Cold War", "Economically advanced nations", "Colonial powers in the 19th century", "Highly industrialized countries"],
+      "answer": "Countries that were non-aligned during the Cold War"
+    },
+    {
+      "question": "What is the focus of the dependency theory critique of foreign direct investment (FDI)?",
+      "options": ["FDI benefits developed countries more than Third World nations", "FDI eliminates economic inequality", "FDI promotes sustainable development", "FDI enhances local autonomy"],
+      "answer": "FDI benefits developed countries more than Third World nations"
+    },
+    {
+      "question": "Which policy emphasizes export-led growth as a development strategy?",
+      "options": ["Neoliberalism", "Autarky", "Socialism", "Import substitution"],
+      "answer": "Neoliberalism"
+    },
+    {
+      "question": "What is the primary focus of the World Trade Organization (WTO)?",
+      "options": ["Promoting free trade among nations", "Providing financial aid to Third World countries", "Developing agricultural subsidies", "Managing international monetary policies"],
+      "answer": "Promoting free trade among nations"
+    },
+    {
+      "question": "Which African country implemented the Ujamaa policy as a self-reliance development strategy?",
+      "options": ["Tanzania", "Nigeria", "Kenya", "Ghana"],
+      "answer": "Tanzania"
+    }
+  ]
+}

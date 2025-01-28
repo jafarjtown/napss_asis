@@ -1,0 +1,886 @@
+{
+  "course": "POLS401",
+  "title": "Civil-Military Relations",
+  "questions": [
+    {
+      "question": "Which Nigerian military leader is credited with introducing the National Youth Service Corps (NYSC) scheme?",
+      "options": ["Yakubu Gowon", "Olusegun Obasanjo", "Ibrahim Babangida", "Sani Abacha"],
+      "answer": "Yakubu Gowon"
+    },
+    {
+      "question": "What event led to the suspension of the Nigerian Second Republic in 1983?",
+      "options": ["A military coup", "The assassination of the president", "A constitutional crisis", "Ethnic violence"],
+      "answer": "A military coup"
+    },
+    {
+      "question": "Which Nigerian military ruler was in power when the OAU (Organization of African Unity) was formed in 1963?",
+      "options": ["Yakubu Gowon", "Aguiyi Ironsi", "Murtala Mohammed", "Sani Abacha"],
+      "answer": "Aguiyi Ironsi"
+    },
+    {
+      "question": "Which Nigerian military ruler was responsible for creating the infamous 'Maitatsine' sect during the 1980s?",
+      "options": ["Olusegun Obasanjo", "Sani Abacha", "Ibrahim Babangida", "Muhammadu Buhari"],
+      "answer": "Muhammadu Buhari"
+    },
+    {
+      "question": "Which Nigerian military regime abolished the regional structure in favor of states in the 1970s?",
+      "options": ["Yakubu Gowon", "Murtala Mohammed", "Ibrahim Babangida", "Olusegun Obasanjo"],
+      "answer": "Yakubu Gowon"
+    },
+    {
+      "question": "Which country did Nigerian peacekeepers intervene in as part of the ECOMOG peacekeeping force during the civil war in the 1990s?",
+      "options": ["Liberia", "Sierra Leone", "Gabon", "Sudan"],
+      "answer": "Liberia"
+    },
+    {
+      "question": "What was the main objective of Nigeria's military intervention in the Chad Civil War in the 1980s?",
+      "options": [
+        "To ensure the flow of oil to Nigeria",
+        "To defend democracy in Chad",
+        "To protect Nigerian borders from threats",
+        "To prevent the spread of insurgency"
+      ],
+      "answer": "To protect Nigerian borders from threats"
+    },
+    {
+      "question": "Which Nigerian military leader is credited with the 'War Against Indiscipline' campaign aimed at promoting national discipline?",
+      "options": ["Muhammadu Buhari", "Ibrahim Babangida", "Olusegun Obasanjo", "Sani Abacha"],
+      "answer": "Muhammadu Buhari"
+    },
+    {
+      "question": "Which Nigerian leader handed over power to a civilian government in 1999, marking the beginning of the Fourth Republic?",
+      "options": ["Ibrahim Babangida", "Sani Abacha", "Olusegun Obasanjo", "Yakubu Gowon"],
+      "answer": "Olusegun Obasanjo"
+    },
+    {
+      "question": "Which Nigerian general was killed in a failed coup attempt in 1976?",
+      "options": ["Yakubu Gowon", "Murtala Mohammed", "Sani Abacha", "Aguiyi Ironsi"],
+      "answer": "Murtala Mohammed"
+    },
+    {
+      "question": "What was the primary cause of the Biafran War (1967–1970) in Nigeria?",
+      "options": [
+        "Religious differences",
+        "Ethnic secession",
+        "Oil exploration",
+        "Corruption in government"
+      ],
+      "answer": "Ethnic secession"
+    },
+    {
+      "question": "Which Nigerian president was forced to step down after a military coup in 1985?",
+      "options": ["Shehu Shagari", "Goodluck Jonathan", "Olusegun Obasanjo", "Muhammadu Buhari"],
+      "answer": "Muhammadu Buhari"
+    },
+    {
+      "question": "Which Nigerian general implemented the Structural Adjustment Program (SAP) in the 1980s?",
+      "options": ["Yakubu Gowon", "Ibrahim Babangida", "Olusegun Obasanjo", "Sani Abacha"],
+      "answer": "Ibrahim Babangida"
+    },
+    {
+      "question": "Which military coup in Nigeria is often seen as the beginning of military dominance in the country's politics?",
+      "options": ["1966 coup", "1976 coup", "1983 coup", "1993 coup"],
+      "answer": "1966 coup"
+    },
+    {
+      "question": "Which Nigerian military leader abolished the National Assembly and suspended the constitution in 1993?",
+      "options": ["Olusegun Obasanjo", "Ibrahim Babangida", "Sani Abacha", "Yakubu Gowon"],
+      "answer": "Ibrahim Babangida"
+    },
+    {
+      "question": "Which Nigerian city became the capital after Lagos in 1991?",
+      "options": ["Kano", "Abuja", "Enugu", "Port Harcourt"],
+      "answer": "Abuja"
+    },
+    {
+      "question": "Which Nigerian military leader was known for his crackdown on political dissent and the press during his rule in the 1990s?",
+      "options": ["Ibrahim Babangida", "Yakubu Gowon", "Sani Abacha", "Olusegun Obasanjo"],
+      "answer": "Sani Abacha"
+    },
+    {
+      "question": "Which Nigerian general was in power when the country hosted the Commonwealth Heads of Government Meeting (CHOGM) in 2003?",
+      "options": ["Sani Abacha", "Olusegun Obasanjo", "Ibrahim Babangida", "Muhammadu Buhari"],
+      "answer": "Olusegun Obasanjo"
+    },
+    {
+      "question": "What is the primary goal of Nigeria's current military strategy?",
+      "options": [
+        "Expand military power internationally",
+        "Promote civilian-military cooperation",
+        "Combat terrorism and insurgency",
+        "Build regional alliances"
+      ],
+      "answer": "Combat terrorism and insurgency"
+    },
+    {
+      "question": "Which country did Nigeria intervene in with military forces during the ECOMOG mission in the early 1990s?",
+      "options": ["Liberia", "Ivory Coast", "Sierra Leone", "Gabon"],
+      "answer": "Liberia"
+    },
+    {
+      "question": "Which Nigerian military leader created the Directorate of Military Intelligence (DMI) to monitor political dissent?",
+      "options": ["Yakubu Gowon", "Olusegun Obasanjo", "Sani Abacha", "Muhammadu Buhari"],
+      "answer": "Sani Abacha"
+    },
+    {
+      "question": "What is one significant issue facing Nigerian civil-military relations today?",
+      "options": [
+        "Civilian dominance over the military",
+        "Excessive military interference in politics",
+        "Lack of military modernization",
+        "Diminishing military influence"
+      ],
+      "answer": "Excessive military interference in politics"
+    },
+    {
+      "question": "What is the significance of the 1966 military coup in Nigeria?",
+      "options": [
+        "It marked Nigeria's independence.",
+        "It led to the establishment of the First Republic.",
+        "It was the first military intervention in Nigeria's politics.",
+        "It ended colonial rule in Nigeria."
+      ],
+      "answer": "It was the first military intervention in Nigeria's politics."
+    },
+    {
+      "question": "Which Nigerian military leader handed over power to a civilian government in 1979?",
+      "options": ["Yakubu Gowon", "Olusegun Obasanjo", "Ibrahim Babangida", "Murtala Mohammed"],
+      "answer": "Olusegun Obasanjo"
+    },
+    {
+      "question": "What was a key cause of the Nigerian Civil War (1967–1970)?",
+      "options": [
+        "Disputes over oil resources",
+        "Ethnic tensions and secession by Biafra",
+        "Colonial influence",
+        "Military professionalism"
+      ],
+      "answer": "Ethnic tensions and secession by Biafra"
+    },
+    {
+      "question": "Which Nigerian regime introduced the Structural Adjustment Program (SAP) in the 1980s?",
+      "options": [
+        "Yakubu Gowon's regime",
+        "Ibrahim Babangida's regime",
+        "Sani Abacha's regime",
+        "Olusegun Obasanjo's regime"
+      ],
+      "answer": "Ibrahim Babangida's regime"
+    },
+    {
+      "question": "What is the term for the return to civilian rule in Nigeria in 1999?",
+      "options": ["Transition", "Democratization", "Reintegration", "Decolonization"],
+      "answer": "Democratization"
+    },
+    {
+      "question": "Which Nigerian military ruler initiated the creation of Abuja as the Federal Capital Territory?",
+      "options": ["Yakubu Gowon", "Murtala Mohammed", "Ibrahim Babangida", "Sani Abacha"],
+      "answer": "Murtala Mohammed"
+    },
+    {
+      "question": "Who was Nigeria's first military head of state?",
+      "options": ["Yakubu Gowon", "Aguiyi Ironsi", "Murtala Mohammed", "Olusegun Obasanjo"],
+      "answer": "Aguiyi Ironsi"
+    },
+    {
+      "question": "Which Nigerian civilian president had previously served as a military head of state?",
+      "options": ["Shehu Shagari", "Muhammadu Buhari", "Goodluck Jonathan", "Umaru Musa Yar'Adua"],
+      "answer": "Muhammadu Buhari"
+    },
+    {
+      "question": "What was the primary reason for the military's repeated intervention in Nigerian politics?",
+      "options": [
+        "Desire for national unity",
+        "Economic mismanagement and corruption",
+        "Lack of military professionalism",
+        "Pressure from foreign governments"
+      ],
+      "answer": "Economic mismanagement and corruption"
+    },
+    {
+      "question": "Which Nigerian military ruler was assassinated in a coup in 1976?",
+      "options": ["Yakubu Gowon", "Aguiyi Ironsi", "Murtala Mohammed", "Sani Abacha"],
+      "answer": "Murtala Mohammed"
+    },
+    {
+      "question": "Which Nigerian military regime established the Economic and Financial Crimes Commission (EFCC)?",
+      "options": [
+        "Ibrahim Babangida's regime",
+        "Olusegun Obasanjo's civilian administration",
+        "Sani Abacha's regime",
+        "Muhammadu Buhari's military regime"
+      ],
+      "answer": "Olusegun Obasanjo's civilian administration"
+    },
+    {
+      "question": "What role did the Nigerian military play in the ECOMOG peacekeeping missions?",
+      "options": [
+        "Led peacekeeping operations in West Africa",
+        "Supported colonial governments",
+        "Fought against independence movements",
+        "Provided aid to foreign militaries"
+      ],
+      "answer": "Led peacekeeping operations in West Africa"
+    },
+    {
+      "question": "Which Nigerian general declared a 'no victor, no vanquished' policy after the Civil War?",
+      "options": ["Yakubu Gowon", "Aguiyi Ironsi", "Olusegun Obasanjo", "Murtala Mohammed"],
+      "answer": "Yakubu Gowon"
+    },
+    {
+      "question": "In which year did Nigeria transition to its Fourth Republic?",
+      "options": ["1993", "1996", "1999", "2001"],
+      "answer": "1999"
+    },
+    {
+      "question": "What is the significance of the June 12, 1993, elections in Nigeria?",
+      "options": [
+        "It marked the beginning of military rule.",
+        "It was widely regarded as the freest and fairest election.",
+        "It resulted in the establishment of the First Republic.",
+        "It led to the Nigerian Civil War."
+      ],
+      "answer": "It was widely regarded as the freest and fairest election."
+    },
+    {
+      "question": "Which Nigerian head of state was known for his 'War Against Indiscipline' campaign?",
+      "options": ["Ibrahim Babangida", "Olusegun Obasanjo", "Sani Abacha", "Muhammadu Buhari"],
+      "answer": "Muhammadu Buhari"
+    },
+    {
+      "question": "Which Nigerian military leader's regime was characterized by severe human rights abuses and suppression of dissent?",
+      "options": ["Yakubu Gowon", "Sani Abacha", "Murtala Mohammed", "Aguiyi Ironsi"],
+      "answer": "Sani Abacha"
+    },
+    {
+      "question": "What is one major challenge of civil-military relations in Nigeria?",
+      "options": [
+        "Frequent foreign invasions",
+        "Economic dominance by the military",
+        "Weak civilian oversight",
+        "Lack of a national military"
+      ],
+      "answer": "Weak civilian oversight"
+    },
+    {
+      "question": "Which Nigerian military ruler initiated the creation of 12 states in 1967 to replace the regions?",
+      "options": ["Yakubu Gowon", "Aguiyi Ironsi", "Murtala Mohammed", "Ibrahim Babangida"],
+      "answer": "Yakubu Gowon"
+    },
+    {
+      "question": "Which Nigerian civilian president implemented the National Economic Empowerment and Development Strategy (NEEDS)?",
+      "options": ["Olusegun Obasanjo", "Goodluck Jonathan", "Shehu Shagari", "Umaru Musa Yar'Adua"],
+      "answer": "Olusegun Obasanjo"
+    },
+    {
+      "question": "What is the principle that ensures civilian leaders have authority over the military in democratic systems?",
+      "options": ["Civilian control", "Military autonomy", "Martial law", "Military junta"],
+      "answer": "Civilian control"
+    },
+    {
+      "question": "Which country experienced a military coup in 2006, leading to significant political changes?",
+      "options": ["Thailand", "Pakistan", "Chile", "Egypt"],
+      "answer": "Thailand"
+    },
+    {
+      "question": "What is the term for the military's role in international peacekeeping missions?",
+      "options": ["Peacekeeping operations", "Civil-military relations", "Strategic defense", "Military professionalism"],
+      "answer": "Peacekeeping operations"
+    },
+    {
+      "question": "Which country transitioned from military rule to civilian governance in 2011?",
+      "options": ["Myanmar", "Turkey", "Argentina", "Nigeria"],
+      "answer": "Myanmar"
+    },
+    {
+      "question": "What is the term for the use of military forces to manage domestic crises or disasters?",
+      "options": ["Humanitarian intervention", "Civil-military coordination", "Martial law", "Strategic operations"],
+      "answer": "Humanitarian intervention"
+    },
+    {
+      "question": "Which country experienced a military coup in 2014 that disrupted civilian governance?",
+      "options": ["Thailand", "Brazil", "Russia", "India"],
+      "answer": "Thailand"
+    },
+    {
+      "question": "What is the legal principle that prohibits military involvement in civilian judicial matters?",
+      "options": ["Posse Comitatus", "Martial law", "Civilian supremacy", "Military professionalism"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "Which historical figure is often credited with establishing civilian oversight of the military in the U.S.?",
+      "options": ["George Washington", "Abraham Lincoln", "Theodore Roosevelt", "John F. Kennedy"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What is the term for the military's withdrawal from political decision-making processes?",
+      "options": ["Demilitarization", "Civilianization", "Reintegration", "Transition"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which country is an example of a long-standing civilian-controlled democracy with minimal military interference?",
+      "options": ["Sweden", "Pakistan", "Egypt", "Turkey"],
+      "answer": "Sweden"
+    },
+    {
+      "question": "What is the concept that emphasizes the professional development of military personnel to avoid political interference?",
+      "options": ["Military professionalism", "Civilian supremacy", "Strategic neutrality", "Posse Comitatus"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "Which country experienced a military coup in 1958, marking the start of a long era of military involvement in governance?",
+      "options": ["Pakistan", "Thailand", "Chile", "Nigeria"],
+      "answer": "Pakistan"
+    },
+    {
+      "question": "What is the term for international efforts to disarm and reintegrate former combatants after a conflict?",
+      "options": ["Disarmament, Demobilization, and Reintegration (DDR)", "Civilianization", "Strategic intervention", "Humanitarian assistance"],
+      "answer": "Disarmament, Demobilization, and Reintegration (DDR)"
+    },
+    {
+      "question": "Which principle ensures that the military is accountable to elected civilian leaders?",
+      "options": ["Civilian oversight", "Military professionalism", "Posse Comitatus", "Strategic governance"],
+      "answer": "Civilian oversight"
+    },
+    {
+      "question": "Which country transitioned to civilian rule in 1983 after years of military dictatorship?",
+      "options": ["Argentina", "Turkey", "Pakistan", "Chile"],
+      "answer": "Argentina"
+    },
+    {
+      "question": "What is the role of civil society organizations in promoting accountability within the military?",
+      "options": ["Monitoring military activities", "Providing military training", "Strategic planning", "Enforcing martial law"],
+      "answer": "Monitoring military activities"
+    },
+    {
+      "question": "Which country has a history of civilian supremacy since the establishment of its modern democracy in 1949?",
+      "options": ["Germany", "China", "Russia", "Japan"],
+      "answer": "Germany"
+    },
+    {
+      "question": "What is the term for the process of educating military personnel on human rights and democratic values?",
+      "options": ["Military education", "Civilianization", "Strategic studies", "Humanitarian training"],
+      "answer": "Military education"
+    },
+    {
+      "question": "Which country is an example of a peaceful transition from military dictatorship to a civilian government in 1974?",
+      "options": ["Portugal", "Brazil", "Myanmar", "Thailand"],
+      "answer": "Portugal"
+    },
+    {
+      "question": "What is the concept that advocates the military's focus on external defense rather than internal governance?",
+      "options": ["Civilian supremacy", "Strategic defense", "Military neutrality", "Martial law"],
+      "answer": "Strategic defense"
+    },
+    {
+      "question": "Which theory argues that a professional military is essential for maintaining national security?",
+      "options": ["Military professionalism", "Civilian supremacy", "Strategic realism", "Martial law"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "What is the term for the use of armed forces to restore public order during a crisis?",
+      "options": ["Martial law", "Military intervention", "Civilian control", "Posse Comitatus"],
+      "answer": "Martial law"
+    },
+    {
+      "question": "Which country experienced a transition from military to civilian rule in 1999?",
+      "options": ["Nigeria", "Pakistan", "Egypt", "Myanmar"],
+      "answer": "Nigeria"
+    },
+    {
+      "question": "What is the term for the principle that the armed forces should remain neutral in political matters?",
+      "options": ["Civilian supremacy", "Military professionalism", "Strategic neutrality", "Martial law"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "Which country experienced a military coup in 1980 that significantly altered its political landscape?",
+      "options": ["Turkey", "Argentina", "Thailand", "Pakistan"],
+      "answer": "Turkey"
+    },
+    {
+      "question": "What term describes the process of reducing the military's influence in governance?",
+      "options": ["Demilitarization", "Civilianization", "Reintegration", "Transition"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "What is the principle that emphasizes civilian control over the military in democratic societies?",
+      "options": ["Civilian supremacy", "Military interventionism", "Strategic realism", "Martial law"],
+      "answer": "Civilian supremacy"
+    },
+    {
+      "question": "Which country is known for its long history of military coups, especially during the 20th century?",
+      "options": ["Pakistan", "Germany", "Japan", "Sweden"],
+      "answer": "Pakistan"
+    },
+    {
+      "question": "What is the process of reintegrating former soldiers into civilian life called?",
+      "options": ["Reintegration", "Demilitarization", "Disarmament", "Civilianization"],
+      "answer": "Reintegration"
+    },
+    {
+      "question": "Which country has a history of civilian control over the military, embedded in its constitution since its founding?",
+      "options": ["United States", "China", "Russia", "North Korea"],
+      "answer": "United States"
+    },
+    {
+      "question": "What is the term for the reduction of military forces and equipment in a society?",
+      "options": ["Disarmament", "Demobilization", "Civilianization", "Transition"],
+      "answer": "Disarmament"
+    },
+    {
+      "question": "Which historical leader emphasized the importance of keeping the military out of politics?",
+      "options": ["George Washington", "Napoleon Bonaparte", "Adolf Hitler", "Julius Caesar"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What is the principle that prohibits the military from enforcing domestic laws in the U.S.?",
+      "options": ["Posse Comitatus", "Martial law", "Civilian control", "Military neutrality"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "Which country transitioned from a military dictatorship to a civilian government in 1985?",
+      "options": ["Brazil", "Turkey", "Pakistan", "Chile"],
+      "answer": "Brazil"
+    },
+    {
+      "question": "What term refers to the military's withdrawal from political decision-making processes?",
+      "options": ["Demilitarization", "Civilianization", "Transition", "Reintegration"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "Which concept describes the balance of power between civilian leadership and the armed forces?",
+      "options": ["Civil-military relations", "Strategic studies", "Political neutrality", "Military professionalism"],
+      "answer": "Civil-military relations"
+    },
+    {
+      "question": "What is the term for a government led by the military following a coup d'état?",
+      "options": ["Military junta", "Autocracy", "Democracy", "Plutocracy"],
+      "answer": "Military junta"
+    },
+    {
+      "question": "Which country is cited as an example of successful civilian oversight of its military post-World War II?",
+      "options": ["Japan", "Russia", "China", "India"],
+      "answer": "Japan"
+    },
+    {
+      "question": "What is the term for a military's role in supporting nation-building and economic development?",
+      "options": ["Military interventionism", "Civilian supremacy", "Strategic studies", "Military professionalism"],
+      "answer": "Military interventionism"
+    },
+    {
+      "question": "Which country is known for a long-standing tradition of military coups and interventions in politics?",
+      "options": ["Thailand", "Switzerland", "United States", "Canada"],
+      "answer": "Thailand"
+    },
+    {
+      "question": "What is the term for the transfer of power from military rule to civilian governance?",
+      "options": ["Transition", "Democratization", "Reintegration", "Stabilization"],
+      "answer": "Transition"
+    },
+    {
+      "question": "Which country experienced a military coup in 1973, leading to a dictatorship under Augusto Pinochet?",
+      "options": ["Chile", "Argentina", "Brazil", "Colombia"],
+      "answer": "Chile"
+    },
+    {
+      "question": "What is the term for the legal framework governing military-civilian interactions in democratic states?",
+      "options": ["Constitutional law", "Martial law", "Military code", "Strategic doctrines"],
+      "answer": "Constitutional law"
+    },
+    {
+      "question": "Which country is known for its history of non-interference by the military in politics?",
+      "options": ["Switzerland", "Pakistan", "North Korea", "Egypt"],
+      "answer": "Switzerland"
+    },
+    {
+      "question": "What is the term for the reduction of the military's size and power in governance?",
+      "options": ["Demilitarization", "Civilianization", "Transition", "Reintegration"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "What is the primary objective of civil-military relations in a democracy?",
+      "options": ["Ensuring military dominance", "Protecting human rights", "Balancing power between military and civilian authorities", "Increasing military funding"],
+      "answer": "Balancing power between military and civilian authorities"
+    },
+    {
+      "question": "Which theory suggests that military leaders should refrain from political decision-making?",
+      "options": ["Civilian supremacy", "Military professionalism", "Martial law", "Military interventionism"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "What is the term for the legal framework that prevents the military from enforcing civilian laws in the United States?",
+      "options": ["Posse Comitatus", "Martial law", "Civilian control", "Military autonomy"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "Which country is often cited as a model for strong civilian oversight of the military?",
+      "options": ["United States", "North Korea", "Egypt", "Iran"],
+      "answer": "United States"
+    },
+    {
+      "question": "What is the primary function of civilian control over the military?",
+      "options": ["To maintain civilian supremacy", "To strengthen military power", "To promote martial law", "To enforce military-led governance"],
+      "answer": "To maintain civilian supremacy"
+    },
+    {
+      "question": "What is the term for the integration of ex-combatants into civilian society after a conflict?",
+      "options": ["Demobilization", "Reintegration", "Civilianization", "Disarmament"],
+      "answer": "Reintegration"
+    },
+    {
+      "question": "Which concept emphasizes the military’s neutrality in political matters?",
+      "options": ["Military professionalism", "Civilian supremacy", "Martial law", "Military autonomy"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "What is the term for the transfer of power from military to civilian authorities?",
+      "options": ["Transition", "Democratization", "Civilianization", "Rehabilitation"],
+      "answer": "Transition"
+    },
+    {
+      "question": "Which country experienced a military coup in 1973 that overthrew Salvador Allende?",
+      "options": ["Chile", "Argentina", "Brazil", "Venezuela"],
+      "answer": "Chile"
+    },
+    {
+      "question": "What is the term for the study of military institutions and their relationship with political systems?",
+      "options": ["Civil-military relations", "Military sociology", "Political science", "Strategic studies"],
+      "answer": "Civil-military relations"
+    },
+    {
+      "question": "Which country is known for its tradition of strict civilian control over the military post-World War II?",
+      "options": ["Japan", "Russia", "Pakistan", "Egypt"],
+      "answer": "Japan"
+    },
+    {
+      "question": "What is the principle of using the military only as a last resort in domestic affairs called?",
+      "options": ["Posse Comitatus", "Civilian supremacy", "Military interventionism", "Martial law"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "What term describes a government ruled by military leaders?",
+      "options": ["Military junta", "Democracy", "Autocracy", "Oligarchy"],
+      "answer": "Military junta"
+    },
+    {
+      "question": "Which legal framework governs the use of military force within a democratic state?",
+      "options": ["Constitutional law", "Martial law", "Civil-military doctrine", "Military code"],
+      "answer": "Constitutional law"
+    },
+    {
+      "question": "What is the term for reducing the size and influence of a country's military?",
+      "options": ["Demilitarization", "Disarmament", "Reintegration", "Civilianization"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which country experienced a military coup in 2021?",
+      "options": ["Myanmar", "Thailand", "Pakistan", "Egypt"],
+      "answer": "Myanmar"
+    },
+    {
+      "question": "What is the process of shifting military resources to civilian use known as?",
+      "options": ["Civilianization", "Demilitarization", "Reintegration", "Disarmament"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "Which country has a long history of military coups and political interventions?",
+      "options": ["Pakistan", "Sweden", "United States", "Switzerland"],
+      "answer": "Pakistan"
+    },
+    {
+      "question": "What is the principle that prevents the military from engaging in domestic law enforcement?",
+      "options": ["Posse Comitatus", "Civilian control", "Martial law", "Military professionalism"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "Which country is known for its tradition of military professionalism and adherence to civilian control?",
+      "options": ["United States", "China", "Germany", "Russia"],
+      "answer": "United States"
+    },
+    {
+      "question": "Which concept refers to the military’s role in nation-building and infrastructure development?",
+      "options": ["Military interventionism", "Civilian supremacy", "Military professionalism", "Strategic studies"],
+      "answer": "Military interventionism"
+    },
+    {
+      "question": "What term describes a situation where the military controls the government through a coup?",
+      "options": ["Coup d'état", "Revolution", "Civil disobedience", "Martial law"],
+      "answer": "Coup d'état"
+    },
+    {
+      "question": "Which country experienced a military coup in 2013, temporarily suspending civilian rule?",
+      "options": ["Thailand", "United States", "Germany", "Canada"],
+      "answer": "Thailand"
+    },
+    {
+      "question": "Which term describes the process of transitioning from a military-led to a civilian-led government?",
+      "options": ["Democratization", "Civilianization", "Transition", "Reintegration"],
+      "answer": "Democratization"
+    },
+    {
+      "question": "What is the study of how military power impacts society and politics called?",
+      "options": ["Civil-military relations", "Political science", "Military sociology", "Strategic studies"],
+      "answer": "Civil-military relations"
+    },
+    {
+      "question": "What is the term for integrating former combatants into civilian life after a conflict?",
+      "options": ["Reintegration", "Civilianization", "Demilitarization", "Disarmament"],
+      "answer": "Reintegration"
+    },
+    {
+      "question": "Which country is known for its military’s strict focus on defense and non-interference in politics?",
+      "options": ["Japan", "Pakistan", "United States", "Russia"],
+      "answer": "Japan"
+    },
+    {
+      "question": "What is the term for the use of military power to suppress internal dissent?",
+      "options": ["Martial law", "Civilian control", "Military intervention", "Posse Comitatus"],
+      "answer": "Martial law"
+    },
+    {
+      "question": "Which concept suggests that the military should avoid political involvement?",
+      "options": ["Military professionalism", "Civilian supremacy", "Military interventionism", "Strategic control"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "Which historical figure famously stepped down from military command to respect civilian authority?",
+      "options": ["George Washington", "Napoleon Bonaparte", "Julius Caesar", "Winston Churchill"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What is the term for the process of reducing the military's influence in political affairs?",
+      "options": ["Civilianization", "Democratization", "Demilitarization", "Reintegration"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "What is the study of the impact of military institutions on political systems called?",
+      "options": ["Military sociology", "Civil-military relations", "Strategic studies", "Political science"],
+      "answer": "Civil-military relations"
+    },
+    {
+      "question": "Which country experienced a military coup in 2021 that disrupted its democratic progress?",
+      "options": ["Myanmar", "Thailand", "Nigeria", "Brazil"],
+      "answer": "Myanmar"
+    },
+    {
+      "question": "What term describes the principle that civilian leaders must have ultimate authority over military decisions?",
+      "options": ["Civilian control", "Martial law", "Military autonomy", "Military professionalism"],
+      "answer": "Civilian control"
+    },
+    {
+      "question": "What is the term for the reduction of armed forces and weapons in a post-conflict society?",
+      "options": ["Disarmament", "Reintegration", "Demobilization", "Demilitarization"],
+      "answer": "Disarmament"
+    },
+    {
+      "question": "Which country is known for its strict adherence to civilian oversight of its military since World War II?",
+      "options": ["Japan", "Germany", "Russia", "United Kingdom"],
+      "answer": "Japan"
+    },
+    {
+      "question": "What is the term for military rule established by force, often following a coup d'état?",
+      "options": ["Military junta", "Autocracy", "Democracy", "Plutocracy"],
+      "answer": "Military junta"
+    },
+    {
+      "question": "Which principle restricts military involvement in domestic law enforcement in the United States?",
+      "options": ["Posse Comitatus", "Martial law", "Military professionalism", "Civilian supremacy"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "What is the term for the military's withdrawal from political engagement to focus on defense?",
+      "options": ["Civilianization", "Demilitarization", "Reintegration", "Transition"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "Which country experienced a military-led government until a transition to civilian rule in the 1980s?",
+      "options": ["Argentina", "Japan", "Switzerland", "Canada"],
+      "answer": "Argentina"
+    },
+    {
+      "question": "What is the process of dismantling a military infrastructure called?",
+      "options": ["Demilitarization", "Disarmament", "Reintegration", "Transition"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which theory posits that a strong, independent military enhances a country's stability?",
+      "options": ["Strategic realism", "Civilian supremacy", "Military interventionism", "Military professionalism"],
+      "answer": "Strategic realism"
+    },
+    {
+      "question": "What is the term for the military's temporary assumption of control in emergencies?",
+      "options": ["Martial law", "Military professionalism", "Posse Comitatus", "Coup d'état"],
+      "answer": "Martial law"
+    },
+    {
+      "question": "Which country is known for its history of alternating between military and civilian governments?",
+      "options": ["Pakistan", "United States", "Sweden", "India"],
+      "answer": "Pakistan"
+    },
+    {
+      "question": "What is the term for the integration of soldiers into society after military service?",
+      "options": ["Reintegration", "Demobilization", "Disarmament", "Civilianization"],
+      "answer": "Reintegration"
+    },
+    {
+      "question": "What is the term for a government's transition from military rule to civilian-led governance?",
+      "options": ["Transition", "Democratization", "Civilianization", "Stabilization"],
+      "answer": "Transition"
+    },
+    {
+      "question": "Which country experienced a military coup in 1976, leading to a dictatorship in Latin America?",
+      "options": ["Argentina", "Chile", "Colombia", "Peru"],
+      "answer": "Argentina"
+    },
+    {
+      "question": "What is the principle that military forces should not interfere in political matters?",
+      "options": ["Military professionalism", "Civilian supremacy", "Strategic neutrality", "Martial law"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "What is the term for the reduction of military spending to prioritize other sectors?",
+      "options": ["Demilitarization", "Economic restructuring", "Disarmament", "Civilianization"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which country has a tradition of civilian supremacy over the military, rooted in its constitutional framework?",
+      "options": ["United States", "China", "Russia", "Pakistan"],
+      "answer": "United States"
+    },
+    {
+      "question": "What is the term for a sudden, often violent, seizure of political power by the military?",
+      "options": ["Coup d'état", "Revolution", "Martial law", "Civil insurrection"],
+      "answer": "Coup d'état"
+    },
+    {
+      "question": "What is the study of the influence of military strategies on national policies called?",
+      "options": ["Strategic studies", "Civil-military relations", "Military sociology", "Political science"],
+      "answer": "Strategic studies"
+    },
+    {
+      "question": "What is the term for the use of military power to suppress internal dissent?",
+      "options": ["Martial law", "Civilian control", "Military intervention", "Posse Comitatus"],
+      "answer": "Martial law"
+    },
+    {
+      "question": "Which concept suggests that the military should avoid political involvement?",
+      "options": ["Military professionalism", "Civilian supremacy", "Military interventionism", "Strategic control"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "Which historical figure famously stepped down from military command to respect civilian authority?",
+      "options": ["George Washington", "Napoleon Bonaparte", "Julius Caesar", "Winston Churchill"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What is the term for the process of reducing the military's influence in political affairs?",
+      "options": ["Civilianization", "Democratization", "Demilitarization", "Reintegration"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "What is the study of the impact of military institutions on political systems called?",
+      "options": ["Military sociology", "Civil-military relations", "Strategic studies", "Political science"],
+      "answer": "Civil-military relations"
+    },
+    {
+      "question": "Which country experienced a military coup in 2021 that disrupted its democratic progress?",
+      "options": ["Myanmar", "Thailand", "Nigeria", "Brazil"],
+      "answer": "Myanmar"
+    },
+    {
+      "question": "What term describes the principle that civilian leaders must have ultimate authority over military decisions?",
+      "options": ["Civilian control", "Martial law", "Military autonomy", "Military professionalism"],
+      "answer": "Civilian control"
+    },
+    {
+      "question": "What is the term for the reduction of armed forces and weapons in a post-conflict society?",
+      "options": ["Disarmament", "Reintegration", "Demobilization", "Demilitarization"],
+      "answer": "Disarmament"
+    },
+    {
+      "question": "Which country is known for its strict adherence to civilian oversight of its military since World War II?",
+      "options": ["Japan", "Germany", "Russia", "United Kingdom"],
+      "answer": "Japan"
+    },
+    {
+      "question": "What is the term for military rule established by force, often following a coup d'état?",
+      "options": ["Military junta", "Autocracy", "Democracy", "Plutocracy"],
+      "answer": "Military junta"
+    },
+    {
+      "question": "Which principle restricts military involvement in domestic law enforcement in the United States?",
+      "options": ["Posse Comitatus", "Martial law", "Military professionalism", "Civilian supremacy"],
+      "answer": "Posse Comitatus"
+    },
+    {
+      "question": "What is the term for the military's withdrawal from political engagement to focus on defense?",
+      "options": ["Civilianization", "Demilitarization", "Reintegration", "Transition"],
+      "answer": "Civilianization"
+    },
+    {
+      "question": "Which country experienced a military-led government until a transition to civilian rule in the 1980s?",
+      "options": ["Argentina", "Japan", "Switzerland", "Canada"],
+      "answer": "Argentina"
+    },
+    {
+      "question": "What is the process of dismantling a military infrastructure called?",
+      "options": ["Demilitarization", "Disarmament", "Reintegration", "Transition"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which theory posits that a strong, independent military enhances a country's stability?",
+      "options": ["Strategic realism", "Civilian supremacy", "Military interventionism", "Military professionalism"],
+      "answer": "Strategic realism"
+    },
+    {
+      "question": "What is the term for the military's temporary assumption of control in emergencies?",
+      "options": ["Martial law", "Military professionalism", "Posse Comitatus", "Coup d'état"],
+      "answer": "Martial law"
+    },
+    {
+      "question": "Which country is known for its history of alternating between military and civilian governments?",
+      "options": ["Pakistan", "United States", "Sweden", "India"],
+      "answer": "Pakistan"
+    },
+    {
+      "question": "What is the term for the integration of soldiers into society after military service?",
+      "options": ["Reintegration", "Demobilization", "Disarmament", "Civilianization"],
+      "answer": "Reintegration"
+    },
+    {
+      "question": "What is the term for a government's transition from military rule to civilian-led governance?",
+      "options": ["Transition", "Democratization", "Civilianization", "Stabilization"],
+      "answer": "Transition"
+    },
+    {
+      "question": "Which country experienced a military coup in 1976, leading to a dictatorship in Latin America?",
+      "options": ["Argentina", "Chile", "Colombia", "Peru"],
+      "answer": "Argentina"
+    },
+    {
+      "question": "What is the principle that military forces should not interfere in political matters?",
+      "options": ["Military professionalism", "Civilian supremacy", "Strategic neutrality", "Martial law"],
+      "answer": "Military professionalism"
+    },
+    {
+      "question": "What is the term for the reduction of military spending to prioritize other sectors?",
+      "options": ["Demilitarization", "Economic restructuring", "Disarmament", "Civilianization"],
+      "answer": "Demilitarization"
+    },
+    {
+      "question": "Which country has a tradition of civilian supremacy over the military, rooted in its constitutional framework?",
+      "options": ["United States", "China", "Russia", "Pakistan"],
+      "answer": "United States"
+    },
+    {
+      "question": "What is the term for a sudden, often violent, seizure of political power by the military?",
+      "options": ["Coup d'état", "Revolution", "Martial law", "Civil insurrection"],
+      "answer": "Coup d'état"
+    },
+    {
+      "question": "What is the study of the influence of military strategies on national policies called?",
+      "options": ["Strategic studies", "Civil-military relations", "Military sociology", "Political science"],
+      "answer": "Strategic studies"
+    }
+  ]
+}

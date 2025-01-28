@@ -1,0 +1,546 @@
+{
+  "course": "POLS407",
+  "title": "Public Finance Administration",
+  "questions": [
+    {
+      "question": "What is the main purpose of a supplementary budget in public finance?",
+      "options": ["To address unforeseen expenditures", "To increase tax revenues", "To reduce government debt", "To redistribute surplus funds"],
+      "answer": "To address unforeseen expenditures"
+    },
+    {
+      "question": "Which agency is primarily responsible for monetary policy in Nigeria?",
+      "options": ["Central Bank of Nigeria", "Federal Ministry of Finance", "Debt Management Office", "Budget Office of the Federation"],
+      "answer": "Central Bank of Nigeria"
+    },
+    {
+      "question": "What is the goal of tax incentives for businesses in Nigeria?",
+      "options": ["To encourage investment and economic growth", "To reduce public spending", "To increase foreign debt", "To centralize revenue collection"],
+      "answer": "To encourage investment and economic growth"
+    },
+    {
+      "question": "What is the purpose of the Treasury Single Account (TSA) policy in Nigeria?",
+      "options": ["To consolidate all government revenue into a single account", "To fund state-level projects", "To privatize public enterprises", "To eliminate external borrowing"],
+      "answer": "To consolidate all government revenue into a single account"
+    },
+    {
+      "question": "Which Nigerian document outlines the nation’s fiscal policy objectives and strategies?",
+      "options": ["Medium-Term Expenditure Framework (MTEF)", "Fiscal Responsibility Act", "Public Procurement Act", "Economic Recovery Plan"],
+      "answer": "Medium-Term Expenditure Framework (MTEF)"
+    },
+    {
+      "question": "What is the primary benefit of capital budgeting in public finance?",
+      "options": ["Efficient allocation of resources for long-term projects", "Minimizing daily operational costs", "Reducing tax burdens", "Increasing foreign reserves"],
+      "answer": "Efficient allocation of resources for long-term projects"
+    },
+    {
+      "question": "What is the focus of expenditure control in Nigeria’s budgeting process?",
+      "options": ["Ensuring funds are used as allocated", "Reducing national revenue", "Increasing government borrowing", "Privatizing public enterprises"],
+      "answer": "Ensuring funds are used as allocated"
+    },
+    {
+      "question": "Which Nigerian agency is responsible for ensuring compliance with procurement rules?",
+      "options": ["Bureau of Public Procurement", "Central Bank of Nigeria", "Debt Management Office", "Revenue Mobilization Allocation and Fiscal Commission"],
+      "answer": "Bureau of Public Procurement"
+    },
+    {
+      "question": "What is the primary challenge facing public project implementation in Nigeria?",
+      "options": ["Corruption and mismanagement of funds", "Excessive tax collection", "High literacy rates", "Excessive foreign investment"],
+      "answer": "Corruption and mismanagement of funds"
+    },
+    {
+      "question": "What does fiscal transparency aim to achieve in public finance?",
+      "options": ["Accountability and public trust", "Increased government secrecy", "Higher tax burdens", "Centralized budget control"],
+      "answer": "Accountability and public trust"
+    },
+    {
+      "question": "What is the significance of public accountability in financial management?",
+      "options": ["To ensure responsible use of public resources", "To increase tax rates", "To privatize public services", "To limit government borrowing"],
+      "answer": "To ensure responsible use of public resources"
+    },
+    {
+      "question": "What is a key feature of Nigeria’s annual budget process?",
+      "options": ["Presentation by the President to the National Assembly", "Approval by the Central Bank", "Implementation by private contractors", "Drafting by state governors"],
+      "answer": "Presentation by the President to the National Assembly"
+    },
+    {
+      "question": "What is the main purpose of public borrowing in Nigeria?",
+      "options": ["To finance developmental projects", "To increase tax revenues", "To limit private sector growth", "To promote international trade"],
+      "answer": "To finance developmental projects"
+    },
+    {
+      "question": "Which Nigerian law emphasizes prudent financial management and debt control?",
+      "options": ["Fiscal Responsibility Act", "Public Procurement Act", "Companies and Allied Matters Act", "Freedom of Information Act"],
+      "answer": "Fiscal Responsibility Act"
+    },
+    {
+      "question": "What is the primary objective of public financial management reforms in Nigeria?",
+      "options": ["Enhancing efficiency, accountability, and transparency", "Reducing national development projects", "Eliminating tax collection", "Increasing government secrecy"],
+      "answer": "Enhancing efficiency, accountability, and transparency"
+    },
+    {
+      "question": "Which type of budget reflects both revenue and expenditure projections over several years?",
+      "options": ["Medium-term budget", "Zero-based budget", "Supplementary budget", "Incremental budget"],
+      "answer": "Medium-term budget"
+    },
+    {
+      "question": "What is the significance of the National Economic Council in Nigeria?",
+      "options": ["Advising the President on economic matters", "Approving government borrowing", "Collecting taxes", "Monitoring international trade policies"],
+      "answer": "Advising the President on economic matters"
+    },
+    {
+      "question": "What is the purpose of public expenditure reviews in Nigeria?",
+      "options": ["To evaluate the effectiveness of government spending", "To increase government borrowing", "To reduce transparency in budgeting", "To privatize public enterprises"],
+      "answer": "To evaluate the effectiveness of government spending"
+    },
+    {
+      "question": "What is a key focus of Nigeria’s debt management strategy?",
+      "options": ["Ensuring debt sustainability and reducing borrowing costs", "Increasing external debt dependence", "Reducing tax collection efforts", "Privatizing public services"],
+      "answer": "Ensuring debt sustainability and reducing borrowing costs"
+    },
+    {
+      "question": "What is the purpose of the Public Accounts Committee in Nigeria’s National Assembly?",
+      "options": ["Ensuring accountability in the use of public funds", "Drafting the national budget", "Regulating tax laws", "Approving foreign aid"],
+      "answer": "Ensuring accountability in the use of public funds"
+    },
+    {
+      "question": "Which agency oversees the management of public funds in Nigeria?",
+      "options": ["Accountant General of the Federation", "Central Bank of Nigeria", "Ministry of Defense", "National Bureau of Statistics"],
+      "answer": "Accountant General of the Federation"
+    },
+    {
+      "question": "What is the purpose of the Budget Implementation and Monitoring Committee in Nigeria?",
+      "options": ["To ensure the effective execution of budget provisions", "To approve new tax laws", "To regulate public borrowing", "To manage state-owned enterprises"],
+      "answer": "To ensure the effective execution of budget provisions"
+    },
+    {
+      "question": "What is a critical issue facing budgeting processes in Nigeria?",
+      "options": ["Revenue shortfalls and poor implementation", "Excessive public participation", "Minimal foreign investment", "Strict expenditure control"],
+      "answer": "Revenue shortfalls and poor implementation"
+    },
+    {
+      "question": "Which type of budgeting focuses on linking expenditures to specific results?",
+      "options": ["Performance-based budgeting", "Line-item budgeting", "Incremental budgeting", "Deficit budgeting"],
+      "answer": "Performance-based budgeting"
+    },
+    {
+      "question": "What is the role of the Federal Inland Revenue Service (FIRS) in Nigeria?",
+      "options": ["Collection of taxes and enforcement of tax laws", "Regulating monetary policies", "Approving government budgets", "Auditing private companies"],
+      "answer": "Collection of taxes and enforcement of tax laws"
+    },
+    {
+      "question": "Which law established the Public Procurement Act in Nigeria?",
+      "options": ["Act No. 14 of 2007", "Fiscal Responsibility Act", "Companies and Allied Matters Act", "National Revenue Act"],
+      "answer": "Act No. 14 of 2007"
+    },
+    {
+      "question": "What is the primary objective of capital expenditure in public finance?",
+      "options": ["To fund long-term development projects", "To pay government workers", "To cover daily operational costs", "To reduce taxes"],
+      "answer": "To fund long-term development projects"
+    },
+    {
+      "question": "What does zero-based budgeting emphasize?",
+      "options": ["Justifying all expenditures for each new budget period", "Maintaining previous year’s allocations", "Reducing government accountability", "Minimizing tax revenue"],
+      "answer": "Justifying all expenditures for each new budget period"
+    },
+    {
+      "question": "Which Nigerian institution monitors compliance with the Fiscal Responsibility Act?",
+      "options": ["Fiscal Responsibility Commission", "Central Bank of Nigeria", "National Assembly", "Budget Office of the Federation"],
+      "answer": "Fiscal Responsibility Commission"
+    },
+    {
+      "question": "What is the purpose of public finance accountability in Nigeria?",
+      "options": ["To prevent corruption and promote trust in government", "To increase government borrowing", "To limit public participation in budgeting", "To eliminate taxation"],
+      "answer": "To prevent corruption and promote trust in government"
+    },
+    {
+      "question": "Which agency is responsible for managing Nigeria's external debt?",
+      "options": ["Debt Management Office", "Central Bank of Nigeria", "Federal Ministry of Finance", "National Bureau of Statistics"],
+      "answer": "Debt Management Office"
+    },
+    {
+      "question": "What does public revenue diversification aim to achieve in Nigeria?",
+      "options": ["Reducing overreliance on oil revenue", "Eliminating foreign aid", "Increasing public expenditure", "Expanding fiscal deficits"],
+      "answer": "Reducing overreliance on oil revenue"
+    },
+    {
+      "question": "What is a significant problem with Nigeria's tax system?",
+      "options": ["Low tax compliance", "Excessive taxation", "Overdependence on agriculture", "Strict tax enforcement"],
+      "answer": "Low tax compliance"
+    },
+    {
+      "question": "What is the primary function of the Budget Office of the Federation in Nigeria?",
+      "options": ["Preparing and monitoring the national budget", "Approving tax laws", "Managing government debts", "Supervising private banks"],
+      "answer": "Preparing and monitoring the national budget"
+    },
+    {
+      "question": "What is the major benefit of adopting a Medium-Term Sector Strategy (MTSS)?",
+      "options": ["Aligning sector budgets with national development priorities", "Minimizing public sector spending", "Avoiding international borrowing", "Promoting private sector autonomy"],
+      "answer": "Aligning sector budgets with national development priorities"
+    },
+    {
+      "question": "What is the main advantage of e-procurement in public finance management?",
+      "options": ["Increased transparency and efficiency", "Reduced public participation", "Higher tax collection", "Expanded public sector employment"],
+      "answer": "Increased transparency and efficiency"
+    },
+    {
+      "question": "Which sector is the largest contributor to Nigeria’s revenue?",
+      "options": ["Oil and gas", "Agriculture", "Manufacturing", "Telecommunications"],
+      "answer": "Oil and gas"
+    },
+    {
+      "question": "What is the primary aim of fiscal federalism in Nigeria?",
+      "options": ["Equitable revenue allocation among different levels of government", "Centralizing all government finances", "Eliminating state-level taxes", "Increasing foreign aid dependence"],
+      "answer": "Equitable revenue allocation among different levels of government"
+    },
+    {
+      "question": "What does the term 'public debt sustainability' mean?",
+      "options": ["Ability to manage debt without compromising future budgets", "Complete elimination of debt", "Unlimited borrowing capacity", "Minimal public expenditure"],
+      "answer": "Ability to manage debt without compromising future budgets"
+    },
+    {
+      "question": "Which body oversees the financial audit of public accounts in Nigeria?",
+      "options": ["Office of the Auditor General of the Federation", "Federal Ministry of Finance", "Central Bank of Nigeria", "National Revenue Service"],
+      "answer": "Office of the Auditor General of the Federation"
+    },
+    {
+      "question": "What is the primary aim of public expenditure in developing countries like Nigeria?",
+      "options": ["To reduce public debt", "To promote economic development and welfare", "To fund political campaigns", "To limit government size"],
+      "answer": "To promote economic development and welfare"
+    },
+    {
+      "question": "Which of the following is a major source of revenue for the Nigerian government?",
+      "options": ["Export of crude oil", "Private sector loans", "Foreign direct investment", "Sale of government properties"],
+      "answer": "Export of crude oil"
+    },
+    {
+      "question": "What is the role of the Fiscal Responsibility Commission in Nigeria?",
+      "options": ["To manage international trade", "To ensure prudent management of public resources", "To regulate oil and gas operations", "To oversee private financial institutions"],
+      "answer": "To ensure prudent management of public resources"
+    },
+    {
+      "question": "Which of the following is a key challenge in Nigeria's public finance administration?",
+      "options": ["Weak revenue collection systems", "Excessive surplus budgets", "Over-regulation of private companies", "Excessive public accountability"],
+      "answer": "Weak revenue collection systems"
+    },
+    {
+      "question": "What is the main purpose of public finance auditing in Nigeria?",
+      "options": ["To increase taxes", "To ensure transparency and accountability in financial management", "To regulate private banks", "To manage government-owned businesses"],
+      "answer": "To ensure transparency and accountability in financial management"
+    },
+    {
+      "question": "Which law governs the appropriation of public funds in Nigeria?",
+      "options": ["Fiscal Responsibility Act", "Public Procurement Act", "Companies and Allied Matters Act", "Land Use Act"],
+      "answer": "Fiscal Responsibility Act"
+    },
+    {
+      "question": "What is the role of the Central Bank of Nigeria in public finance management?",
+      "options": ["Printing currency and regulating monetary policy", "Approving government expenditure", "Auditing public accounts", "Setting tax rates"],
+      "answer": "Printing currency and regulating monetary policy"
+    },
+    {
+      "question": "What is the key purpose of the Nigerian Sovereign Wealth Fund?",
+      "options": ["To save for future generations", "To fund government salaries", "To finance political campaigns", "To reduce public taxation"],
+      "answer": "To save for future generations"
+    },
+    {
+      "question": "In public finance, what does the term 'deficit financing' mean?",
+      "options": ["Raising funds through loans to cover budget shortfalls", "Reducing government spending", "Increasing taxes to fund development", "Eliminating foreign investments"],
+      "answer": "Raising funds through loans to cover budget shortfalls"
+    },
+    {
+      "question": "What is the primary objective of public debt management?",
+      "options": ["Minimizing borrowing costs", "Increasing government expenditure", "Raising taxes", "Expanding public sector employment"],
+      "answer": "Minimizing borrowing costs"
+    },
+    {
+      "question": "Which Nigerian government body is responsible for approving the national budget?",
+      "options": ["National Assembly", "Federal Executive Council", "Central Bank of Nigeria", "Budget Office of the Federation"],
+      "answer": "National Assembly"
+    },
+    {
+      "question": "What is one of the main purposes of public accountability in finance administration?",
+      "options": ["To increase government secrecy", "To prevent corruption and misuse of public funds", "To increase government spending", "To reduce the role of the private sector"],
+      "answer": "To prevent corruption and misuse of public funds"
+    },
+    {
+      "question": "Which of the following is a key feature of a good budgeting system?",
+      "options": ["Transparency and accountability", "High levels of taxation", "Minimal public involvement", "Government secrecy"],
+      "answer": "Transparency and accountability"
+    },
+    {
+      "question": "What is the primary role of taxation in public finance?",
+      "options": ["To provide revenue for public goods and services", "To reduce government spending", "To promote private sector growth", "To limit economic development"],
+      "answer": "To provide revenue for public goods and services"
+    },
+    {
+      "question": "What is the purpose of public procurement laws in Nigeria?",
+      "options": ["To regulate government contracts and ensure value for money", "To limit private sector involvement", "To increase public sector employment", "To manage international trade agreements"],
+      "answer": "To regulate government contracts and ensure value for money"
+    },
+    {
+      "question": "Which of the following is a major factor influencing public finance in Nigeria?",
+      "options": ["Global oil prices", "Low population density", "Limited trade partnerships", "Strict financial autonomy"],
+      "answer": "Global oil prices"
+    },
+    {
+      "question": "What is the function of the Treasury Single Account (TSA) in Nigeria?",
+      "options": ["To consolidate government revenue in a single account", "To set tax rates", "To regulate public-private partnerships", "To manage foreign debt"],
+      "answer": "To consolidate government revenue in a single account"
+    },
+    {
+      "question": "What is a key element of financial management in public finance?",
+      "options": ["Budgeting, auditing, and expenditure control", "Setting up private sector businesses", "Reducing taxation rates", "Focusing only on capital projects"],
+      "answer": "Budgeting, auditing, and expenditure control"
+    },
+    {
+      "question": "What does the Medium-Term Expenditure Framework (MTEF) aim to achieve in Nigeria?",
+      "options": ["Linking policies with resources and budgeting over a three-year period", "Reducing government accountability", "Expanding public debt without plans", "Managing state-owned enterprises"],
+      "answer": "Linking policies with resources and budgeting over a three-year period"
+    },
+    {
+      "question": "What is the primary challenge of public revenue generation in Nigeria?",
+      "options": ["Overdependence on oil revenue", "Excessive borrowing", "High literacy rates", "Strong industrial base"],
+      "answer": "Overdependence on oil revenue"
+    },
+    {
+      "question": "Which of the following is a key principle in the budgeting process?",
+      "options": ["Inclusiveness", "Tax evasion", "Government secrecy", "Privatization of state-owned assets"],
+      "answer": "Inclusiveness"
+    },
+    {
+      "question": "What is the purpose of the budgetary control system?",
+      "options": ["To maximize the revenue collected by the government", "To ensure that the government adheres to its budget", "To raise taxes", "To manage private sector investments"],
+      "answer": "To ensure that the government adheres to its budget"
+    },
+    {
+      "question": "What is a major benefit of public finance administration?",
+      "options": ["Increased political corruption", "Efficient allocation of government resources", "Reduced government transparency", "Higher private sector profits"],
+      "answer": "Efficient allocation of government resources"
+    },
+    {
+      "question": "In Nigeria, what is the primary purpose of the Federal Inland Revenue Service (FIRS)?",
+      "options": ["To create and enforce public finance policies", "To collect tax revenue for the federal government", "To provide loans to private companies", "To regulate the banking sector"],
+      "answer": "To collect tax revenue for the federal government"
+    },
+    {
+      "question": "What is the role of the Ministry of Finance in public finance administration?",
+      "options": ["To issue government bonds", "To manage national government financial policies", "To collect customs duties", "To monitor private sector investments"],
+      "answer": "To manage national government financial policies"
+    },
+    {
+      "question": "Which of the following is a key component of effective public financial management?",
+      "options": ["Budget formulation and implementation", "Government-owned enterprises' profit maximization", "Investment in private sectors", "Increase in government debt"],
+      "answer": "Budget formulation and implementation"
+    },
+    {
+      "question": "Which financial document details the revenue and expenditure plan of the Nigerian government?",
+      "options": ["Annual National Budget", "Monetary Policy Document", "National Economic Recovery Plan", "Economic and Financial Crimes Report"],
+      "answer": "Annual National Budget"
+    },
+    {
+      "question": "What is a common method used by governments to control public expenditure?",
+      "options": ["Increasing foreign debt", "Cutting spending on essential services", "Fiscal policy adjustments and budget constraints", "Privatizing state-owned enterprises"],
+      "answer": "Fiscal policy adjustments and budget constraints"
+    },
+    {
+      "question": "What does public accountability in public finance administration help to prevent?",
+      "options": ["Financial mismanagement and corruption", "Increased government spending", "Private sector interference", "Foreign dependency"],
+      "answer": "Financial mismanagement and corruption"
+    },
+    {
+      "question": "In the Nigerian context, which of the following is a major issue affecting public finance management?",
+      "options": ["Tax evasion and avoidance", "Over-regulation of private industries", "Insufficient government expenditure", "Decreased foreign aid"],
+      "answer": "Tax evasion and avoidance"
+    },
+    {
+      "question": "Which of the following is a primary goal of budgetary control in public finance?",
+      "options": ["Reducing government debt", "Avoiding excess public sector salaries", "Ensuring public funds are spent according to approved plans", "Maximizing private sector profits"],
+      "answer": "Ensuring public funds are spent according to approved plans"
+    },
+    {
+      "question": "What is the role of the Auditor-General in Nigeria's public finance administration?",
+      "options": ["To oversee government revenue collection", "To audit government financial records and ensure transparency", "To approve national budgets", "To control foreign investments"],
+      "answer": "To audit government financial records and ensure transparency"
+    },
+    {
+      "question": "Which of the following is a characteristic of sound fiscal policy in public finance administration?",
+      "options": ["Excessive borrowing", "Balanced revenue and expenditure", "Limited government control over the economy", "Ignoring public welfare needs"],
+      "answer": "Balanced revenue and expenditure"
+    },
+    {
+      "question": "What does a government budget typically include?",
+      "options": ["Total national debt", "National revenue and expenditure plans", "Tax rate schedules only", "Private sector profits"],
+      "answer": "National revenue and expenditure plans"
+    },
+    {
+      "question": "What role does the National Assembly play in Nigeria's public finance administration?",
+      "options": ["Approval of the national budget", "Directly managing government revenue", "Setting tax rates", "Managing public sector wages"],
+      "answer": "Approval of the national budget"
+    },
+    {
+      "question": "What is a major objective of fiscal policy in public finance?",
+      "options": ["Maintaining a balance between government spending and revenue", "Encouraging debt accumulation", "Increasing private sector ownership", "Regulating foreign exchange markets"],
+      "answer": "Maintaining a balance between government spending and revenue"
+    },
+    {
+      "question": "Which of the following is the main purpose of the Nigeria Debt Management Office (DMO)?",
+      "options": ["To collect taxes", "To manage the country's external and domestic debts", "To regulate interest rates", "To provide loans to private sectors"],
+      "answer": "To manage the country's external and domestic debts"
+    },
+    {
+      "question": "In Nigeria, which of the following is an essential component of public finance management?",
+      "options": ["Revenue generation through taxation", "Creating employment for all citizens", "Privatizing government-owned enterprises", "Limiting national spending to foreign aid"],
+      "answer": "Revenue generation through taxation"
+    },
+    {
+      "question": "What is one of the challenges of public finance management in developing countries like Nigeria?",
+      "options": ["Transparency in budgeting and financial reporting", "Excessive taxation", "Lack of financial institutions", "Over-dependence on external borrowing"],
+      "answer": "Transparency in budgeting and financial reporting"
+    },
+    {
+      "question": "What is the function of the Budget Office of the Federation in Nigeria?",
+      "options": ["To approve all private sector investments", "To coordinate the preparation and implementation of the national budget", "To regulate the banking sector", "To ensure national security spending"],
+      "answer": "To coordinate the preparation and implementation of the national budget"
+    },
+    {
+      "question": "Which of the following is an important principle in the public finance decision-making process?",
+      "options": ["Maximizing tax rates", "Ensuring equity and fairness in expenditure", "Promoting privatization", "Encouraging government monopoly in all sectors"],
+      "answer": "Ensuring equity and fairness in expenditure"
+    },
+    {
+      "question": "What does the concept of 'public accountability' in public finance entail?",
+      "options": ["Ensuring private sector growth", "Transparency in the management of public resources", "Limiting government spending", "Increasing the national debt"],
+      "answer": "Transparency in the management of public resources"
+    },
+    {
+      "question": "What is the primary purpose of public revenue raising?",
+      "options": ["Funding government operations", "Promoting economic growth", "Supporting private sector development", "Increasing exports"],
+      "answer": "Funding government operations"
+    },
+    {
+      "question": "Which of the following is a major source of public revenue?",
+      "options": ["Private sector profits", "Taxes", "Personal savings", "Government subsidies"],
+      "answer": "Taxes"
+    },
+    {
+      "question": "What is the main goal of public financial management?",
+      "options": ["Maximizing government spending", "Efficient use of public funds", "Reducing taxes", "Increasing government debt"],
+      "answer": "Efficient use of public funds"
+    },
+    {
+      "question": "What does the budgeting process in public finance administration primarily aim to achieve?",
+      "options": ["Control of government expenditure", "Increase in government revenue", "Encourage private investment", "Regulation of imports"],
+      "answer": "Control of government expenditure"
+    },
+    {
+      "question": "Which of the following is NOT a component of public expenditure planning?",
+      "options": ["Budget allocation", "Revenue projections", "Expenditure control", "Private sector investment planning"],
+      "answer": "Private sector investment planning"
+    },
+    {
+      "question": "What is meant by public accountability in the context of public finance?",
+      "options": ["The process of increasing government revenue", "Ensuring transparency and responsibility in managing public funds", "Increasing military spending", "Limiting tax collection to only wealthy individuals"],
+      "answer": "Ensuring transparency and responsibility in managing public funds"
+    },
+    {
+      "question": "What is the first step in the budgeting process?",
+      "options": ["Expenditure review", "Revenue forecasting", "Budget formulation", "Approval by legislature"],
+      "answer": "Budget formulation"
+    },
+    {
+      "question": "Which of the following best describes the concept of 'public accountability' in financial management?",
+      "options": ["Ensuring that financial resources are used for public benefit", "Maximizing tax revenue collection", "Government control of private enterprises", "Minimizing government spending"],
+      "answer": "Ensuring that financial resources are used for public benefit"
+    },
+    {
+      "question": "Which of the following is a key function of financial management in public administration?",
+      "options": ["Public revenue generation", "Government regulation of markets", "Foreign investment attraction", "Control of public sector salaries"],
+      "answer": "Public revenue generation"
+    },
+    {
+      "question": "Which document outlines the government's planned revenues and expenditures for a fiscal year?",
+      "options": ["National development plan", "Government policy document", "Budget", "Economic recovery plan"],
+      "answer": "Budget"
+    },
+    {
+      "question": "What is the role of a public expenditure control system?",
+      "options": ["To ensure that government funds are spent according to the budget", "To reduce the overall tax burden on citizens", "To facilitate international trade", "To ensure private sector involvement in public services"],
+      "answer": "To ensure that government funds are spent according to the budget"
+    },
+    {
+      "question": "What is the purpose of the budgetary control process in public finance administration?",
+      "options": ["To make sure that the government collects enough revenue", "To ensure that the government does not overspend", "To increase government debt", "To reduce tax rates"],
+      "answer": "To ensure that the government does not overspend"
+    },
+    {
+      "question": "Which of the following is a characteristic of a sound public budgeting system?",
+      "options": ["Excessive secrecy", "Clear allocation of financial resources", "Limited transparency", "Government monopoly on financial management"],
+      "answer": "Clear allocation of financial resources"
+    },
+    {
+      "question": "What does the 'expenditure control' process involve in public finance?",
+      "options": ["Monitoring the revenue collection", "Ensuring that the government's spending is in line with the budget", "Promoting private sector investments", "Setting tax rates"],
+      "answer": "Ensuring that the government's spending is in line with the budget"
+    },
+    {
+      "question": "What is an important consideration in decision-making for public projects?",
+      "options": ["Maximizing profits", "Efficiency and cost-effectiveness", "Private sector interests", "Reducing government revenue"],
+      "answer": "Efficiency and cost-effectiveness"
+    },
+    {
+      "question": "Which of the following is NOT typically included in a public finance expenditure plan?",
+      "options": ["Public sector salaries", "Infrastructure development", "Public service pensions", "Private sector profit margins"],
+      "answer": "Private sector profit margins"
+    },
+    {
+      "question": "How do government agencies ensure public accountability in the financial management process?",
+      "options": ["By reducing government debt", "By conducting regular audits", "By limiting financial transparency", "By increasing tax rates"],
+      "answer": "By conducting regular audits"
+    },
+    {
+      "question": "What is a key challenge in public finance administration?",
+      "options": ["Minimizing public sector wages", "Ensuring the efficient allocation of resources", "Increasing private sector revenue", "Reducing public sector corruption"],
+      "answer": "Ensuring the efficient allocation of resources"
+    },
+    {
+      "question": "Which method is commonly used to raise public revenue?",
+      "options": ["Foreign direct investment", "Public-private partnerships", "Taxation", "Monetary policy"],
+      "answer": "Taxation"
+    },
+    {
+      "question": "What is the role of public finance administration in economic development?",
+      "options": ["Regulating private enterprises", "Facilitating efficient resource allocation", "Controlling inflation", "Increasing export capacity"],
+      "answer": "Facilitating efficient resource allocation"
+    },
+    {
+      "question": "What does the public finance budgeting process ensure?",
+      "options": ["Increasing government revenue", "Efficient allocation of funds to priority sectors", "Minimizing taxes", "Maximizing government spending"],
+      "answer": "Efficient allocation of funds to priority sectors"
+    },
+    {
+      "question": "Which of the following is a major purpose of the public budgeting process?",
+      "options": ["To increase government revenue", "To promote fiscal discipline and financial control", "To minimize public debt", "To reduce military spending"],
+      "answer": "To promote fiscal discipline and financial control"
+    },
+    {
+      "question": "Which of the following best defines public expenditure in the context of public finance?",
+      "options": ["Expenditures related to private enterprises", "Government spending on goods, services, and welfare", "Funding for international trade", "Capital investment in the private sector"],
+      "answer": "Government spending on goods, services, and welfare"
+    },
+    {
+      "question": "Which of the following is a common tool used in public financial management for transparency?",
+      "options": ["Confidential financial statements", "Regular audits", "Limitations on financial reporting", "Private sector involvement in budgeting"],
+      "answer": "Regular audits"
+    },
+    {
+      "question": "Which aspect of public finance is concerned with the control of spending to ensure alignment with fiscal goals?",
+      "options": ["Revenue generation", "Expenditure control", "Public accountability", "Project funding"],
+      "answer": "Expenditure control"
+    },
+    {
+      "question": "What is a key element of a well-designed budgeting system in public finance administration?",
+      "options": ["Secrecy in financial matters", "Clear prioritization of expenditure", "Excessive government borrowing", "Lack of oversight in spending"],
+      "answer": "Clear prioritization of expenditure"
+    }
+  ]
+}
