@@ -1,5 +1,11 @@
 from django.db import models
+from django.db.models import QuerySet
 
+def randomize_options(qs: QuerySet) -> QuerySet:
+    from random import shuffle
+    list_of_options = list(qs) 
+    shuffle(list_of_options)
+    return list_of_options
 # Create your models here.
 class CourseCBT(models.Model):
   course = models.OneToOneField('material.Course', on_delete=models.CASCADE, related_name='cbt_test')
@@ -15,12 +21,14 @@ class Question(models.Model):
     
     @property
     def correct_answer(self):
-        for o in self.options:
+        for o in self.opts.all():
             if o.is_correct:
                 return o
     @property
     def options(self):
-      return self.opts.order_by('?')
+        options = self.opts.all()  # Get all options for the question
+        return randomize_options(options) 
+    
         
 class Option(models.Model):
     question = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True, related_name='opts')
