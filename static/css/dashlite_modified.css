@@ -54,7 +54,7 @@
 :root,
 [data-bs-theme=light] {
     --bs-primary: #00923f; /* New primary color */
-    --bs-primary-rgb: 0, 146, 63;
+    --bs-primary-rgb: #00923f;
     --bs-primary-text-emphasis: #00592a; /* Darker shade for text */
 
   --bs-blue: #559bfb;
@@ -89,7 +89,7 @@
   --bs-dark: #1f2b3a;
   --bs-gray: #8091a7;
   --bs-lighter: #f5f6fa;
-  --bs-primary-rgb: 133, 79, 255;
+  --bs-primary-rgb: #00923f;
   --bs-secondary-rgb: 54, 74, 99;
   --bs-success-rgb: 30, 224, 172;
   --bs-info-rgb: 9, 194, 222;
@@ -8861,7 +8861,7 @@ div.dataTables_wrapper div.dataTables_filter .input-group.has-validation > .form
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-primary-rgb) !important;
 }
 
 .text-secondary {
@@ -31110,7 +31110,7 @@ body.nav-shown {
   border-radius: 6px;
 }
 .nk-menu-link:hover, .active > .nk-menu-link {
-  color: #9769ff;
+  color: #00923c;
   background: #fff;
 }
 .is-light .nk-menu-link:hover, .is-light .active > .nk-menu-link {
@@ -31123,7 +31123,7 @@ body.nav-shown {
   background: #422782;
 }
 .nk-menu-link:hover .count, .active > .nk-menu-link .count {
-  color: #9769ff;
+  color: #00923c;
 }
 .nk-menu-sub .nk-menu-link {
   padding: 0.375rem 40px 0.375rem 36px;
@@ -31151,7 +31151,7 @@ body.nav-shown {
   color: #b799ff;
 }
 .is-light .nk-menu-link:hover, .is-light .active > .nk-menu-link {
-  color: #9769ff;
+  color: #00923c;
 }
 .is-theme .nk-menu-link:hover, .is-theme .active > .nk-menu-link {
   color: #fff;
@@ -31183,7 +31183,7 @@ body.nav-shown {
   transition: color 0.4s, background-color 0.4s;
 }
 .nk-menu-link:hover .nk-menu-icon, .nk-menu-item.active > .nk-menu-link .nk-menu-icon, .nk-menu-item.current-menu > .nk-menu-link .nk-menu-icon {
-  color: #9769ff;
+  color: #00923c;
 }
 .is-theme .nk-menu-link:hover .nk-menu-icon, .is-theme .nk-menu-item.active > .nk-menu-link .nk-menu-icon, .is-theme .nk-menu-item.current-menu > .nk-menu-link .nk-menu-icon {
   color: #fff;
@@ -31384,7 +31384,7 @@ body.nav-shown {
   font-weight: 500;
 }
 .nk-menu-footer .nk-menu-link:hover {
-  color: #9769ff;
+  color: #00923f;
 }
 .is-theme .nk-menu-footer .nk-menu-link {
   color: #d4c2ff;
@@ -35068,7 +35068,7 @@ body.toggle-shown {
   color: #00923f;
 }
 .is-theme .nk-news-icon .icon {
-  color: #9769ff;
+  color: #00923f;
 }
 .nk-news-icon img {
   width: 24px;
