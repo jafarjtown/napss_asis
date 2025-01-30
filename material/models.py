@@ -2,7 +2,7 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
-import mimetypes, os
+import mimetypes, os, uuid
 
 # Create your models here.
 
@@ -14,6 +14,7 @@ def materials_directory_path(instance, filename):
 def material_name(instance):
     return instance.file.name
     
+
 
 
 class Material(models.Model):
@@ -91,7 +92,28 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
+class DepartmentRepresentative(models.Model):
+  id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+  person = models.OneToOneField(User, on_delete=models.CASCADE, related_name="department_represented")
+  person_phone = models.CharField(max_length=255)
+  person_img = models.FileField(upload_to='representatives/', null=True, blank=True)
+  
+  department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name="representatives")
+  level = models.IntegerField(default=100)
+  
+  uploaded_materials = models.ManyToManyField(Material, blank=True)
+  
+  active = models.BooleanField(default=True)
 
+  def person_name(self):
+    return self.person.get_full_name()
+  def get_absolute_url(self):
+    return reverse('material:representative', kwargs={ 'id': self.id })
+    
+  def __str__(self):
+    return f'{self.department.name} - {self.level}'
+    
+  
 class TimeTable(models.Model):
     department = models.ForeignKey("Department", on_delete=models.CASCADE)
     level = models.CharField(max_length=3)

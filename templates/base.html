@@ -2,7 +2,34 @@
 <!DOCTYPE html>
 <html lang="zxx" class="js">
 
-{% include 'head.html' %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a comprehensive collection of PDFs, past questions, course outlines, and relevant study materials for {{pr_long_name}} students. Access valuable resources to excel in your academic journey.">
+    <meta name="keywords" content="{{pr_long_name}}, ABU, PDFs, past questions, course outlines, study materials">
+    <meta name="author" content="Jafaru Idris">
+    <meta name="robots" content="index, follow"> <!-- To allow search engines to index the site -->
+    <link rel="icon" href="{% static pr_napss_logo %}" type="image/x-icon">
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="{{pr_long_name}} Study Resources">
+    <meta property="og:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for {{pr_long_name}} students.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{% static pr_small_logo %}">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{pr_long_name}} Study Resources">
+    <meta name="twitter:description" content="Access a wide range of study materials, including PDFs, past questions, and course outlines for {{pr_long_name}} students.">
+    <meta name="twitter:image" content="{% static pr_small_logo %}">
+    
+    <title>{{pr_long_name}} - {% block title %}Get reading materials here{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/advance_search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashlite_modified.css' %}">
+    {% block style %}
+    {% endblock style %}
+    
+</head>
+
 <body class="nk-body bg-lighter npc-general has-sidebar ">
   <div class="loader" loader>
     <img src="{% static pr_napss_logo %}">

@@ -7,7 +7,7 @@ from django.conf import settings
 import os
 import zipfile
 from io import BytesIO
-from .models import Material, Department , Course, TimeTable, CourseComment ,PastQuestion, Day, Time
+from .models import Material, Department , Course, TimeTable, CourseComment ,PastQuestion, Day, Time, DepartmentRepresentative
 from user_account.models import FlaggedIssue
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -38,6 +38,39 @@ def upload(request):
             try:
                 material = Material(course=course, comment=comment, file=file, title=title)
                 material.save()
+            except Exception as e:
+                print(e)
+            messages.success(request, "Material added successful")
+
+
+    return render(request, 'app/upload.html', context)
+
+@login_required
+def representative_upload(request, id):
+    rep = DepartmentRepresentative.objects.get(id=id, person=request.user)
+    context = {
+            "departments": [rep.department],
+            'levels': [rep.level]
+    }
+    if request.method == 'POST':
+        course = request.POST.get('course')
+        comment = request.POST.get('comment')
+        department = request.POST.get('department')
+        file = request.FILES.get('file')
+        title = request.POST.get("title")
+        
+        course = Course.objects.get(department__id = department, code = course)
+        f = FileComparator(file, f"materials/{course.department.name}/{course.code}")
+        print(f.get_file_type(file))
+        if f.is_same:
+            messages.info(request, "Material already exists.")
+        else:
+           
+            try:
+                rep.uploaded_materials.create(course=course, comment=comment, file=file, title=title)
+                rep.save()
+                #material = Material(course=course, comment=comment, file=file, title=title)
+                #material.save()
             except Exception as e:
                 print(e)
             messages.success(request, "Material added successful")

@@ -1,6 +1,6 @@
 # app/views.py
 from django.shortcuts import render, redirect
-from material.models import Material, Department , Course, PastQuestion, TimeTable
+from material.models import Material, Department , Course, PastQuestion, TimeTable, DepartmentRepresentative
 from blog.models import BlogPage, User
 from .models import Newsletter, Partner
 from django.contrib import messages
@@ -16,6 +16,10 @@ def about(request):
     return render(request, 'about.html')
 def contact(request):
     return render(request, 'contact.html')
+
+def representatives(request):
+  reps = DepartmentRepresentative.objects.all()
+  return render(request, 'reps.html', {'reps': reps})
 
 def register_newsletter(request):
     if request.method == "POST":

@@ -4,6 +4,7 @@ from . import views
 app_name = 'material'
 urlpatterns = [
     path('upload/', views.upload, name='upload'),
+    path('representative/<id>/', views.representative_upload, name='representative'),
     path('materials/', views.material_list, name='material_list'),   
     path('past-questions/', views.past_questions, name='pqs'),   
     path('search/', views.search_materials, name='search'),
