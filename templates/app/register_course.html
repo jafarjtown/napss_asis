@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-div card">
+  <h3 class="card-title">Regster a Course</h3>
+  <p><b>Note:</b> Every course register can be view by all student and all reps from same Department can upload materials to the course<a href="terms">Terms and condition</a></p>
+    <form method="post">
+        {% csrf_token %}
+        <label> Level:
+          <select class="form-select js-select2" data-ui="lg" name="level" level>
+                {% for l in levels %}
+                  <option value="{{l}}" {% if l == level %}selected
+                {% endif %}>{{l}} Level</option>
+               {% endfor %}
+            </select>
+        </label>
+        <div class="hr"></div>
+        <p>Information about the Course</p>
+        <div>
+            <label> Code :
+            <input class="form-control form-control-lg" type="text" name="code" placeholder="Code : XXXX100." value="{{ code }}"></label>
+        </div>
+        <div>
+            <label> Title :
+            <input class="form-control form-control-lg" type="text" name="title" placeholder="Title for Course." value="{{ title }}"></label>
+        </div>
+       <div>
+            <label> Information:
+            <textarea class="form-control form-control-lg" name="info" placeholder="( optional )">{{ info }}</textarea></label>
+        </div>
+        <p style="background: white;color: black;"><b>Note : </b>any course that's not relevant will be removed by Administrators</p>
+        <div><button type="submit" class="btn btn-primary">Submit</button></div>
+        
+        
+    </form>
+    
+</div>
+{% endblock content %}

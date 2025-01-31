@@ -43,6 +43,14 @@
                                         <li class="nk-menu-item">
                                             <a href="{% url 'material:timetables' %}" class="nk-menu-link"><span class="nk-menu-text">Time Tables</span></a>
                                         </li>
+                                        {% if user.department_represented %}
+                                        <li class="nk-menu-item">
+                                            <a href="{% url 'material:representative' user.department_represented.id %}" class="nk-menu-link"><span class="nk-menu-text">Add Material</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="{% url 'material:register_course' user.department_represented.id %}" class="nk-menu-link"><span class="nk-menu-text">Register Course</span></a>
+                                        </li>
+                                        {% endif %}
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">

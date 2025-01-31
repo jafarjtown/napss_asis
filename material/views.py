@@ -38,9 +38,9 @@ def upload(request):
             try:
                 material = Material(course=course, comment=comment, file=file, title=title)
                 material.save()
+                messages.success(request, "Material added successful")
             except Exception as e:
                 print(e)
-            messages.success(request, "Material added successful")
 
 
     return render(request, 'app/upload.html', context)
@@ -69,16 +69,38 @@ def representative_upload(request, id):
             try:
                 rep.uploaded_materials.create(course=course, comment=comment, file=file, title=title)
                 rep.save()
+                messages.success(request, "Material added successful")
                 #material = Material(course=course, comment=comment, file=file, title=title)
                 #material.save()
             except Exception as e:
                 print(e)
-            messages.success(request, "Material added successful")
 
 
     return render(request, 'app/upload.html', context)
 
-
+def register_course(request, id):
+  rep = DepartmentRepresentative.objects.get(id=id, person=request.user)
+  department = rep.department
+  context = {
+            "departments": [rep.department],
+            'levels': [rep.level]
+  }
+  if request.method == "POST":
+    code = request.POST.get("code")
+    title = request.POST.get("title")
+    info = request.POST.get("info")
+    level = request.POST.get("level")
+    if department.course_set.filter(code=code.upper()).exists():
+      messages.info(request, f'{code} already exist.')
+      context['title'] = title
+      context['info'] = info
+      context['code'] = code
+    else:
+      department.course_set.create(code=code.upper(), title=title, info=info, level=level)
+      messages.success(request, f'{code} added successful.')
+      return redirect('material:register_course', rep.id )
+  return render(request, 'app/register_course.html', context)
+  
 def material_list(request):
     departments = Department.objects.all()
     sort = request.GET.get("sort")

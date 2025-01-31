@@ -11,6 +11,7 @@ class FileComparator:
         self.get_old_file()
     
     def are_files_same(self):
+        print(self.old_file.size, self.new_file.size)
         if self.old_file.size != self.new_file.size:
             return False
         
@@ -28,15 +29,12 @@ class FileComparator:
         
     def get_old_file(self):
          files = os.walk(os.path.join(settings.MEDIA_ROOT, self.dr))
-         for f, _, files in files:
-             for file in files:
+         for f, _, _files in files:
+             for file in _files:
                  with open(os.path.join(f, file), "rb") as file:
                      self.old_file = File(file)
                      if self.are_files_same():
                          self.is_same = True
-                     
-                     
-                     
 
 # Usage example:
 #old_file = ContentFile(b"Sample PDF content.")

@@ -7,8 +7,8 @@ import mimetypes, os, uuid
 # Create your models here.
 
 def materials_directory_path(instance, filename):
-    code = "-".join(instance.code.split(" "))
-    name = "-".join(instance.department.name.split(" "))
+    code = instance.code
+    name = instance.department.name
     return f"materials/{name}/{code}/{filename}"
 
 def material_name(instance):
