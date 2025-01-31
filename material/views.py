@@ -50,7 +50,7 @@ def representative_upload(request, id):
     rep = DepartmentRepresentative.objects.get(id=id, person=request.user)
     context = {
             "departments": [rep.department],
-            'levels': [rep.level]
+            'levels': [100, 200, 300, 400, 500]
     }
     if request.method == 'POST':
         course = request.POST.get('course')
@@ -83,7 +83,7 @@ def register_course(request, id):
   department = rep.department
   context = {
             "departments": [rep.department],
-            'levels': [rep.level]
+            'levels': [100, 200, 300, 400, 500]
   }
   if request.method == "POST":
     code = request.POST.get("code")
