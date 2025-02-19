@@ -1,0 +1,8 @@
+<form hx-post="{% url 'reader:edit' content.id %}"  hx-swap='outerHTML'>
+  <div class="form-group">
+    <div class="form-control-wrap">
+      <textarea name="text" class="form-control" id="default-textarea" placeholder="Start writing ..." >{{ content.content_object.text }}</textarea>
+    </div>
+</div>
+<button class="btn btn-secondary">Save</button>
+</form>

@@ -1,0 +1,10 @@
+<form hx-post="{% url 'reader:update_book' id block %}" hx-target='#content-{{ block }}-{{ id }}' hx-swap='innerHTML'>
+  <div class="form-group">
+    <label class="form-label">Video Component</label>
+    <div class="form-control-wrap">
+        <input required name="video" class="form-control mb-1" type="url" placeholder="Url">
+        <input required name="description" class="form-control" type="text" placeholder="Display name">
+    </div>
+</div>
+<button class="btn btn-secondary">Save</button>
+</form>

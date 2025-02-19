@@ -1,0 +1,8 @@
+<form hx-post="{% url 'reader:edit-title' content.id %}{% if sub %}?subsection=1{% endif %}"  hx-swap='outerHTML'>
+  <div class="form-group">
+    <div class="form-control-wrap">
+      <input name="title" class="form-control" type="text" placeholder="Title" value="{{ content.title }}">
+    </div>
+  </div>
+  <button class="btn btn-secondary">Save</button>
+</form>

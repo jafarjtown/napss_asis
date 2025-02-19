@@ -10,9 +10,9 @@
 <h4 class="mt-1">Course Details</h4>
 <section class="card">
   {% include 'app/libs/help.html' %}
-  {% include "app/libs/filter.html" with btn="Get Course"%}
+  {% include "app/libs/filter.html" with btn="Get Course" htmx=True htmx_replace_id="course" %}
+    <div id="course" class="p-2 mb-2">
     {% if course %}
-    <div class="p-2 mb-2">
     <h4 class="card-title">{{course.title|title}}</h4>
     <div class="divider mt-0"></div>
     <h4>Code : {{course.code|upper}}</h4>
@@ -28,8 +28,8 @@
     <p><b>Note:</b> anyone can flag an issue if you found anything that's not alright concerning the above course, <a href="{% url "material:flag_course" course.id %}">Flag issue</a></p>
     {% include "app/libs/comments.html"  with next="courses?" course=course %}
     {% else %}
-    </div>
     <p>Select Course from above to see the details about it.</p>
     {% endif %}
+    </div>
 </section>
 {% endblock content%}

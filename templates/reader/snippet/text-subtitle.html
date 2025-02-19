@@ -1,0 +1,9 @@
+<form hx-post="{% url 'reader:update_book' id block %}" hx-target='#content-{{ block }}-{{ id }}' hx-swap='innerHTML'>
+  <div class="form-group">
+    <div class="form-control-wrap">
+      <label class="form-label">Sub Topic</label>
+        <input required name="stitle" class="form-control" type="text" placeholder="sub title">
+    </div>
+</div>
+<button class="btn btn-secondary">Save</button>
+</form>

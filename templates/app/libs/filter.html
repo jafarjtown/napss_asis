@@ -1,7 +1,16 @@
 {% load static %}
 <div class="card border form-div">
     <script src="{% static "js/load_courses.js" %}" defer></script>
-        <form>
+        <form
+        {% if htmx %}
+          hx-get=""
+          hx-select="#{{ htmx_replace_id }}"
+          hx-target="#{{ htmx_replace_id }}"
+          hx-swap="outerHTML"
+          hx-push-url="true"
+          hx-oob="true"
+        {% endif %}
+        >
           <h4 class="card-subtitle">Filter Component</h4>
             <label> Department:
             <select class="form-select js-select2" data-ui="lg" name="department" department>

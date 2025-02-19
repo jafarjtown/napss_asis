@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load partials %}
+
+{% partialdef subsection %}
+  <div id="content-subsection-{{ subsection.id }}" class="content-subsection my-2">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+    {% partialdef sub-topic inline %}
+    <h4 id="title-subsection-{{ subsection.id }}" class="d-flex flex-row justify-content-between"
+    hx-on:click="
+        document.querySelectorAll('.form-wrapper').forEach(el => el.classList.add('d-none'));
+        document.querySelectorAll('div').forEach(el => el.classList.remove('active-section'));
+        document.getElementById('form-wrapper-sub-{{ subsection.id }}').classList.remove('d-none');
+        
+        document.getElementById('content-subsection-{{ subsection.id }}').classList.add('active-section')
+        ">
+      - {{ subsection.title }}
+      
+    </h4>
+    {% endpartialdef %}
+    <a
+    hx-get='{% url 'reader:edit-title' subsection.id %}?subsection=1'
+    hx-target='#title-subsection-{{ subsection.id }}'
+    hx-swap="outerHTML"
+    hx-trigger="click"
+    ><em class="icon ni ni-edit"></em></a>
+    </div>
+    {% for content in subsection.contents.all %}
+      {% partial text-content %}
+    {% endfor %}
+     <div id="form-wrapper-sub-{{ subsection.id }}" class="form-wrapper d-none">
+    
+    <div id="form-sub-con-{{ subsection.id }}" class="form-con p-2"></div>
+    
+    <!-- Form to fetch dynamic content -->
+    <form id="form-sub{{ section.id }}" hx-get="{% url 'reader:snippet' %}?block=subsection&id={{subsection.id}}" 
+          hx-target="#form-sub-con-{{ subsection.id }}" 
+          hx-swap="innerHTML" 
+          class="form d-flex flex-row p-2" 
+          style="gap: 5px">
+      
+      <select name="type" class="form-select js-select2">
+        <option value="text">Text - Body</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+        <option value="link">Link</option>
+      </select>
+      
+      <button class="btn btn-primary">Add</button>
+    </form>
+  </div>
+    </div>
+{% endpartialdef %}
+
+{% partialdef section %}
+<div id="content-section-{{ section.id }}" class="py-3 my-2 border-bottom content">
+  <div class="d-flex flex-row justify-content-between align-items-center">
+  {% partialdef topic inline %}
+  <h2 id="title-section-{{ section.id }}" class="d-flex flex-row justify-content-between"
+    hx-on:click="
+        document.querySelectorAll('div').forEach(el => el.classList.remove('active-section'));
+        document.getElementById('content-section-{{ section.id }}').classList.add('active-section')
+       
+        document.querySelectorAll('.form-wrapper').forEach(el => el.classList.add('d-none'));
+        document.getElementById('form-wrapper-{{ section.id }}').classList.remove('d-none');">
+    {{ section.title }} 
+  </h2>
+  {% endpartialdef %}
+    <a
+    hx-get='{% url 'reader:edit-title' section.id %}'
+    hx-target='#title-section-{{ section.id }}'
+    hx-swap="outerHTML"
+    hx-trigger="click"
+    ><em class="icon ni ni-edit"></em></a>
+  </div>
+  {% for content in section.contents.all %}
+  {% partialdef text-content inline %}
+    <p
+      hx-get='{% url 'reader:edit' content.id %}'
+      hx-trigger='click'
+      hx-swap='outerHTML'
+    >{{ content.content_object.get_content|safe }}</p>
+  {% endpartialdef %}
+  {% endfor %}
+  
+  {% for subsection in section.subsections.all %}
+    {% partial subsection %}
+  {% endfor %}
+<div id="form-wrapper-{{ section.id }}" class="form-wrapper d-none">
+    <div id="form-con-{{ section.id }}" class="form-con p-2"></div>
+
+    <!-- Form to fetch dynamic content -->
+    <form id="form-{{ section.id }}" hx-get="{% url 'reader:snippet' %}?block=section&id={{section.id}}" 
+          hx-target="#form-con-{{ section.id }}" 
+          hx-swap="innerHTML" 
+          class="form d-flex flex-row p-2" 
+          style="gap: 5px">
+      
+      <select name="type" class="form-select js-select2">
+        <option value="text-title">New Topic</option>
+        <option value="text-subtitle">Sub Topic</option>
+        <option value="text">Text - Body</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+        <option value="link">Link</option>
+      </select>
+      
+      <button class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>
+  <!-- Form container (unique ID for each section) -->
+{% endpartialdef %}
+
+{% block content %}
+<style>
+  .active-section{
+    border: .5px solid;
+    padding: 3px;
+    border-radius: 4px;
+  }
+</style>
+<div class="card border w-auto">
+  <div class="d-flex flex-row p-2 border-bottom">
+    <img style="width: 50px" src="{% static pr_small_logo %}">
+    <p>Reader</p>
+  </div>
+  
+  <div id="content" class="p-2">
+    {% for section in book.sections.all %}
+      {% partial section %}
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock content %}

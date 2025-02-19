@@ -30,7 +30,7 @@
     
 </head>
 
-<body class="nk-body bg-lighter npc-general has-sidebar ">
+<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}' class="nk-body bg-lighter npc-general has-sidebar ">
   <div class="loader" loader>
     <img src="{% static pr_napss_logo %}">
     <span class="n"></span>
@@ -113,6 +113,7 @@
     <script src="{% static 'js/bundle.js' %}"></script>
     <script src="{% static 'js/scripts.js' %}"></script>
     <script src="{% static 'js/advance_search.js' %}"></script>
+    <script src="{% static 'js/htmx.js' %}"></script>
     {% block script %}
     {% endblock script %}
     <script>
@@ -120,7 +121,7 @@
         setTimeout(()=>{
         $('[loader]').addClass('d-none')
         document.documentElement.style.setProperty('--primary-color', '#00923f');
-        },1000)
+        },200)
       });
     </script>
 </body>

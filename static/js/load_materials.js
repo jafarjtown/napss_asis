@@ -68,18 +68,49 @@ function createMaterialElement(obj) {
 
   dialog_close.on("click", () => dialog.get(0).close());
 
-  const createButton = (text, iconSrc, url) => {
+  const createAnchor = (text, iconSrc, url) => {
     return $("<a>", { href: url, css: { textAlign: "center" } }).html(`
       <em class="${iconSrc}"></em>
       <span>${text}</span>
     `);
   };
+  const createButton = (text, iconSrc, file) => {
+    let btn = $("<a>", {css: { textAlign: "center" } })
+    btn.on('click', () => {
+      const hostname = window.location.hostname;
+      const downloadLink = `https://${hostname}${file.download_url}`;
+      const siteLink = `https://${hostname}`;
+  
+      const text = `
+Academic Resource Download: ${downloadLink}
 
-  const download = createButton("Download", "icon ni ni-download", obj.download_url);
-  const view = createButton("View", "icon ni ni-view", obj.file);
-  const report = createButton("Report", "icon ni ni-report", obj.flag_url);
+Course Information:
+  Code: ${file.code}
+  Title: ${file.title}
+  Department: ${file.department_name}
+  Comment: ${file.comment}
 
-  btns.append(download, report, dialog);
+ABUSITE HUB: A platform offering educational resources and exam preparation tools.
+
+Access additional resources at: ${siteLink}
+          `.trim();
+      
+          copy_func(text);
+    });
+
+    
+    btn.html(`
+      <em class="${iconSrc}"></em>
+      <span>${text}</span>
+    `);
+    return btn
+  };
+
+  const download = createAnchor("Download", "icon ni ni-download", obj.download_url);
+  const copy = createButton("Copy", "icon ni ni-copy", obj);
+  const report = createAnchor("Report", "icon ni ni-report", obj.flag_url);
+  
+  btns.append(download, copy, dialog);
   fileIconDiv.on("click", () => dialog.get(0).showModal());
   material_info.append(fileIconDiv, info);
   material_card.append(material_info, btns);
@@ -102,6 +133,14 @@ function populate_dom(data) {
   });
 }
 
+async function copy_func(value) {
+    try {
+        await navigator.clipboard.writeText(value);
+        alert('Material link copied to clipboard');
+    } catch (err) {
+        alert('Failed to copy text: ', err);
+    }
+}
 // Uncomment the following functions if pagination is needed
 /*
 function pagination(data) {

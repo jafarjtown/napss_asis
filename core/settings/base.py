@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'material',
     'service',
     'wallet',
+    'reader',
     
     
     # third parties apps
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'whitenoise',
     'rest_framework',
     'django_filters',
+    'template_partials',
+    'django_htmx',
 ]
 
 
@@ -57,6 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'core.middlewares.LoginRequiredOrNotMiddleware',
     'core.middlewares.OnlyStaffViewMiddleware',
+    'django_htmx.middleware.HtmxMiddleware',
 ]
 
 

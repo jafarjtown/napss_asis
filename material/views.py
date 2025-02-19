@@ -197,6 +197,7 @@ def courses(request):
         if level: 
             context["level"] = int(level)
         context["department"] = dep.id
+    
     return render(request, "app/course.html", context)
     
     
