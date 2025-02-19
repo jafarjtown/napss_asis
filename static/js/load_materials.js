@@ -85,10 +85,10 @@ function createMaterialElement(obj) {
 Academic Resource Download: ${downloadLink}
 
 Course Information:
-  Code: ${file.code}
-  Title: ${file.title}
-  Department: ${file.department_name}
-  Comment: ${file.comment}
+- Code: ${file.code}
+- Title: ${file.title}
+- Department: ${file.department_name}
+- Comment: ${file.comment}
 
 ABUSITE HUB: A platform offering educational resources and exam preparation tools.
 
