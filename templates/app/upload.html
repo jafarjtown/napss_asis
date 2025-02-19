@@ -27,16 +27,56 @@ async function getCourse(){
 }
 
 </script>
+<script>
+    $(document).ready(function () {
+        $(document).on("htmx:beforeSend", function (event) {
+            $("#progressBar").css("width", "10%").text("10%");
+        });
+
+        $(document).on("htmx:configRequest", function (event) {
+            let xhr = event.detail.xhr;
+            xhr.upload.onprogress = function (e) {
+                if (e.lengthComputable) {
+                    let percentComplete = Math.round((e.loaded / e.total) * 100);
+                    $("#progressBar").css("width", percentComplete + "%").text(percentComplete + "%");
+                }
+            };
+        });
+
+        $(document).on("htmx:afterRequest", function (event) {
+            $("#progressBar").css("width", "100%").text("Upload Complete!");
+        });
+    });
+</script>
 {% block script %}
 <script src="{% static "js/load_courses.js" %}"></script>
+<script>
+    htmx.on("#form", "htmx:xhr:progress", function (evt) {
+    let percentComplete = Math.abs((evt.detail.loaded / evt.detail.total) * 100);
+    let bar = $("#progressBar").removeClass('d-none')
+    bar.css("width", percentComplete + "%").text(Math.round(percentComplete) + "%");
+});
+
+// When request is complete
+htmx.on("#form", "htmx:afterRequest", function () {
+    let bar = $("#progressBar")
+    bar.css("width", "100%").text("Upload Complete!").addClass('d-none');
+    alert('Upload successfully.')
+});
+
+// When an error occurs
+htmx.on("#form", "htmx:responseError", function () {
+    let bar = $("#progressBar").css("width", "0%").text("Upload Failed!");
+    alert('Upload Failed.')
+    bar.addClass('d-none')
+});
+    </script>
 {% endblock script %}
 {% block content %}
 <div class="form-div card">
   <h3 class="card-title">Upload new resouce</h3>
   <p><b>Note:</b> Before uploading any resource to this platform, make sure you understand all the terms and conditions <a href="terms">Terms and condition</a></p>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        
+    <form id="form" hx-post="" hx-encoding="multipart/form-data" hx-trigger="submit">
             
           <label> Department:
             <select class="form-select js-select2" data-ui="lg" name="department" department>
@@ -77,11 +117,17 @@ async function getCourse(){
             <input class="form-control form-control-lg" type="file" name="file" required></label>
         </div>
         <p style="background: white;color: black;"><b>Note : </b>any material that's not relevant will be removed by Administrators</p>
+        <!-- Progress Bar -->
+        <div class="progress progress-lg">
+            <div id="progressBar" class="d-none progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                0%
+            </div>
+        </div>
+        
+        <!-- Response will be shown here -->
+        <div id="response"></div>
         <div><button type="submit" class="btn btn-primary">Submit</button></div>
-        
-        
     </form>
-    
 </div>
 
 {% endblock content %}

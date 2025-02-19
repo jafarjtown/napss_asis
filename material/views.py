@@ -74,6 +74,8 @@ def representative_upload(request, id):
                 #material.save()
             except Exception as e:
                 print(e)
+        if request.htmx:
+          return HttpResponse(status=204)
 
 
     return render(request, 'app/upload.html', context)
