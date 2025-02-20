@@ -54,12 +54,13 @@ def cbt_test_result(request, id):
     qs = []
     if request.method == "POST":  
         attempts = dict(request.POST)
+        print(attempts)
         del attempts["csrfmiddlewaretoken"]
         for q, a in attempts.items():
             a = int(a[0])
             qq = course.objectives.get(id = q)
-            op = qq.options.get(id=a)
-            qs.append({"q":qq, "select": a})
+            op = qq.opts.get(id=a)
+            qs.append({"question":qq, "select": a})
             if op.is_correct:
                 result["score"] += 1
     return render(request, "cbt/cbt_time_base_result.html", {"course": course, "qs": qs, "result": result})

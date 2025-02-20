@@ -263,6 +263,8 @@ def download_material(request, material_id):
         # Return the file as a response for download
         response = FileResponse(open(file_path, "rb"), as_attachment=True)
         response["Content-Disposition"] = f'attachment; filename="{os.path.basename(material.file.name)}"'
+        material.increment_download_count()
+        
         return response
 
     except Material.DoesNotExist:
@@ -291,7 +293,7 @@ def bulk_download_materials(request, id):
             
             # Add the file to the ZIP archive
             zip_file.write(file_path, file_name)
-    
+            material.increment_download_count()
     # Set the buffer's pointer to the beginning
     buffer.seek(0)
     

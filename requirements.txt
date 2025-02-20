@@ -4,5 +4,7 @@ djangorestframework
 django-filter
 python-dotenv
 django-compressor
+django-htmx
+django-template-partials
 gunicorn
 requests

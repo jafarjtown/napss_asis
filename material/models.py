@@ -1,5 +1,6 @@
 # app/models.py
 from django.db import models
+from django.db.models import Count, F, Q
 from django.urls import reverse
 from django.contrib.auth.models import User
 import mimetypes, os, uuid
@@ -15,7 +16,20 @@ def material_name(instance):
     return instance.file.name
     
 
+class ClassMaterialManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(course__department__active=True)
+    def get_top_5_downloaded(self):
+        """Returns the 5 most downloaded materials."""
+        return self.order_by('-download_count')[:5]
 
+    def get_random_material(self):
+        """Returns a random material."""
+        count = self.aggregate(count=Count('id'))['count']
+        if count == 0:
+            return None
+        random_index = random.randint(0, count - 1)
+        return self.all()[random_index]
 
 class Material(models.Model):
     title= models.CharField(max_length=200, default="")
@@ -23,7 +37,14 @@ class Material(models.Model):
     file = models.FileField(upload_to=materials_directory_path)
     comment= models.TextField()
     upload_on = models.DateTimeField(auto_now_add=True)
+    download_count = models.IntegerField(default=0)
     
+    objects = ClassMaterialManager()
+    
+    def increment_download_count(self):
+        self.download_count = F('download_count') + 1
+        self.save()
+        
     @property
     def download_url(self):
       return reverse('material:download_material', kwargs={'material_id':self.id})
@@ -88,6 +109,7 @@ class Request(models.Model):
 class Department(models.Model):
     name = models.CharField(max_length=50)
     slogan = models.TextField()
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name

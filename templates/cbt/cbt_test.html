@@ -2,10 +2,7 @@
 {% load static %}
 {% block content %}
 <section class="card px-2 py-3">
-    <div class="d-flex flex-row align-items-end border-bottom pb-3 mb-2">
-      <img style="width: 60px" src="{% static pr_small_logo %}">
-      <h3 class="px-2 text-primary">CBT Playground</h3>
-    </div>
+    {% include 'cbt/_header.html' %}
     <h2 class="card-title">{{course.code|upper}} Test</h2>
     <p>Questions boxes, click to select question or use the navigators below.</p>
     <div questions style="display:flex;gap:2px;flex-wrap:wrap"></div>
@@ -17,18 +14,13 @@
         <div style="flex-direction:column;display:none" question id="{{forloop.counter}}">
             <p class="fw-medium fs-5">{{forloop.counter}}. {{q.question}}</p>
             <ol type="A">
-                
             {% for o in q.options %}
-            
             <li class="m-1">
             <div class=" my-1 custom-control custom-radio custom-control-lg">
               <input type="radio" id="customRadio{{o.id}}" name="{{q.id}}" value="{{o.id}}" class="custom-control-input">
               <label class="custom-control-label" for="customRadio{{o.id}}">{{o.value}}</label>
             </div>
             </li>
-             
-
-            
             {% endfor %}
             </ol>
             <input type="text" value="{{q.correct_answer.id}}" style="display:none" correct_answer>
