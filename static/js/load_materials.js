@@ -110,7 +110,7 @@ Access additional resources at: ${siteLink}
   const copy = createButton("Copy", "icon ni ni-copy", obj);
   const report = createAnchor("Report", "icon ni ni-report", obj.flag_url);
   
-  btns.append(download, copy, dialog);
+  btns.append(download, report, copy);
   fileIconDiv.on("click", () => dialog.get(0).showModal());
   material_info.append(fileIconDiv, info);
   material_card.append(material_info, btns);
