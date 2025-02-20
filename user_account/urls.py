@@ -11,5 +11,5 @@ urlpatterns = [
     path('make_request/', views.make_request, name='make_request'),
     path("update", views.update_user, name="update_user"),
     path("buy-coins/", views.wallet, name="wallet"),
-    path("accounts/", include("django.contrib.auth.urls")),
+    
 ]
