@@ -33,7 +33,8 @@ urlpatterns = [
     path('service/', include('service.urls')),
     path('wallet/', include('wallet.urls')),
     path('reader/', include('reader.urls')),
-    path('', include('app.urls')),
     path("accounts/", include("django.contrib.auth.urls")),
+    path('mail/', include('mail.urls')),
+    path('', include('app.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block script %}
+<link rel="stylesheet" href="{% static 'css/editors/summernote.css' %}">
+<script src="{% static 'js/libs/editors/summernote.js' %}"></script>
+<script src="{% static 'js/editors.js' %}"></script>
+<script>
+document.addEventListener('htmx:configRequest', function (event) {
+    let summernoteContent = $('#summernote').summernote('code');
+    event.detail.parameters['body'] = summernoteContent;
+});
+
+htmx.on("#form", "htmx:xhr:progress", function (evt) {
+    let div = $("#response").removeClass('d-none')
+    div.text("Sending ... please wait");
+});
+
+// When request is complete
+htmx.on("#form", "htmx:afterRequest", function () {
+    let div = $("#response")
+    div.text("Sending Complete!")
+    setTimeout(()=>div.addClass('d-none'), 1000);
+});
+
+// When an error occurs
+htmx.on("#form", "htmx:responseError", function () {
+    let div = $("#response").text("Sending Failed!");
+    setTimeout(()=>div.addClass('d-none'), 1000);
+});
+    </script>
+{% endblock script %}
+{% block content %}
+<div class="card p-2">
+  <h2>{{ pr_short_name }} Mailer</h2>
+  <p>This interface can be used to send e-mails to registered users or moderators of the platform.</p>
+  <form id="form" hx-post='' hx-encoding="multipart/form-data" hx-before="alert(8)">
+    <div class="form-group">
+      <label class="form-label" for="default-01">Subject</label>
+      <div class="form-control-wrap">
+        <input required name="subject" type="text" class="form-control" id="default-01" placeholder="Input placeholder">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="to">To</label>
+      <div class="form-control-wrap">
+        <select id="to" name="to" class="form-select js-select2">
+          <option value="all">All Users</option>
+          <option value="moderators">Moderators</option>
+          <option value="students">Students</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="body">Body</label>
+      <div class="form-control-wrap">
+        <div id="summernote" class="summernote-basic"></div>
+        <textarea name="body" id="body" hidden></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="file">Attachment</label>
+      <div class="form-control-wrap">
+        <input name="attachment" type="file" class="form-control" id="file" placeholder="Select File">
+      </div>
+    </div>
+        <!-- Response will be shown here -->
+        <div id="response" class="mb-2"></div>
+    <button class="btn btn-primary">Send mail</button>
+  </form>
+  <p class="mt-2">Mail may take some time to send</p>
+</div>
+
+{% endblock content %}

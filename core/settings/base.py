@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'service',
     'wallet',
     'reader',
+    'mail',
     
     
     # third parties apps
