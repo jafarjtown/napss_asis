@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 def index(request):
     if request.htmx:
         if request.method == 'POST':
-            print(request.POST)  # Debugging: Print POST data
+            
             subject = request.POST.get('subject')
             to = request.POST.get('to')
             body = request.POST.get('body')
