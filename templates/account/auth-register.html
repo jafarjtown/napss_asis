@@ -22,7 +22,7 @@
                                         </div>
                                     </div>
                                 </div><!-- .nk-block-head -->
-                                <form method="post" class="form-validate is-alter" autocomplete="off">
+                                <form method="post" class="is-alter" autocomplete="off">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <label class="form-label" for="name">Name</label>
@@ -48,8 +48,8 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-control-xs custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox">
-                                            <label class="custom-control-label" for="checkbox">I agree to {{pr_short_name}} <a tabindex="-1" href="#">Privacy Policy</a> &amp; <a tabindex="-1" href="#"> Terms.</a></label>
+                                            <input type="checkbox" required class="custom-control-input" id="checkbox">
+                                            <label class="custom-control-label" for="checkbox">I agree to {{pr_short_name}} <a tabindex="-1" href="{% url 'app:terms_condition' %}">Privacy Policy</a> &amp; <a tabindex="-1" href="#"> Terms.</a></label>
                                         </div>
                                     </div>
                                     <div class="form-group">

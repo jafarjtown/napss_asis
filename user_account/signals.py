@@ -13,7 +13,7 @@ from core import monnify
 @receiver(post_save, sender=User)  # Replace User with your model
 def send_welcome_email(sender, instance, created, **kwargs):
     if created:
-        #Account.objects.create(user=instance, coins=5000)
+        Account.objects.create(user=instance, coins=5000)
         #res = monnify.create_virtual_account(instance.get_full_name(), instance.email, str(datetime.datetime.now()))
         #print(res)
         

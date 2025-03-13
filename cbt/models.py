@@ -29,6 +29,21 @@ class Question(models.Model):
         options = self.opts.all()  # Get all options for the question
         return randomize_options(options) 
     
+    @property
+    def a(self):
+      return self.opts.first()
+      
+    @property
+    def b(self):
+      return self.opts.all()[1]
+        
+    @property
+    def c(self):
+      return self.opts.all()[2]
+        
+    @property
+    def d(self):
+      return self.opts.last()
         
 class Option(models.Model):
     question = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True, related_name='opts')

@@ -14,9 +14,14 @@ def index(request):
 
 def about(request):
     return render(request, 'about.html')
+
 def contact(request):
     return render(request, 'contact.html')
+    
+def terms_condition(request):
+    return render(request, 'terms_condition.html')
 
+    
 def representatives(request):
   reps = DepartmentRepresentative.objects.all()
   return render(request, 'reps.html', {'reps': reps})

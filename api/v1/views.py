@@ -1,12 +1,38 @@
-from material.models import Material, Course, PastQuestion
+from material.models import Material, Course, PastQuestion, Department
 from rest_framework import viewsets
 from rest_framework import permissions
-
-from api.v1.serializers import MaterialSerializer, CourseSerializer, PastQSerializer
+from rest_framework.generics import ListAPIView, RetrieveAPIView
+from api.v1.serializers import MaterialSerializer, CourseSerializer, PastQSerializer, DepartmentSerializer, BlogPage, BlogListPageSerializer, BlogDetailPageSerializer, DepartmentCoursesSerializer
 #from rest_framework_word_filter import FullWordSearchFilter 
 #from url_filter.integrations.drf import DjangoFilterBackend
 
 
+
+class BlogPageViewset(viewsets.ModelViewSet):
+    queryset = BlogPage.objects.all()
+    
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return BlogListPageSerializer  # For listing
+        return BlogDetailPageSerializer  # For details
+        
+        
+class DepartmentViewset(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Department to be viewed or edited.
+    """
+    
+    queryset = Department.objects.all()
+    serializer_class = DepartmentSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    #filter_fields = ['course','title', "upload_on"]
+    #word_fields = ('title','comment','course__code', 'course__title')
+    #filter_backends = (FullWordSearchFilter,DjangoFilterBackend )
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return DepartmentSerializer  # For listing
+        return DepartmentCoursesSerializer  # For details
 
 class MaterialViewset(viewsets.ModelViewSet):
     """
@@ -16,9 +42,9 @@ class MaterialViewset(viewsets.ModelViewSet):
     queryset = Material.objects.all()
     serializer_class = MaterialSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    #filter_fields = ['course','title', "upload_on"]
+    filter_fields = ['course','title', "upload_on"]
     #word_fields = ('title','comment','course__code', 'course__title')
-    #filter_backends = (FullWordSearchFilter,DjangoFilterBackend )
+    #filter_backends = (DjangoFilterBackend,)
     
     
 class CourseViewset(viewsets.ModelViewSet):

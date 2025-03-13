@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 
-from api.v1.serializers import MaterialSerializer, Material, CourseSerializer, Course
+from api.v1.serializers import MaterialSerializer, Material, CourseSerializer, Course, QuestionSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -37,7 +37,7 @@ def get_materials(request):
   course_level = GET.get('course__level', None)
   course = GET.get('course__code', None)
   if course:
-    materials = Material.objects.select_related('course').filter(course__code=course[0], course__level=int(course_level[0]))
+    materials = Material.objects.select_related('course').filter(course__code=course[0])
   else:
     materials = Material.objects.select_related('course').all()
   materials = (query(obj, search_param) for obj in materials)
@@ -54,3 +54,11 @@ def get_courses(request):
   courses = Course.objects.filter(department__id=department_id, level=level)
   serialize_courses = CourseSerializer(courses, many=True, context={'request': request})
   return Response(serialize_courses.data)
+
+@api_view(['GET'])
+def get_quizze(request):
+  GET = request.GET
+  code = (GET.get('code'))
+  course = Course.objects.get(code=code)
+  serialize_course = QuestionSerializer(course.objectives.all(), many=True, context={'request': request})
+  return Response(serialize_course.data)
